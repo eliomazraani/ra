@@ -36,7 +36,7 @@
 </div>
 
 <script>
-    fetch('http://localhost:1337/api/get-in-touches')
+    fetch('https://rachelasmar.netlify.app/.netlify/functions/api/get-in-touches')
     .then(res => res.json())
     .then(data => {
         const contactData = data.data[0].attributes;
