@@ -9,9 +9,8 @@
                         <div class="norm">${v?.attributes?.norm}</div>
                         <div class="detail">${v?.attributes?.detail}</div>
                     </div>`;
-            value = value.join('');
-            })
-            document.querySelector(".values").innerHTML += value;
+            }).join('');
+            document.querySelector(".values").innerHTML = value;
         })
         .catch(err => {
             console.error(err);
