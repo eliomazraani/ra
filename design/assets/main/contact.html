@@ -1,0 +1,51 @@
+<!-- Contact -->
+<div class="left">
+    <div class="getInTouch">Get In Touch</div>
+    <div class="description"></div>
+    <div class="reachOut">
+        <div class="address link">
+            <img src="assets/img/Location.png" alt="Img">
+        </div>
+        <div class="number link">
+            <img src="assets/img/Phone.png" alt="Img">
+        </div>
+        <div class="email link">
+            <img src="assets/img/Email.png" alt="Img">
+        </div>
+    </div>
+</div>
+<div class="right">
+    <form action="" class="form" id="contactForm">
+        <div class="row">
+            <input type="text" id="firstName" placeholder="First Name*" required>
+            <input type="text" id="lastName" placeholder="Last Name*" required>
+        </div>
+        <div class="row">
+            <input type="phone" id="phoneNumber" placeholder="Phone Number*" required>
+            <input type="email" id="email" placeholder="Email*" required>
+        </div>
+        <div class="row">
+            <textarea name="" id="message" cols="30" rows="10" placeholder="Message*" required></textarea>
+        </div>
+        <div class="row">
+            <div onclick="sendEmail()" class="button">
+                <a>Submit</a>
+            </div>
+        </div>
+    </form>
+</div>
+
+<script>
+    fetch('http://localhost:1337/api/get-in-touches')
+    .then(res => res.json())
+    .then(data => {
+        const contactData = data.data[0].attributes;
+        document.querySelector(".contact .left .description").innerHTML = contactData.description;
+        document.querySelector(".contact .left .address").append(contactData.address);
+        document.querySelector(".contact .left .number").append(contactData.number);
+        document.querySelector(".contact .left .email").append(contactData.email);
+    })
+    .catch(err => {
+        console.error(err);
+    });
+</script>

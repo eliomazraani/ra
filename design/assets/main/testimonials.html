@@ -1,0 +1,40 @@
+<!-- Testimonials -->
+<div class="title">Our Happy Clients</div>
+<div class="testimonialTab">
+    <div class="clientTestimonial fade">
+        <img src="assets/img/Client.png" alt="Img">
+        <div class="testimonial">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec magna at bibendum. Nam non dui nec erat rhoncus sagittis sed at tortor. In eu sapien non diam efficitur auctor ut eget nisl. Praesent arcu massa, ultricies quis condimentum nec, consectetur ut odio. Vestibulum a lobortis metus.”</div>
+        <div class="name">Client Name 1</div>
+    </div>
+    <div class="clientTestimonial fade">
+        <img src="assets/img/Client.png" alt="Img">
+        <div class="testimonial">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec magna at bibendum. Nam non dui nec erat rhoncus sagittis sed at tortor. In eu sapien non diam efficitur auctor ut eget nisl. Praesent arcu massa, ultricies quis condimentum nec, consectetur ut odio. Vestibulum a lobortis metus.”</div>
+        <div class="name">Client Name 2</div>
+    </div>
+</div>
+<div class="dots">
+    <span class="dot active"></span>
+    <span class="dot"></span>
+</div>
+
+<script>
+    let testimonialIndex = 0;
+    showTestimonials();
+
+    function showTestimonials() {
+    let i;
+        let testimonials = document.getElementsByClassName("clientTestimonial");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < testimonials.length; i++) {
+            testimonials[i].style.display = "none";  
+        }
+        testimonialIndex++;
+        if (testimonialIndex > testimonials.length) {testimonialIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        testimonials[testimonialIndex-1].style.display = "block";  
+        dots[testimonialIndex-1].className += " active";
+        setTimeout(showTestimonials, 5000);
+    }
+</script>
