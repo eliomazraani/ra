@@ -1,6 +1,6 @@
 <!-- Values -->
 <script>
-    fetch('https://rachelasmar.netlify.app/.netlify/functions/api/values')
+    fetch('http://localhost:1337/api/values')
         .then(res => res.json())
         .then(data => {
             const value = data?.data?.map(v => {
