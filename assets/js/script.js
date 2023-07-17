@@ -21,6 +21,7 @@ function thankYou() {
 }
 
 function jobPosition(num) {
+    applyNow();
     switch (num) {
         case 1:
             $("#jobPositionName").text("Coordinator");
