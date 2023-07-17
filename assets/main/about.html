@@ -1,7 +1,7 @@
 <!-- About -->
 <div class="left">
     <div class="headline">Our Story</div>
-    <div class="information">The story began with our founder, Rachel Asmar, and her love for fashion and movement, which inspired her to create a unique artistic experience. Over the years, RACHEL ASMAR has evolved from a solo enterprise into a team of coordinators, stylists, choreographers, makeup artists, and assistants who share the same values and ethics. The RA Team works passionately with talented artists to create the ultimate experience for our clients, driven by our belief that the journey is just as important as the destination.</div>
+    <div class="information"></div>
     <div class="button">
         <a href="about.html">Read More <i class="fas fa-angle-right"></i></a>
     </div>
@@ -12,3 +12,17 @@
 <div class="button mobile">
     <a  onclick="scrollToContact()">Get In Touch</a>
 </div>
+
+<script>
+    fetch('http://localhost:1337/api/stories')
+        .then(res => res.json())
+        .then(data => {
+            const story = data?.data?.map(s => {
+            return `${s?.attributes?.information}`;
+            }).join('');
+            document.querySelector(".ourStory .left .information").textContent = story;
+        })
+        .catch(err => {
+            console.error(err);
+        });
+</script>

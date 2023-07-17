@@ -163,6 +163,37 @@ function showClients(n) {
     }
 }
 
+let testimonialIndex = 0;
+showTestimonials();
+
+
+function showTestimonials() {
+    let testimonials = document.getElementsByClassName("clientTestimonial");
+    let dots = document.getElementsByClassName("dot");
+
+    if (testimonials.length === 0 || dots.length === 0) {
+        return;
+    }
+
+    for (let i = 0; i < testimonials.length; i++) {
+        testimonials[i].style.display = "none";
+    }
+
+    testimonialIndex++;
+    if (testimonialIndex > testimonials.length) {
+        testimonialIndex = 1;
+    }
+
+    for (let i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+
+    testimonials[testimonialIndex - 1].style.display = "block";
+    dots[testimonialIndex - 1].className += " active";
+
+    setTimeout(showTestimonials, 5000);
+}
+
 function serviceShow(num) {
     const currentUrl = window.location.href;
 
@@ -189,7 +220,7 @@ function serviceShow(num) {
 
 
 (function(){
-    emailjs.init("rAQqZ--N6DLDl8Mgk");
+    emailjs.init("4uIfK9PIMmhm3l7HF");
 })();
 
 function sendEmail() {
