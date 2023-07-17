@@ -1,16 +1,19 @@
 <!-- Contact -->
 <div class="left">
     <div class="getInTouch">Get In Touch</div>
-    <div class="description"></div>
+    <div class="description">We're excited to share more about our services with you. <br> At Rachel Asmar, we are committed to providing the best possible experience for our customers. Whether you're looking to learn more about what we offer or have a question, we're here to help. Browse our website to find out more, or contact us for further assistance. Thank you for consideration!</div>
     <div class="reachOut">
         <div class="address link">
             <img src="assets/img/Location.png" alt="Img">
+            Beirut, Lebanon
         </div>
         <div class="number link">
             <img src="assets/img/Phone.png" alt="Img">
+            961 70908587
         </div>
         <div class="email link">
             <img src="assets/img/Email.png" alt="Img">
+            Info@rachelasmar.com
         </div>
     </div>
 </div>
@@ -34,18 +37,3 @@
         </div>
     </form>
 </div>
-
-<script>
-    fetch('https://rachelasmar.netlify.app/.netlify/functions/api/get-in-touches')
-    .then(res => res.json())
-    .then(data => {
-        const contactData = data.data[0].attributes;
-        document.querySelector(".contact .left .description").innerHTML = contactData.description;
-        document.querySelector(".contact .left .address").append(contactData.address);
-        document.querySelector(".contact .left .number").append(contactData.number);
-        document.querySelector(".contact .left .email").append(contactData.email);
-    })
-    .catch(err => {
-        console.error(err);
-    });
-</script>
