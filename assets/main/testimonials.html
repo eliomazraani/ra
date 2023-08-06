@@ -1,33 +1,66 @@
 <!-- Testimonials -->
 <div class="title">Our Happy Clients</div>
-<div class="testimonialTab"></div>
-<div class="dots"></div>
+<div class="testimonialTab">
+    <div class="clientTestimonial fade">
+        <img src="assets/img/Client.png" alt="Img">
+        <div class="testimonial">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec magna at
+            bibendum. Nam non dui nec erat rhoncus sagittis sed at tortor. In eu sapien non diam efficitur auctor ut
+            eget nisl. Praesent arcu massa, ultricies quis condimentum nec, consectetur ut odio. Vestibulum a lobortis
+            metus.”</div>
+        <div class="name">Name 1</div>
+    </div>
+    <div class="clientTestimonial fade">
+        <img src="assets/img/Client.png" alt="Img">
+        <div class="testimonial">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec magna at
+            bibendum. Nam non dui nec erat rhoncus sagittis sed at tortor. In eu sapien non diam efficitur auctor ut
+            eget nisl. Praesent arcu massa, ultricies quis condimentum nec, consectetur ut odio. Vestibulum a lobortis
+            metus.”</div>
+        <div class="name">Name 2</div>
+    </div>
+    <div class="clientTestimonial fade">
+        <img src="assets/img/Client.png" alt="Img">
+        <div class="testimonial">“
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec magna at bibendum. Nam non dui
+            nec erat rhoncus sagittis sed at tortor. In eu sapien non diam efficitur auctor ut eget nisl. Praesent arcu
+            massa, ultricies quis condimentum nec, consectetur ut odio. Vestibulum a lobortis metus.”</div>
+        <div class="name">Name 3</div>
+    </div>
+</div>
+<div class="dots">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+</div>
 
 <script>
-    fetch('http://localhost:1337/api/testimonials')
-        .then(res => res.json())
-        .then(data => {
-            const testimonial = data?.data?.map(t => {
-            return `<div class="clientTestimonial fade">
-                        <img src="assets/img/Client.png" alt="Img">
-                        <div class="testimonial">“${t?.attributes?.testimonial}”</div>
-                        <div class="name">${t?.attributes?.name} ${t?.id}</div>
-                    </div>`;
-            }).join('');
-            document.querySelector(".testimonialTab").innerHTML = testimonial;
-            let testimonials = document.getElementsByClassName("clientTestimonial");
-            let dot = "";
-            for (i = 0; i < testimonials.length; i++) {
-                if (i === 0) {
-                    dot += `<span class="dot active"></span>`;
-                } else {
-                    dot += `<span class="dot"></span>`;
-                }
-            }
-            document.querySelector(".dots").innerHTML = dot;
-            showTestimonials();
-        })
-        .catch(err => {
-            console.error(err);
-        });
+    let testimonialIndex = 0;
+    showTestimonials();
+
+
+    function showTestimonials() {
+        let testimonials = document.getElementsByClassName("clientTestimonial");
+        let dots = document.getElementsByClassName("dot");
+
+        if (testimonials.length === 0 || dots.length === 0) {
+            return;
+        }
+
+        for (let i = 0; i < testimonials.length; i++) {
+            testimonials[i].style.display = "none";
+        }
+
+        testimonialIndex++;
+        if (testimonialIndex > testimonials.length) {
+            testimonialIndex = 1;
+        }
+
+        for (let i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+
+        testimonials[testimonialIndex - 1].style.display = "block";
+        dots[testimonialIndex - 1].className += " active";
+
+        setTimeout(showTestimonials, 5000);
+    }
 </script>

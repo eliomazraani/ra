@@ -1,25 +1,13 @@
 <!-- Footer -->
-<div class="socialMedia"></div>
+<div class="socialMedia">
+    <a onclick="socialMedia('https://www.instagram.com/rachel.w.asmar')">
+        <i class="fa-brands fa-instagram"></i>
+    </a><a onclick="socialMedia('https://www.youtube.com/@rachelasmar')">
+        <i class="fa-brands fa-youtube"></i>
+    </a><a onclick="socialMedia('https://www.tiktok.com/@rachelasmar')">
+        <i class="fa-brands fa-tiktok"></i>
+    </a>
+</div>
 <div class="copyRight">
     &copy; &nbsp; <span id="year">2023</span> &nbsp; Rachel Asmar. All Rights Reserved
 </div>
-
-<script>
-    fetch('http://localhost:1337/api/social-medias')
-        .then(res => res.json())
-        .then(data => {
-            const media = data?.data?.map(s => {
-            return `<a onclick="socialMedia('${s?.attributes?.url}')">
-                        <i class="fa-brands fa-${s?.attributes?.platform}"></i>
-                    </a>`;
-            }).join('');
-            document.querySelector(".socialMedia").innerHTML = media;
-        })
-        .catch(err => {
-            console.error(err);
-        });
-
-    const date = new Date();
-    let year = date.getFullYear();
-    document.getElementById("year").innerHTML = year;
-</script>
