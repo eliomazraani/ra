@@ -36,23 +36,4 @@
             </div>
         </div>
     </form>
-<<<<<<< HEAD
 </div>
-=======
-</div>
-
-<script>
-    fetch('http://localhost:1337/api/get-in-touches')
-    .then(res => res.json())
-    .then(data => {
-        const contactData = data?.data[0]?.attributes;
-        document.querySelector(".contact .left .description").innerHTML = contactData?.description;
-        document.querySelector(".contact .left .address").append(contactData?.address);
-        document.querySelector(".contact .left .number").append(contactData?.number);
-        document.querySelector(".contact .left .email").append(contactData?.email);
-    })
-    .catch(err => {
-        console.error(err);
-    });
-</script>
->>>>>>> locally
