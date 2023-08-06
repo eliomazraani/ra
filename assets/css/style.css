@@ -995,6 +995,7 @@ body {
 }
 .serviceOptions .servicesGrid .grid .service img {
   width: 100%;
+  cursor: pointer;
 }
 .serviceOptions .servicesGrid .grid .service .information {
   margin-top: 18px;
