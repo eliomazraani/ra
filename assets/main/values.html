@@ -1,4 +1,5 @@
 <!-- Values -->
+<<<<<<< HEAD
 <div class="box">
     <img src="assets/img/Integrity.png" alt="Img">
     <div class="norm">Integrity</div>
@@ -14,3 +15,22 @@
     <div class="norm">Discipline</div>
     <div class="detail">We are responsible, respect our artists, care for our client’s overall experience and manage our business ethically.</div>
 </div>
+=======
+<script>
+    fetch('http://localhost:1337/api/values')
+        .then(res => res.json())
+        .then(data => {
+            const value = data?.data?.map(v => {
+            return `<div class="box">
+                        <img src="assets/img/${v?.attributes?.norm}.png" alt="Img">
+                        <div class="norm">${v?.attributes?.norm}</div>
+                        <div class="detail">${v?.attributes?.detail}</div>
+                    </div>`;
+            }).join('');
+            document.querySelector(".values").innerHTML = value;
+        })
+        .catch(err => {
+            console.error(err);
+        });
+</script>
+>>>>>>> locally

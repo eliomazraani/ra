@@ -26,6 +26,9 @@ function jobPosition(num) {
         case 1:
             $("#jobPositionName").text("Coordinator");
             break;
+        case 2:
+            $("#jobPositionName").text("Wardrobe");
+            break;
     }
 }
 
@@ -162,6 +165,37 @@ function showClients(n) {
     if (clients.length > 0) {
         clients[clientIndex - 1].style.display = "flex";
     }
+}
+
+let testimonialIndex = 0;
+showTestimonials();
+
+
+function showTestimonials() {
+    let testimonials = document.getElementsByClassName("clientTestimonial");
+    let dots = document.getElementsByClassName("dot");
+
+    if (testimonials.length === 0 || dots.length === 0) {
+        return;
+    }
+
+    for (let i = 0; i < testimonials.length; i++) {
+        testimonials[i].style.display = "none";
+    }
+
+    testimonialIndex++;
+    if (testimonialIndex > testimonials.length) {
+        testimonialIndex = 1;
+    }
+
+    for (let i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+
+    testimonials[testimonialIndex - 1].style.display = "block";
+    dots[testimonialIndex - 1].className += " active";
+
+    setTimeout(showTestimonials, 5000);
 }
 
 function serviceShow(num) {
