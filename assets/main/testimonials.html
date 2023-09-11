@@ -26,22 +26,17 @@
         <div class="name">Name 3</div>
     </div>
 </div>
-<div class="dots">
-    <span class="dot"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
-</div>
+<div class="dots"></div>
 
 <script>
     let testimonialIndex = 0;
     showTestimonials();
 
-
     function showTestimonials() {
         let testimonials = document.getElementsByClassName("clientTestimonial");
-        let dots = document.getElementsByClassName("dot");
+        let dotsContainer = document.querySelector(".dots");
 
-        if (testimonials.length === 0 || dots.length === 0) {
+        if (testimonials.length === 0) {
             return;
         }
 
@@ -54,13 +49,23 @@
             testimonialIndex = 1;
         }
 
-        for (let i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
+        updateDots(dotsContainer, testimonials.length, testimonialIndex);
 
         testimonials[testimonialIndex - 1].style.display = "block";
-        dots[testimonialIndex - 1].className += " active";
 
         setTimeout(showTestimonials, 5000);
+    }
+
+    function updateDots(container, total, activeIndex) {
+        container.innerHTML = "";
+
+        for (let i = 0; i < total; i++) {
+            let dot = document.createElement("span");
+            dot.className = "dot";
+            if (i === activeIndex - 1) {
+                dot.className += " active";
+            }
+            container.appendChild(dot);
+        }
     }
 </script>

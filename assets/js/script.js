@@ -82,19 +82,19 @@ function checkURL() {
     } else if (currentUrl.endsWith('about.html')) {
         $('.toHome').attr('href', '/');
         $('.ap').addClass('selected');
-    } else if (currentUrl.endsWith('choreography.html')) {
+    } else if (currentUrl.endsWith('choreography.html') || currentUrl.endsWith('choreographyService.html')) {
         $('.toHome').attr('href', '/');
         $('.toHome img').attr('src', 'assets/img/LogoGreen.png');
         $('.sp').addClass('selected');
         $('.chp').addClass('selected');
         $('.button').addClass('green');
-    } else if (currentUrl.endsWith('design.html')) {
+    } else if (currentUrl.endsWith('design.html') || currentUrl.endsWith('designService.html')) {
         $('.toHome').attr('href', '/');
         $('.toHome img').attr('src', 'assets/img/LogoPink.png');
         $('.sp').addClass('selected');
         $('.des').addClass('selected');
         $('.button').addClass('pink');
-    } else if (currentUrl.endsWith('art.html')) {
+    } else if (currentUrl.endsWith('art.html') || currentUrl.endsWith('artService.html')) {
         $('.toHome').attr('href', '/');
         $('.toHome img').attr('src', 'assets/img/LogoPurple.png');
         $('.sp').addClass('selected');

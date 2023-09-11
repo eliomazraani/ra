@@ -405,7 +405,8 @@ body {
   -moz-column-gap: 56px;
        column-gap: 56px;
 }
-.ourStory .left .headline, .ourStory .right .headline {
+.ourStory .left .headline,
+.ourStory .right .headline {
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
@@ -415,22 +416,26 @@ body {
   text-transform: uppercase;
   color: #474C67;
 }
-.ourStory .left .information, .ourStory .right .information {
+.ourStory .left .information,
+.ourStory .right .information {
   margin-top: 12px;
   font-size: 14px;
   line-height: 24px;
   text-align: justify;
   color: #7377A5;
 }
-.ourStory .left .button, .ourStory .right .button {
+.ourStory .left .button,
+.ourStory .right .button {
   margin-top: 16px;
   width: -moz-fit-content;
   width: fit-content;
 }
-.ourStory .left .button .fas, .ourStory .right .button .fas {
+.ourStory .left .button .fas,
+.ourStory .right .button .fas {
   display: none;
 }
-.ourStory .left img, .ourStory .right img {
+.ourStory .left img,
+.ourStory .right img {
   width: 100%;
 }
 .ourStory .mobile {
@@ -986,18 +991,20 @@ body {
   flex-wrap: wrap;
   gap: 48px 32px;
 }
-.serviceOptions .servicesGrid .grid .service {
+.serviceOptions .servicesGrid .grid a {
+  width: 30%;
+  text-decoration: none;
+}
+.serviceOptions .servicesGrid .grid a .service {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 30%;
 }
-.serviceOptions .servicesGrid .grid .service img {
+.serviceOptions .servicesGrid .grid a .service img {
   width: 100%;
-  cursor: pointer;
 }
-.serviceOptions .servicesGrid .grid .service .information {
+.serviceOptions .servicesGrid .grid a .service .information {
   margin-top: 18px;
   display: flex;
   flex-direction: column;
@@ -1005,7 +1012,7 @@ body {
   align-items: center;
   text-align: center;
 }
-.serviceOptions .servicesGrid .grid .service .information .name {
+.serviceOptions .servicesGrid .grid a .service .information .name {
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -1013,7 +1020,7 @@ body {
   text-transform: uppercase;
   color: #474C67;
 }
-.serviceOptions .servicesGrid .grid .service .information .summary {
+.serviceOptions .servicesGrid .grid a .service .information .summary {
   font-size: 14px;
   line-height: 20px;
   color: #7377A5;
@@ -1097,6 +1104,120 @@ body {
   }
 }
 
+.breadCrumbs {
+  padding: 16.5px 160px;
+  margin-top: 92px;
+  color: #FFFFFF;
+}
+.breadCrumbs .serviceName {
+  opacity: 0.6;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: justify;
+}
+.breadCrumbs .projectName {
+  margin-top: 4px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: 0.2em;
+}
+.breadCrumbs.green {
+  background: linear-gradient(90deg, #008CA7 0%, #0988A9 0.01%, #464EA3 95.84%);
+}
+.breadCrumbs.pink {
+  background: linear-gradient(90deg, #E54A81 0.01%, #AC5BB3 95.84%);
+}
+.breadCrumbs.purple {
+  background: linear-gradient(90deg, #464EA3 0.01%, #995BB7 100%);
+}
+
+.galleryProject {
+  padding-top: 16px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.galleryProject .leftArrowLite {
+  position: absolute;
+  left: 0px;
+  z-index: 1;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+.galleryProject .rightArrowLite {
+  position: absolute;
+  right: 0px;
+  z-index: 1;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+.galleryProject .gallery {
+  display: flex;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+}
+.galleryProject .gallery img {
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.infoProject {
+  padding: 60px 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.infoProject .title {
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 21px;
+  letter-spacing: 0.3em;
+  color: #474C67;
+}
+.infoProject .concept {
+  max-width: 565px;
+}
+.infoProject .concept .details {
+  margin-top: 12px;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: justify;
+  color: #7377A5;
+}
+.infoProject .projectInfo {
+  background-color: #F7F7FB;
+  padding: 32px 40px 77px;
+  min-width: 270px;
+  min-height: 241px;
+}
+.infoProject .projectInfo .infoList {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+}
+.infoProject .projectInfo .infoList .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.infoProject .projectInfo .infoList .row .position {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.16em;
+  color: #474C67;
+  text-transform: uppercase;
+}
+.infoProject .projectInfo .infoList .row .name {
+  font-size: 14px;
+  font-weight: 400;
+  color: #7377A5;
+  text-transform: capitalize;
+}
+
 /* Join Us */
 .vacancy {
   margin-top: 92px;
@@ -1178,7 +1299,8 @@ body {
     height: 100px;
   }
   .vacancy .jobList .jobPosition .image img {
-    width: -webkit-fill-available; /* demo purpose */
+    width: -webkit-fill-available;
+    /* demo purpose */
   }
 }
 
