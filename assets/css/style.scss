@@ -1181,11 +1181,11 @@ body {
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
-    
+
                     img {
                         width: 100%;
                     }
-    
+
                     .information {
                         margin-top: 18px;
                         display: flex;
@@ -1193,7 +1193,7 @@ body {
                         justify-content: center;
                         align-items: center;
                         text-align: center;
-    
+
                         .name {
                             font-weight: 700;
                             font-size: 14px;
@@ -1202,7 +1202,7 @@ body {
                             text-transform: uppercase;
                             color: #474C67;
                         }
-    
+
                         .summary {
                             font-size: 14px;
                             line-height: 20px;
@@ -1435,6 +1435,93 @@ body {
             }
         }
     }
+}
+
+.displayProject {
+    padding: 60px 148px 48px;
+
+    .display {
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+
+        .projectDescription {
+            font-size: 14px;
+            line-height: 24px;
+            text-align: justified;
+            color: #7377A5;
+        }
+
+        .displayCatalogue {
+            display: flex;
+            flex-direction: column;
+            row-gap: 16px;
+
+            .row {
+                display: flex;
+                justify-content: space-between;
+                height: 270px;
+
+                .video {
+                    width: calc(50% - 16px);
+                }
+
+                .image {
+                    width: calc(25% - 16px);
+                }
+            }
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 8px;
+            color: #7377A5;
+
+            i {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 32px;
+                height: 32px;
+                color: #7377A5;
+                cursor: pointer;
+
+                &.disabled {
+                    color: #E4E5F7;
+                    cursor: unset;
+                }
+            }
+
+            .numbering {
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 20px;
+
+                span {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 32px;
+                    height: 32px;
+                    cursor: pointer;
+                }
+
+                .active {
+
+                    &.green {
+                        color: #008CA7;
+                    }
+
+                    &.pink {
+                        color: #E3467E;
+                    }
+                }
+            }
+        }
+    }
+
 }
 
 /* Join Us */

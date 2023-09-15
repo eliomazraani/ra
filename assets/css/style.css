@@ -1218,6 +1218,77 @@ body {
   text-transform: capitalize;
 }
 
+.displayProject {
+  padding: 60px 148px 48px;
+}
+.displayProject .display {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+.displayProject .display .projectDescription {
+  font-size: 14px;
+  line-height: 24px;
+  text-align: justified;
+  color: #7377A5;
+}
+.displayProject .display .displayCatalogue {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+.displayProject .display .displayCatalogue .row {
+  display: flex;
+  justify-content: space-between;
+  height: 270px;
+}
+.displayProject .display .displayCatalogue .row .video {
+  width: calc(50% - 16px);
+}
+.displayProject .display .displayCatalogue .row .image {
+  width: calc(25% - 16px);
+}
+.displayProject .display .pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+  color: #7377A5;
+}
+.displayProject .display .pagination i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  color: #7377A5;
+  cursor: pointer;
+}
+.displayProject .display .pagination i.disabled {
+  color: #E4E5F7;
+  cursor: unset;
+}
+.displayProject .display .pagination .numbering {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+}
+.displayProject .display .pagination .numbering span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+.displayProject .display .pagination .numbering .active.green {
+  color: #008CA7;
+}
+.displayProject .display .pagination .numbering .active.pink {
+  color: #E3467E;
+}
+
 /* Join Us */
 .vacancy {
   margin-top: 92px;

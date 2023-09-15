@@ -1,0 +1,163 @@
+<!-- Display Project -->
+<div class="display">
+    <div class="projectDescription">Personal style is not just about the clothes you wear, but also about expressing
+        your unique personality and values. Our style coaching service is designed to help you discover and cultivate
+        your individual style, taking into account your personal taste, lifestyle, and goals. We'll work closely with
+        you to create a wardrobe that reflects who you are and makes you feel confident, comfortable, and empowered. Our
+        experienced style coaches are dedicated to helping you develop a personal style that's authentic, versatile, and
+        truly your own.</div>
+    <div class="displayCatalogue displayCatalogue-1">
+        <div class="row">
+            <img class="video" src="assets/img/Rectangle.png" alt="Img">
+            <img class="image" src="assets/img/Square.png" alt="Img">
+            <img class="image" src="assets/img/Square.png" alt="Img">
+        </div>
+        <div class="row">
+            <img class="image" src="assets/img/Square.png" alt="Img">
+            <img class="image" src="assets/img/Square.png" alt="Img">
+            <img class="image" src="assets/img/Square.png" alt="Img">
+            <img class="image" src="assets/img/Square.png" alt="Img">
+        </div>
+        <div class="row">
+            <img class="image" src="assets/img/Square.png" alt="Img">
+            <img class="video" src="assets/img/Rectangle.png" alt="Img">
+            <img class="image" src="assets/img/Square.png" alt="Img">
+        </div>
+        <div class="row">
+            <img class="image" src="assets/img/Square.png" alt="Img">
+            <img class="image" src="assets/img/Square.png" alt="Img">
+            <img class="video" src="assets/img/Rectangle.png" alt="Img">
+        </div>
+    </div>
+    <div class="displayCatalogue displayCatalogue-2 d-none">
+        <div class="row">
+            <img class="image" src="assets/img/Square.png" alt="Img">
+            <img class="image" src="assets/img/Square.png" alt="Img">
+            <img class="image" src="assets/img/Square.png" alt="Img">
+            <img class="image" src="assets/img/Square.png" alt="Img">
+        </div>
+        <div class="row">
+            <img class="video" src="assets/img/Rectangle.png" alt="Img">
+            <img class="image" src="assets/img/Square.png" alt="Img">
+            <img class="image" src="assets/img/Square.png" alt="Img">
+        </div>
+        <div class="row">
+            <img class="image" src="assets/img/Square.png" alt="Img">
+            <img class="image" src="assets/img/Square.png" alt="Img">
+            <img class="video" src="assets/img/Rectangle.png" alt="Img">
+        </div>
+    </div>
+    <div class="displayCatalogue displayCatalogue-3 d-none">
+        <div class="row">
+            <img class="image" src="assets/img/Square.png" alt="Img">
+            <img class="image" src="assets/img/Square.png" alt="Img">
+            <img class="video" src="assets/img/Rectangle.png" alt="Img">
+        </div>
+        <div class="row">
+            <img class="image" src="assets/img/Square.png" alt="Img">
+            <img class="image" src="assets/img/Square.png" alt="Img">
+            <img class="image" src="assets/img/Square.png" alt="Img">
+            <img class="image" src="assets/img/Square.png" alt="Img">
+        </div>
+        <div class="row">
+            <img class="video" src="assets/img/Rectangle.png" alt="Img">
+            <img class="image" src="assets/img/Square.png" alt="Img">
+            <img class="image" src="assets/img/Square.png" alt="Img">
+        </div>
+    </div>
+    <div class="pagination">
+        <i onclick="changeDisplay(-1)" class="fas fa-angle-left pageLeft"></i>
+        <div class="pagination numbering"></div>
+        <i onclick="changeDisplay(1)" class="fas fa-angle-right pageRight"></i>
+    </div>
+</div>
+
+<script>
+    let numberingContainer = document.querySelector(".numbering");
+    let displayCatalogue = document.getElementsByClassName("displayCatalogue").length;
+    let index = 1;
+
+    updatePagination(numberingContainer, displayCatalogue, index);
+
+    function updatePagination(container, total, activeIndex) {
+        container.innerHTML = "";
+
+        if (activeIndex === 1) {
+            $(".pageLeft").addClass("disabled");
+        }
+
+        for (let i = 1; i <= total; i++) {
+            let number = document.createElement("span");
+            number.innerHTML = `${i}`;
+            number.onclick = function () {
+                goToPage(i);
+            }
+            if (i === activeIndex) {
+                number.className += "pink active";
+            }
+            container.appendChild(number);
+        }
+    }
+
+    function goToPage(num) {
+        index = num;
+
+        if (num === 1) {
+            $(".pageRight").removeClass("disabled");
+            $(".pageLeft").addClass("disabled");
+        } else if (num === displayCatalogue) {
+            $(".pageLeft").removeClass("disabled");
+            $(".pageRight").addClass("disabled");
+        } else {
+            $(".pageLeft").removeClass("disabled");
+            $(".pageRight").removeClass("disabled");
+        }
+
+        const spans = document.querySelectorAll('.numbering span');
+        spans.forEach(tab => tab.classList.remove('pink', 'active'));
+
+        const clickedSpan = document.querySelector(`.numbering span:nth-child(${num})`);
+        clickedSpan.classList.add('pink', 'active');
+
+        const displayCatalogues = document.querySelectorAll('.display .displayCatalogue');
+        displayCatalogues.forEach(grid => grid.classList.add('d-none'));
+
+        const selectedDisplay = document.querySelector(`.displayCatalogue-${num}`);
+        selectedDisplay.classList.remove('d-none');
+    }
+
+    function changeDisplay(one) {
+        let n = index + one;
+        
+        if (n > displayCatalogue) {
+            n = displayCatalogue
+        }
+        if (n < 1) {
+            n = 1
+        }
+        index = n;
+
+        if (n === 1) {
+            $(".pageRight").removeClass("disabled");
+            $(".pageLeft").addClass("disabled");
+        } else if (n === displayCatalogue) {
+            $(".pageLeft").removeClass("disabled");
+            $(".pageRight").addClass("disabled");
+        } else {
+            $(".pageLeft").removeClass("disabled");
+            $(".pageRight").removeClass("disabled");
+        }
+        
+        const spans = document.querySelectorAll('.numbering span');
+        spans.forEach(tab => tab.classList.remove('pink', 'active'));
+
+        const clickedSpan = document.querySelector(`.numbering span:nth-child(${n})`);
+        clickedSpan.classList.add('pink', 'active');
+
+        const displayCatalogues = document.querySelectorAll('.display .displayCatalogue');
+        displayCatalogues.forEach(grid => grid.classList.add('d-none'));
+
+        const selectedDisplay = document.querySelector(`.displayCatalogue-${n}`);
+        selectedDisplay.classList.remove('d-none');
+    }
+</script>
