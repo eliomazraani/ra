@@ -65,6 +65,7 @@ function renderService() {
         $(".services .wide").append(serviceD);
         $(".services .narrow .fader").append(serviceM);
     });
+    console.log("renderService function called");
 }
 
 var values = [
