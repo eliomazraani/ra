@@ -492,6 +492,8 @@ function changeDisplay(one) {
 $(document).ready(function () {
     checkURL();
     showTestimonials();
-    getYear();
-    // updatePagination();
+    setTimeout(function() {
+        getYear();
+        updatePagination();
+    }, 100);    
 });
