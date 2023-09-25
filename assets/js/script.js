@@ -131,12 +131,12 @@ function showServiceSlide(n) {
     let services = document.querySelectorAll('.narrow .block');
     if (n > services.length) {
         serviceIndex = 1
-    }    
+    }
     if (n < 1) {
         serviceIndex = services.length
     }
     for (i = 0; i < services.length; i++) {
-        services[i].style.display = "none";  
+        services[i].style.display = "none";
     }
     if (services.length > 0) {
         services[serviceIndex - 1].style.display = "flex";
@@ -155,48 +155,56 @@ function showClients(n) {
     let clients = document.querySelectorAll('.wide .clientLogo');
     if (n > clients.length) {
         clientIndex = 1
-    }    
+    }
     if (n < 1) {
         clientIndex = clients.length
     }
     for (i = 0; i < clients.length; i++) {
-        clients[i].style.display = "none";  
+        clients[i].style.display = "none";
     }
     if (clients.length > 0) {
         clients[clientIndex - 1].style.display = "flex";
     }
 }
 
-// let testimonialIndex = 0;
-// showTestimonials();
+let testimonialIndex = 0;
 
+function showTestimonials() {
+    let testimonials = document.getElementsByClassName("clientTestimonial");
+    let dotsContainer = document.querySelector(".dots");
 
-// function showTestimonials() {
-//     let testimonials = document.getElementsByClassName("clientTestimonial");
-//     let dots = document.getElementsByClassName("dot");
+    if (testimonials.length === 0) {
+        return;
+    }
 
-//     if (testimonials.length === 0 || dots.length === 0) {
-//         return;
-//     }
+    for (let i = 0; i < testimonials.length; i++) {
+        testimonials[i].style.display = "none";
+    }
 
-//     for (let i = 0; i < testimonials.length; i++) {
-//         testimonials[i].style.display = "none";
-//     }
+    testimonialIndex++;
+    if (testimonialIndex > testimonials.length) {
+        testimonialIndex = 1;
+    }
 
-//     testimonialIndex++;
-//     if (testimonialIndex > testimonials.length) {
-//         testimonialIndex = 1;
-//     }
+    updateDots(dotsContainer, testimonials.length, testimonialIndex);
 
-//     for (let i = 0; i < dots.length; i++) {
-//         dots[i].className = dots[i].className.replace(" active", "");
-//     }
+    testimonials[testimonialIndex - 1].style.display = "block";
 
-//     testimonials[testimonialIndex - 1].style.display = "block";
-//     dots[testimonialIndex - 1].className += " active";
+    setTimeout(showTestimonials, 5000);
+}
 
-//     setTimeout(showTestimonials, 5000);
-// }
+function updateDots(container, total, activeIndex) {
+    container.innerHTML = "";
+
+    for (let i = 0; i < total; i++) {
+        let dot = document.createElement("span");
+        dot.className = "dot";
+        if (i === activeIndex - 1) {
+            dot.className += " active";
+        }
+        container.appendChild(dot);
+    }
+}
 
 function serviceShow(num) {
     const currentUrl = window.location.href;
@@ -223,7 +231,7 @@ function serviceShow(num) {
 }
 
 
-(function(){
+(function () {
     emailjs.init("4uIfK9PIMmhm3l7HF");
 })();
 
@@ -265,11 +273,11 @@ function sendEmail() {
         message: message.value
     };
 
-    emailjs.send("service_3bod7np","template_4hd3fvm", templateParams)
-        .then(function(response) {
+    emailjs.send("service_3bod7np", "template_4hd3fvm", templateParams)
+        .then(function (response) {
             console.log('Email sent successfully!', response.status, response.text);
             thankYou();
-        }, function(error) {
+        }, function (error) {
             console.log('Email sending failed!', error);
         });
 }
@@ -320,7 +328,7 @@ function applyJob() {
     };
 
     if (file) {
-        reader.onloadend = function(event) {
+        reader.onloadend = function (event) {
             var fileData = event.target.result;
             templateParams.file_data = fileData;
             sendEmailWithAttachment(templateParams);
@@ -332,20 +340,158 @@ function applyJob() {
 }
 
 function sendEmailWithAttachment(templateParams) {
-    emailjs.send("service_3bod7np","template_fqztz8l", templateParams)
-        .then(function(response) {
+    emailjs.send("service_3bod7np", "template_fqztz8l", templateParams)
+        .then(function (response) {
             console.log('Email sent successfully!', response.status, response.text);
             thankYou();
-        }, function(error) {
+        }, function (error) {
             console.log('Email sending failed!', error);
         });
 }
 
-$(document).ready(function() {
-    checkURL();
-    let clients = document.querySelectorAll('.wide .clientLogo');
-    if (clients.length === 1) {
-        $('.leftArrow').css('display', 'none');
-        $('.rightArrow').css('display', 'none');
+function showModal(img) {
+    var modal = document.getElementById("galleryModal");
+    var modalImg = document.getElementById("galleryImg");
+    modal.style.display = "flex";
+    modalImg.src = img.src;
+}
+
+function closeModal() {
+    var modal = document.getElementById("galleryModal");
+    modal.style.display = "none";
+
+}
+
+function getYear() {
+    const year = new Date().getFullYear();
+    document.getElementById("year").innerHTML = year;
+}
+
+let currentIndex = 0;
+
+function updateGallery(num) {
+    const gallery = document.querySelector('.gallery');
+    const images = gallery.querySelectorAll('img');
+    currentIndex = currentIndex + num;
+    if (currentIndex < 0) {
+        currentIndex = 0;
+    } else if (currentIndex > images.length - 2) {
+        currentIndex = images.length - 2;
     }
+
+    const translateXValue = -currentIndex * 50;
+    gallery.style.transform = `translateX(${translateXValue}%)`;
+}
+
+var currentUrl = window.location.href;
+let displayCatalogue = document.getElementsByClassName("displayCatalogue");
+let activeIndex = 1;
+function updatePagination() {
+    let numberingContainer = document.querySelector(".numbering");
+    numberingContainer.innerHTML = "";
+
+    if (activeIndex === 1) {
+        $(".pageLeft").addClass("disabled");
+    }
+
+    for (let i = 1; i <= displayCatalogue.length; i++) {
+        let number = document.createElement("span");
+        number.innerHTML = `${i}`;
+        number.onclick = function () {
+            goToPage(i);
+        }
+        if (i === activeIndex) {
+            if (currentUrl.endsWith('designService.html')) {
+                number.className += "pink active";
+            } else if (currentUrl.endsWith('choreographyService.html')) {
+                number.className += "green active";
+            }
+        }
+        numberingContainer.appendChild(number);
+    }
+}
+
+function goToPage(num) {
+    activeIndex = num;
+
+    if (num === 1) {
+        $(".pageRight").removeClass("disabled");
+        $(".pageLeft").addClass("disabled");
+    } else if (num === displayCatalogue.length) {
+        $(".pageLeft").removeClass("disabled");
+        $(".pageRight").addClass("disabled");
+    } else {
+        $(".pageLeft").removeClass("disabled");
+        $(".pageRight").removeClass("disabled");
+    }
+
+    const spans = document.querySelectorAll('.numbering span');
+    if (currentUrl.endsWith('designService.html')) {
+        spans.forEach(tab => tab.classList.remove('pink', 'active'));
+    } else if (currentUrl.endsWith('choreographyService.html')) {
+        spans.forEach(tab => tab.classList.remove('green', 'active'));
+    }
+
+    const clickedSpan = document.querySelector(`.numbering span:nth-child(${num})`);
+    if (currentUrl.endsWith('designService.html')) {
+        clickedSpan.classList.add('pink', 'active');
+    } else if (currentUrl.endsWith('choreographyService.html')) {
+        clickedSpan.classList.add('green', 'active');
+    }
+
+    const displayCatalogues = document.querySelectorAll('.display .displayCatalogue');
+    displayCatalogues.forEach(grid => grid.classList.add('d-none'));
+
+    const selectedDisplay = document.querySelector(`.displayCatalogue-${num}`);
+    selectedDisplay.classList.remove('d-none');
+}
+
+function changeDisplay(one) {
+    let n = activeIndex + one;
+
+    if (n > displayCatalogue.length) {
+        n = displayCatalogue.length
+    }
+    if (n < 1) {
+        n = 1
+    }
+    activeIndex = n;
+
+    if (n === 1) {
+        $(".pageRight").removeClass("disabled");
+        $(".pageLeft").addClass("disabled");
+    } else if (n === displayCatalogue.length) {
+        $(".pageLeft").removeClass("disabled");
+        $(".pageRight").addClass("disabled");
+    } else {
+        $(".pageLeft").removeClass("disabled");
+        $(".pageRight").removeClass("disabled");
+    }
+
+    const spans = document.querySelectorAll('.numbering span');
+    if (currentUrl.endsWith('designService.html')) {
+        spans.forEach(tab => tab.classList.remove('pink', 'active'));
+    } else if (currentUrl.endsWith('choreographyService.html')) {
+        spans.forEach(tab => tab.classList.remove('green', 'active'));
+    }
+
+    const clickedSpan = document.querySelector(`.numbering span:nth-child(${n})`);
+    if (currentUrl.endsWith('designService.html')) {
+        clickedSpan.classList.add('pink', 'active');
+    } else if (currentUrl.endsWith('choreographyService.html')) {
+        clickedSpan.classList.add('green', 'active');
+    }
+
+    const displayCatalogues = document.querySelectorAll('.display .displayCatalogue');
+    displayCatalogues.forEach(grid => grid.classList.add('d-none'));
+
+    const selectedDisplay = document.querySelector(`.displayCatalogue-${n}`);
+    selectedDisplay.classList.remove('d-none');
+}
+
+$(document).ready(function () {
+    checkURL();
+    showTestimonials();
+    getYear();
+    // updatePagination();
 });
