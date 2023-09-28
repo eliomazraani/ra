@@ -212,5 +212,5 @@ $(document).ready(function () {
         renderClient();
         renderTestimonial();
         renderJob();
-    }, 100)
+    }, 1000)
 });
