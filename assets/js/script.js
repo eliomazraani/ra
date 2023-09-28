@@ -491,7 +491,7 @@ function getYear() {
 }
 
 $(document).ready(function () {
-    setInterval(function () {
+    setTimeout(function () {
         checkURL();
     }, 100)
     setTimeout(function() {
