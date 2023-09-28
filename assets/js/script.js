@@ -484,13 +484,19 @@ function changeDisplay(one) {
     selectedDisplay.classList.remove('d-none');
 }
 
+
+function getYear() {
+    const year = new Date().getFullYear();
+    document.getElementById("year").innerHTML = year;
+}
+
 $(document).ready(function () {
     setInterval(function () {
         checkURL();
     }, 100)
-    showTestimonials();
-    // setTimeout(function() {
-        // getYear();
+    setTimeout(function() {
+        showTestimonials();
+        getYear();
         // updatePagination();
-    // }, 100);
+    }, 1000);
 });
