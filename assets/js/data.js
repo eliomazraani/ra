@@ -206,9 +206,11 @@ function renderJob() {
 }
 
 $(document).ready(function () {
-    renderService();
-    renderValue();
-    renderClient();
-    renderTestimonial();
-    renderJob();
+    setTimeout(function () {
+        renderService();
+        renderValue();
+        renderClient();
+        renderTestimonial();
+        renderJob();
+    }, 100)
 });

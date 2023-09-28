@@ -362,11 +362,6 @@ function closeModal() {
 
 }
 
-function getYear() {
-    const year = new Date().getFullYear();
-    document.getElementById("year").innerHTML = year;
-}
-
 let currentIndex = 0;
 
 function updateGallery(num) {
@@ -490,10 +485,12 @@ function changeDisplay(one) {
 }
 
 $(document).ready(function () {
-    checkURL();
+    setInterval(function () {
+        checkURL();
+    }, 100)
     showTestimonials();
     // setTimeout(function() {
-    //     getYear();
-    //     updatePagination();
-    // }, 100);    
+        // getYear();
+        // updatePagination();
+    // }, 100);
 });
