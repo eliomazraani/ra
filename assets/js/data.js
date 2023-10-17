@@ -2,7 +2,7 @@ var services = [
     {
         id: 1,
         title: "Movement & Choreography",
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente vitae velit iusto perferendis, labore quo. Recusandae quaerat deleniti alias a perspiciatis voluptas repellat tenetur qui nam, error voluptatum, similique autem.",
+        description: "We tell stories through movements, formations and dance routines. RA choreography team creates physical vocabulary through artist movement, design steps  and dances in a variety of production settings, for artists to perform. It includes, theaters, films, music videos, concert stage, events and TV ads. RA dance team consists of disciplined professional dancers, acrobats, aerialists and impersonators moving together perfectly in sync creating a marvelous effect.",
         image: "assets/img/OverlayGreen.png",
         link: "choreography.html",
         class: "mvmt-choreo",
@@ -11,7 +11,7 @@ var services = [
     {
         id: 2,
         title: "Costume Design & Styling",
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente vitae velit iusto perferendis, labore quo. Recusandae quaerat deleniti alias a perspiciatis voluptas repellat tenetur qui nam, error voluptatum, similique autem.",
+        description: "We create, design, hire and produce costumes for stage contributing to the look and story-telling of the production. We carefully choose every fabric and texture that fits with the theme, enhances the performance and complements the artist’s movement. RA wardrobe team takes good care and maintenance of all costumes and provide assistance to artists backstage.",
         image: "assets/img/OverlayPink.png",
         link: "design.html",
         class: "cstm-style",
@@ -20,7 +20,7 @@ var services = [
     {
         id: 3,
         title: "Artistic Direction",
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente vitae velit iusto perferendis, labore quo. Recusandae quaerat deleniti alias a perspiciatis voluptas repellat tenetur qui nam, error voluptatum, similique autem.",
+        description: "Combining all departments together, RA team oversees all aspects of the artistic production. In addition to planning and implementing an artistic vision for the project, we produce, direct and choreograph the work. Combining light design with suitable visual arts, our detail oriented team is dedicated to deliver a full experience for your audience.",
         image: "assets/img/OverlayPurple.png",
         link: "art.html",
         class: "art-direction",
@@ -29,7 +29,7 @@ var services = [
     {
         id: 4,
         title: "Style Coaching",
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente vitae velit iusto perferendis, labore quo. Recusandae quaerat deleniti alias a perspiciatis voluptas repellat tenetur qui nam, error voluptatum, similique autem.",
+        description: "We teach you how to combine your love of style with your values about inner beauty, empowerment and positive body image. Beside redesigning your wardrobe, we help you to have a whole new approach to style and appearance, rebuilding your self- image from the inside guiding you to become your best and most stylish self.",
         image: "assets/img/OverlayPeach.png",
         link: "art.html",
         class: "coaching.html",
@@ -138,19 +138,73 @@ function renderClient() {
 var testimonials = [
     {
         id: 1,
-        name: "Name 1",
+        name: "LEA MAKHOUL – SINGER",
         testimonial: "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec magna at bibendum. Nam non dui nec erat rhoncus sagittis sed at tortor. In eu sapien non diam efficitur auctor ut eget nisl. Praesent arcu massa, ultricies quis condimentum nec, consectetur ut odio. Vestibulum a lobortis metus.”",
         image: "assets/img/Client.png",
     },
     {
         id: 2,
-        name: "Name 2",
+        name: "RAPHAEL JABBOUR – SINGER",
         testimonial: "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec magna at bibendum. Nam non dui nec erat rhoncus sagittis sed at tortor. In eu sapien non diam efficitur auctor ut eget nisl. Praesent arcu massa, ultricies quis condimentum nec, consectetur ut odio. Vestibulum a lobortis metus.”",
         image: "assets/img/Client.png",
     },
     {
         id: 3,
-        name: "Name 3",
+        name: "CHRISTINA HADDAD – SINGER",
+        testimonial: "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec magna at bibendum. Nam non dui nec erat rhoncus sagittis sed at tortor. In eu sapien non diam efficitur auctor ut eget nisl. Praesent arcu massa, ultricies quis condimentum nec, consectetur ut odio. Vestibulum a lobortis metus.”",
+        image: "assets/img/Client.png",
+    },
+    {
+        id: 4,
+        name: "KARL HSEIN – SINGER, COMPOSER",
+        testimonial: "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec magna at bibendum. Nam non dui nec erat rhoncus sagittis sed at tortor. In eu sapien non diam efficitur auctor ut eget nisl. Praesent arcu massa, ultricies quis condimentum nec, consectetur ut odio. Vestibulum a lobortis metus.”",
+        image: "assets/img/Client.png",
+    },
+    {
+        id: 5,
+        name: "DALIDA KHALIL – ACTRESS",
+        testimonial: "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec magna at bibendum. Nam non dui nec erat rhoncus sagittis sed at tortor. In eu sapien non diam efficitur auctor ut eget nisl. Praesent arcu massa, ultricies quis condimentum nec, consectetur ut odio. Vestibulum a lobortis metus.”",
+        image: "assets/img/Client.png",
+    },
+    {
+        id: 6,
+        name: " OUSAMA OBEID – DIRECTOR",
+        testimonial: "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec magna at bibendum. Nam non dui nec erat rhoncus sagittis sed at tortor. In eu sapien non diam efficitur auctor ut eget nisl. Praesent arcu massa, ultricies quis condimentum nec, consectetur ut odio. Vestibulum a lobortis metus.”",
+        image: "assets/img/Client.png",
+    },
+    {
+        id: 7,
+        name: "RAMI LATTOUF – DIRECTOR",
+        testimonial: "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec magna at bibendum. Nam non dui nec erat rhoncus sagittis sed at tortor. In eu sapien non diam efficitur auctor ut eget nisl. Praesent arcu massa, ultricies quis condimentum nec, consectetur ut odio. Vestibulum a lobortis metus.”",
+        image: "assets/img/Client.png",
+    },
+    {
+        id: 8,
+        name: "ROY KHOURY – WRITER, DIRECTOR, CHOREOGRAPHER",
+        testimonial: "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec magna at bibendum. Nam non dui nec erat rhoncus sagittis sed at tortor. In eu sapien non diam efficitur auctor ut eget nisl. Praesent arcu massa, ultricies quis condimentum nec, consectetur ut odio. Vestibulum a lobortis metus.”",
+        image: "assets/img/Client.png",
+    },
+    {
+        id: 9,
+        name: "ANTHONY KHAWAND – ARTIST MANAGER",
+        testimonial: "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec magna at bibendum. Nam non dui nec erat rhoncus sagittis sed at tortor. In eu sapien non diam efficitur auctor ut eget nisl. Praesent arcu massa, ultricies quis condimentum nec, consectetur ut odio. Vestibulum a lobortis metus.”",
+        image: "assets/img/Client.png",
+    },
+    {
+        id: 10,
+        name: "MARY SAAD – FOUNDER MUSIC SAGA",
+        testimonial: "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec magna at bibendum. Nam non dui nec erat rhoncus sagittis sed at tortor. In eu sapien non diam efficitur auctor ut eget nisl. Praesent arcu massa, ultricies quis condimentum nec, consectetur ut odio. Vestibulum a lobortis metus.”",
+        image: "assets/img/Client.png",
+    },
+    {
+        id: 11,
+        name: "FAWAZ KOTOB – FOUNDER KULT BEIRUT",
+        testimonial: "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec magna at bibendum. Nam non dui nec erat rhoncus sagittis sed at tortor. In eu sapien non diam efficitur auctor ut eget nisl. Praesent arcu massa, ultricies quis condimentum nec, consectetur ut odio. Vestibulum a lobortis metus.”",
+        image: "assets/img/Client.png",
+    },
+    {
+        id: 12,
+        name: "TOUMA SALEMEH – EVENT PLANNER",
         testimonial: "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec magna at bibendum. Nam non dui nec erat rhoncus sagittis sed at tortor. In eu sapien non diam efficitur auctor ut eget nisl. Praesent arcu massa, ultricies quis condimentum nec, consectetur ut odio. Vestibulum a lobortis metus.”",
         image: "assets/img/Client.png",
     }
