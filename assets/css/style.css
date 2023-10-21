@@ -234,6 +234,7 @@ body {
 }
 .services .wide {
   display: flex;
+  width: 100%;
 }
 .services .narrow {
   display: none;
