@@ -27,6 +27,7 @@ body {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
+    overflow: hidden auto;
 }
 
 .d-none {
@@ -297,6 +298,7 @@ body {
 
     .wide {
         display: flex;
+        width: 100%;
     }
 
     .narrow {

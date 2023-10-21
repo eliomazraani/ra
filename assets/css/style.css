@@ -3,6 +3,7 @@ body {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
+  overflow: hidden auto;
 }
 
 .d-none {
@@ -234,6 +235,7 @@ body {
 }
 .services .wide {
   display: flex;
+  width: 100%;
 }
 .services .narrow {
   display: none;
