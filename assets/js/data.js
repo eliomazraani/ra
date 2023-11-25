@@ -2,8 +2,9 @@ var services = [
     {
         id: 1,
         title: "Movement & Choreography",
-        description: "We tell stories through movements, formations and dance routines. RA choreography team creates physical vocabulary through artist movement, design steps  and dances in a variety of production settings, for artists to perform. It includes, theaters, films, music videos, concert stage, events and TV ads. RA dance team consists of disciplined professional dancers, acrobats, aerialists and impersonators moving together perfectly in sync creating a marvelous effect.",
-        image: "assets/img/OverlayGreen.png",
+        teaser: "RA choreography team creates dynamic dance routines for a variety of productions, including theaters, films, music videos, concerts, events, and TV ads...",
+        description: "RA choreography team creates dynamic dance routines for a variety of productions, including theaters, films, music videos, concerts, events, and TV ads. Our talented and disciplined team of professional dancers, acrobats, aerialists, and impersonators perform in perfect sync to deliver visually captivating performances.",
+        image: "assets/img/OverlayGreen.jpg",
         link: "choreography.html",
         class: "mvmt-choreo",
         color: "green",
@@ -11,8 +12,9 @@ var services = [
     {
         id: 2,
         title: "Costume Design & Styling",
+        teaser: "We create, design, hire and produce costumes for stage contributing to the look and story-telling of the production...",
         description: "We create, design, hire and produce costumes for stage contributing to the look and story-telling of the production. We carefully choose every fabric and texture that fits with the theme, enhances the performance and complements the artist’s movement. RA wardrobe team takes good care and maintenance of all costumes and provide assistance to artists backstage.",
-        image: "assets/img/OverlayPink.png",
+        image: "assets/img/OverlayPink.jpg",
         link: "design.html",
         class: "cstm-style",
         color: "pink",
@@ -20,8 +22,9 @@ var services = [
     {
         id: 3,
         title: "Artistic Direction",
+        teaser: "Combining all departments together, RA team oversees all aspects of the artistic production...",
         description: "Combining all departments together, RA team oversees all aspects of the artistic production. In addition to planning and implementing an artistic vision for the project, we produce, direct and choreograph the work. Combining light design with suitable visual arts, our detail oriented team is dedicated to deliver a full experience for your audience.",
-        image: "assets/img/OverlayPurple.png",
+        image: "assets/img/OverlayPurple.jpg",
         link: "art.html",
         class: "art-direction",
         color: "purple",
@@ -29,10 +32,11 @@ var services = [
     {
         id: 4,
         title: "Style Coaching",
+        teaser: "We teach you how to combine your love of style with your values about inner beauty, empowerment and positive body image...",
         description: "We teach you how to combine your love of style with your values about inner beauty, empowerment and positive body image. Beside redesigning your wardrobe, we help you to have a whole new approach to style and appearance, rebuilding your self- image from the inside guiding you to become your best and most stylish self.",
-        image: "assets/img/OverlayPeach.png",
-        link: "art.html",
-        class: "coaching.html",
+        image: "assets/img/OverlayPeach.jpg",
+        link: "coaching.html",
+        class: "coach",
         color: "peach",
     }
 ]
@@ -46,17 +50,14 @@ function renderService() {
                         <img src="${service.image}" alt="Img">
                         <div class="paragraph">
                             <div class="title">${service.title}</div>
-                            <div class="description">${service.description}</div>
+                            <div class="description">${service.teaser}</div>
                         </div>
                     </div>`;
-        serviceM = `<div class="${service.class} block fade">
+        serviceM = `<div onclick="goTo('${service.link}')" class="${service.class} block fade">
                         <img src="${service.image}" alt="Img">
                         <div class="paragraph">
                             <div class="title">${service.title}</div>
-                            <div class="description">${service.description}</div>
-                            <div onclick="goTo('${service.link}')"  class="glimpseBtn">
-                                Take a Glimpse <i class="fas fa-angle-right"></i>
-                            </div>
+                            <div class="description">${service.teaser}</div>
                             <div class="button ${service.color}">
                                 <a onclick="scrollToContact()">Get In Touch</a>
                             </div>
@@ -65,6 +66,19 @@ function renderService() {
         $(".services .wide").append(serviceD);
         $(".services .narrow .fader").append(serviceM);
     });
+}
+
+function chooseService() {
+    var pathName = window.location.pathname.slice(1);
+    var service = services.filter(service => service.link === pathName);
+    var header = `<div class="background ${service[0].color}">
+                    <div class="title">${service[0].title.toUpperCase()}</div>
+                    <div class="details">${service[0].description}</div>
+                    <div class="button ${service[0].color} mobile">
+                        <a onclick="scrollToContact()">Get In Touch</a>
+                    </div>
+                </div>`;
+    $(".serviceHeader").append(header);
 }
 
 var values = [
@@ -139,75 +153,93 @@ var testimonials = [
     {
         id: 1,
         name: "LEA MAKHOUL – SINGER",
-        testimonial: "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec magna at bibendum. Nam non dui nec erat rhoncus sagittis sed at tortor. In eu sapien non diam efficitur auctor ut eget nisl. Praesent arcu massa, ultricies quis condimentum nec, consectetur ut odio. Vestibulum a lobortis metus.”",
+        testimonial: "“Rachel is an exceptional artist and a dear friend, having worked together on numerous projects. Her unmatched attention to detail and ability to capture clients' visions make her a top choice. From coordinating my wedding to various artistic projects, Rachel always exceeds expectations. Her professionalism, dedication, and talent shine through in every aspect of her work. Highly recommending Rachel and her team for outstanding contributions to any art-related project.”",
         image: "assets/img/Client.png",
     },
     {
         id: 2,
         name: "RAPHAEL JABBOUR – SINGER",
         testimonial: "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec magna at bibendum. Nam non dui nec erat rhoncus sagittis sed at tortor. In eu sapien non diam efficitur auctor ut eget nisl. Praesent arcu massa, ultricies quis condimentum nec, consectetur ut odio. Vestibulum a lobortis metus.”",
-        image: "assets/img/Client.png",
+        image: "assets/img/Testimonial/RaphaelJabbour.jpg",
     },
     {
         id: 3,
         name: "CHRISTINA HADDAD – SINGER",
-        testimonial: "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec magna at bibendum. Nam non dui nec erat rhoncus sagittis sed at tortor. In eu sapien non diam efficitur auctor ut eget nisl. Praesent arcu massa, ultricies quis condimentum nec, consectetur ut odio. Vestibulum a lobortis metus.”",
-        image: "assets/img/Client.png",
+        testimonial: '“I had the big pleasure to work with Rachel on my "Tête à Tête" Concert November 2022.. I saw her show during a wedding I was performing at and since then I kept her in my mind.. and I was not mistaken for a second.. Ever since I started working on my concert and during our planifications, preparations and rehearsals, Rachel has shown high level of professionalism, commitment, perseverance and most of all her passion in work. I look forward to repeat more and more my collaboration.. Rachel I love you and wish you reach high as much as you deserve it.”',
+        image: "assets/img/Testimonial/ChristinaHaddad.JPG",
     },
     {
         id: 4,
         name: "KARL HSEIN – SINGER, COMPOSER",
         testimonial: "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec magna at bibendum. Nam non dui nec erat rhoncus sagittis sed at tortor. In eu sapien non diam efficitur auctor ut eget nisl. Praesent arcu massa, ultricies quis condimentum nec, consectetur ut odio. Vestibulum a lobortis metus.”",
-        image: "assets/img/Client.png",
+        image: "assets/img/Testimonial/KarlHsein.png",
     },
     {
         id: 5,
         name: "DALIDA KHALIL – ACTRESS",
         testimonial: "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec magna at bibendum. Nam non dui nec erat rhoncus sagittis sed at tortor. In eu sapien non diam efficitur auctor ut eget nisl. Praesent arcu massa, ultricies quis condimentum nec, consectetur ut odio. Vestibulum a lobortis metus.”",
-        image: "assets/img/Client.png",
+        image: "assets/img/Testimonial/DalidaKhalil.png",
     },
     {
         id: 6,
-        name: " OUSAMA OBEID – DIRECTOR",
-        testimonial: "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec magna at bibendum. Nam non dui nec erat rhoncus sagittis sed at tortor. In eu sapien non diam efficitur auctor ut eget nisl. Praesent arcu massa, ultricies quis condimentum nec, consectetur ut odio. Vestibulum a lobortis metus.”",
-        image: "assets/img/Client.png",
+        name: "RAMI LATTOUF – DIRECTOR",
+        testimonial: "“Collaborating with Rachel as a choreographer and stylist has consistently surpassed my expectations. She delivers exceptional work. Her professionalism and dedication to projects shine through.”",
+        image: "assets/img/Testimonial/RamiLattouf.jpeg",
     },
     {
         id: 7,
-        name: "RAMI LATTOUF – DIRECTOR",
-        testimonial: "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec magna at bibendum. Nam non dui nec erat rhoncus sagittis sed at tortor. In eu sapien non diam efficitur auctor ut eget nisl. Praesent arcu massa, ultricies quis condimentum nec, consectetur ut odio. Vestibulum a lobortis metus.”",
-        image: "assets/img/Client.png",
+        name: "ROY KHOURY – WRITER, DIRECTOR, CHOREOGRAPHER",
+        testimonial: "“The work and experience with Rachel was beyond amazing. She made me feel comfortable, she was professional yet personal, with a strong knowledge of what she does. Execution and delivery were unbelievable! I certainly recommend her, and can’t wait for more projects to come!”",
+        image: "assets/img/Testimonial/RoyKhoury.png",
     },
     {
         id: 8,
-        name: "ROY KHOURY – WRITER, DIRECTOR, CHOREOGRAPHER",
+        name: "ANTHONY KHAWAND – ARTIST MANAGER",
         testimonial: "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec magna at bibendum. Nam non dui nec erat rhoncus sagittis sed at tortor. In eu sapien non diam efficitur auctor ut eget nisl. Praesent arcu massa, ultricies quis condimentum nec, consectetur ut odio. Vestibulum a lobortis metus.”",
-        image: "assets/img/Client.png",
+        image: "assets/img/Testimonial/AnthonyKhawand.png",
     },
     {
         id: 9,
-        name: "ANTHONY KHAWAND – ARTIST MANAGER",
-        testimonial: "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec magna at bibendum. Nam non dui nec erat rhoncus sagittis sed at tortor. In eu sapien non diam efficitur auctor ut eget nisl. Praesent arcu massa, ultricies quis condimentum nec, consectetur ut odio. Vestibulum a lobortis metus.”",
-        image: "assets/img/Client.png",
-    },
-    {
-        id: 10,
         name: "MARY SAAD – FOUNDER MUSIC SAGA",
-        testimonial: "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec magna at bibendum. Nam non dui nec erat rhoncus sagittis sed at tortor. In eu sapien non diam efficitur auctor ut eget nisl. Praesent arcu massa, ultricies quis condimentum nec, consectetur ut odio. Vestibulum a lobortis metus.”",
-        image: "assets/img/Client.png",
+        testimonial: "“Rachel creates with her heart and builds with her mind. Her creativity is beyond the beyond . Rachel is one of the best stage directors i have ever worked with , always doing her best to elevate the standards of any job with her unique talent.”",
+        image: "assets/img/Testimonial/MarySaad.png",
     },
-    {
-        id: 11,
-        name: "FAWAZ KOTOB – FOUNDER KULT BEIRUT",
-        testimonial: "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec magna at bibendum. Nam non dui nec erat rhoncus sagittis sed at tortor. In eu sapien non diam efficitur auctor ut eget nisl. Praesent arcu massa, ultricies quis condimentum nec, consectetur ut odio. Vestibulum a lobortis metus.”",
-        image: "assets/img/Client.png",
-    },
-    {
-        id: 12,
-        name: "TOUMA SALEMEH – EVENT PLANNER",
-        testimonial: "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec magna at bibendum. Nam non dui nec erat rhoncus sagittis sed at tortor. In eu sapien non diam efficitur auctor ut eget nisl. Praesent arcu massa, ultricies quis condimentum nec, consectetur ut odio. Vestibulum a lobortis metus.”",
-        image: "assets/img/Client.png",
-    }
+    // {
+    //     id: ,
+    //     name: "FAWAZ KOTOB – FOUNDER KULT BEIRUT",
+    //     testimonial: "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec magna at bibendum. Nam non dui nec erat rhoncus sagittis sed at tortor. In eu sapien non diam efficitur auctor ut eget nisl. Praesent arcu massa, ultricies quis condimentum nec, consectetur ut odio. Vestibulum a lobortis metus.”",
+    //     image: "assets/img/Testimonial/Client.png",
+    // },
+    // {
+    //     id: ,
+    //     name: "TOUMA SALEMEH – EVENT PLANNER",
+    //     testimonial: "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec magna at bibendum. Nam non dui nec erat rhoncus sagittis sed at tortor. In eu sapien non diam efficitur auctor ut eget nisl. Praesent arcu massa, ultricies quis condimentum nec, consectetur ut odio. Vestibulum a lobortis metus.”",
+    //     image: "assets/img/Testimonial/Client.png",
+    // },
+    // {
+    //     id: ,
+    //     name: " OUSAMA OBEID – DIRECTOR",
+    //     testimonial: "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec magna at bibendum. Nam non dui nec erat rhoncus sagittis sed at tortor. In eu sapien non diam efficitur auctor ut eget nisl. Praesent arcu massa, ultricies quis condimentum nec, consectetur ut odio. Vestibulum a lobortis metus.”",
+    //     image: "assets/img/Testimonial/Client.png",
+    // },
+    // {
+    //     id: ,
+    //     name: " TAREK BARBOUR – WEDDING PLANNER",
+    //     testimonial: "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec magna at bibendum. Nam non dui nec erat rhoncus sagittis sed at tortor. In eu sapien non diam efficitur auctor ut eget nisl. Praesent arcu massa, ultricies quis condimentum nec, consectetur ut odio. Vestibulum a lobortis metus.”",
+    //     image: "assets/img/Testimonial/Client.png",
+    // },
+    // {
+    //     id: ,
+    //     name: " MANAL ITANI – BRIDE",
+    //     testimonial: "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec magna at bibendum. Nam non dui nec erat rhoncus sagittis sed at tortor. In eu sapien non diam efficitur auctor ut eget nisl. Praesent arcu massa, ultricies quis condimentum nec, consectetur ut odio. Vestibulum a lobortis metus.”",
+    //     image: "assets/img/Testimonial/Client.png",
+    // },
+    // {
+    //     id: ,
+    //     name: " NIDAL BCHERRAWY – ",
+    //     testimonial: "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec magna at bibendum. Nam non dui nec erat rhoncus sagittis sed at tortor. In eu sapien non diam efficitur auctor ut eget nisl. Praesent arcu massa, ultricies quis condimentum nec, consectetur ut odio. Vestibulum a lobortis metus.”",
+    //     image: "assets/img/Testimonial/Client.png",
+    // },
 ]
 
 function renderTestimonial() {
@@ -227,13 +259,91 @@ var jobs = [
     {
         id: 1,
         position: "Coordinator",
-        requirements: "We are responsible, respect our artists, care for our client’s overall experience and manage our business ethically.",
+        requirements: "Coordinates tasks, promotes collaboration, and ensures efficiency.",
         image: "assets/img/Square.png"
     },
     {
         id: 2,
-        position: "Wardrobe",
-        requirements: "We are responsible, respect our artists, care for our client’s overall experience and manage our business ethically.",
+        position: "Assistant",
+        requirements: "Supports coordination with computer proficiency and strong English skills, ensuring smooth task execution.",
+        image: "assets/img/Square.png"
+    },
+    {
+        id: 3,
+        position: "Driver",
+        requirements: "Reliable, safely transports, maintains vehicle, follows routes.",
+        image: "assets/img/Square.png"
+    },
+    {
+        id: 4,
+        position: "Wardrobe Supervisor",
+        requirements: "Manages and coordinates costumes, collaborates with designer to achieve visions.",
+        image: "assets/img/Square.png"
+    },
+    {
+        id: 5,
+        position: "Makeup Artist",
+        requirements: "Applies beauty and artistic makeup for expressive themes.",
+        image: "assets/img/Square.png"
+    },
+    {
+        id: 6,
+        position: "Tailor",
+        requirements: "Expertly crafts costumes with precision and skill.",
+        image: "assets/img/Square.png"
+    },
+    {
+        id: 7,
+        position: "Crafter",
+        requirements: "Creates and handcrafts unique items with skill and creativity.",
+        image: "assets/img/Square.png"
+    },
+    {
+        id: 8,
+        position: "Dancer/Performer",
+        requirements: "Expresses art through different types of dance/performances.",
+        image: "assets/img/Square.png"
+    },
+    {
+        id: 9,
+        position: "Singer",
+        requirements: "Elevates experiences with powerful vocal performances.",
+        image: "assets/img/Square.png"
+    },
+    {
+        id: 10,
+        position: "Musician",
+        requirements: "Creates music, performs with instrumental mastery.",
+        image: "assets/img/Square.png"
+    },
+    {
+        id: 11,
+        position: "Graphic Designer",
+        requirements: "Conceptualizes and designs visuals for multiple purposes.",
+        image: "assets/img/Square.png"
+    },
+    {
+        id: 12,
+        position: "Photographer",
+        requirements: "Captures moments through creative photography skills.",
+        image: "assets/img/Square.png"
+    },
+    {
+        id: 13,
+        position: "Videographer",
+        requirements: "Records captivating visual content.",
+        image: "assets/img/Square.png"
+    },
+    {
+        id: 14,
+        position: "Editor",
+        requirements: "Edits footage for engaging visual content.",
+        image: "assets/img/Square.png"
+    },
+    {
+        id: 15,
+        position: "Digital Marketing Specialist",
+        requirements: "Executes online strategies to maximize digital presence.",
         image: "assets/img/Square.png"
     }
 ]
@@ -260,8 +370,13 @@ function renderJob() {
 }
 
 $(document).ready(function () {
+    var pathName = window.location.pathname.slice(1);
+
     setTimeout(function () {
         renderService();
+        if (pathName === "choreography.html" || pathName === "design.html" || pathName === "art.html" || pathName === "coaching.html") {
+            chooseService();
+        };
         renderValue();
         renderClient();
         renderTestimonial();

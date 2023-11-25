@@ -27,7 +27,46 @@ function jobPosition(num) {
             $("#jobPositionName").text("Coordinator");
             break;
         case 2:
-            $("#jobPositionName").text("Wardrobe");
+            $("#jobPositionName").text("Assistant");
+            break;
+        case 3:
+            $("#jobPositionName").text("Driver");
+            break;
+        case 4:
+            $("#jobPositionName").text("Wardrobe Supervisor");
+            break;
+        case 5:
+            $("#jobPositionName").text("Makeup Artist");
+            break;
+        case 6:
+            $("#jobPositionName").text("Tailor");
+            break;
+        case 7:
+            $("#jobPositionName").text("Crafter");
+            break;
+        case 8:
+            $("#jobPositionName").text("Dancer/Performer");
+            break;
+        case 9:
+            $("#jobPositionName").text("Singer");
+            break;
+        case 10:
+            $("#jobPositionName").text("Musician");
+            break;
+        case 11:
+            $("#jobPositionName").text("Graphic Designer");
+            break;
+        case 12:
+            $("#jobPositionName").text("Photographer");
+            break;
+        case 13:
+            $("#jobPositionName").text("Videographer");
+            break;
+        case 14:
+            $("#jobPositionName").text("Editor");
+            break;
+        case 15:
+            $("#jobPositionName").text("Digital Marketing Specialist");
             break;
     }
 }
@@ -494,7 +533,7 @@ $(document).ready(function () {
     setTimeout(function () {
         checkURL();
     }, 100)
-    setTimeout(function() {
+    setTimeout(function () {
         showTestimonials();
         getYear();
         // updatePagination();
