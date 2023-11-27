@@ -86,19 +86,19 @@ var values = [
         id: 1,
         norm: "Integrity",
         detail: "We build and strengthen our reputation through our client’s trust.",
-        image: "assets/img/Integrity.png"
+        image: "assets/img/Values/Integrity.png"
     },
     {
         id: 2,
         norm: "Excellence",
         detail: "We are passionate about our people and our high quality service.",
-        image: "assets/img/Excellence.png"
+        image: "assets/img/Values/Excellence.png"
     },
     {
         id: 2,
         norm: "Discipline",
         detail: "We are responsible, respect our artists, care for our client’s overall experience and manage our business ethically.",
-        image: "assets/img/Discipline.png"
+        image: "assets/img/Values/Discipline.png"
     }
 ]
 
@@ -116,13 +116,20 @@ function renderValue() {
 }
 
 var clients = [
-    "assets/img/MTV.png",
-    "assets/img/KAI.png",
-    "assets/img/KLOUD.png",
-    "assets/img/CICADA.png",
-    "assets/img/BOLD.png",
-    "assets/img/KULT.png",
-    "assets/img/ABC.png",
+    "assets/img/Clients/MTV.png",
+    "assets/img/Clients/KAI.png",
+    "assets/img/Clients/KLOUD.png",
+    "assets/img/Clients/BOLD.png",
+    "assets/img/Clients/KULT.png",
+    "assets/img/Clients/ABC.png",
+    "assets/img/Clients/IAM.png",
+    "assets/img/Clients/SEAFRONT.png",
+    // "assets/img/Clients/BENCHMARK.png",
+    "assets/img/Clients/CA.jpg",
+    "assets/img/Clients/CASINO.png",
+    "assets/img/Clients/GAT.jpg",
+    "assets/img/Clients/RETINA.jpg",
+    "assets/img/Clients/STEPS.png",
 ]
 
 function renderClient() {
@@ -156,12 +163,12 @@ var testimonials = [
         testimonial: "“After 10 years plus of working in the audio visual field , through films , TVC’s and music videos, I’ve met a lot of art directors and concept creators, but there’s this particular one that you ll never forget . The one working so hard to achieve and deliver the best outcome, no matter the circumstances. A pioneer in research and concept creation, going through every detail, giving every project the maximum time and effort needed. Don’t be fooled with that beautiful smile she puts… Her serious yet severe character could engage at any moment to put things in their right order, making her one of many international professionals in the artistic scene. It’s always a pleasure working with you Rachel, you’re an avant gardiste of our field , can’t wish but more future projects together.”",
         image: "assets/img/Testimonial/AnthonyKhawand.png",
     },
-    {
-        id: 2,
-        name: "LEA MAKHOUL – SINGER",
-        testimonial: "“Rachel is simply one of the best artists in her field. Her attention to detail is unmatched, Her ability to understand the message her clients want to convey is truly impressive, and she always manages to capture the essence of their vision in her art. Rachel and her team have always exceeded my expectations. Whether designing costumes, styling for special events and performances, or creating moodboards for photoshoots and music videos, Rachel always brought her A-game. She is incredibly professional, and she treats every project as if it were her own.”",
-        image: "assets/img/Client.png",
-    },
+    // {
+    //     id: 2,
+    //     name: "LEA MAKHOUL – SINGER",
+    //     testimonial: "“Rachel is simply one of the best artists in her field. Her attention to detail is unmatched, Her ability to understand the message her clients want to convey is truly impressive, and she always manages to capture the essence of their vision in her art. Rachel and her team have always exceeded my expectations. Whether designing costumes, styling for special events and performances, or creating moodboards for photoshoots and music videos, Rachel always brought her A-game. She is incredibly professional, and she treats every project as if it were her own.”",
+    //     image: "assets/img/Client.png",
+    // },
     {
         id: 3,
         name: "ROY KHOURY – WRITER, DIRECTOR, CHOREOGRAPHER",
@@ -174,12 +181,12 @@ var testimonials = [
         testimonial: "“Working with Rachel has always been a pleasure of mine. Professionally speaking, she is one of the most talented choreographers I’ve worked with and her vision has been spectacular. I can never thank her enough…”",
         image: "assets/img/Testimonial/DalidaKhalil.png",
     },
-    {
-        id: 5,
-        name: "RAPHAEL JABBOUR – SINGER",
-        testimonial: "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec magna at bibendum. Nam non dui nec erat rhoncus sagittis sed at tortor. In eu sapien non diam efficitur auctor ut eget nisl. Praesent arcu massa, ultricies quis condimentum nec, consectetur ut odio. Vestibulum a lobortis metus.”",
-        image: "assets/img/Testimonial/RaphaelJabbour.jpg",
-    },
+    // {
+    //     id: 5,
+    //     name: "RAPHAEL JABBOUR – SINGER",
+    //     testimonial: "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec magna at bibendum. Nam non dui nec erat rhoncus sagittis sed at tortor. In eu sapien non diam efficitur auctor ut eget nisl. Praesent arcu massa, ultricies quis condimentum nec, consectetur ut odio. Vestibulum a lobortis metus.”",
+    //     image: "assets/img/Testimonial/RaphaelJabbour.jpg",
+    // },
     {
         id: 6,
         name: "MARY SAAD – FOUNDER MUSIC SAGA",
@@ -198,12 +205,12 @@ var testimonials = [
         testimonial: '“I had the big pleasure to work with Rachel on my "Tête à Tête" Concert November 2022.. I saw her show during a wedding I was performing at and since then I kept her in my mind.. and I was not mistaken for a second.. Ever since I started working on my concert and during our planifications, preparations and rehearsals, Rachel has shown high level of professionalism, commitment, perseverance and most of all her passion in work. I look forward to repeat more and more my collaboration.. Rachel I love you and wish you reach high as much as you deserve it.”',
         image: "assets/img/Testimonial/ChristinaHaddad.JPG",
     },
-    {
-        id: 9,
-        name: "KARL HSEIN – SINGER, COMPOSER",
-        testimonial: "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec magna at bibendum. Nam non dui nec erat rhoncus sagittis sed at tortor. In eu sapien non diam efficitur auctor ut eget nisl. Praesent arcu massa, ultricies quis condimentum nec, consectetur ut odio. Vestibulum a lobortis metus.”",
-        image: "assets/img/Testimonial/KarlHsein.png",
-    },
+    // {
+    //     id: 9,
+    //     name: "KARL HSEIN – SINGER, COMPOSER",
+    //     testimonial: "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec magna at bibendum. Nam non dui nec erat rhoncus sagittis sed at tortor. In eu sapien non diam efficitur auctor ut eget nisl. Praesent arcu massa, ultricies quis condimentum nec, consectetur ut odio. Vestibulum a lobortis metus.”",
+    //     image: "assets/img/Testimonial/KarlHsein.png",
+    // },
     // {
     //     id: ,
     //     name: "FAWAZ KOTOB – FOUNDER KULT BEIRUT",

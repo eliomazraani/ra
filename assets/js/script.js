@@ -312,7 +312,7 @@ function sendEmail() {
         message: message.value
     };
 
-    emailjs.send("service_3bod7np", "template_4hd3fvm", templateParams)
+    emailjs.send("service_op2jm29", "template_4hd3fvm", templateParams)
         .then(function (response) {
             console.log('Email sent successfully!', response.status, response.text);
             thankYou();
@@ -379,7 +379,7 @@ function applyJob() {
 }
 
 function sendEmailWithAttachment(templateParams) {
-    emailjs.send("service_3bod7np", "template_fqztz8l", templateParams)
+    emailjs.send("service_op2jm29", "template_fqztz8l", templateParams)
         .then(function (response) {
             console.log('Email sent successfully!', response.status, response.text);
             thankYou();
