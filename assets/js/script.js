@@ -209,6 +209,7 @@ function showClients(n) {
 let testimonialIndex = 0;
 let swipeStartX = 0;
 let swipeEndX = 0;
+let autoSwitchTimeout;
 
 function showTestimonials() {
     let testimonials = document.getElementsByClassName("clientTestimonial");
@@ -231,7 +232,7 @@ function showTestimonials() {
 
     testimonials[testimonialIndex - 1].style.display = "block";
 
-    setTimeout(showTestimonials, 5000);
+    autoSwitchTimeout = setTimeout(showTestimonials, 5000);
 }
 
 function updateDots(container, total, activeIndex) {
@@ -257,17 +258,17 @@ function handleSwipeEnd(event) {
     swipeEndX = event.changedTouches[0].clientX;
 
     // Adjust this threshold based on your swipe sensitivity
-    if (swipeEndX < swipeStartX - 50) {
+    if (swipeEndX < swipeStartX - 250) {
         // Swipe to the left
         changeTestimonial(-1);
-    } else if (swipeEndX > swipeStartX + 50) {
+    } else if (swipeEndX > swipeStartX + 250) {
         // Swipe to the right
         changeTestimonial(1);
     }
 }
 
 function changeTestimonial(delta) {
-    clearTimeout(showTestimonials); // Stop the automatic switching
+    clearTimeout(autoSwitchTimeout); // Stop the automatic switching
     let testimonials = document.getElementsByClassName("clientTestimonial");
     testimonialIndex += delta;
 
@@ -284,7 +285,7 @@ function changeTestimonial(delta) {
     testimonials[testimonialIndex - 1].style.display = "block";
 
     // Restart the automatic switching after 5000ms
-    setTimeout(showTestimonials, 5000);
+    autoSwitchTimeout = setTimeout(showTestimonials, 5000);
 }
 
 /* End New */
