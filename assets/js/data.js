@@ -132,27 +132,61 @@ var clients = [
     "assets/img/Clients/STEPS.png",
 ]
 
-function renderClient() {
-    var clientContainers = [];
-    var clientM = `<div class="clientLogo">`;
-
-    for (let i = 0; i < clients.length; i += 7) {
-        var clientD = '<div class="clientLogo fade">';
-        for (let j = i; j < Math.min(i + 7, clients.length); j++) {
-            clientD += `<img src="${clients[j]}" alt="Img">`;
-        }
-        clientD += '</div>';
-        clientContainers.push(clientD);
-    }
-    clients.forEach(client => {
-        clientM += `<img src="${client}" alt="Img">`
+function loadImage(url) {
+    return new Promise((resolve, reject) => {
+        var img = new Image();
+        img.onload = function() {
+            resolve(img);
+        };
+        img.onerror = function() {
+            reject(new Error('Image load error'));
+        };
+        img.src = url;
     });
-    clientM += `</div>`
+}
+
+async function renderClient() {
+    var clientContainers = [];
+    var faderWidth = $('.clients .wide').width();
+    var columnGap = 80;
+    var currentContainer = '<div class="clientLogo fade">';
+    var currentContainerWidth = 0;
+
+    for (let i = 0; i < clients.length; i++) {
+        try {
+            var img = await loadImage(clients[i]);
+            var imgWidth = img.width;
+
+            if (currentContainerWidth + imgWidth + columnGap > faderWidth) {
+                if (currentContainerWidth > 0) {
+                    clientContainers.push(currentContainer + '</div>');
+                }
+
+                currentContainer = '<div class="clientLogo fade">';
+                currentContainerWidth = 0;
+            }
+
+            currentContainer += `<img src="${clients[i]}" alt="Img">`;
+            currentContainerWidth += imgWidth + columnGap;
+
+            if (i === clients.length - 1 && currentContainerWidth > 0) {
+                clientContainers.push(currentContainer + '</div>');
+            }
+        } catch (error) {
+            console.error(error);
+        }
+    };
     $(".clients .wide .fader").html(clientContainers.join(''));
     if ($('.clients .wide .fader .clientLogo').length === 1) {
         $('.leftArrow').css('display', 'none');
         $('.rightArrow').css('display', 'none');
-    }
+    };
+
+    var clientM = `<div class="clientLogo">`;
+    clients.forEach(client => {
+        clientM += `<img src="${client}" alt="Img">`
+    });
+    clientM += `</div>`;
     $(".clients .narrow").append(clientM);
 }
 
@@ -389,4 +423,8 @@ $(document).ready(function () {
         renderTestimonial();
         renderJob();
     }, 1000)
+});
+
+$(window).resize(function() {
+    renderClient();
 });

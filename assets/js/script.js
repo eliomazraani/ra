@@ -207,6 +207,8 @@ function showClients(n) {
 }
 
 let testimonialIndex = 0;
+let swipeStartX = 0;
+let swipeEndX = 0;
 
 function showTestimonials() {
     let testimonials = document.getElementsByClassName("clientTestimonial");
@@ -244,6 +246,48 @@ function updateDots(container, total, activeIndex) {
         container.appendChild(dot);
     }
 }
+
+/* Start New */
+
+function handleSwipeStart(event) {
+    swipeStartX = event.touches[0].clientX;
+}
+
+function handleSwipeEnd(event) {
+    swipeEndX = event.changedTouches[0].clientX;
+
+    // Adjust this threshold based on your swipe sensitivity
+    if (swipeEndX < swipeStartX - 50) {
+        // Swipe to the left
+        changeTestimonial(-1);
+    } else if (swipeEndX > swipeStartX + 50) {
+        // Swipe to the right
+        changeTestimonial(1);
+    }
+}
+
+function changeTestimonial(delta) {
+    clearTimeout(showTestimonials); // Stop the automatic switching
+    let testimonials = document.getElementsByClassName("clientTestimonial");
+    testimonialIndex += delta;
+
+    if (testimonialIndex > testimonials.length) {
+        testimonialIndex = 1;
+    } else if (testimonialIndex < 1) {
+        testimonialIndex = testimonials.length;
+    }
+
+    for (let i = 0; i < testimonials.length; i++) {
+        testimonials[i].style.display = "none";
+    }
+
+    testimonials[testimonialIndex - 1].style.display = "block";
+
+    // Restart the automatic switching after 5000ms
+    setTimeout(showTestimonials, 5000);
+}
+
+/* End New */
 
 function serviceShow(num) {
     const currentUrl = window.location.href;
@@ -538,4 +582,6 @@ $(document).ready(function () {
         getYear();
         // updatePagination();
     }, 1000);
+    document.addEventListener('touchstart', handleSwipeStart);
+    document.addEventListener('touchend', handleSwipeEnd);
 });
