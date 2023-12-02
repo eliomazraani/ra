@@ -260,10 +260,10 @@ function handleSwipeEnd(event) {
     // Adjust this threshold based on your swipe sensitivity
     if (swipeEndX < swipeStartX - 200) {
         // Swipe to the left
-        changeTestimonial(1);
+        changeTestimonial(-1);
     } else if (swipeEndX > swipeStartX + 200) {
         // Swipe to the right
-        changeTestimonial(-1);
+        changeTestimonial(1);
     }
 }
 
