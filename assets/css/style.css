@@ -408,7 +408,7 @@ body {
 .ourStory {
   padding: 60px 160px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   -moz-column-gap: 56px;
        column-gap: 56px;
 }
@@ -448,6 +448,9 @@ body {
 .ourStory .mobile {
   display: none;
 }
+.ourStory.founder .left {
+  width: 30%;
+}
 @media (max-width: 767px) {
   .ourStory {
     flex-direction: column;
@@ -479,6 +482,9 @@ body {
   }
   .ourStory .mobile {
     display: block;
+  }
+  .ourStory.founder .left {
+    width: 100%;
   }
 }
 
@@ -1072,6 +1078,9 @@ body {
 .serviceOptions .servicesList .list .demo {
   width: 400px;
   height: 400px;
+}
+.serviceOptions .servicesList .list .demo img {
+  height: 100%;
 }
 .serviceOptions .servicesList .list .information .name {
   font-size: 18px;

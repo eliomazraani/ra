@@ -495,7 +495,7 @@ body {
 .ourStory {
     padding: 60px 160px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     column-gap: 56px;
 
     .left,
@@ -537,6 +537,13 @@ body {
         display: none;
     }
 
+    &.founder {
+
+        .left {
+            width: 30%;
+        }
+    }
+
     @include screen767 {
         flex-direction: column;
         align-items: center;
@@ -572,6 +579,12 @@ body {
 
         .mobile {
             display: block;
+        }
+
+        &.founder {
+            .left {
+                width: 100%;
+            }
         }
     }
 }
@@ -1265,6 +1278,10 @@ body {
             .demo {
                 width: 400px;
                 height: 400px;
+
+                img {
+                    height: 100%;
+                }
             }
 
             .information {

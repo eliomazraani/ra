@@ -570,9 +570,14 @@ function getYear() {
 }
 
 $(document).ready(function () {
+    var currentUrl = window.location.href;
+    if (currentUrl.endsWith('/')) {
+        var height = $(window).height() - 92;
+        $('.services').css('height', height);
+    };
     setTimeout(function () {
         checkURL();
-    }, 100)
+    }, 100);
     setTimeout(function () {
         showTestimonials();
         getYear();
@@ -580,4 +585,12 @@ $(document).ready(function () {
     }, 1000);
     document.addEventListener('touchstart', handleSwipeStart);
     document.addEventListener('touchend', handleSwipeEnd);
+});
+
+$(window).resize(function() {
+    var currentUrl = window.location.href;
+    if (currentUrl.endsWith('/')) {
+        var height = $(window).height() - 92;
+        $('.services').css('height', height);
+    };
 });

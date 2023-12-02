@@ -124,12 +124,14 @@ var clients = [
     "assets/img/Clients/ABC.png",
     "assets/img/Clients/IAM.png",
     "assets/img/Clients/SEAFRONT.png",
-    // "assets/img/Clients/BENCHMARK.png",
+    "assets/img/Clients/BENCHMARK.png",
     "assets/img/Clients/CA.jpg",
     "assets/img/Clients/CASINO.png",
     "assets/img/Clients/GAT.jpg",
     "assets/img/Clients/RETINA.jpg",
     "assets/img/Clients/STEPS.png",
+    "assets/img/Clients/ROTANA.png",
+    "assets/img/Clients/SAYF.png",
 ]
 
 function loadImage(url) {
@@ -410,13 +412,93 @@ function renderJob() {
     });
 }
 
+var styleCoaching = [
+    {
+        id: 1,
+        img: "assets/img/StyleCoaching/Style.jpg",
+        name: "Style Personality",
+        summary: "For special events, you want to look and feel your best. Our style coaches will help you choose an outfit and accessories that are appropriate and stylish for the occasion. We'll consider your personal style, body shape, and the dress code of the event to create a polished and put-together look. We'll ensure that you make a memorable impression.",
+        button: "BOOK A SESSION",
+    },
+    {
+        id: 2,
+        img: "assets/img/StyleCoaching/Body.jpg",
+        name: "Body Shape Analysis",
+        summary: "For special events, you want to look and feel your best. Our style coaches will help you choose an outfit and accessories that are appropriate and stylish for the occasion. We'll consider your personal style, body shape, and the dress code of the event to create a polished and put-together look. We'll ensure that you make a memorable impression.",
+        button: "BOOK A SESSION",
+    },
+    {
+        id: 3,
+        img: "assets/img/StyleCoaching/Color.jpg",
+        name: "Color Analysis",
+        summary: "For special events, you want to look and feel your best. Our style coaches will help you choose an outfit and accessories that are appropriate and stylish for the occasion. We'll consider your personal style, body shape, and the dress code of the event to create a polished and put-together look. We'll ensure that you make a memorable impression.",
+        button: "BOOK A SESSION",
+    },
+    {
+        id: 4,
+        img: "assets/img/StyleCoaching/Wardrobe.jpg",
+        name: "Wardrobe Decluttering",
+        summary: "For special events, you want to look and feel your best. Our style coaches will help you choose an outfit and accessories that are appropriate and stylish for the occasion. We'll consider your personal style, body shape, and the dress code of the event to create a polished and put-together look. We'll ensure that you make a memorable impression.",
+        button: "BOOK A SESSION",
+    },
+    {
+        id: 5,
+        img: "assets/img/StyleCoaching/Personal.jpg",
+        name: "Personal Shopping",
+        summary: "For special events, you want to look and feel your best. Our style coaches will help you choose an outfit and accessories that are appropriate and stylish for the occasion. We'll consider your personal style, body shape, and the dress code of the event to create a polished and put-together look. We'll ensure that you make a memorable impression.",
+        button: "BOOK A SESSION",
+    },
+    {
+        id: 6,
+        img: "assets/img/StyleCoaching/Full.jpg",
+        name: "Full Program",
+        summary: "For special events, you want to look and feel your best. Our style coaches will help you choose an outfit and accessories that are appropriate and stylish for the occasion. We'll consider your personal style, body shape, and the dress code of the event to create a polished and put-together look. We'll ensure that you make a memorable impression.",
+        button: "REGISTER NOW",
+    },
+]
+
+function coachingList() {
+    var list = `<div class="servicesList">`;
+    var quantity;
+
+    if (styleCoaching.length % 2 === 0) {
+        quantity = "even";
+    } else {
+        quantity = "odd";
+    };
+
+    styleCoaching.forEach((topic, i) => {
+        list += `<div class="list ${(quantity === 'even' && i % 2 === 0) ? 'odd' : ((quantity === 'odd' && i % 2 !== 0) ? 'odd': 'even')}">
+                    <div class="demo">
+                        <img src="${topic.img}" alt="Img">
+                    </div>
+                    <div class="information">
+                        <div class="name">${topic.name}</div>
+                        <div class="summary">${topic.summary}</div>
+                        <div class="button peachBtn">
+                            <a onclick="scrollToContact()">${topic.button}</a>
+                        </div>
+                    </div>
+                </div>`
+    });
+    list += `</div>`;
+    $(".serviceOptions").append(list);
+}
+
 $(document).ready(function () {
     var pathName = window.location.pathname.slice(1);
 
     setTimeout(function () {
         renderService();
-        if (pathName === "choreography.html" || pathName === "design.html" || pathName === "art.html" || pathName === "coaching.html") {
+        if (pathName === "choreography.html") {
             chooseService();
+        } else if (pathName === "design.html") {
+            chooseService();
+        } else if (pathName === "art.html") {
+            chooseService();
+        } else if (pathName === "coaching.html") {
+            chooseService();
+            coachingList();
         };
         renderValue();
         renderClient();
