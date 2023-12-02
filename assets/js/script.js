@@ -232,7 +232,7 @@ function showTestimonials() {
 
     testimonials[testimonialIndex - 1].style.display = "block";
 
-    autoSwitchTimeout = setTimeout(showTestimonials, 5000);
+    autoSwitchTimeout = setTimeout(showTestimonials, 15000);
 }
 
 function updateDots(container, total, activeIndex) {
@@ -282,7 +282,7 @@ function changeTestimonial(delta) {
 
     testimonials[testimonialIndex - 1].style.display = "block";
 
-    autoSwitchTimeout = setTimeout(showTestimonials, 5000);
+    autoSwitchTimeout = setTimeout(showTestimonials, 15000);
 }
 
 function serviceShow(num) {
