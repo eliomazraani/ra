@@ -248,8 +248,6 @@ function updateDots(container, total, activeIndex) {
     }
 }
 
-/* Start New */
-
 function handleSwipeStart(event) {
     swipeStartX = event.touches[0].clientX;
 }
@@ -257,19 +255,17 @@ function handleSwipeStart(event) {
 function handleSwipeEnd(event) {
     swipeEndX = event.changedTouches[0].clientX;
 
-    // Adjust this threshold based on your swipe sensitivity
-    if (swipeEndX < swipeStartX - 200) {
-        // Swipe to the left
-        changeTestimonial(-1);
-    } else if (swipeEndX > swipeStartX + 200) {
-        // Swipe to the right
+    if (swipeEndX < swipeStartX - 150) {
         changeTestimonial(1);
+    } else if (swipeEndX > swipeStartX + 150) {
+        changeTestimonial(-1);
     }
 }
 
 function changeTestimonial(delta) {
-    clearTimeout(autoSwitchTimeout); // Stop the automatic switching
+    clearTimeout(autoSwitchTimeout);
     let testimonials = document.getElementsByClassName("clientTestimonial");
+    let dotsContainer = document.querySelector(".dots");
     testimonialIndex += delta;
 
     if (testimonialIndex > testimonials.length) {
@@ -282,13 +278,12 @@ function changeTestimonial(delta) {
         testimonials[i].style.display = "none";
     }
 
+    updateDots(dotsContainer, testimonials.length, testimonialIndex);
+
     testimonials[testimonialIndex - 1].style.display = "block";
 
-    // Restart the automatic switching after 5000ms
     autoSwitchTimeout = setTimeout(showTestimonials, 5000);
 }
-
-/* End New */
 
 function serviceShow(num) {
     const currentUrl = window.location.href;
