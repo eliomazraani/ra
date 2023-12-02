@@ -123,19 +123,19 @@ function checkURL() {
         $('.ap').addClass('selected');
     } else if (currentUrl.endsWith('choreography.html') || currentUrl.endsWith('choreographyService.html')) {
         $('.toHome').attr('href', '/');
-        $('.toHome img').attr('src', 'assets/img/LogoGreen.png');
+        $('.toHome img').attr('src', 'assets/img/LogoGreen.svg');
         $('.sp').addClass('selected');
         $('.chp').addClass('selected');
         $('.button').addClass('green');
     } else if (currentUrl.endsWith('design.html') || currentUrl.endsWith('designService.html')) {
         $('.toHome').attr('href', '/');
-        $('.toHome img').attr('src', 'assets/img/LogoPink.png');
+        $('.toHome img').attr('src', 'assets/img/LogoPink.svg');
         $('.sp').addClass('selected');
         $('.des').addClass('selected');
         $('.button').addClass('pink');
     } else if (currentUrl.endsWith('art.html') || currentUrl.endsWith('artService.html')) {
         $('.toHome').attr('href', '/');
-        $('.toHome img').attr('src', 'assets/img/LogoPurple.png');
+        $('.toHome img').attr('src', 'assets/img/LogoPurple.svg');
         $('.sp').addClass('selected');
         $('.art').addClass('selected');
         $('.button').addClass('purple');
