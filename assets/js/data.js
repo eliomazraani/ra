@@ -415,7 +415,7 @@ function renderJob() {
 var styleCoaching = [
     {
         id: 1,
-        img: "assets/img/StyleCoaching/Style.jpg",
+        img: "assets/img/StyleCoaching/Style.JPG",
         name: "Style Personality",
         summary: "For special events, you want to look and feel your best. Our style coaches will help you choose an outfit and accessories that are appropriate and stylish for the occasion. We'll consider your personal style, body shape, and the dress code of the event to create a polished and put-together look. We'll ensure that you make a memorable impression.",
         button: "BOOK A SESSION",
