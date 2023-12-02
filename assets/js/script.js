@@ -242,7 +242,7 @@ function updateDots(container, total, activeIndex) {
         let dot = document.createElement("span");
         dot.className = "dot";
         if (i === activeIndex - 1) {
-            dot.className += " active";
+            dot.classList += " active";
         }
         container.appendChild(dot);
     }
@@ -258,12 +258,12 @@ function handleSwipeEnd(event) {
     swipeEndX = event.changedTouches[0].clientX;
 
     // Adjust this threshold based on your swipe sensitivity
-    if (swipeEndX < swipeStartX - 250) {
+    if (swipeEndX < swipeStartX - 200) {
         // Swipe to the left
-        changeTestimonial(-1);
-    } else if (swipeEndX > swipeStartX + 250) {
-        // Swipe to the right
         changeTestimonial(1);
+    } else if (swipeEndX > swipeStartX + 200) {
+        // Swipe to the right
+        changeTestimonial(-1);
     }
 }
 
