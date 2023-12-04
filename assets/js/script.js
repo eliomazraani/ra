@@ -141,6 +141,7 @@ function checkURL() {
         $('.button').addClass('purple');
     } else if (currentUrl.endsWith('coaching.html')) {
         $('.toHome').attr('href', '/');
+        $('.toHome img').attr('src', 'assets/img/LogoPeach.svg');
         $('.sp').addClass('selected');
         $('.stl').addClass('selected');
         $('.button').addClass('peach');
