@@ -572,9 +572,11 @@ function getYear() {
 
 $(document).ready(function () {
     var currentUrl = window.location.href;
-    if (currentUrl.endsWith('/')) {
+    if (currentUrl.endsWith('/') && $(window).width() > 767) {
         var height = $(window).height() - 92;
         $('.services').css('height', height);
+    } else {
+        $('.services').css('height', 'unset');
     };
     setTimeout(function () {
         checkURL();
@@ -590,8 +592,10 @@ $(document).ready(function () {
 
 $(window).resize(function() {
     var currentUrl = window.location.href;
-    if (currentUrl.endsWith('/')) {
+    if (currentUrl.endsWith('/') && $(window).width() > 767) {
         var height = $(window).height() - 92;
         $('.services').css('height', height);
+    } else {
+        $('.services').css('height', 'unset');
     };
 });
