@@ -137,10 +137,10 @@ var clients = [
 function loadImage(url) {
     return new Promise((resolve, reject) => {
         var img = new Image();
-        img.onload = function() {
+        img.onload = function () {
             resolve(img);
         };
-        img.onerror = function() {
+        img.onerror = function () {
             reject(new Error('Image load error'));
         };
         img.src = url;
@@ -412,6 +412,268 @@ function renderJob() {
     });
 }
 
+var choreoTabs = [
+    {
+        id: 1,
+        name: "MUSIC VIDEO",
+        elements: [
+            {
+                id: 1,
+                image: "assets/img/Rectangle.png",
+                name: "EBKI",
+                summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+            },
+            {
+                id: 2,
+                image: "assets/img/Rectangle.png",
+                name: "MOUKHTASSAR EL KALAM",
+                summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+            }
+        ]
+    },
+    {
+        id: 2,
+        name: "TV SERIES",
+        elements: [
+            {
+                id: 3,
+                image: "assets/img/Rectangle.png",
+                name: "KHAMSEH W NOSS",
+                summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+            },
+            {
+                id: 4,
+                image: "assets/img/Rectangle.png",
+                name: "PARANOIA",
+                summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+            }
+        ]
+    },
+    {
+        id: 3,
+        name: "NIGHTLIFE",
+        elements: [
+            {
+                id: 5,
+                image: "assets/img/Rectangle.png",
+                name: "AVA",
+                summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+            },
+            {
+                id: 6,
+                image: "assets/img/Rectangle.png",
+                name: "BOLD",
+                summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+            },
+            {
+                id: 7,
+                image: "assets/img/Rectangle.png",
+                name: "KAI",
+                summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+            },
+            {
+                id: 8,
+                image: "assets/img/Rectangle.png",
+                name: "KLOUD",
+                summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+            }
+        ]
+    },
+    {
+        id: 4,
+        name: "WEDDINGS & EVENTS",
+        elements: []
+    }
+]
+
+function choreographyTabs() {
+    var tabs = ``;
+    var grids = ``;
+
+    choreoTabs.forEach((tab, index) => {
+        tabs += `<a onclick="serviceShow(${index + 1})" ${index === 0 ? 'class="green"' : ''}>${tab.name}</a>`;
+
+        grids += `<div class="grid service-${index + 1} ${index !== 0 ? 'd-none' : ''}">`;
+        tab.elements.forEach(grid => {
+            grids += `<a href="choreographyService.html?id=${grid.id}">
+                        <div class="service">
+                            <img src="${grid.image}" alt="Img">
+                            <div class="information">
+                                <div class="name">${grid.name}</div>
+                                <div class="summary">${grid.summary}</div>
+                            </div>
+                        </div>
+                    </a>`;
+        });
+        grids += `</div>`;
+    });
+
+    $(".servicesGrid .tabs").append(tabs);
+    $(".servicesGrid").append(grids);
+}
+
+var designTabs = [
+    {
+        id: 1,
+        name: "PHOTOSHOOT",
+        elements: [
+            {
+                id: 1,
+                image: "assets/img/Rectangle.png",
+                name: "LEA MAKHOUL",
+                summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+            },
+            {
+                id: 2,
+                image: "assets/img/Rectangle.png",
+                name: "MAROUN CONSTANTINE",
+                summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+            },
+            {
+                id: 3,
+                image: "assets/img/Rectangle.png",
+                name: "NADA ABOU FARHAT",
+                summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+            }
+        ]
+    },
+    {
+        id: 2,
+        name: "MUSIC VIDEO",
+        elements: [
+            {
+                id: 4,
+                image: "assets/img/Rectangle.png",
+                name: "EBKI",
+                summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+            },
+            {
+                id: 5,
+                image: "assets/img/Rectangle.png",
+                name: "RATATA",
+                summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+            }
+        ]
+    },
+    {
+        id: 3,
+        name: "COMMERCIAL",
+        elements: [
+            {
+                id: 6,
+                image: "assets/img/Rectangle.png",
+                name: "AL MAKASSED",
+                summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+            },
+            {
+                id: 7,
+                image: "assets/img/Rectangle.png",
+                name: "MEMOTILES",
+                summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+            }
+        ]
+    },
+    {
+        id: 4,
+        name: "COSTUME THEMES",
+        elements: [
+            {
+                id: 8,
+                image: "assets/img/Rectangle.png",
+                name: "CHRISTMAS",
+                summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+            },
+            {
+                id: 9,
+                image: "assets/img/Rectangle.png",
+                name: "FOLKLORE",
+                summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+            },
+            {
+                id: 10,
+                image: "assets/img/Rectangle.png",
+                name: "ORIENTALE",
+                summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+            },
+            {
+                id: 11,
+                image: "assets/img/Rectangle.png",
+                name: "STREETSTYLE",
+                summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+            }
+        ]
+    }
+]
+
+function stylingTabs() {
+    var tabs = ``;
+    var grids = ``;
+
+    designTabs.forEach((tab, index) => {
+        tabs += `<a onclick="serviceShow(${index + 1})" ${index === 0 ? 'class="pink"' : ''}>${tab.name}</a>`;
+
+        grids += `<div class="grid service-${index + 1} ${index !== 0 ? 'd-none' : ''}">`;
+        tab.elements.forEach(grid => {
+            grids += `<a href="designService.html?id=${grid.id}">
+                        <div class="service">
+                            <img src="${grid.image}" alt="Img">
+                            <div class="information">
+                                <div class="name">${grid.name}</div>
+                                <div class="summary">${grid.summary}</div>
+                            </div>
+                        </div>
+                    </a>`;
+        });
+        grids += `</div>`;
+    });
+
+    $(".servicesGrid .tabs").append(tabs);
+    $(".servicesGrid").append(grids);
+}
+
+var artTabs = [
+    {
+        id: 1,
+        image: "assets/img/Rectangle.png",
+        name: "AHLAM",
+        summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+    },
+    {
+        id: 2,
+        image: "assets/img/Rectangle.png",
+        name: "KULT",
+        summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+    },
+    {
+        id: 3,
+        image: "assets/img/Rectangle.png",
+        name: "TETE A TETE",
+        summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+    }
+]
+
+function directionTabs() {
+    $(".servicesGrid .tabs").addClass("solo");
+    $(".servicesGrid .tabs").text("OUR PROJECT");
+
+    var grids = `<div class="grid">`;
+
+    artTabs.forEach(grid => {
+        grids += `<a href="artService.html?id=${grid.id}">
+                    <div class="service">
+                        <img src="${grid.image}" alt="Img">
+                        <div class="information">
+                            <div class="name">${grid.name}</div>
+                            <div class="summary">${grid.summary}</div>
+                        </div>
+                    </div>
+                </a>`;
+        });
+        grids += `</div>`;
+
+    $(".servicesGrid").append(grids);
+}
+
 var styleCoaching = [
     {
         id: 1,
@@ -468,7 +730,7 @@ function coachingList() {
     };
 
     styleCoaching.forEach((topic, i) => {
-        list += `<div class="list ${(quantity === 'even' && i % 2 === 0) ? 'odd' : ((quantity === 'odd' && i % 2 !== 0) ? 'odd': 'even')}">
+        list += `<div class="list ${(quantity === 'even' && i % 2 === 0) ? 'odd' : ((quantity === 'odd' && i % 2 !== 0) ? 'odd' : 'even')}">
                     <div class="demo">
                         <img src="${topic.img}" alt="Img">
                     </div>
@@ -492,10 +754,13 @@ $(document).ready(function () {
         renderService();
         if (pathName === "choreography.html") {
             chooseService();
+            choreographyTabs();
         } else if (pathName === "design.html") {
             chooseService();
+            stylingTabs();
         } else if (pathName === "art.html") {
             chooseService();
+            directionTabs();
         } else if (pathName === "coaching.html") {
             chooseService();
             coachingList();
@@ -507,6 +772,6 @@ $(document).ready(function () {
     }, 1000)
 });
 
-$(window).resize(function() {
+$(window).resize(function () {
     renderClient();
 });

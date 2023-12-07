@@ -114,38 +114,38 @@ function scrollToContact() {
 }
 
 function checkURL() {
-    var currentUrl = window.location.href;
-    if (currentUrl.endsWith('/')) {
+    var currentUrl = window.location.pathname.slice(1);
+    if (currentUrl === '') {
         $('.toHome').removeAttr('href');
         $('.lp').addClass('selected');
-    } else if (currentUrl.endsWith('about.html')) {
+    } else if (currentUrl === 'about.html') {
         $('.toHome').attr('href', '/');
         $('.ap').addClass('selected');
-    } else if (currentUrl.endsWith('choreography.html') || currentUrl.endsWith('choreographyService.html')) {
+    } else if (currentUrl === 'choreography.html' || currentUrl === 'choreographyService.html') {
         $('.toHome').attr('href', '/');
         $('.toHome img').attr('src', 'assets/img/LogoGreen.svg');
         $('.sp').addClass('selected');
         $('.chp').addClass('selected');
         $('.button').addClass('green');
-    } else if (currentUrl.endsWith('design.html') || currentUrl.endsWith('designService.html')) {
+    } else if (currentUrl === 'design.html' || currentUrl === 'designService.html') {
         $('.toHome').attr('href', '/');
         $('.toHome img').attr('src', 'assets/img/LogoPink.svg');
         $('.sp').addClass('selected');
         $('.des').addClass('selected');
         $('.button').addClass('pink');
-    } else if (currentUrl.endsWith('art.html') || currentUrl.endsWith('artService.html')) {
+    } else if (currentUrl === 'art.html' || currentUrl === 'artService.html') {
         $('.toHome').attr('href', '/');
         $('.toHome img').attr('src', 'assets/img/LogoPurple.svg');
         $('.sp').addClass('selected');
         $('.art').addClass('selected');
         $('.button').addClass('purple');
-    } else if (currentUrl.endsWith('coaching.html')) {
+    } else if (currentUrl === 'coaching.html') {
         $('.toHome').attr('href', '/');
         $('.toHome img').attr('src', 'assets/img/LogoPeach.svg');
         $('.sp').addClass('selected');
         $('.stl').addClass('selected');
         $('.button').addClass('peach');
-    } else if (currentUrl.endsWith('joinUs.html') || currentUrl.endsWith('joinus')) {
+    } else if (currentUrl === 'joinUs.html' || currentUrl === 'joinus') {
         $('.toHome').attr('href', '/');
         $('.tp').addClass('selected');
     }
@@ -458,7 +458,7 @@ function updateGallery(num) {
     gallery.style.transform = `translateX(${translateXValue}%)`;
 }
 
-var currentUrl = window.location.href;
+var currentUrl = window.location.pathname.slice(1);
 let displayCatalogue = document.getElementsByClassName("displayCatalogue");
 let activeIndex = 1;
 function updatePagination() {
@@ -476,9 +476,9 @@ function updatePagination() {
             goToPage(i);
         }
         if (i === activeIndex) {
-            if (currentUrl.endsWith('designService.html')) {
+            if (currentUrl === 'designService.html') {
                 number.className += "pink active";
-            } else if (currentUrl.endsWith('choreographyService.html')) {
+            } else if (currentUrl === 'choreographyService.html') {
                 number.className += "green active";
             }
         }
@@ -501,16 +501,16 @@ function goToPage(num) {
     }
 
     const spans = document.querySelectorAll('.numbering span');
-    if (currentUrl.endsWith('designService.html')) {
+    if (currentUrl === 'designService.html') {
         spans.forEach(tab => tab.classList.remove('pink', 'active'));
-    } else if (currentUrl.endsWith('choreographyService.html')) {
+    } else if (currentUrl === 'choreographyService.html') {
         spans.forEach(tab => tab.classList.remove('green', 'active'));
     }
 
     const clickedSpan = document.querySelector(`.numbering span:nth-child(${num})`);
-    if (currentUrl.endsWith('designService.html')) {
+    if (currentUrl === 'designService.html') {
         clickedSpan.classList.add('pink', 'active');
-    } else if (currentUrl.endsWith('choreographyService.html')) {
+    } else if (currentUrl === 'choreographyService.html') {
         clickedSpan.classList.add('green', 'active');
     }
 
@@ -544,16 +544,16 @@ function changeDisplay(one) {
     }
 
     const spans = document.querySelectorAll('.numbering span');
-    if (currentUrl.endsWith('designService.html')) {
+    if (currentUrl === 'designService.html') {
         spans.forEach(tab => tab.classList.remove('pink', 'active'));
-    } else if (currentUrl.endsWith('choreographyService.html')) {
+    } else if (currentUrl === 'choreographyService.html') {
         spans.forEach(tab => tab.classList.remove('green', 'active'));
     }
 
     const clickedSpan = document.querySelector(`.numbering span:nth-child(${n})`);
-    if (currentUrl.endsWith('designService.html')) {
+    if (currentUrl === 'designService.html') {
         clickedSpan.classList.add('pink', 'active');
-    } else if (currentUrl.endsWith('choreographyService.html')) {
+    } else if (currentUrl === 'choreographyService.html') {
         clickedSpan.classList.add('green', 'active');
     }
 
