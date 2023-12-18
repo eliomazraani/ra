@@ -53,8 +53,8 @@ function renderService() {
                             <div class="description">${service.teaser}</div>
                         </div>
                     </div>`;
-        serviceM = `<div onclick="goTo('${service.link}')" class="${service.class} block fade">
-                        <img src="${service.image}" alt="Img">
+        serviceM = `<div class="${service.class} block fade">
+                        <img onclick="goTo('${service.link}')" src="${service.image}" alt="Img">
                         <div class="paragraph">
                             <div class="title">${service.title}</div>
                             <div class="description">${service.teaser}</div>

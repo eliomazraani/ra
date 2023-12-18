@@ -254,6 +254,7 @@ body {
   bottom: 40px;
   padding: 0 32px;
   color: #FFFFFF;
+  z-index: 1;
 }
 .services .block .paragraph .title {
   font-weight: 700;
