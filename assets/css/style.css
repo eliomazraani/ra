@@ -1297,24 +1297,6 @@ body {
   text-align: justify;
   color: #7377A5;
 }
-.displayProject .display .displayCatalogue {
-  display: flex;
-  flex-direction: column;
-  row-gap: 16px;
-}
-.displayProject .display .displayCatalogue .row {
-  display: flex;
-  justify-content: space-between;
-  height: 270px;
-}
-.displayProject .display .displayCatalogue .row .video {
-  width: calc(50% - 16px);
-  cursor: pointer;
-}
-.displayProject .display .displayCatalogue .row .image {
-  width: calc(25% - 16px);
-  cursor: pointer;
-}
 .displayProject .display .pagination {
   display: flex;
   justify-content: center;
@@ -1388,6 +1370,44 @@ body {
   }
 }
 
+.displayCatalogue {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+.displayCatalogue .row {
+  display: flex;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+  height: 270px;
+}
+.displayCatalogue .row .video {
+  width: calc(50% - 16px);
+  cursor: pointer;
+}
+.displayCatalogue .row .image {
+  width: calc(25% - 16px);
+  cursor: pointer;
+}
+@media (max-width: 767px) {
+  .displayCatalogue {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+  }
+  .displayCatalogue .row {
+    height: unset;
+    flex-wrap: wrap;
+    row-gap: 16px;
+  }
+  .displayCatalogue .row .video {
+    width: 100%;
+  }
+  .displayCatalogue .row .image {
+    width: calc(50% - 8px);
+  }
+}
+
 .modal {
   display: none;
   position: fixed;
@@ -1405,8 +1425,7 @@ body {
 .modal .modal-content {
   margin: auto;
   display: block;
-  width: 40%;
-  max-width: 700px;
+  width: 50%;
   -webkit-animation-name: zoom;
   -webkit-animation-duration: 0.6s;
   animation-name: zoom;

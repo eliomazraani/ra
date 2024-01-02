@@ -457,59 +457,198 @@ var choreoTabs = [
                 id: 5,
                 image: "assets/img/Rectangle.png",
                 name: "AVA",
-                summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+                href: "https://youtube.com"
             },
             {
                 id: 6,
                 image: "assets/img/Rectangle.png",
                 name: "BOLD",
-                summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+                href: "https://youtube.com"
             },
             {
                 id: 7,
                 image: "assets/img/Rectangle.png",
                 name: "KAI",
-                summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+                href: "https://youtube.com"
             },
             {
                 id: 8,
                 image: "assets/img/Rectangle.png",
                 name: "KLOUD",
-                summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+                href: "https://youtube.com"
             }
         ]
     },
     {
         id: 4,
         name: "WEDDINGS & EVENTS",
-        elements: []
+        elements: [
+            {
+                type: "video",
+                src: "assets/img/Weddings&Events/R_M10810ed.jpg",
+                link: "https://youtu.be/zzk59n-Yunc?si=wwRWNL6mhBPHCvo9",
+            },
+            {
+                type: "image",
+                src: "assets/img/Weddings&Events/_MAZ5136.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/Weddings&Events/_MAZ5167.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/Weddings&Events/_MAZ5220.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/Weddings&Events/5W4A4828.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/Weddings&Events/7C2A9022.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/Weddings&Events/7C2A9108.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/Weddings&Events/7C2A9629.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/Weddings&Events/7C2A9699.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/Weddings&Events/ALY_0219.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/Weddings&Events/IAM_1304.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/Weddings&Events/IAM_1407.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/Weddings&Events/M_L_4251.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/Weddings&Events/M_L_4396.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/Weddings&Events/Post9.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/Weddings&Events/R_M10665.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/Weddings&Events/R_M10677.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/Weddings&Events/R_M10810.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/Weddings&Events/R_M10816.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/Weddings&Events/R_M19046.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/Weddings&Events/R_M19144.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/Weddings&Events/R_M19199.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/Weddings&Events/R_M19486.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/Weddings&Events/RODD3360.jpg",
+            },
+        ]
     }
 ]
 
 function choreographyTabs() {
     var tabs = ``;
     var grids = ``;
+    var modal = `<div id="galleryModal" class="modal">
+                    <i onclick="closeModal()" class="fas fa-close"></i>
+                    <div class="modal-content">
+                        <img id="galleryImg">
+                    </div>
+                </div>`;
 
     choreoTabs.forEach((tab, index) => {
         tabs += `<a onclick="serviceShow(${index + 1})" ${index === 0 ? 'class="green"' : ''}>${tab.name}</a>`;
 
-        grids += `<div class="grid service-${index + 1} ${index !== 0 ? 'd-none' : ''}">`;
-        tab.elements.forEach(grid => {
-            grids += `<a href="choreographyService.html?id=${grid.id}">
-                        <div class="service">
-                            <img src="${grid.image}" alt="Img">
-                            <div class="information">
-                                <div class="name">${grid.name}</div>
-                                <div class="summary">${grid.summary}</div>
+        grids += `<div class="grid service-${index + 1} ${index !== 0 ? 'd-none' : ''} ${tab.name === 'WEDDINGS & EVENTS' ? 'displayCatalogue' : ''}">`;
+        if (tab.name != "WEDDINGS & EVENTS") {
+            tab.elements.forEach(grid => {
+                grids += `<a ${grid.href ? `href=${grid.href} target="_blank"` : `href="choreographyService.html?id=${tab.id}?name=${grid.name}"`}>
+                            <div class="service">
+                                <img src="${grid.image}" alt="Img">
+                                ${
+                                    grid.name || grid.summary ?
+                                    `<div class="information">
+                                        ${grid.name ? `<div class="name">${grid.name}</div>` : ''}
+                                        ${grid.summary ? `<div class="summary">${grid.summary}</div>` : ''}
+                                    </div>` :
+                                    ''
+                                }
                             </div>
-                        </div>
-                    </a>`;
-        });
+                        </a>`;
+            });
+        } else {
+            grids += `<div class="row">`;
+            let rowFill = 0;
+
+            tab.elements.forEach(grid => {
+                if (grid.type === "image") {
+                    rowFill += 25;
+                    if (rowFill <= 100) {
+                        grids += `<img onclick="showModal(this)" class="${grid.type}" src="${grid.src}" alt="Img">`;
+                    } else {
+                        rowFill = 25;
+                        grids += `</div>
+                                <div class="row">
+                                    <img onclick="showModal(this)" class="${grid.type}" src="${grid.src}" alt="Img">`;
+                    }
+                } else if (grid.type === "video") {
+                    rowFill += 50;
+                    if (rowFill <= 100) {
+                        grids += `<img onclick="socialMedia('${grid.link}')" class="${grid.type}" src="${grid.src}" alt="Video">`;
+                    } else {
+                        rowFill = 50;
+                        grids += `</div>
+                                <div class="row">
+                                    <img onclick="socialMedia('${grid.link}')" class="${grid.type}" src="${grid.src}" alt="Video">`;
+                    }
+                }
+            });
+            grids += `</div>`;
+        }
         grids += `</div>`;
     });
 
     $(".servicesGrid .tabs").append(tabs);
     $(".servicesGrid").append(grids);
+    $(".servicesGrid").append(modal);
 }
 
 var designTabs = [
@@ -614,7 +753,7 @@ function stylingTabs() {
 
         grids += `<div class="grid service-${index + 1} ${index !== 0 ? 'd-none' : ''}">`;
         tab.elements.forEach(grid => {
-            grids += `<a href="designService.html?id=${grid.id}">
+            grids += `<a href="designService.html?id=${tab.id}?name=${grid.name}">
                         <div class="service">
                             <img src="${grid.image}" alt="Img">
                             <div class="information">
@@ -635,31 +774,44 @@ var artTabs = [
     {
         id: 1,
         image: "assets/img/Rectangle.png",
-        name: "AHLAM",
+        name: "DIAMOND NIGHT - AHLAM",
         summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+        href: "https://youtu.be/m2i9zXV9qcA?si=UmwVBVd0g_8WS1wx",
     },
     {
         id: 2,
         image: "assets/img/Rectangle.png",
         name: "KULT",
         summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+        href: "https://youtu.be/moe2qFIx7qc?si=VfXmNJSsvx6Ad3bI",
+
     },
     {
         id: 3,
         image: "assets/img/Rectangle.png",
         name: "TETE A TETE",
         summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+        href: "https://youtu.be/h_QfzLDR3v8?si=NFBh60IcRV3HDkgQ",
+
+    },
+    {
+        id: 4,
+        image: "assets/img/Rectangle.png",
+        name: "SAYF",
+        summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+        href: "https://youtu.be/lQAdLBk-6g0?si=SaTp1gXeghJVzu3W",
+
     }
 ]
 
 function directionTabs() {
     $(".servicesGrid .tabs").addClass("solo");
-    $(".servicesGrid .tabs").text("OUR PROJECT");
+    $(".servicesGrid .tabs").text("OUR PROJECTS");
 
     var grids = `<div class="grid">`;
 
     artTabs.forEach(grid => {
-        grids += `<a href="artService.html?id=${grid.id}">
+        grids += `<a href="${grid.href}" target="_blank">
                     <div class="service">
                         <img src="${grid.image}" alt="Img">
                         <div class="information">
@@ -749,6 +901,11 @@ function coachingList() {
 
 $(document).ready(function () {
     var pathName = window.location.pathname.slice(1);
+    var project = window.location.href.split('=')[1];
+    if (project !== undefined) {
+        project = project.replace(/%20/g, ' ');
+        console.log("PR", project);
+    }
 
     setTimeout(function () {
         renderService();
