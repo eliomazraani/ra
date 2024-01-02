@@ -1653,6 +1653,8 @@ body {
         .row {
             height: unset;
             flex-wrap: wrap;
+            justify-content: space-between;
+            column-gap: unset;
             row-gap: 16px;
 
             .video {

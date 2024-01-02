@@ -1398,6 +1398,9 @@ body {
   .displayCatalogue .row {
     height: unset;
     flex-wrap: wrap;
+    justify-content: space-between;
+    -moz-column-gap: unset;
+         column-gap: unset;
     row-gap: 16px;
   }
   .displayCatalogue .row .video {

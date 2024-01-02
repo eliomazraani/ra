@@ -490,15 +490,15 @@ var choreoTabs = [
             },
             {
                 type: "image",
-                src: "assets/img/Weddings&Events/_MAZ5136.jpg",
+                src: "assets/img/Weddings&Events/MAZ5136.jpg",
             },
             {
                 type: "image",
-                src: "assets/img/Weddings&Events/_MAZ5167.jpg",
+                src: "assets/img/Weddings&Events/MAZ5167.jpg",
             },
             {
                 type: "image",
-                src: "assets/img/Weddings&Events/_MAZ5220.jpg",
+                src: "assets/img/Weddings&Events/MAZ5220.jpg",
             },
             {
                 type: "image",
