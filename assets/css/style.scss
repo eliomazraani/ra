@@ -1627,11 +1627,11 @@ body {
 .displayCatalogue {
     display: flex;
     flex-direction: column;
-    row-gap: 16px;
+    row-gap: 16px !important;
 
     .row {
         display: flex;
-        column-gap: 24px;
+        column-gap: 16px;
         height: 270px;
 
         .video {
@@ -1646,9 +1646,6 @@ body {
     }
 
     @include screen767 {
-        display: flex;
-        flex-direction: column;
-        row-gap: 16px;
 
         .row {
             height: unset;

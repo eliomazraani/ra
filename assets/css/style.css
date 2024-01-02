@@ -1373,12 +1373,12 @@ body {
 .displayCatalogue {
   display: flex;
   flex-direction: column;
-  row-gap: 16px;
+  row-gap: 16px !important;
 }
 .displayCatalogue .row {
   display: flex;
-  -moz-column-gap: 24px;
-       column-gap: 24px;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
   height: 270px;
 }
 .displayCatalogue .row .video {
@@ -1390,11 +1390,6 @@ body {
   cursor: pointer;
 }
 @media (max-width: 767px) {
-  .displayCatalogue {
-    display: flex;
-    flex-direction: column;
-    row-gap: 16px;
-  }
   .displayCatalogue .row {
     height: unset;
     flex-wrap: wrap;
