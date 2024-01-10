@@ -415,43 +415,103 @@ function renderJob() {
 var choreoTabs = [
     {
         id: 1,
-        name: "MUSIC VIDEO",
+        name: "Music Video",
         elements: [
             {
                 id: 1,
                 image: "assets/img/Rectangle.png",
                 name: "EBKI",
                 summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+                type: "descriptive",
+                images: [
+                    "assets/img/Rectangle(2).png",
+                    "assets/img/Rectangle(2).png",
+                    "assets/img/Rectangle(2).png",
+                ],
+                concept: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+                info: {
+                    "Lyrics and Composition": "Test",
+                    "Music Designer": "Test",
+                    "Recording": "Test",
+                    "Mix and Mastering": "Test",
+                    "Directed By": "Test",
+                    "Choreographer & Stylist": "Test",
+                }
             },
             {
                 id: 2,
                 image: "assets/img/Rectangle.png",
                 name: "MOUKHTASSAR EL KALAM",
                 summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+                type: "descriptive",
+                images: [
+                    "assets/img/Rectangle(2).png",
+                    "assets/img/Rectangle(2).png",
+                    "assets/img/Rectangle(2).png",
+                ],
+                concept: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+                info: {
+                    "Lyrics and Composition": "Test",
+                    "Music Designer": "Test",
+                    "Recording": "Test",
+                    "Mix and Mastering": "Test",
+                    "Directed By": "Test",
+                    "Choreographer & Stylist": "Test",
+                }
             }
         ]
     },
     {
         id: 2,
-        name: "TV SERIES",
+        name: "TV Series",
         elements: [
             {
                 id: 3,
                 image: "assets/img/Rectangle.png",
                 name: "KHAMSEH W NOSS",
                 summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+                type: "descriptive",
+                images: [
+                    "assets/img/Rectangle(2).png",
+                    "assets/img/Rectangle(2).png",
+                    "assets/img/Rectangle(2).png",
+                ],
+                concept: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+                info: {
+                    "Lyrics and Composition": "Test",
+                    "Music Designer": "Test",
+                    "Recording": "Test",
+                    "Mix and Mastering": "Test",
+                    "Directed By": "Test",
+                    "Choreographer & Stylist": "Test",
+                }
             },
             {
                 id: 4,
                 image: "assets/img/Rectangle.png",
                 name: "PARANOIA",
                 summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+                type: "descriptive",
+                images: [
+                    "assets/img/Rectangle(2).png",
+                    "assets/img/Rectangle(2).png",
+                    "assets/img/Rectangle(2).png",
+                ],
+                concept: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+                info: {
+                    "Lyrics and Composition": "Test",
+                    "Music Designer": "Test",
+                    "Recording": "Test",
+                    "Mix and Mastering": "Test",
+                    "Directed By": "Test",
+                    "Choreographer & Stylist": "Test",
+                }
             }
         ]
     },
     {
         id: 3,
-        name: "NIGHTLIFE",
+        name: "Nightlife",
         elements: [
             {
                 id: 5,
@@ -481,7 +541,7 @@ var choreoTabs = [
     },
     {
         id: 4,
-        name: "WEDDINGS & EVENTS",
+        name: "Weddings & Events",
         elements: [
             {
                 type: "video",
@@ -519,10 +579,6 @@ var choreoTabs = [
             {
                 type: "image",
                 src: "assets/img/Weddings&Events/7C2A9699.jpg",
-            },
-            {
-                type: "image",
-                src: "assets/img/Weddings&Events/ALY_0219.jpg",
             },
             {
                 type: "image",
@@ -597,8 +653,8 @@ function choreographyTabs() {
     choreoTabs.forEach((tab, index) => {
         tabs += `<a onclick="serviceShow(${index + 1})" ${index === 0 ? 'class="green"' : ''}>${tab.name}</a>`;
 
-        grids += `<div class="grid service-${index + 1} ${index !== 0 ? 'd-none' : ''} ${tab.name === 'WEDDINGS & EVENTS' ? 'displayCatalogue' : ''}">`;
-        if (tab.name != "WEDDINGS & EVENTS") {
+        grids += `<div class="grid service-${index + 1} ${index !== 0 ? 'd-none' : ''} ${tab.name === 'Weddings & Events' ? 'displayCatalogue' : ''}">`;
+        if (tab.name != "Weddings & Events") {
             tab.elements.forEach(grid => {
                 grids += `<a ${grid.href ? `href=${grid.href} target="_blank"` : `href="choreographyService.html?id=${tab.id}?name=${grid.name}"`}>
                             <div class="service">
@@ -654,91 +710,321 @@ function choreographyTabs() {
 var designTabs = [
     {
         id: 1,
-        name: "PHOTOSHOOT",
+        name: "Photoshoot",
         elements: [
             {
                 id: 1,
                 image: "assets/img/Rectangle.png",
                 name: "LEA MAKHOUL",
                 summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+                type: "grid",
+                images: [
+                    {
+                        type: "video",
+                        src: "assets/img/Rectangle.png",
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/Square.png",
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/Square.png",
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/Square.png",
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/Square.png",
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/Square.png",
+                    },
+                ],
+                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
             },
             {
                 id: 2,
                 image: "assets/img/Rectangle.png",
                 name: "MAROUN CONSTANTINE",
                 summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+                type: "grid",
+                images: [
+                    {
+                        type: "video",
+                        src: "assets/img/Rectangle.png",
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/Square.png",
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/Square.png",
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/Square.png",
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/Square.png",
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/Square.png",
+                    },
+                ],
+                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
             },
             {
                 id: 3,
                 image: "assets/img/Rectangle.png",
                 name: "NADA ABOU FARHAT",
                 summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+                type: "grid",
+                images: [
+                    {
+                        type: "video",
+                        src: "assets/img/Rectangle.png",
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/Square.png",
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/Square.png",
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/Square.png",
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/Square.png",
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/Square.png",
+                    },
+                ],
+                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
             }
         ]
     },
     {
         id: 2,
-        name: "MUSIC VIDEO",
+        name: "Music Video",
         elements: [
             {
                 id: 4,
                 image: "assets/img/Rectangle.png",
                 name: "EBKI",
                 summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+                type: "grid",
+                images: [
+                    {
+                        type: "video",
+                        src: "assets/img/Rectangle.png",
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/Square.png",
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/Square.png",
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/Square.png",
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/Square.png",
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/Square.png",
+                    },
+                ],
+                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
             },
             {
                 id: 5,
                 image: "assets/img/Rectangle.png",
                 name: "RATATA",
                 summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+                type: "grid",
+                images: [
+                    {
+                        type: "video",
+                        src: "assets/img/Rectangle.png",
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/Square.png",
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/Square.png",
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/Square.png",
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/Square.png",
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/Square.png",
+                    },
+                ],
+                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
             }
         ]
     },
     {
         id: 3,
-        name: "COMMERCIAL",
+        name: "Commercial",
         elements: [
             {
                 id: 6,
                 image: "assets/img/Rectangle.png",
                 name: "AL MAKASSED",
                 summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+                type: "descriptive",
+                images: [
+                    "assets/img/Rectangle(2).png",
+                    "assets/img/Rectangle(2).png",
+                    "assets/img/Rectangle(2).png",
+                ],
+                concept: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+                info: {
+                    "Lyrics and Composition": "Test",
+                    "Music Designer": "Test",
+                    "Recording": "Test",
+                    "Mix and Mastering": "Test",
+                    "Directed By": "Test",
+                    "Choreographer & Stylist": "Test",
+                }
             },
             {
                 id: 7,
                 image: "assets/img/Rectangle.png",
                 name: "MEMOTILES",
                 summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+                type: "descriptive",
+                images: [
+                    "assets/img/Rectangle(2).png",
+                    "assets/img/Rectangle(2).png",
+                    "assets/img/Rectangle(2).png",
+                ],
+                concept: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+                info: {
+                    "Lyrics and Composition": "Test",
+                    "Music Designer": "Test",
+                    "Recording": "Test",
+                    "Mix and Mastering": "Test",
+                    "Directed By": "Test",
+                    "Choreographer & Stylist": "Test",
+                }
             }
         ]
     },
     {
         id: 4,
-        name: "COSTUME THEMES",
+        name: "Costume Themes",
         elements: [
             {
                 id: 8,
                 image: "assets/img/Rectangle.png",
                 name: "CHRISTMAS",
                 summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+                type: "slide",
+                images: [
+                    [
+                        "assets/img/Rectangle(2).png",
+                        "assets/img/Rectangle(2).png",
+                        "assets/img/Rectangle(2).png",
+                        "assets/img/Rectangle(2).png",
+                    ],
+                    [
+                        "assets/img/Rectangle(2).png",
+                        "assets/img/Rectangle(2).png",
+                        "assets/img/Rectangle(2).png",
+                        "assets/img/Rectangle(2).png",
+                    ],
+                ]
             },
             {
                 id: 9,
                 image: "assets/img/Rectangle.png",
                 name: "FOLKLORE",
                 summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+                type: "slide",
+                images: [
+                    [
+                        "assets/img/Rectangle(2).png",
+                        "assets/img/Rectangle(2).png",
+                        "assets/img/Rectangle(2).png",
+                        "assets/img/Rectangle(2).png",
+                    ],
+                    [
+                        "assets/img/Rectangle(2).png",
+                        "assets/img/Rectangle(2).png",
+                        "assets/img/Rectangle(2).png",
+                        "assets/img/Rectangle(2).png",
+                    ],
+                ]
             },
             {
                 id: 10,
                 image: "assets/img/Rectangle.png",
                 name: "ORIENTALE",
                 summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+                type: "slide",
+                images: [
+                    [
+                        "assets/img/Rectangle(2).png",
+                        "assets/img/Rectangle(2).png",
+                        "assets/img/Rectangle(2).png",
+                        "assets/img/Rectangle(2).png",
+                    ],
+                    [
+                        "assets/img/Rectangle(2).png",
+                        "assets/img/Rectangle(2).png",
+                        "assets/img/Rectangle(2).png",
+                        "assets/img/Rectangle(2).png",
+                    ],
+                ]
             },
             {
                 id: 11,
                 image: "assets/img/Rectangle.png",
                 name: "STREETSTYLE",
                 summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+                type: "slide",
+                images: [
+                    [
+                        "assets/img/Rectangle(2).png",
+                        "assets/img/Rectangle(2).png",
+                        "assets/img/Rectangle(2).png",
+                        "assets/img/Rectangle(2).png",
+                    ],
+                    [
+                        "assets/img/Rectangle(2).png",
+                        "assets/img/Rectangle(2).png",
+                        "assets/img/Rectangle(2).png",
+                        "assets/img/Rectangle(2).png",
+                    ],
+                ]
             }
         ]
     }
@@ -899,12 +1185,127 @@ function coachingList() {
     $(".serviceOptions").append(list);
 }
 
+var serviceTab
+
+function showService(tab, name, color) {
+    $(".breadCrumbs .serviceName span").text(tab);
+    $(".breadCrumbs .projectName").text(name);
+
+    var show = ``;
+
+    if (serviceTab.type === "descriptive") {
+        var imagesHTML = serviceTab.images.map(image => `<img onclick="showModal(this)" src="${image}" alt="Img">`).join('');
+        var infosHTML = serviceTab.info
+                        ? Object.entries(serviceTab.info).map(([key, value]) => `<div class="row"><div class="position">${key}</div><div class="name">${value}</div></div>`).join('')
+                        : '';
+        show += `<div class="galleryProject">
+                    <img onclick="updateGallery(-1)" class="leftArrowLite" src="assets/img/leftArrowLite.png" alt="Img">
+                    <div class="gallery">
+                        ${imagesHTML}
+                    </div>
+                    <div id="galleryModal" class="modal">
+                        <i onclick="closeModal()" class="fas fa-close"></i>
+                        <div class="modal-content">
+                            <img id="galleryImg">
+                        </div>
+                    </div>
+                    <img onclick="updateGallery(1)" class="rightArrowLite" src="assets/img/rightArrowLite.png" alt="Img">
+                </div>
+                <div class="infoProject" ${serviceTab.concept ? "" : "style='justify-content: end'"}>
+                    <div class="concept ${serviceTab.concept ? "" : "d-none"}">
+                        <div class="title">CONCEPT</div>
+                        <div class="details">${serviceTab.concept}</div>
+                    </div>
+                    <div class="projectInfo ${serviceTab.info ? "" : "d-none"}">
+                        <div class="title">PROJECT INFO</div>
+                        <div class="infoList">
+                            ${infosHTML}
+                        </div>
+                    </div>
+                    <div class="button ${color}">
+                        <a onclick="scrollToContact()">Get In Touch</a>
+                    </div>
+                </div>`
+    } else if (serviceTab.type === "grid") {
+        var rows = `<div class="row">`;
+        let rowFill = 0;
+
+        serviceTab.images.forEach(grid => {
+            if (grid.type === "image") {
+                rowFill += 25;
+                if (rowFill <= 100) {
+                    rows += `<img onclick="showModal(this)" class="${grid.type}" src="${grid.src}" alt="Img">`;
+                } else {
+                    rowFill = 25;
+                    rows += `</div>
+                            <div class="row">
+                                <img onclick="showModal(this)" class="${grid.type}" src="${grid.src}" alt="Img">`;
+                }
+            } else if (grid.type === "video") {
+                rowFill += 50;
+                if (rowFill <= 100) {
+                    rows += `<img onclick="socialMedia('${grid.link}')" class="${grid.type}" src="${grid.src}" alt="Video">`;
+                } else {
+                    rowFill = 50;
+                    rows += `</div>
+                            <div class="row">
+                                <img onclick="socialMedia('${grid.link}')" class="${grid.type}" src="${grid.src}" alt="Video">`;
+                }
+            }
+        });
+        rows += `</div>`;
+
+        show += `<div class="displayProject">
+                    <div class="display">
+                        <div class="projectDescription">
+                            ${serviceTab.description}
+                        </div>
+                        <div id="displayCatalogue">
+                            <div class="displayCatalogue displayCatalogue-1">
+                                ${rows}
+                            </div>
+                        </div>
+                        <div id="galleryModal" class="modal">
+                            <i onclick="closeModal()" class="fas fa-close"></i>
+                            <div class="modal-content">
+                                <img id="galleryImg">
+                            </div>
+                        </div>
+                        <div class="button ${color}">
+                            <a onclick="scrollToContact()">Get In Touch</a>
+                        </div>
+                    </div>
+                </div>`
+    } else if (serviceTab.type === "slide") {
+        for (let i = 0; i < serviceTab.images.length; i++) {
+            
+            var imagesHTML = serviceTab.images[i].map(image => `<img onclick="showModal(this)" src="${image}" alt="Img">`).join('');
+            show += `<div class="galleryProject">
+                        <img onclick="updateGallery(-1)" class="leftArrowLite" src="assets/img/leftArrowLite.png" alt="Img">
+                        <div class="gallery">
+                            ${imagesHTML}
+                        </div>
+                        <div id="galleryModal" class="modal">
+                            <i onclick="closeModal()" class="fas fa-close"></i>
+                            <div class="modal-content">
+                                <img id="galleryImg">
+                            </div>
+                        </div>
+                        <img onclick="updateGallery(1)" class="rightArrowLite" src="assets/img/rightArrowLite.png" alt="Img">
+                    </div>`
+        }
+    }
+
+    $(".showService").append(show);
+}
+
 $(document).ready(function () {
     var pathName = window.location.pathname.slice(1);
-    var project = window.location.href.split('=')[1];
-    if (project !== undefined) {
-        project = project.replace(/%20/g, ' ');
-        console.log("PR", project);
+    var params = window.location.href.split('?');
+    if (params.length > 1) {
+        var id = params[1].split('=')[1];
+        var name = params[2].split('=')[1];
+        name = name.replace(/%20/g, ' ');
     }
 
     setTimeout(function () {
@@ -912,9 +1313,17 @@ $(document).ready(function () {
         if (pathName === "choreography.html") {
             chooseService();
             choreographyTabs();
+        } else if (pathName === "choreographyService.html") {
+            var oneTab = choreoTabs.find(tabs => tabs.id == id);
+            serviceTab = oneTab.elements.find(service => service.name == name);
+            showService(`Movement & Choreography / ${oneTab.name}`, name, "green");
         } else if (pathName === "design.html") {
             chooseService();
             stylingTabs();
+        } else if (pathName === "designService.html") {
+            var oneTab = designTabs.find(tabs => tabs.id == id);
+            serviceTab = oneTab.elements.find(service => service.name == name);
+            showService(`Costume Design & Styling / ${oneTab.name}`, name, "pink");
         } else if (pathName === "art.html") {
             chooseService();
             directionTabs();
