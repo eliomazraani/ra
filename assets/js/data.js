@@ -424,9 +424,11 @@ var choreoTabs = [
                 summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
                 type: "descriptive",
                 images: [
-                    "assets/img/Rectangle(2).png",
-                    "assets/img/Rectangle(2).png",
-                    "assets/img/Rectangle(2).png",
+                    "assets/img/EBKI/EBKI.jpg",
+                    "assets/img/EBKI/EBKI(1).jpg",
+                    "assets/img/EBKI/EBKI(2).jpg",
+                    "assets/img/EBKI/EBKI(3).jpg",
+                    "assets/img/EBKI/EBKI(4).jpg",
                 ],
                 concept: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
                 info: {
@@ -1280,20 +1282,20 @@ function showService(tab, name, color) {
         for (let i = 0; i < serviceTab.images.length; i++) {
             
             var imagesHTML = serviceTab.images[i].map(image => `<img onclick="showModal(this)" src="${image}" alt="Img">`).join('');
-            show += `<div class="galleryProject">
+            show += `<div class="galleryProject" ${i === serviceTab.images.length - 1 ? `style='padding-bottom: 16px'` : ''}>
                         <img onclick="updateGallery(-1)" class="leftArrowLite" src="assets/img/leftArrowLite.png" alt="Img">
                         <div class="gallery">
                             ${imagesHTML}
                         </div>
-                        <div id="galleryModal" class="modal">
-                            <i onclick="closeModal()" class="fas fa-close"></i>
-                            <div class="modal-content">
-                                <img id="galleryImg">
-                            </div>
-                        </div>
                         <img onclick="updateGallery(1)" class="rightArrowLite" src="assets/img/rightArrowLite.png" alt="Img">
                     </div>`
         }
+        show += `<div id="galleryModal" class="modal">
+                    <i onclick="closeModal()" class="fas fa-close"></i>
+                    <div class="modal-content">
+                        <img id="galleryImg">
+                    </div>
+                </div>`
     }
 
     $(".showService").append(show);
