@@ -430,7 +430,7 @@ var choreoTabs = [
                     "assets/img/EBKI/EBKI(3).jpg",
                     "assets/img/EBKI/EBKI(4).jpg",
                 ],
-                concept: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+                // concept: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
                 info: {
                     "Lyrics and Composition": "Test",
                     "Music Designer": "Test",
@@ -451,7 +451,7 @@ var choreoTabs = [
                     "assets/img/Rectangle(2).png",
                     "assets/img/Rectangle(2).png",
                 ],
-                concept: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+                // concept: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
                 info: {
                     "Lyrics and Composition": "Test",
                     "Music Designer": "Test",
@@ -478,7 +478,7 @@ var choreoTabs = [
                     "assets/img/Rectangle(2).png",
                     "assets/img/Rectangle(2).png",
                 ],
-                concept: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+                // concept: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
                 info: {
                     "Lyrics and Composition": "Test",
                     "Music Designer": "Test",
@@ -499,7 +499,7 @@ var choreoTabs = [
                     "assets/img/Rectangle(2).png",
                     "assets/img/Rectangle(2).png",
                 ],
-                concept: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+                // concept: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
                 info: {
                     "Lyrics and Composition": "Test",
                     "Music Designer": "Test",
@@ -907,7 +907,7 @@ var designTabs = [
                     "assets/img/Rectangle(2).png",
                     "assets/img/Rectangle(2).png",
                 ],
-                concept: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+                // concept: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
                 info: {
                     "Lyrics and Composition": "Test",
                     "Music Designer": "Test",
@@ -928,7 +928,7 @@ var designTabs = [
                     "assets/img/Rectangle(2).png",
                     "assets/img/Rectangle(2).png",
                 ],
-                concept: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+                // concept: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
                 info: {
                     "Lyrics and Composition": "Test",
                     "Music Designer": "Test",
@@ -1064,31 +1064,140 @@ var artTabs = [
         image: "assets/img/Rectangle.png",
         name: "DIAMOND NIGHT - AHLAM",
         summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
-        href: "https://youtu.be/m2i9zXV9qcA?si=UmwVBVd0g_8WS1wx",
+        type: "grid",
+        images: [
+            {
+                type: "video",
+                src: "assets/img/Rectangle.png",
+                link: "https://youtu.be/m2i9zXV9qcA?si=UmwVBVd0g_8WS1wx",
+            },
+            {
+                type: "image",
+                src: "assets/img/Square.png",
+            },
+            {
+                type: "image",
+                src: "assets/img/Square.png",
+            },
+            {
+                type: "image",
+                src: "assets/img/Square.png",
+            },
+            {
+                type: "image",
+                src: "assets/img/Square.png",
+            },
+            {
+                type: "image",
+                src: "assets/img/Square.png",
+            },
+        ],
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
     },
     {
         id: 2,
         image: "assets/img/Rectangle.png",
         name: "KULT",
         summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
-        href: "https://youtu.be/moe2qFIx7qc?si=VfXmNJSsvx6Ad3bI",
-
+        type: "grid",
+        images: [
+            {
+                type: "video",
+                src: "assets/img/Rectangle.png",
+                link: "https://youtu.be/moe2qFIx7qc?si=VfXmNJSsvx6Ad3bI",
+            },
+            {
+                type: "image",
+                src: "assets/img/Square.png",
+            },
+            {
+                type: "image",
+                src: "assets/img/Square.png",
+            },
+            {
+                type: "image",
+                src: "assets/img/Square.png",
+            },
+            {
+                type: "image",
+                src: "assets/img/Square.png",
+            },
+            {
+                type: "image",
+                src: "assets/img/Square.png",
+            },
+        ],
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
     },
     {
         id: 3,
         image: "assets/img/Rectangle.png",
         name: "TETE A TETE",
         summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
-        href: "https://youtu.be/h_QfzLDR3v8?si=NFBh60IcRV3HDkgQ",
-
+        type: "grid",
+        images: [
+            {
+                type: "video",
+                src: "assets/img/Rectangle.png",
+                link: "https://youtu.be/h_QfzLDR3v8?si=NFBh60IcRV3HDkgQ",
+            },
+            {
+                type: "image",
+                src: "assets/img/Square.png",
+            },
+            {
+                type: "image",
+                src: "assets/img/Square.png",
+            },
+            {
+                type: "image",
+                src: "assets/img/Square.png",
+            },
+            {
+                type: "image",
+                src: "assets/img/Square.png",
+            },
+            {
+                type: "image",
+                src: "assets/img/Square.png",
+            },
+        ],
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
     },
     {
         id: 4,
         image: "assets/img/Rectangle.png",
         name: "SAYF",
         summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
-        href: "https://youtu.be/lQAdLBk-6g0?si=SaTp1gXeghJVzu3W",
-
+        type: "grid",
+        images: [
+            {
+                type: "video",
+                src: "assets/img/Rectangle.png",
+                link: "https://youtu.be/lQAdLBk-6g0?si=SaTp1gXeghJVzu3W",
+            },
+            {
+                type: "image",
+                src: "assets/img/Square.png",
+            },
+            {
+                type: "image",
+                src: "assets/img/Square.png",
+            },
+            {
+                type: "image",
+                src: "assets/img/Square.png",
+            },
+            {
+                type: "image",
+                src: "assets/img/Square.png",
+            },
+            {
+                type: "image",
+                src: "assets/img/Square.png",
+            },
+        ],
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
     }
 ]
 
@@ -1099,7 +1208,7 @@ function directionTabs() {
     var grids = `<div class="grid">`;
 
     artTabs.forEach(grid => {
-        grids += `<a href="${grid.href}" target="_blank">
+        grids += `<a href="artService.html?id=${grid.id}?name=${grid.name}">
                     <div class="service">
                         <img src="${grid.image}" alt="Img">
                         <div class="information">
@@ -1329,6 +1438,10 @@ $(document).ready(function () {
         } else if (pathName === "art.html") {
             chooseService();
             directionTabs();
+        } else if (pathName === "artService.html") {
+            var oneTab = artTabs.find(tabs => tabs.id == id);
+            serviceTab = oneTab;
+            showService(`Artistic Direction / Our Projects`, name, "purple");
         } else if (pathName === "coaching.html") {
             chooseService();
             coachingList();
