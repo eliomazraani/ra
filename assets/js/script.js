@@ -21,54 +21,83 @@ function thankYou() {
 }
 
 function jobPosition(num) {
-    applyNow();
+    // applyNow();
+    var position;
     switch (num) {
         case 1:
-            $("#jobPositionName").text("Coordinator");
+            // $("#jobPositionName").text("Coordinator");
+            position = "Coordinator";
             break;
         case 2:
-            $("#jobPositionName").text("Assistant");
+            // $("#jobPositionName").text("Assistant");
+            position = "Assistant";
             break;
         case 3:
-            $("#jobPositionName").text("Driver");
+            // $("#jobPositionName").text("Driver");
+            position = "Driver";
             break;
         case 4:
-            $("#jobPositionName").text("Wardrobe Supervisor");
+            // $("#jobPositionName").text("Wardrobe Supervisor");
+            position = "Wardrobe Supervisor";
             break;
         case 5:
-            $("#jobPositionName").text("Makeup Artist");
+            // $("#jobPositionName").text("Makeup Artist");
+            position = "Makeup Artist";
             break;
         case 6:
-            $("#jobPositionName").text("Tailor");
+            // $("#jobPositionName").text("Tailor");
+            position = "Tailor";
             break;
         case 7:
-            $("#jobPositionName").text("Crafter");
+            // $("#jobPositionName").text("Crafter");
+            position = "Crafter";
             break;
         case 8:
-            $("#jobPositionName").text("Dancer/Performer");
+            // $("#jobPositionName").text("Dancer/Performer");
+            position = "Dancer/Performer";
             break;
         case 9:
-            $("#jobPositionName").text("Singer");
+            // $("#jobPositionName").text("Singer");
+            position = "Singer";
             break;
         case 10:
-            $("#jobPositionName").text("Musician");
+            // $("#jobPositionName").text("Musician");
+            position = "Musician";
             break;
         case 11:
-            $("#jobPositionName").text("Graphic Designer");
+            // $("#jobPositionName").text("Graphic Designer");
+            position = "Graphic Designer";
             break;
         case 12:
-            $("#jobPositionName").text("Photographer");
+            // $("#jobPositionName").text("Photographer");
+            position = "Photographer";
             break;
         case 13:
-            $("#jobPositionName").text("Videographer");
+            // $("#jobPositionName").text("Videographer");
+            position = "Videographer";
             break;
         case 14:
-            $("#jobPositionName").text("Editor");
+            // $("#jobPositionName").text("Editor");
+            position = "Editor";
             break;
         case 15:
-            $("#jobPositionName").text("Digital Marketing Specialist");
+            // $("#jobPositionName").text("Digital Marketing Specialist");
+            position = "Digital Marketing Specialist";
             break;
     }
+    var emailAddress = "info@rachelasmar.com";
+    var subject = `New Job Application - ${position}`;
+    var body = `*Please attach your resume, videos, and photos and complete the information below*
+                
+Phone: 
+Height: 
+Instagram: `;
+
+    var mailtoUrl = "mailto:" + emailAddress
+                    + "?subject=" + encodeURIComponent(subject)
+                    + "&body=" + encodeURIComponent(body);
+
+    window.location.href = mailtoUrl;
 }
 
 function applyNow() {
@@ -318,6 +347,9 @@ function serviceShow(num) {
 function sendEmail() {
     event.preventDefault();
 
+    var sendEmailBtn = document.getElementById('sendEmail');
+    sendEmailBtn.classList.add('disabled');
+
     var firstName = document.getElementById('firstName');
     var lastName = document.getElementById('lastName');
     var phoneNumber = document.getElementById('phoneNumber');
@@ -357,14 +389,18 @@ function sendEmail() {
         .then(function (response) {
             console.log('Email sent successfully!', response.status, response.text);
             thankYou();
+            sendEmailBtn.classList.remove('disabled');
         }, function (error) {
             console.log('Email sending failed!', error);
+            sendEmailBtn.classList.remove('disabled');
         });
 }
 
 
 function applyJob() {
     event.preventDefault();
+
+    var applyJobBtn = document.getElementById('applyJob');
 
     var jobPositionName = document.getElementById('jobPositionName').textContent;
     var firstName = document.getElementById('fName');
@@ -412,10 +448,12 @@ function applyJob() {
             var fileData = event.target.result;
             templateParams.file_data = fileData;
             sendEmailWithAttachment(templateParams);
+            applyJobBtn.classList.add('disabled');
         };
         reader.readAsDataURL(file);
     } else {
         sendEmailWithAttachment(templateParams);
+        applyJobBtn.classList.add('disabled');
     }
 }
 
@@ -424,8 +462,10 @@ function sendEmailWithAttachment(templateParams) {
         .then(function (response) {
             console.log('Email sent successfully!', response.status, response.text);
             thankYou();
+            applyJobBtn.classList.remove('disabled');
         }, function (error) {
             console.log('Email sending failed!', error);
+            applyJobBtn.classList.remove('disabled');
         });
 }
 
@@ -564,6 +604,32 @@ function changeDisplay(one) {
     selectedDisplay.classList.remove('d-none');
 }
 
+function openGoogleMaps() {
+    var mapsUrl = "https://maps.app.goo.gl/TuJwvJCoFnzyVtXj8";
+    
+    window.open(mapsUrl, "_blank");
+}
+
+function openWhatsApp() {
+    var phoneNumber = "96170908587";
+    // var message = "Hello!";
+
+    var whatsappUrl = "https://wa.me/" + phoneNumber + "?text="; //+ encodeURIComponent(message);
+
+    window.open(whatsappUrl, "_blank");
+}
+
+function openEmail() {
+    var emailAddress = "info@rachelasmar.com";
+    // var subject = "Subject of the email";
+    // var body = "Body of the email";
+
+    var mailtoUrl = "mailto:" + emailAddress;
+                    // + "?subject=" + encodeURIComponent(subject)
+                    // + "&body=" + encodeURIComponent(body);
+
+    window.location.href = mailtoUrl;
+}
 
 function getYear() {
     const year = new Date().getFullYear();

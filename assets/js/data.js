@@ -116,22 +116,22 @@ function renderValue() {
 }
 
 var clients = [
+    "assets/img/Clients/ROTANA.png",
+    "assets/img/Clients/BENCHMARK.png",
+    "assets/img/Clients/SAYF.png",
     "assets/img/Clients/MTV.png",
-    "assets/img/Clients/KAI.png",
+    "assets/img/Clients/STEPS.png",
+    "assets/img/Clients/KULT.png",
     "assets/img/Clients/KLOUD.png",
     "assets/img/Clients/BOLD.png",
-    "assets/img/Clients/KULT.png",
     "assets/img/Clients/ABC.png",
     "assets/img/Clients/IAM.png",
     "assets/img/Clients/SEAFRONT.png",
-    "assets/img/Clients/BENCHMARK.png",
     "assets/img/Clients/CA.jpg",
     "assets/img/Clients/CASINO.png",
     "assets/img/Clients/GAT.jpg",
     "assets/img/Clients/RETINA.jpg",
-    "assets/img/Clients/STEPS.png",
-    "assets/img/Clients/ROTANA.png",
-    "assets/img/Clients/SAYF.png",
+    "assets/img/Clients/KAI.png",
 ]
 
 function loadImage(url) {
@@ -303,92 +303,92 @@ var jobs = [
         id: 1,
         position: "Coordinator",
         requirements: "Coordinates tasks, promotes collaboration, and ensures efficiency.",
-        image: "assets/img/Square.png"
+        image: "assets/img/Jobs/Coordinator.jpg"
     },
     {
         id: 2,
         position: "Assistant",
         requirements: "Supports coordination with computer proficiency and strong English skills, ensuring smooth task execution.",
-        image: "assets/img/Square.png"
+        image: "assets/img/Jobs/Assistant.jpg"
     },
     {
         id: 3,
         position: "Driver",
         requirements: "Reliable, safely transports, maintains vehicle, follows routes.",
-        image: "assets/img/Square.png"
+        image: "assets/img/Jobs/Driver.jpg"
     },
     {
         id: 4,
         position: "Wardrobe Supervisor",
         requirements: "Manages and coordinates costumes, collaborates with designer to achieve visions.",
-        image: "assets/img/Square.png"
+        image: "assets/img/Jobs/Wardrobe.jpg"
     },
     {
         id: 5,
         position: "Makeup Artist",
         requirements: "Applies beauty and artistic makeup for expressive themes.",
-        image: "assets/img/Square.png"
+        image: "assets/img/Jobs/MUA.jpg"
     },
     {
         id: 6,
         position: "Tailor",
         requirements: "Expertly crafts costumes with precision and skill.",
-        image: "assets/img/Square.png"
+        image: "assets/img/Jobs/Tailor.jpg"
     },
     {
         id: 7,
         position: "Crafter",
         requirements: "Creates and handcrafts unique items with skill and creativity.",
-        image: "assets/img/Square.png"
+        image: "assets/img/Jobs/Crafter.jpg"
     },
     {
         id: 8,
         position: "Dancer/Performer",
         requirements: "Expresses art through different types of dance/performances.",
-        image: "assets/img/Square.png"
+        image: "assets/img/Jobs/Dancer.jpg"
     },
     {
         id: 9,
         position: "Singer",
         requirements: "Elevates experiences with powerful vocal performances.",
-        image: "assets/img/Square.png"
+        image: "assets/img/Jobs/Singer.jpg"
     },
     {
         id: 10,
         position: "Musician",
         requirements: "Creates music, performs with instrumental mastery.",
-        image: "assets/img/Square.png"
+        image: "assets/img/Jobs/Musician.jpg"
     },
     {
         id: 11,
         position: "Graphic Designer",
         requirements: "Conceptualizes and designs visuals for multiple purposes.",
-        image: "assets/img/Square.png"
+        image: "assets/img/Jobs/GDesigner.jpg"
     },
-    {
-        id: 12,
-        position: "Photographer",
-        requirements: "Captures moments through creative photography skills.",
-        image: "assets/img/Square.png"
-    },
-    {
-        id: 13,
-        position: "Videographer",
-        requirements: "Records captivating visual content.",
-        image: "assets/img/Square.png"
-    },
+    // {
+    //     id: 12,
+    //     position: "Photographer",
+    //     requirements: "Captures moments through creative photography skills.",
+    //     image: "assets/img/Jobs/Photographer.jpg"
+    // },
+    // {
+    //     id: 13,
+    //     position: "Videographer",
+    //     requirements: "Records captivating visual content.",
+    //     image: "assets/img/Jobs/Videographer.jpg"
+    // },
     {
         id: 14,
         position: "Editor",
         requirements: "Edits footage for engaging visual content.",
-        image: "assets/img/Square.png"
+        image: "assets/img/Jobs/Editor.jpg"
     },
-    {
-        id: 15,
-        position: "Digital Marketing Specialist",
-        requirements: "Executes online strategies to maximize digital presence.",
-        image: "assets/img/Square.png"
-    }
+    // {
+    //     id: 15,
+    //     position: "Digital Marketing Specialist",
+    //     requirements: "Executes online strategies to maximize digital presence.",
+    //     image: "assets/img/Jobs/DMarketing.jpg"
+    // }
 ]
 
 function renderJob() {
@@ -1132,6 +1132,41 @@ var artTabs = [
     {
         id: 3,
         image: "assets/img/Rectangle.png",
+        name: "SAYF",
+        summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+        type: "grid",
+        images: [
+            {
+                type: "video",
+                src: "assets/img/Rectangle.png",
+                link: "https://youtu.be/lQAdLBk-6g0?si=SaTp1gXeghJVzu3W",
+            },
+            {
+                type: "image",
+                src: "assets/img/Square.png",
+            },
+            {
+                type: "image",
+                src: "assets/img/Square.png",
+            },
+            {
+                type: "image",
+                src: "assets/img/Square.png",
+            },
+            {
+                type: "image",
+                src: "assets/img/Square.png",
+            },
+            {
+                type: "image",
+                src: "assets/img/Square.png",
+            },
+        ],
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+    },
+    {
+        id: 4,
+        image: "assets/img/Rectangle.png",
         name: "TETE A TETE",
         summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
         type: "grid",
@@ -1164,41 +1199,6 @@ var artTabs = [
         ],
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
     },
-    {
-        id: 4,
-        image: "assets/img/Rectangle.png",
-        name: "SAYF",
-        summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
-        type: "grid",
-        images: [
-            {
-                type: "video",
-                src: "assets/img/Rectangle.png",
-                link: "https://youtu.be/lQAdLBk-6g0?si=SaTp1gXeghJVzu3W",
-            },
-            {
-                type: "image",
-                src: "assets/img/Square.png",
-            },
-            {
-                type: "image",
-                src: "assets/img/Square.png",
-            },
-            {
-                type: "image",
-                src: "assets/img/Square.png",
-            },
-            {
-                type: "image",
-                src: "assets/img/Square.png",
-            },
-            {
-                type: "image",
-                src: "assets/img/Square.png",
-            },
-        ],
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
-    }
 ]
 
 function directionTabs() {
@@ -1228,42 +1228,42 @@ var styleCoaching = [
         id: 1,
         img: "assets/img/StyleCoaching/Style.JPG",
         name: "Style Personality",
-        summary: "For special events, you want to look and feel your best. Our style coaches will help you choose an outfit and accessories that are appropriate and stylish for the occasion. We'll consider your personal style, body shape, and the dress code of the event to create a polished and put-together look. We'll ensure that you make a memorable impression.",
+        summary: "Unlock your style potential with the Style Personality Assessment. It helps you find your unique fashion identity by understanding what you like, how you live, and what you dream of ensuring you spread confidence and charm on every occasion.",
         button: "BOOK A SESSION",
     },
     {
         id: 2,
         img: "assets/img/StyleCoaching/Body.jpg",
         name: "Body Shape Analysis",
-        summary: "For special events, you want to look and feel your best. Our style coaches will help you choose an outfit and accessories that are appropriate and stylish for the occasion. We'll consider your personal style, body shape, and the dress code of the event to create a polished and put-together look. We'll ensure that you make a memorable impression.",
+        summary: "Discover the perfect fit with our Body Shape Analysis. Our style coach will guide you in understanding the aspects of your body type, to help you enhance your silhouette ensuring you always look your best. <br> Say goodbye to unsuitable outfits and hello to a wardrobe tailored just for you.",
         button: "BOOK A SESSION",
     },
     {
         id: 3,
         img: "assets/img/StyleCoaching/Color.jpg",
         name: "Color Analysis",
-        summary: "For special events, you want to look and feel your best. Our style coaches will help you choose an outfit and accessories that are appropriate and stylish for the occasion. We'll consider your personal style, body shape, and the dress code of the event to create a polished and put-together look. We'll ensure that you make a memorable impression.",
+        summary: "Dive into the enchanting realm of color theory, where every shade matters. Decode undertones, master wardrobe selection, spice up your routine with professional tips.",
         button: "BOOK A SESSION",
     },
     {
         id: 4,
         img: "assets/img/StyleCoaching/Wardrobe.jpg",
         name: "Wardrobe Decluttering",
-        summary: "For special events, you want to look and feel your best. Our style coaches will help you choose an outfit and accessories that are appropriate and stylish for the occasion. We'll consider your personal style, body shape, and the dress code of the event to create a polished and put-together look. We'll ensure that you make a memorable impression.",
+        summary: "Is your closet overflowing with clothes, but you never seem to find anything to wear? It's time to embark on a wardrobe decluttering journey! Our style coach will help you to declutter your wardrobe! You’ll feel lighter, more refreshed, and ready to take on the day with confidence!",
         button: "BOOK A SESSION",
     },
     {
         id: 5,
         img: "assets/img/StyleCoaching/Personal.jpg",
         name: "Personal Shopping",
-        summary: "For special events, you want to look and feel your best. Our style coaches will help you choose an outfit and accessories that are appropriate and stylish for the occasion. We'll consider your personal style, body shape, and the dress code of the event to create a polished and put-together look. We'll ensure that you make a memorable impression.",
+        summary: "Whether you're searching for a special occasion ensemble or simply updating your everyday wardrobe, our expert stylist is here to help. No more endless scrolling or aimless wandering through stores—we'll do the legwork to find pieces that fit your needs and flatter your figure. Sit back, relax, and let us make shopping enjoyable and effortless for you.",
         button: "BOOK A SESSION",
     },
     {
         id: 6,
         img: "assets/img/StyleCoaching/Full.jpg",
         name: "Full Program",
-        summary: "For special events, you want to look and feel your best. Our style coaches will help you choose an outfit and accessories that are appropriate and stylish for the occasion. We'll consider your personal style, body shape, and the dress code of the event to create a polished and put-together look. We'll ensure that you make a memorable impression.",
+        summary: "Experience the ultimate makeover with our all-in-one package, combining body shape analysis, personality testing, color analysis, wardrobe decluttering, and personal shopping. This comprehensive service not only makes the process enjoyable and fun but also delivers visible results in no time. Get ready to transform your life and elevate your personal style with ease!",
         button: "REGISTER NOW",
     },
 ]

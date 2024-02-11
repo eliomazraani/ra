@@ -9,15 +9,21 @@
     <div class="reachOut">
         <div class="address link">
             <img src="assets/img/Location.png" alt="Img">
-            Beirut, Lebanon
+            <div onclick="openGoogleMaps()">
+                Beirut, Lebanon
+            </div>
         </div>
         <div class="number link">
             <img src="assets/img/Phone.png" alt="Img">
-            961 70908587
+            <div onclick="openWhatsApp()">
+                961 70908587
+            </div>
         </div>
         <div class="email link">
             <img src="assets/img/Email.png" alt="Img">
-            Info@rachelasmar.com
+            <div onclick="openEmail()">
+                Info@rachelasmar.com
+            </div>
         </div>
     </div>
 </div>
@@ -35,7 +41,7 @@
             <textarea name="" id="message" cols="30" rows="10" placeholder="Message*" required></textarea>
         </div>
         <div class="row">
-            <div onclick="sendEmail()" class="button">
+            <div id="sendEmail" onclick="sendEmail()" class="button">
                 <a>Submit</a>
             </div>
         </div>

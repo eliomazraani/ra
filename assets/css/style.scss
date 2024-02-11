@@ -56,6 +56,11 @@ body {
         text-decoration: none;
     }
 
+    &.disabled {
+        pointer-events: none;
+        opacity: 0.6;
+    }
+
     &.green {
         background: linear-gradient(90deg, #008CA7 0%, #0988A9 0.01%, #464EA3 95.84%);
     }
@@ -309,10 +314,11 @@ body {
         width: 25%;
         position: relative;
         cursor: pointer;
+        overflow: hidden;
 
         img {
             width: 100%;
-            height: 100%;
+            // height: 100%;
         }
 
         .paragraph {
@@ -832,6 +838,10 @@ body {
 
             img {
                 margin-right: 11px;
+            }
+
+            div {
+                cursor: pointer;
             }
         }
     }
@@ -1782,6 +1792,10 @@ body {
     .hiring {
         margin-top: 40px;
         width: 100%;
+
+        img {
+            width: 100%;
+        }
     }
 
     .jobList {
@@ -1799,6 +1813,10 @@ body {
             .image {
                 width: 216px;
                 height: 216px;
+
+                img {
+                    height: 100%;
+                }
             }
 
             .details {
