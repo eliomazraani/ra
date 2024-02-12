@@ -304,12 +304,6 @@ body {
     .wide {
         display: flex;
         width: 100%;
-
-        .mvmt-choreo,
-        .cstm-style,
-        .art-direction {
-            pointer-events: none;
-        }
     }
 
     .narrow {

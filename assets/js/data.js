@@ -46,7 +46,7 @@ function renderService() {
     var serviceM = ``;
 
     services.forEach(service => {
-        serviceD = `<div onclick="goTo('${service.link}')" class="${service.class} block">
+        serviceD = `<div ${service.class == 'coach' ? `onclick="goTo('${service.link}')` : ''}" class="${service.class} block">
                         <img src="${service.image}" alt="Img">
                         <div class="paragraph">
                             <div class="title">${service.title}</div>
