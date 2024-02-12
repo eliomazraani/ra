@@ -241,8 +241,22 @@ body {
   display: flex;
   width: 100%;
 }
+.services .wide .mvmt-choreo,
+.services .wide .cstm-style,
+.services .wide .art-direction {
+  pointer-events: none;
+}
 .services .narrow {
   display: none;
+}
+.services .narrow .mvmt-choreo img {
+  pointer-events: none;
+}
+.services .narrow .cstm-style img {
+  pointer-events: none;
+}
+.services .narrow .art-direction img {
+  pointer-events: none;
 }
 .services .block {
   width: 25%;

@@ -304,10 +304,37 @@ body {
     .wide {
         display: flex;
         width: 100%;
+
+        .mvmt-choreo,
+        .cstm-style,
+        .art-direction {
+            pointer-events: none;
+        }
     }
 
     .narrow {
         display: none;
+
+        .mvmt-choreo {
+
+            img {
+                pointer-events: none;
+            }
+        }
+
+        .cstm-style {
+
+            img {
+                pointer-events: none;
+            }
+        }
+
+        .art-direction {
+
+            img {
+                pointer-events: none;
+            }
+        }
     }
 
     .block {
