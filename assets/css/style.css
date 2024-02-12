@@ -1580,10 +1580,6 @@ body {
     width: 100px;
     height: 100px;
   }
-  .vacancy .jobList .jobPosition .image img {
-    width: -webkit-fill-available;
-    /* demo purpose */
-  }
 }
 
 .apply .thankYou {

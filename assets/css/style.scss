@@ -1886,12 +1886,6 @@ body {
                 .image {
                     width: 100px;
                     height: 100px;
-
-                    img {
-                        // width: 100%;
-                        width: -webkit-fill-available;
-                        /* demo purpose */
-                    }
                 }
             }
         }
