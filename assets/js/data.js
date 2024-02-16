@@ -116,21 +116,21 @@ function renderValue() {
 }
 
 var clients = [
-    "assets/img/Clients/ROTANA.png",
+    "assets/img/Clients/KULT.png",
     "assets/img/Clients/BENCHMARK.png",
     "assets/img/Clients/SAYF.png",
-    "assets/img/Clients/MTV.png",
-    "assets/img/Clients/STEPS.png",
-    "assets/img/Clients/KULT.png",
-    "assets/img/Clients/KLOUD.png",
-    "assets/img/Clients/BOLD.png",
-    "assets/img/Clients/ABC.png",
-    "assets/img/Clients/IAM.png",
-    "assets/img/Clients/SEAFRONT.png",
     "assets/img/Clients/CA.jpg",
-    "assets/img/Clients/CASINO.png",
+    "assets/img/Clients/MTV.png",
+    "assets/img/Clients/ABC.png",
+    "assets/img/Clients/STEPS.png",
+    "assets/img/Clients/ROTANA.png",
+    "assets/img/Clients/IAM.png",
+    "assets/img/Clients/KLOUD.png",
     "assets/img/Clients/GAT.jpg",
+    "assets/img/Clients/CASINO.png",
+    "assets/img/Clients/SEAFRONT.png",
     "assets/img/Clients/RETINA.jpg",
+    "assets/img/Clients/BOLD.png",
     "assets/img/Clients/KAI.png",
 ]
 
@@ -415,109 +415,47 @@ function renderJob() {
 var choreoTabs = [
     {
         id: 1,
-        name: "Music Video",
+        name: "Our Stars",
         elements: [
             {
                 id: 1,
                 image: "assets/img/Rectangle.png",
                 name: "EBKI",
                 summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
-                type: "descriptive",
-                images: [
-                    "assets/img/EBKI/EBKI.jpg",
-                    "assets/img/EBKI/EBKI(1).jpg",
-                    "assets/img/EBKI/EBKI(2).jpg",
-                    "assets/img/EBKI/EBKI(3).jpg",
-                    "assets/img/EBKI/EBKI(4).jpg",
-                ],
-                // concept: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
-                info: {
-                    "Lyrics and Composition": "Test",
-                    "Music Designer": "Test",
-                    "Recording": "Test",
-                    "Mix and Mastering": "Test",
-                    "Directed By": "Test",
-                    "Choreographer & Stylist": "Test",
-                }
+                href: "https://youtube.com",
             },
             {
                 id: 2,
                 image: "assets/img/Rectangle.png",
                 name: "MOUKHTASSAR EL KALAM",
                 summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
-                type: "descriptive",
-                images: [
-                    "assets/img/Rectangle(2).png",
-                    "assets/img/Rectangle(2).png",
-                    "assets/img/Rectangle(2).png",
-                ],
-                // concept: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
-                info: {
-                    "Lyrics and Composition": "Test",
-                    "Music Designer": "Test",
-                    "Recording": "Test",
-                    "Mix and Mastering": "Test",
-                    "Directed By": "Test",
-                    "Choreographer & Stylist": "Test",
-                }
-            }
-        ]
-    },
-    {
-        id: 2,
-        name: "TV Series",
-        elements: [
+                href: "https://youtube.com",
+            },
             {
                 id: 3,
                 image: "assets/img/Rectangle.png",
                 name: "KHAMSEH W NOSS",
                 summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
-                type: "descriptive",
-                images: [
-                    "assets/img/Rectangle(2).png",
-                    "assets/img/Rectangle(2).png",
-                    "assets/img/Rectangle(2).png",
-                ],
-                // concept: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
-                info: {
-                    "Lyrics and Composition": "Test",
-                    "Music Designer": "Test",
-                    "Recording": "Test",
-                    "Mix and Mastering": "Test",
-                    "Directed By": "Test",
-                    "Choreographer & Stylist": "Test",
-                }
+                href: "https://youtube.com",
+
             },
             {
                 id: 4,
                 image: "assets/img/Rectangle.png",
                 name: "PARANOIA",
                 summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
-                type: "descriptive",
-                images: [
-                    "assets/img/Rectangle(2).png",
-                    "assets/img/Rectangle(2).png",
-                    "assets/img/Rectangle(2).png",
-                ],
-                // concept: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
-                info: {
-                    "Lyrics and Composition": "Test",
-                    "Music Designer": "Test",
-                    "Recording": "Test",
-                    "Mix and Mastering": "Test",
-                    "Directed By": "Test",
-                    "Choreographer & Stylist": "Test",
-                }
-            }
+                href: "https://youtube.com",
+
+            },
         ]
     },
     {
-        id: 3,
-        name: "Nightlife",
+        id: 2,
+        name: "Our Clubs",
         elements: [
             {
                 id: 5,
-                image: "assets/img/Rectangle.png",
+                image: "assets/img/Clubs/Ava.jpg",
                 name: "AVA",
                 href: "https://youtube.com"
             },
@@ -535,19 +473,19 @@ var choreoTabs = [
             },
             {
                 id: 8,
-                image: "assets/img/Rectangle.png",
+                image: "assets/img/Clubs/Kloud.jpg",
                 name: "KLOUD",
-                href: "https://youtube.com"
+                href: "https://youtube.com/shorts/6cyvM5eIm_w?si=0X7gHm-6kvuqpJmI"
             }
         ]
     },
     {
-        id: 4,
-        name: "Weddings & Events",
+        id: 3,
+        name: "Our Weddings & Events",
         elements: [
             {
                 type: "video",
-                src: "assets/img/Weddings&Events/R_M10810ed.jpg",
+                src: "assets/img/Weddings&Events/W&E.jpg",
                 link: "https://youtu.be/zzk59n-Yunc?si=wwRWNL6mhBPHCvo9",
             },
             {
@@ -655,8 +593,8 @@ function choreographyTabs() {
     choreoTabs.forEach((tab, index) => {
         tabs += `<a onclick="serviceShow(${index + 1})" ${index === 0 ? 'class="green"' : ''}>${tab.name}</a>`;
 
-        grids += `<div class="grid service-${index + 1} ${index !== 0 ? 'd-none' : ''} ${tab.name === 'Weddings & Events' ? 'displayCatalogue' : ''}">`;
-        if (tab.name != "Weddings & Events") {
+        grids += `<div class="grid service-${index + 1} ${index !== 0 ? 'd-none' : ''} ${tab.name === 'Our Weddings & Events' ? 'displayCatalogue' : ''}">`;
+        if (tab.name != "Our Weddings & Events") {
             tab.elements.forEach(grid => {
                 grids += `<a ${grid.href ? `href=${grid.href} target="_blank"` : `href="choreographyService.html?id=${tab.id}?name=${grid.name}"`}>
                             <div class="service">
@@ -712,7 +650,7 @@ function choreographyTabs() {
 var designTabs = [
     {
         id: 1,
-        name: "Photoshoot",
+        name: "Our Projects",
         elements: [
             {
                 id: 1,
@@ -815,13 +753,7 @@ var designTabs = [
                     },
                 ],
                 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
-            }
-        ]
-    },
-    {
-        id: 2,
-        name: "Music Video",
-        elements: [
+            },
             {
                 id: 4,
                 image: "assets/img/Rectangle.png",
@@ -889,13 +821,7 @@ var designTabs = [
                     },
                 ],
                 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
-            }
-        ]
-    },
-    {
-        id: 3,
-        name: "Commercial",
-        elements: [
+            },
             {
                 id: 6,
                 image: "assets/img/Rectangle.png",
@@ -937,12 +863,12 @@ var designTabs = [
                     "Directed By": "Test",
                     "Choreographer & Stylist": "Test",
                 }
-            }
+            },
         ]
     },
     {
-        id: 4,
-        name: "Costume Themes",
+        id: 2,
+        name: "Our Costumes",
         elements: [
             {
                 id: 8,
