@@ -130,7 +130,6 @@ var clients = [
     "assets/img/Clients/CASINO.png",
     "assets/img/Clients/SEAFRONT.png",
     "assets/img/Clients/RETINA.jpg",
-    "assets/img/Clients/BOLD.png",
     "assets/img/Clients/KAI.png",
 ]
 
@@ -207,7 +206,7 @@ var testimonials = [
     // },
     {
         id: 3,
-        name: "ROY KHOURY – WRITER, DIRECTOR, CHOREOGRAPHER",
+        name: "ROY El KHOURI – WRITER, DIRECTOR, CHOREOGRAPHER",
         testimonial: "“The work and experience with Rachel was beyond amazing. She made me feel comfortable, she was professional yet personal, with a strong knowledge of what she does. Execution and delivery were unbelievable! I certainly recommend her, and can’t wait for more projects to come!”",
         image: "assets/img/Testimonial/RoyKhoury.png",
     },
@@ -419,31 +418,47 @@ var choreoTabs = [
         elements: [
             {
                 id: 1,
-                image: "assets/img/Rectangle.png",
-                name: "EBKI",
-                summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+                image: "assets/img/Stars/Ebki.jpg",
+                name: "KARL HUSEIN",
+                summary: "Ebki - Music Video",
                 href: "https://youtube.com",
             },
             {
                 id: 2,
-                image: "assets/img/Rectangle.png",
-                name: "MOUKHTASSAR EL KALAM",
-                summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+                image: "assets/img/Stars/MokhtasarElKalam.jpg",
+                name: "LAILA CHANDOUL",
+                summary: "Mokhtasar El Kalam - Music Video",
                 href: "https://youtube.com",
             },
             {
                 id: 3,
-                image: "assets/img/Rectangle.png",
-                name: "KHAMSEH W NOSS",
-                summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+                image: "assets/img/Stars/KhamsehWNoss.jpg",
+                name: "NADINE NJEIM & KOSAI KHAULI",
+                summary: "Khamseh W Noss - TV Series",
                 href: "https://youtube.com",
 
             },
             {
                 id: 4,
+                image: "assets/img/Stars/Paranoia.jpg",
+                name: "DALIDA KHALIL",
+                summary: "Paranoia - TV Series",
+                href: "https://youtube.com",
+
+            },
+            {
+                id: 5,
                 image: "assets/img/Rectangle.png",
-                name: "PARANOIA",
-                summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+                name: "HAIFA WEHBE",
+                summary: "Woseltelha - Live Concert",
+                href: "https://youtube.com",
+
+            },
+            {
+                id: 6,
+                image: "assets/img/Stars/Aziza.jpg",
+                name: "AZIZA",
+                summary: "The Show - Live Concert",
                 href: "https://youtube.com",
 
             },
@@ -454,28 +469,39 @@ var choreoTabs = [
         name: "Our Clubs",
         elements: [
             {
-                id: 5,
+                id: 7,
                 image: "assets/img/Clubs/Ava.jpg",
                 name: "AVA",
-                href: "https://youtube.com"
-            },
-            {
-                id: 6,
-                image: "assets/img/Rectangle.png",
-                name: "BOLD",
-                href: "https://youtube.com"
-            },
-            {
-                id: 7,
-                image: "assets/img/Rectangle.png",
-                name: "KAI",
-                href: "https://youtube.com"
+                summary: "Beirut, Lebanon",
+                href: "https://youtu.be/WpziTVP_DzY?si=I1ZBna5opwREuVZz"
             },
             {
                 id: 8,
+                image: "assets/img/Clubs/Seafront.jpg",
+                name: "SEAFRONT",
+                summary: "Kaslik, Lebanon",
+                href: "https://youtube.com/shorts/8jxuLF0jQh0?si=0l434eKF3tMCDqmE"
+            },
+            {
+                id: 9,
+                image: "assets/img/Rectangle.png",
+                name: "KAI",
+                summary: "Batroun, Lebanon",
+                href: "https://youtube.com"
+            },
+            {
+                id: 10,
                 image: "assets/img/Clubs/Kloud.jpg",
                 name: "KLOUD",
+                summary: "Dbaye, Lebanon",
                 href: "https://youtube.com/shorts/6cyvM5eIm_w?si=0X7gHm-6kvuqpJmI"
+            },
+            {
+                id: 11,
+                image: "assets/img/Clubs/Andalucia.jpg",
+                name: "ANDALUCIA",
+                summary: "Monot, Lebanon",
+                href: "https://youtube.com/"
             }
         ]
     },
@@ -655,8 +681,8 @@ var designTabs = [
             {
                 id: 1,
                 image: "assets/img/Rectangle.png",
-                name: "LEA MAKHOUL",
-                summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+                name: "CHICAGO ARABIA",
+                summary: "Roy El Khouri - Broadway Musical",
                 type: "grid",
                 images: [
                     {
@@ -689,8 +715,8 @@ var designTabs = [
             {
                 id: 2,
                 image: "assets/img/Rectangle.png",
-                name: "MAROUN CONSTANTINE",
-                summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+                name: "LEA MAKHOUL",
+                summary: "Artist - Photoshoot",
                 type: "grid",
                 images: [
                     {
@@ -723,8 +749,8 @@ var designTabs = [
             {
                 id: 3,
                 image: "assets/img/Rectangle.png",
-                name: "NADA ABOU FARHAT",
-                summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+                name: "MAROUN CONSTANTINE",
+                summary: "Jewelery Design - Photoshoot",
                 type: "grid",
                 images: [
                     {
@@ -757,8 +783,8 @@ var designTabs = [
             {
                 id: 4,
                 image: "assets/img/Rectangle.png",
-                name: "EBKI",
-                summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+                name: "NADA ABOU FARHAT",
+                summary: "Artist - Photoshoot",
                 type: "grid",
                 images: [
                     {
@@ -791,8 +817,8 @@ var designTabs = [
             {
                 id: 5,
                 image: "assets/img/Rectangle.png",
-                name: "RATATA",
-                summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+                name: "EBKI",
+                summary: "Karl Husein - Music Video",
                 type: "grid",
                 images: [
                     {
@@ -825,8 +851,42 @@ var designTabs = [
             {
                 id: 6,
                 image: "assets/img/Rectangle.png",
-                name: "AL MAKASSED",
-                summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+                name: "RATATA",
+                summary: "Lea Makhoul - Music Video",
+                type: "grid",
+                images: [
+                    {
+                        type: "video",
+                        src: "assets/img/Rectangle.png",
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/Square.png",
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/Square.png",
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/Square.png",
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/Square.png",
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/Square.png",
+                    },
+                ],
+                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+            },
+            {
+                id: 7,
+                image: "assets/img/Rectangle.png",
+                name: "ZAKKI BLINK",
+                summary: "Al Makassed - Commercial",
                 type: "descriptive",
                 images: [
                     "assets/img/Rectangle(2).png",
@@ -844,10 +904,10 @@ var designTabs = [
                 }
             },
             {
-                id: 7,
+                id: 8,
                 image: "assets/img/Rectangle.png",
                 name: "MEMOTILES",
-                summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+                summary: "Commercial",
                 type: "descriptive",
                 images: [
                     "assets/img/Rectangle(2).png",
@@ -868,34 +928,13 @@ var designTabs = [
     },
     {
         id: 2,
-        name: "Our Costumes",
+        name: "Our Designs",
         elements: [
-            {
-                id: 8,
-                image: "assets/img/Rectangle.png",
-                name: "CHRISTMAS",
-                summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
-                type: "slide",
-                images: [
-                    [
-                        "assets/img/Rectangle(2).png",
-                        "assets/img/Rectangle(2).png",
-                        "assets/img/Rectangle(2).png",
-                        "assets/img/Rectangle(2).png",
-                    ],
-                    [
-                        "assets/img/Rectangle(2).png",
-                        "assets/img/Rectangle(2).png",
-                        "assets/img/Rectangle(2).png",
-                        "assets/img/Rectangle(2).png",
-                    ],
-                ]
-            },
             {
                 id: 9,
                 image: "assets/img/Rectangle.png",
-                name: "FOLKLORE",
-                summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+                name: "CHRISTMAS",
+                // summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
                 type: "slide",
                 images: [
                     [
@@ -915,8 +954,8 @@ var designTabs = [
             {
                 id: 10,
                 image: "assets/img/Rectangle.png",
-                name: "ORIENTALE",
-                summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+                name: "FOLKLORE",
+                // summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
                 type: "slide",
                 images: [
                     [
@@ -936,8 +975,29 @@ var designTabs = [
             {
                 id: 11,
                 image: "assets/img/Rectangle.png",
+                name: "ORIENTALE",
+                // summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+                type: "slide",
+                images: [
+                    [
+                        "assets/img/Rectangle(2).png",
+                        "assets/img/Rectangle(2).png",
+                        "assets/img/Rectangle(2).png",
+                        "assets/img/Rectangle(2).png",
+                    ],
+                    [
+                        "assets/img/Rectangle(2).png",
+                        "assets/img/Rectangle(2).png",
+                        "assets/img/Rectangle(2).png",
+                        "assets/img/Rectangle(2).png",
+                    ],
+                ]
+            },
+            {
+                id: 12,
+                image: "assets/img/Rectangle.png",
                 name: "STREETSTYLE",
-                summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+                // summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
                 type: "slide",
                 images: [
                     [
@@ -972,7 +1032,7 @@ function stylingTabs() {
                             <img src="${grid.image}" alt="Img">
                             <div class="information">
                                 <div class="name">${grid.name}</div>
-                                <div class="summary">${grid.summary}</div>
+                                ${grid.summary ? `<div class="summary">${grid.summary}</div>` : ''}
                             </div>
                         </div>
                     </a>`;
@@ -988,8 +1048,8 @@ var artTabs = [
     {
         id: 1,
         image: "assets/img/Rectangle.png",
-        name: "DIAMOND NIGHT - AHLAM",
-        summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+        name: "MR LEBANON 2024",
+        summary: "Haifa Wehbe - Casino Du Liban",
         type: "grid",
         images: [
             {
@@ -1023,8 +1083,43 @@ var artTabs = [
     {
         id: 2,
         image: "assets/img/Rectangle.png",
+        name: "DIAMOND NIGHT",
+        summary: "Ahlam Al Shamsi - Al Riyadh, KSA",
+        type: "grid",
+        images: [
+            {
+                type: "video",
+                src: "assets/img/Rectangle.png",
+                link: "https://youtu.be/m2i9zXV9qcA?si=UmwVBVd0g_8WS1wx",
+            },
+            {
+                type: "image",
+                src: "assets/img/Square.png",
+            },
+            {
+                type: "image",
+                src: "assets/img/Square.png",
+            },
+            {
+                type: "image",
+                src: "assets/img/Square.png",
+            },
+            {
+                type: "image",
+                src: "assets/img/Square.png",
+            },
+            {
+                type: "image",
+                src: "assets/img/Square.png",
+            },
+        ],
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+    },
+    {
+        id: 3,
+        image: "assets/img/Rectangle.png",
         name: "KULT",
-        summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+        summary: "Beirut, Lebanon",
         type: "grid",
         images: [
             {
@@ -1056,10 +1151,10 @@ var artTabs = [
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
     },
     {
-        id: 3,
+        id: 4,
         image: "assets/img/Rectangle.png",
         name: "SAYF",
-        summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+        summary: "Waterfront Beirut, Lebanon",
         type: "grid",
         images: [
             {
@@ -1091,10 +1186,10 @@ var artTabs = [
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
     },
     {
-        id: 4,
+        id: 5,
         image: "assets/img/Rectangle.png",
         name: "TETE A TETE",
-        summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+        summary: "Christina Haddad, Casino Du Liban",
         type: "grid",
         images: [
             {
