@@ -156,13 +156,13 @@ function checkURL() {
         $('.sp').addClass('selected');
         $('.chp').addClass('selected');
         $('.button').addClass('green');
-    } else if (currentUrl === 'design.html' || currentUrl === 'designService.html') {
+    } else if (currentUrl === 'design.html' || currentUrl === 'designService.html' || currentUrl === 'designservice') {
         $('.toHome').attr('href', '/');
         $('.toHome img').attr('src', 'assets/img/LogoPink.svg');
         $('.sp').addClass('selected');
         $('.des').addClass('selected');
         $('.button').addClass('pink');
-    } else if (currentUrl === 'art.html' || currentUrl === 'artService.html') {
+    } else if (currentUrl === 'art.html' || currentUrl === 'artService.html' || currentUrl === 'artservice') {
         $('.toHome').attr('href', '/');
         $('.toHome img').attr('src', 'assets/img/LogoPurple.svg');
         $('.sp').addClass('selected');

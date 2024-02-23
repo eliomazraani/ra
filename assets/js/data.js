@@ -1488,14 +1488,14 @@ $(document).ready(function () {
         } else if (pathName === "design.html") {
             chooseService();
             stylingTabs();
-        } else if (pathName === "designService.html") {
+        } else if (pathName === "designService.html" || pathName === "designservice") {
             var oneTab = designTabs.find(tabs => tabs.id == id);
             serviceTab = oneTab.elements.find(service => service.name == name);
             showService(`Costume Design & Styling / ${oneTab.name}`, name, "pink");
         } else if (pathName === "art.html") {
             chooseService();
             directionTabs();
-        } else if (pathName === "artService.html") {
+        } else if (pathName === "artService.html" || pathName === "artservice") {
             var oneTab = artTabs.find(tabs => tabs.id == id);
             serviceTab = oneTab;
             showService(`Artistic Direction / Our Projects`, name, "purple");
