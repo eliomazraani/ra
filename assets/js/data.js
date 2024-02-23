@@ -516,19 +516,7 @@ var choreoTabs = [
             },
             {
                 type: "image",
-                src: "assets/img/Weddings&Events/MAZ5136.jpg",
-            },
-            {
-                type: "image",
-                src: "assets/img/Weddings&Events/MAZ5167.jpg",
-            },
-            {
-                type: "image",
-                src: "assets/img/Weddings&Events/MAZ5220.jpg",
-            },
-            {
-                type: "image",
-                src: "assets/img/Weddings&Events/5W4A4828.jpg",
+                src: "assets/img/Weddings&Events/7C2A9699.jpg",
             },
             {
                 type: "image",
@@ -536,51 +524,27 @@ var choreoTabs = [
             },
             {
                 type: "image",
-                src: "assets/img/Weddings&Events/7C2A9108.jpg",
-            },
-            {
-                type: "image",
-                src: "assets/img/Weddings&Events/7C2A9629.jpg",
-            },
-            {
-                type: "image",
-                src: "assets/img/Weddings&Events/7C2A9699.jpg",
-            },
-            {
-                type: "image",
-                src: "assets/img/Weddings&Events/IAM_1304.jpg",
-            },
-            {
-                type: "image",
-                src: "assets/img/Weddings&Events/IAM_1407.jpg",
-            },
-            {
-                type: "image",
                 src: "assets/img/Weddings&Events/M_L_4251.jpg",
             },
             {
                 type: "image",
-                src: "assets/img/Weddings&Events/M_L_4396.jpg",
+                src: "assets/img/Weddings&Events/R_M19486.jpg",
             },
             {
                 type: "image",
-                src: "assets/img/Weddings&Events/Post9.jpg",
-            },
-            {
-                type: "image",
-                src: "assets/img/Weddings&Events/R_M10665.jpg",
-            },
-            {
-                type: "image",
-                src: "assets/img/Weddings&Events/R_M10677.jpg",
-            },
-            {
-                type: "image",
-                src: "assets/img/Weddings&Events/R_M10810.jpg",
+                src: "assets/img/Weddings&Events/5W4A4828.jpg",
             },
             {
                 type: "image",
                 src: "assets/img/Weddings&Events/R_M10816.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/Weddings&Events/ALY_0219.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/Weddings&Events/MAZ5136.jpg",
             },
             {
                 type: "image",
@@ -592,15 +556,35 @@ var choreoTabs = [
             },
             {
                 type: "image",
+                src: "assets/img/Weddings&Events/Post9.jpg",
+            },
+            {
+                type: "image",
                 src: "assets/img/Weddings&Events/R_M19199.jpg",
             },
             {
                 type: "image",
-                src: "assets/img/Weddings&Events/R_M19486.jpg",
+                src: "assets/img/Weddings&Events/IAM_1304.jpg",
             },
             {
                 type: "image",
                 src: "assets/img/Weddings&Events/RODD3360.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/Weddings&Events/IAM_1407.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/Weddings&Events/M_L_4396.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/Weddings&Events/R_M10677.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/Weddings&Events/MAZ5220.jpg",
             },
         ]
     }
@@ -644,22 +628,22 @@ function choreographyTabs() {
                 if (grid.type === "image") {
                     rowFill += 25;
                     if (rowFill <= 100) {
-                        grids += `<img onclick="showModal(this)" class="${grid.type}" src="${grid.src}" alt="Img">`;
+                        grids += `<div class="${grid.type}"><img onclick="showModal(this)" src="${grid.src}" alt="Img"></div>`;
                     } else {
                         rowFill = 25;
                         grids += `</div>
                                 <div class="row">
-                                    <img onclick="showModal(this)" class="${grid.type}" src="${grid.src}" alt="Img">`;
+                                    <div class="${grid.type}"><img onclick="showModal(this)" src="${grid.src}" alt="Img"></div>`;
                     }
                 } else if (grid.type === "video") {
                     rowFill += 50;
                     if (rowFill <= 100) {
-                        grids += `<img onclick="socialMedia('${grid.link}')" class="${grid.type}" src="${grid.src}" alt="Video">`;
+                        grids += `<div class="${grid.type}"><img onclick="socialMedia('${grid.link}')" src="${grid.src}" alt="Video"></div>`;
                     } else {
                         rowFill = 50;
                         grids += `</div>
                                 <div class="row">
-                                    <img onclick="socialMedia('${grid.link}')" class="${grid.type}" src="${grid.src}" alt="Video">`;
+                                    <div class="${grid.type}"><img onclick="socialMedia('${grid.link}')" src="${grid.src}" alt="Video"></div>`;
                     }
                 }
             });
@@ -1078,7 +1062,7 @@ var artTabs = [
                 src: "assets/img/Square.png",
             },
         ],
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+        // description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
     },
     {
         id: 2,
@@ -1113,42 +1097,94 @@ var artTabs = [
                 src: "assets/img/Square.png",
             },
         ],
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+        // description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
     },
     {
         id: 3,
-        image: "assets/img/Rectangle.png",
+        image: "assets/img/ArtisticDirection/KultCover.jpg",
         name: "KULT",
         summary: "Beirut, Lebanon",
         type: "grid",
         images: [
             {
                 type: "video",
-                src: "assets/img/Rectangle.png",
+                src: "assets/img/ArtisticDirection/Kult/VAR_100.jpg",
                 link: "https://youtu.be/moe2qFIx7qc?si=VfXmNJSsvx6Ad3bI",
             },
             {
                 type: "image",
-                src: "assets/img/Square.png",
+                src: "assets/img/ArtisticDirection/Kult/VAR_101.jpg",
             },
             {
                 type: "image",
-                src: "assets/img/Square.png",
+                src: "assets/img/ArtisticDirection/Kult/VAR_102.jpg",
             },
             {
                 type: "image",
-                src: "assets/img/Square.png",
+                src: "assets/img/ArtisticDirection/Kult/VAR_103.jpg",
             },
             {
                 type: "image",
-                src: "assets/img/Square.png",
+                src: "assets/img/ArtisticDirection/Kult/VAR_104.jpg",
             },
             {
                 type: "image",
-                src: "assets/img/Square.png",
+                src: "assets/img/ArtisticDirection/Kult/VAR_105.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/Kult/VAR_106.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/Kult/VAR_107.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/Kult/VAR_108.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/Kult/VAR_109.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/Kult/VAR_1010.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/Kult/VAR_1011.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/Kult/VAR_1012.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/Kult/VAR_1013.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/Kult/VAR_1014.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/Kult/VAR_1015.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/Kult/VAR_1016.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/Kult/VAR_1017.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/Kult/VAR_1018.jpg",
             },
         ],
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+        // description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
     },
     {
         id: 4,
@@ -1183,7 +1219,7 @@ var artTabs = [
                 src: "assets/img/Square.png",
             },
         ],
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+        // description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
     },
     {
         id: 5,
@@ -1218,7 +1254,7 @@ var artTabs = [
                 src: "assets/img/Square.png",
             },
         ],
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+        // description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
     },
 ]
 
@@ -1366,22 +1402,22 @@ function showService(tab, name, color) {
             if (grid.type === "image") {
                 rowFill += 25;
                 if (rowFill <= 100) {
-                    rows += `<img onclick="showModal(this)" class="${grid.type}" src="${grid.src}" alt="Img">`;
+                    rows += `<div class="${grid.type}"><img onclick="showModal(this)" src="${grid.src}" alt="Img"></div>`;
                 } else {
                     rowFill = 25;
                     rows += `</div>
                             <div class="row">
-                                <img onclick="showModal(this)" class="${grid.type}" src="${grid.src}" alt="Img">`;
+                                <div class="${grid.type}"><img onclick="showModal(this)" src="${grid.src}" alt="Img"></div>`;
                 }
             } else if (grid.type === "video") {
                 rowFill += 50;
                 if (rowFill <= 100) {
-                    rows += `<img onclick="socialMedia('${grid.link}')" class="${grid.type}" src="${grid.src}" alt="Video">`;
+                    rows += `<div class="${grid.type}"><img onclick="socialMedia('${grid.link}')" src="${grid.src}" alt="Video"></div>`;
                 } else {
                     rowFill = 50;
                     rows += `</div>
                             <div class="row">
-                                <img onclick="socialMedia('${grid.link}')" class="${grid.type}" src="${grid.src}" alt="Video">`;
+                                <div class="${grid.type}"><img onclick="socialMedia('${grid.link}')" src="${grid.src}" alt="Video"></div>`;
                 }
             }
         });
@@ -1389,7 +1425,7 @@ function showService(tab, name, color) {
 
         show += `<div class="displayProject">
                     <div class="display">
-                        <div class="projectDescription">
+                        <div class="projectDescription ${serviceTab.description ? "" : "d-none"}">
                             ${serviceTab.description}
                         </div>
                         <div id="displayCatalogue">

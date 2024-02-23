@@ -1389,20 +1389,31 @@ body {
 }
 .displayCatalogue .row {
   display: flex;
+  justify-content: center;
   -moz-column-gap: 16px;
        column-gap: 16px;
   height: 270px;
 }
 .displayCatalogue .row .video {
-  width: calc(50% - 16px);
+  display: flex;
+  justify-content: center;
+  width: 556px;
+  overflow: hidden;
   cursor: pointer;
 }
 .displayCatalogue .row .image {
-  width: calc(25% - 16px);
+  display: flex;
+  justify-content: center;
+  width: 270px;
+  overflow: hidden;
   cursor: pointer;
 }
-@media (max-width: 767px) {
+.displayCatalogue .row .image img {
+  height: 100%;
+}
+@media only screen and (max-width: 1427px) {
   .displayCatalogue .row {
+    width: 100%;
     height: unset;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -1413,8 +1424,14 @@ body {
   .displayCatalogue .row .video {
     width: 100%;
   }
+  .displayCatalogue .row .video img {
+    width: 100%;
+  }
   .displayCatalogue .row .image {
     width: calc(50% - 8px);
+  }
+  .displayCatalogue .row .image img {
+    width: 100%;
   }
 }
 
@@ -1530,6 +1547,11 @@ body {
 }
 .vacancy .jobList .jobPosition .image img {
   height: 100%;
+}
+.vacancy .jobList .jobPosition .details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .vacancy .jobList .jobPosition .details .position {
   font-weight: 800;

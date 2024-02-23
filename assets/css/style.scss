@@ -1647,23 +1647,36 @@ body {
 
     .row {
         display: flex;
+        justify-content: center;
         column-gap: 16px;
         height: 270px;
 
         .video {
-            width: calc(50% - 16px);
+            display: flex;
+            justify-content: center;
+            width: 556px;
+            overflow: hidden;
             cursor: pointer;
         }
 
         .image {
-            width: calc(25% - 16px);
+            display: flex;
+            justify-content: center;
+            width: 270px;
+            overflow: hidden;
             cursor: pointer;
+
+            img {
+                height: 100%;
+            }
         }
     }
 
-    @include screen767 {
+    // @include screen767 {
+    @media only screen and (max-width: 1427px) {
 
         .row {
+            width: 100%;
             height: unset;
             flex-wrap: wrap;
             justify-content: space-between;
@@ -1672,10 +1685,18 @@ body {
 
             .video {
                 width: 100%;
+
+                img {
+                    width: 100%;
+                }
             }
 
             .image {
                 width: calc(50% - 8px);
+
+                img {
+                    width: 100%;
+                }
             }
         }
     }
@@ -1820,6 +1841,10 @@ body {
             }
 
             .details {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                
                 .position {
                     font-weight: 800;
                     font-size: 16px;
