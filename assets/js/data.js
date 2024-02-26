@@ -539,7 +539,7 @@ var choreoTabs = [
                 image: "assets/img/Rectangle.png",
                 name: "HAIFA WEHBE",
                 summary: "Woseltelha - Live Concert",
-                href: "https://youtube.com",
+                href: "https://youtu.be/pYrZMdjldPo?si=6s3_QvrMGXMqsjLc",
 
             },
             {
@@ -1154,14 +1154,14 @@ var artTabs = [
     },
     {
         id: 2,
-        image: "assets/img/Rectangle.png",
+        image: "assets/img/ArtisticDirection/AhlamCover.jpg",
         name: "DIAMOND NIGHT",
         summary: "Ahlam Al Shamsi - Al Riyadh, KSA",
         type: "grid",
         images: [
             {
                 type: "video",
-                src: "assets/img/Rectangle.png",
+                src: "assets/img/ArtisticDirection/Ahlam/AH_100.jpg",
                 link: "https://youtu.be/m2i9zXV9qcA?si=UmwVBVd0g_8WS1wx",
             },
             {
@@ -1194,11 +1194,11 @@ var artTabs = [
             },
             {
                 type: "image",
-                src: "assets/img/ArtisticDirection/Ahlam/AH_108.png",
+                src: "assets/img/ArtisticDirection/Ahlam/AH_108.jpg",
             },
             {
                 type: "image",
-                src: "assets/img/ArtisticDirection/Ahlam/AH_109.jpg",
+                src: "assets/img/ArtisticDirection/Ahlam/AH_109.png",
             },
             {
                 type: "image",
@@ -1312,7 +1312,7 @@ var artTabs = [
     },
     {
         id: 4,
-        image: "assets/img/ArtisticDirection/SayfCover2.jpg",
+        image: "assets/img/ArtisticDirection/SayfCover.jpg",
         name: "SAYF",
         summary: "Waterfront Beirut, Lebanon",
         type: "grid",
@@ -1367,35 +1367,135 @@ var artTabs = [
     },
     {
         id: 5,
-        image: "assets/img/Rectangle.png",
+        image: "assets/img/ArtisticDirection/TATCover.jpg",
         name: "TETE A TETE",
         summary: "Christina Haddad, Casino Du Liban",
         type: "grid",
         images: [
             {
                 type: "video",
-                src: "assets/img/Rectangle.png",
+                src: "assets/img/ArtisticDirection/TeteATete/TAT_001.jpg",
                 link: "https://youtu.be/h_QfzLDR3v8?si=NFBh60IcRV3HDkgQ",
             },
             {
                 type: "image",
-                src: "assets/img/Square.png",
+                src: "assets/img/ArtisticDirection/TeteATete/TAT_002.jpg",
             },
             {
                 type: "image",
-                src: "assets/img/Square.png",
+                src: "assets/img/ArtisticDirection/TeteATete/TAT_003.jpg",
             },
             {
                 type: "image",
-                src: "assets/img/Square.png",
+                src: "assets/img/ArtisticDirection/TeteATete/TAT_004.jpg",
             },
             {
                 type: "image",
-                src: "assets/img/Square.png",
+                src: "assets/img/ArtisticDirection/TeteATete/TAT_005.jpg",
             },
             {
                 type: "image",
-                src: "assets/img/Square.png",
+                src: "assets/img/ArtisticDirection/TeteATete/TAT_006.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/TeteATete/TAT_007.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/TeteATete/TAT_008.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/TeteATete/TAT_009.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/TeteATete/TAT_0010.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/TeteATete/TAT_0011.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/TeteATete/TAT_0012.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/TeteATete/TAT_0013.png",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/TeteATete/TAT_0014.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/TeteATete/TAT_0015.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/TeteATete/TAT_0016.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/TeteATete/TAT_0017.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/TeteATete/TAT_0018.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/TeteATete/TAT_0019.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/TeteATete/TAT_0020.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/TeteATete/TAT_0021.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/TeteATete/TAT_0022.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/TeteATete/TAT_0023.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/TeteATete/TAT_0024.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/TeteATete/TAT_0025.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/TeteATete/TAT_0026.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/TeteATete/TAT_0027.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/TeteATete/TAT_0028.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/TeteATete/TAT_0029.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/TeteATete/TAT_0030.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/TeteATete/TAT_0031.jpg",
             },
         ],
         // description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
