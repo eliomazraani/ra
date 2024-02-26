@@ -302,43 +302,48 @@ var jobs = [
         id: 1,
         position: "Coordinator",
         requirements: "Coordinates tasks, promotes collaboration, and ensures efficiency.",
-        image: "assets/img/Jobs/Coordinator.jpg"
+        image: "assets/img/Jobs/Coordinator.jpg",
+        description: true
     },
     {
         id: 2,
         position: "Assistant",
         requirements: "Supports coordination with computer proficiency and strong English skills, ensuring smooth task execution.",
-        image: "assets/img/Jobs/Assistant.jpg"
+        image: "assets/img/Jobs/Assistant.jpg",
+        description: true
     },
     {
         id: 3,
         position: "Driver",
         requirements: "Reliable, safely transports, maintains vehicle, follows routes.",
-        image: "assets/img/Jobs/Driver.jpg"
+        image: "assets/img/Jobs/Driver.jpg",
+        description: true
     },
     {
         id: 4,
         position: "Wardrobe Supervisor",
         requirements: "Manages and coordinates costumes, collaborates with designer to achieve visions.",
-        image: "assets/img/Jobs/Wardrobe.jpg"
+        image: "assets/img/Jobs/Wardrobe.jpg",
+        description: true
     },
     {
         id: 5,
+        position: "Crafter",
+        requirements: "Creates and handcrafts unique items with skill and creativity.",
+        image: "assets/img/Jobs/Crafter.jpg",
+        description: true
+    },
+    {
+        id: 6,
         position: "Makeup Artist",
         requirements: "Applies beauty and artistic makeup for expressive themes.",
         image: "assets/img/Jobs/MUA.jpg"
     },
     {
-        id: 6,
+        id: 7,
         position: "Tailor",
         requirements: "Expertly crafts costumes with precision and skill.",
         image: "assets/img/Jobs/Tailor.jpg"
-    },
-    {
-        id: 7,
-        position: "Crafter",
-        requirements: "Creates and handcrafts unique items with skill and creativity.",
-        image: "assets/img/Jobs/Crafter.jpg"
     },
     {
         id: 8,
@@ -390,6 +395,69 @@ var jobs = [
     // }
 ]
 
+var jobsDescription = [
+    {
+        id: 1,
+        position: "Coordinator",
+        responsibilities: [
+            "Responsibility 1",
+            "Responsibility 2"
+        ],
+        requirements: [
+            "Requirements 1",
+            "Requirements 2"
+        ]
+    },
+    {
+        id: 2,
+        position: "Assistant",
+        responsibilities: [
+            "Responsibility 1",
+            "Responsibility 2"
+        ],
+        requirements: [
+            "Requirements 1",
+            "Requirements 2"
+        ]
+    },
+    {
+        id: 3,
+        position: "Driver",
+        responsibilities: [
+            "Responsibility 1",
+            "Responsibility 2"
+        ],
+        requirements: [
+            "Requirements 1",
+            "Requirements 2"
+        ]
+    },
+    {
+        id: 4,
+        position: "Wardrobe Supervisor",
+        responsibilities: [
+            "Responsibility 1",
+            "Responsibility 2"
+        ],
+        requirements: [
+            "Requirements 1",
+            "Requirements 2"
+        ]
+    },
+    {
+        id: 5,
+        position: "Crafter",
+        responsibilities: [
+            "Responsibility 1",
+            "Responsibility 2"
+        ],
+        requirements: [
+            "Requirements 1",
+            "Requirements 2"
+        ]
+    },
+]
+
 function renderJob() {
     var job = ``;
 
@@ -402,13 +470,33 @@ function renderJob() {
                         <div class="position">${vacancy.position}</div>
                         <div class="requirements">${vacancy.requirements}</div>
                         <div onclick="jobPosition(${vacancy.id})" class="button">
-                            <a>Apply Now</a>
+                            <a>${vacancy.description ? "View Description" : "Apply Now"}</a>
                         </div>
                     </div>
                 </div>`;
 
         $(".jobList").append(job);
     });
+}
+
+function renderDescription(position) {
+    $("#responsibilitiesList").empty();
+    $("#requirementsList").empty();
+    var chosenJob = jobsDescription.find(job => job.position == position);
+    var resp = ``;
+    var req = ``;
+
+    chosenJob.responsibilities.forEach(responsibility => {
+        resp = `<li>${responsibility}</li>`;
+
+        $("#responsibilitiesList").append(resp);
+    });
+
+    chosenJob.requirements.forEach(requirement => {
+        req = `<li>${requirement}</li>`;
+
+        $("#requirementsList").append(req);
+    })
 }
 
 var choreoTabs = [
@@ -1078,23 +1166,59 @@ var artTabs = [
             },
             {
                 type: "image",
-                src: "assets/img/Square.png",
+                src: "assets/img/ArtisticDirection/Ahlam/AH_101.jpg",
             },
             {
                 type: "image",
-                src: "assets/img/Square.png",
+                src: "assets/img/ArtisticDirection/Ahlam/AH_102.jpg",
             },
             {
                 type: "image",
-                src: "assets/img/Square.png",
+                src: "assets/img/ArtisticDirection/Ahlam/AH_103.jpg",
             },
             {
                 type: "image",
-                src: "assets/img/Square.png",
+                src: "assets/img/ArtisticDirection/Ahlam/AH_104.jpg",
             },
             {
                 type: "image",
-                src: "assets/img/Square.png",
+                src: "assets/img/ArtisticDirection/Ahlam/AH_105.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/Ahlam/AH_106.png",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/Ahlam/AH_107.png",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/Ahlam/AH_108.png",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/Ahlam/AH_109.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/Ahlam/AH_1010.png",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/Ahlam/AH_1011.png",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/Ahlam/AH_1012.png",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/Ahlam/AH_1013.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/Ahlam/AH_1014.png",
             },
         ],
         // description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
@@ -1188,35 +1312,55 @@ var artTabs = [
     },
     {
         id: 4,
-        image: "assets/img/Rectangle.png",
+        image: "assets/img/ArtisticDirection/SayfCover2.jpg",
         name: "SAYF",
         summary: "Waterfront Beirut, Lebanon",
         type: "grid",
         images: [
             {
                 type: "video",
-                src: "assets/img/Rectangle.png",
+                src: "assets/img/ArtisticDirection/Sayf/SA_001.jpg",
                 link: "https://youtu.be/lQAdLBk-6g0?si=SaTp1gXeghJVzu3W",
             },
             {
                 type: "image",
-                src: "assets/img/Square.png",
+                src: "assets/img/ArtisticDirection/Sayf/SA_002.jpg",
             },
             {
                 type: "image",
-                src: "assets/img/Square.png",
+                src: "assets/img/ArtisticDirection/Sayf/SA_003.jpg",
             },
             {
                 type: "image",
-                src: "assets/img/Square.png",
+                src: "assets/img/ArtisticDirection/Sayf/SA_004.jpg",
             },
             {
                 type: "image",
-                src: "assets/img/Square.png",
+                src: "assets/img/ArtisticDirection/Sayf/SA_005.jpg",
             },
             {
                 type: "image",
-                src: "assets/img/Square.png",
+                src: "assets/img/ArtisticDirection/Sayf/SA_006.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/Sayf/SA_007.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/Sayf/SA_008.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/Sayf/SA_009.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/Sayf/SA_010.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/Sayf/SA_011.jpg",
             },
         ],
         // description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",

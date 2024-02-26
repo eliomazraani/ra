@@ -1590,8 +1590,23 @@ body {
   }
 }
 
+.apply .popUp {
+  align-items: unset;
+}
 .apply .thankYou {
   margin-top: unset !important;
+}
+.apply #jobDescripiton {
+  margin-top: 15px;
+}
+.apply #jobDescripiton .responsibilities,
+.apply #jobDescripiton .requirements {
+  font-size: 14px;
+  text-align: justify;
+  color: #7377A5;
+}
+.apply .button {
+  justify-content: center;
 }
 .apply .form {
   margin-top: 32px;
