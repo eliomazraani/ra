@@ -536,10 +536,10 @@ var choreoTabs = [
             },
             {
                 id: 5,
-                image: "assets/img/Rectangle.png",
+                image: "assets/img/Stars/Woseltelha.jpg",
                 name: "HAIFA WEHBE",
                 summary: "Woseltelha - Live Concert",
-                href: "https://youtu.be/pYrZMdjldPo?si=6s3_QvrMGXMqsjLc",
+                href: "https://youtube.com/shorts/48jXTIceaB0?si=5v4Ta2eYj2RmWIIa",
 
             },
             {
@@ -547,7 +547,7 @@ var choreoTabs = [
                 image: "assets/img/Stars/Aziza.jpg",
                 name: "AZIZA",
                 summary: "The Show - Live Concert",
-                href: "https://youtube.com",
+                href: "https://youtu.be/GkyzmWZjFxE?si=ipf12_B7GX3THm5i",
 
             },
         ]
@@ -1119,35 +1119,103 @@ function stylingTabs() {
 var artTabs = [
     {
         id: 1,
-        image: "assets/img/Rectangle.png",
+        image: "assets/img/ArtisticDirection/MrLebCover.jpg",
         name: "MR LEBANON 2024",
         summary: "Haifa Wehbe - Casino Du Liban",
         type: "grid",
         images: [
             {
                 type: "video",
-                src: "assets/img/Rectangle.png",
-                link: "https://youtu.be/m2i9zXV9qcA?si=UmwVBVd0g_8WS1wx",
+                src: "assets/img/ArtisticDirection/MrLeb/mrLeb_100.jpg",
+                link: "https://youtu.be/pYrZMdjldPo?si=6s3_QvrMGXMqsjLc",
             },
             {
                 type: "image",
-                src: "assets/img/Square.png",
+                src: "assets/img/ArtisticDirection/MrLeb/mrLeb_101.png",
             },
             {
                 type: "image",
-                src: "assets/img/Square.png",
+                src: "assets/img/ArtisticDirection/MrLeb/mrLeb_102.jpeg",
             },
             {
                 type: "image",
-                src: "assets/img/Square.png",
+                src: "assets/img/ArtisticDirection/MrLeb/mrLeb_103.png",
             },
             {
                 type: "image",
-                src: "assets/img/Square.png",
+                src: "assets/img/ArtisticDirection/MrLeb/mrLeb_104.jpeg",
             },
             {
                 type: "image",
-                src: "assets/img/Square.png",
+                src: "assets/img/ArtisticDirection/MrLeb/mrLeb_105.png",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/MrLeb/mrLeb_106.png",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/MrLeb/mrLeb_107.jpeg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/MrLeb/mrLeb_108.png",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/MrLeb/mrLeb_109.jpeg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/MrLeb/mrLeb_1010.jpeg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/MrLeb/mrLeb_1011.png",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/MrLeb/mrLeb_1012.jpeg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/MrLeb/mrLeb_1013.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/MrLeb/mrLeb_1014.png",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/MrLeb/mrLeb_1015.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/MrLeb/mrLeb_1016.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/MrLeb/mrLeb_1017.jpeg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/MrLeb/mrLeb_1018.jpeg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/MrLeb/mrLeb_1019.png",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/MrLeb/mrLeb_1020.jpeg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/MrLeb/mrLeb_1021.jpeg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/MrLeb/mrLeb_1022.jpeg",
             },
         ],
         // description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
