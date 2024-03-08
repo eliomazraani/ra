@@ -72,10 +72,12 @@ function chooseService() {
     var pathName = window.location.pathname.slice(1);
     var service = services.filter(service => service.link === pathName);
     var header = `<div class="background ${service[0].color}">
-                    <div class="title">${service[0].title.toUpperCase()}</div>
-                    <div class="details">${service[0].description}</div>
-                    <div class="button ${service[0].color} mobile">
-                        <a onclick="scrollToContact()">Get In Touch</a>
+                    <div class="wrap">
+                        <div class="title">${service[0].title.toUpperCase()}</div>
+                        <div class="details">${service[0].description}</div>
+                        <div class="button ${service[0].color} mobile">
+                            <a onclick="scrollToContact()">Get In Touch</a>
+                        </div>
                     </div>
                 </div>`;
     $(".serviceHeader").append(header);
@@ -111,7 +113,7 @@ function renderValue() {
                     <div class="norm">${val.norm}</div>
                     <div class="detail">${val.detail}</div>
                 </div>`;
-        $(".values").append(value);
+        $(".values .wrap").append(value);
     });
 }
 
@@ -293,7 +295,7 @@ function renderTestimonial() {
                             <div class="testimonial">${test.testimonial}</div>
                             <div class="name">${test.name}</div>
                         </div>`
-        $(".testimonialTab").append(testimonial);
+        $(".testimonialTab .wrap").append(testimonial);
     });
 }
 
@@ -741,8 +743,8 @@ function choreographyTabs() {
     });
 
     $(".servicesGrid .tabs").append(tabs);
-    $(".servicesGrid").append(grids);
-    $(".servicesGrid").append(modal);
+    $(".servicesGrid .wrap").append(grids);
+    $(".servicesGrid .wrap").append(modal);
 }
 
 var designTabs = [
@@ -1113,7 +1115,7 @@ function stylingTabs() {
     });
 
     $(".servicesGrid .tabs").append(tabs);
-    $(".servicesGrid").append(grids);
+    $(".servicesGrid .wrap").append(grids);
 }
 
 var artTabs = [
@@ -1589,7 +1591,7 @@ function directionTabs() {
         });
         grids += `</div>`;
 
-    $(".servicesGrid").append(grids);
+    $(".servicesGrid .wrap").append(grids);
 }
 
 var styleCoaching = [
@@ -1649,14 +1651,16 @@ function coachingList() {
 
     styleCoaching.forEach((topic, i) => {
         list += `<div class="list ${(quantity === 'even' && i % 2 === 0) ? 'odd' : ((quantity === 'odd' && i % 2 !== 0) ? 'odd' : 'even')}">
-                    <div class="demo">
-                        <img src="${topic.img}" alt="Img">
-                    </div>
-                    <div class="information">
-                        <div class="name">${topic.name}</div>
-                        <div class="summary">${topic.summary}</div>
-                        <div class="button peachBtn">
-                            <a onclick="scrollToContact()">${topic.button}</a>
+                    <div class="wrap">
+                        <div class="demo">
+                            <img src="${topic.img}" alt="Img">
+                        </div>
+                        <div class="information">
+                            <div class="name">${topic.name}</div>
+                            <div class="summary">${topic.summary}</div>
+                            <div class="button peachBtn">
+                                <a onclick="scrollToContact()">${topic.button}</a>
+                            </div>
                         </div>
                     </div>
                 </div>`
@@ -1736,7 +1740,7 @@ function showService(tab, name, color) {
         rows += `</div>`;
 
         show += `<div class="displayProject">
-                    <div class="display">
+                    <div class="display wrap">
                         <div class="projectDescription ${serviceTab.description ? "" : "d-none"}">
                             ${serviceTab.description}
                         </div>
