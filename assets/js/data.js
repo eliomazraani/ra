@@ -572,10 +572,10 @@ var choreoTabs = [
             },
             {
                 id: 9,
-                image: "assets/img/Rectangle.png",
+                image: "assets/img/Clubs/Kai.jpg",
                 name: "KAI",
                 summary: "Batroun, Lebanon",
-                href: "https://youtube.com"
+                href: "https://youtube.com/shorts/jCzdL_QE47A?si=vw43hFm4YPFc18Xp"
             },
             {
                 id: 10,
