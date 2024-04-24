@@ -46,7 +46,7 @@ function renderService() {
     var serviceM = ``;
 
     services.forEach(service => {
-        serviceD = `<div ${service.class == 'coach' ? `onclick="goTo('${service.link}')` : ''}" class="${service.class} block">
+        serviceD = `<div ${service.class != 'cstm-style' ? `onclick="goTo('${service.link}')"` : ''} class="${service.class} block">
                         <img src="${service.image}" alt="Img">
                         <div class="paragraph">
                             <div class="title">${service.title}</div>
@@ -54,7 +54,7 @@ function renderService() {
                         </div>
                     </div>`;
         serviceM = `<div class="${service.class} block fade">
-                        <img onclick="goTo('${service.link}')" src="${service.image}" alt="Img">
+                        <img ${service.class != 'cstm-style' ? `onclick="goTo('${service.link}')"` : ''} src="${service.image}" alt="Img">
                         <div class="paragraph">
                             <div class="title">${service.title}</div>
                             <div class="description">${service.teaser}</div>
