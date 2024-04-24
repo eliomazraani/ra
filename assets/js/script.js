@@ -20,71 +20,89 @@ function thankYou() {
     $('#message').val('');
 }
 
+var position;
 function jobPosition(num) {
-    // applyNow();
-    var position;
     switch (num) {
         case 1:
-            // $("#jobPositionName").text("Coordinator");
+            $("#jobPositionName").text("Coordinator");
             position = "Coordinator";
+            viewDescription(position);
             break;
         case 2:
-            // $("#jobPositionName").text("Assistant");
+            $("#jobPositionName").text("Assistant");
             position = "Assistant";
+            viewDescription(position);
             break;
         case 3:
-            // $("#jobPositionName").text("Driver");
+            $("#jobPositionName").text("Driver");
             position = "Driver";
+            viewDescription(position);
             break;
         case 4:
-            // $("#jobPositionName").text("Wardrobe Supervisor");
+            $("#jobPositionName").text("Wardrobe Supervisor");
             position = "Wardrobe Supervisor";
+            viewDescription(position);
             break;
         case 5:
-            // $("#jobPositionName").text("Makeup Artist");
-            position = "Makeup Artist";
+            $("#jobPositionName").text("Crafter");
+            position = "Crafter";
+            viewDescription(position);
             break;
         case 6:
-            // $("#jobPositionName").text("Tailor");
-            position = "Tailor";
+            position = "Makeup Artist";
+            applyNow(position);
             break;
         case 7:
-            // $("#jobPositionName").text("Crafter");
-            position = "Crafter";
+            position = "Tailor";
+            applyNow(position);
             break;
         case 8:
-            // $("#jobPositionName").text("Dancer/Performer");
             position = "Dancer/Performer";
+            applyNow(position);
             break;
         case 9:
-            // $("#jobPositionName").text("Singer");
             position = "Singer";
+            applyNow(position);
             break;
         case 10:
-            // $("#jobPositionName").text("Musician");
             position = "Musician";
+            applyNow(position);
             break;
         case 11:
-            // $("#jobPositionName").text("Graphic Designer");
             position = "Graphic Designer";
+            applyNow(position);
             break;
         case 12:
-            // $("#jobPositionName").text("Photographer");
             position = "Photographer";
+            applyNow(position);
             break;
         case 13:
-            // $("#jobPositionName").text("Videographer");
             position = "Videographer";
+            applyNow(position);
             break;
         case 14:
-            // $("#jobPositionName").text("Editor");
             position = "Editor";
+            applyNow(position);
             break;
         case 15:
-            // $("#jobPositionName").text("Digital Marketing Specialist");
             position = "Digital Marketing Specialist";
+            applyNow(position);
             break;
     }
+}
+
+function viewDescription(position) {
+    $('.apply').toggleClass('open');
+    $('#applyForm input').val('');
+    $('#applyForm input').css('border', '');
+    $('#applyForm .unselected').css('border', '');
+    if (!$("#applyForm .unselected").hasClass("seen")) {
+        $(".uploadFile").toggleClass('seen');
+    }
+    renderDescription(position);
+}
+
+function applyNow(position) {
     var emailAddress = "info@rachelasmar.com";
     var subject = `New Job Application - ${position}`;
     var body = `*Please attach your resume, videos, and photos and complete the information below*
@@ -94,20 +112,14 @@ Height:
 Instagram: `;
 
     var mailtoUrl = "mailto:" + emailAddress
-                    + "?subject=" + encodeURIComponent(subject)
-                    + "&body=" + encodeURIComponent(body);
+        + "?subject=" + encodeURIComponent(subject)
+        + "&body=" + encodeURIComponent(body);
 
     window.location.href = mailtoUrl;
 }
 
-function applyNow() {
-    $('.apply').toggleClass('open');
-    $('#applyForm input').val('');
-    $('#applyForm input').css('border', '');
-    $('#applyForm .unselected').css('border', '');
-    if (!$("#applyForm .unselected").hasClass("seen")) {
-        $(".uploadFile").toggleClass('seen');
-    }
+function claimNow() {
+    applyNow(position)
 }
 
 var file;
@@ -156,13 +168,13 @@ function checkURL() {
         $('.sp').addClass('selected');
         $('.chp').addClass('selected');
         $('.button').addClass('green');
-    } else if (currentUrl === 'design.html' || currentUrl === 'designService.html') {
+    } else if (currentUrl === 'design.html' || currentUrl === 'designService.html' || currentUrl === 'designservice') {
         $('.toHome').attr('href', '/');
         $('.toHome img').attr('src', 'assets/img/LogoPink.svg');
         $('.sp').addClass('selected');
         $('.des').addClass('selected');
         $('.button').addClass('pink');
-    } else if (currentUrl === 'art.html' || currentUrl === 'artService.html') {
+    } else if (currentUrl === 'art.html' || currentUrl === 'artService.html' || currentUrl === 'artservice') {
         $('.toHome').attr('href', '/');
         $('.toHome img').attr('src', 'assets/img/LogoPurple.svg');
         $('.sp').addClass('selected');
@@ -606,7 +618,7 @@ function changeDisplay(one) {
 
 function openGoogleMaps() {
     var mapsUrl = "https://maps.app.goo.gl/TuJwvJCoFnzyVtXj8";
-    
+
     window.open(mapsUrl, "_blank");
 }
 
@@ -625,8 +637,8 @@ function openEmail() {
     // var body = "Body of the email";
 
     var mailtoUrl = "mailto:" + emailAddress;
-                    // + "?subject=" + encodeURIComponent(subject)
-                    // + "&body=" + encodeURIComponent(body);
+    // + "?subject=" + encodeURIComponent(subject)
+    // + "&body=" + encodeURIComponent(body);
 
     window.location.href = mailtoUrl;
 }
@@ -656,7 +668,7 @@ $(document).ready(function () {
     document.addEventListener('touchend', handleSwipeEnd);
 });
 
-$(window).resize(function() {
+$(window).resize(function () {
     var currentUrl = window.location.href;
     if (currentUrl.endsWith('/') && $(window).width() > 767) {
         var height = $(window).height() - 92;

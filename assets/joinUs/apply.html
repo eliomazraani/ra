@@ -1,37 +1,20 @@
 <!-- Apply -->
 <div class="overlay apply">
     <div class="popUp">
-        <i onclick="applyNow()" class="fas fa-close"></i>
+        <i onclick="viewDescription()" class="fas fa-close"></i>
         <div id="jobPositionName" class="thankYou">Job Name</div>
-        <form action="" class="form" id="applyForm">
-            <div class="row">
-                <input type="text" id="fName" name="from_name" placeholder="First Name*" required>
-                <input type="text" id="lName" name="from_name" placeholder="Last Name*" required>
+        <div id="jobDescripiton">
+            <div class="responsibilities">
+                <div>Responsibilities:</div>
+                <ul id="responsibilitiesList"></ul>
             </div>
-            <div class="row">
-                <input type="phone" id="telephone" name="phone_number" placeholder="Phone Number*" required>
-                <input type="email" id="mail" name="email" placeholder="Email*" required>
+            <div class="requirements">
+                <div>Requirements:</div>
+                <ul id="requirementsList"></ul>
             </div>
-            <div class="row">
-                <input type="url" id="linkedin" name="linkedin" placeholder="LinkedIn URL">
-                <input type="url" id="portfolio" name="portfolio" placeholder="Portfolio URL">
-            </div>
-            <div class="row">
-                <label for="upload" class="uploadFile unselected seen">
-                    <img src="assets/img/Upload.png" alt="Img">
-                    <div>Upload Resume & Portfolio</div>
-                </label>
-                <div class="uploadFile">
-                    <div id="fileName"></div>
-                    <i onclick="removeFile(event)" class="fas fa-trash" aria-hidden="true"></i>
-                </div>
-                <input onchange="fileSelected(this)" type="file" id="upload" accept=".pdf, .docx">
-            </div>
-            <div class="row">
-                <div id="applyJob" onclick="applyJob()" class="button">
-                    <a>Submit</a>
-                </div>
-            </div>
-        </form>
+        </div>
+        <div onclick="claimNow()" class="button">
+            <a>Apply Now</a>
+        </div>
     </div>
 </div>

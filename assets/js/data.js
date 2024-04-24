@@ -72,10 +72,12 @@ function chooseService() {
     var pathName = window.location.pathname.slice(1);
     var service = services.filter(service => service.link === pathName);
     var header = `<div class="background ${service[0].color}">
-                    <div class="title">${service[0].title.toUpperCase()}</div>
-                    <div class="details">${service[0].description}</div>
-                    <div class="button ${service[0].color} mobile">
-                        <a onclick="scrollToContact()">Get In Touch</a>
+                    <div class="wrap">
+                        <div class="title">${service[0].title.toUpperCase()}</div>
+                        <div class="details">${service[0].description}</div>
+                        <div class="button ${service[0].color} mobile">
+                            <a onclick="scrollToContact()">Get In Touch</a>
+                        </div>
                     </div>
                 </div>`;
     $(".serviceHeader").append(header);
@@ -111,25 +113,24 @@ function renderValue() {
                     <div class="norm">${val.norm}</div>
                     <div class="detail">${val.detail}</div>
                 </div>`;
-        $(".values").append(value);
+        $(".values .wrap").append(value);
     });
 }
 
 var clients = [
-    "assets/img/Clients/ROTANA.png",
+    "assets/img/Clients/KULT.png",
     "assets/img/Clients/BENCHMARK.png",
     "assets/img/Clients/SAYF.png",
-    "assets/img/Clients/MTV.png",
-    "assets/img/Clients/STEPS.png",
-    "assets/img/Clients/KULT.png",
-    "assets/img/Clients/KLOUD.png",
-    "assets/img/Clients/BOLD.png",
-    "assets/img/Clients/ABC.png",
-    "assets/img/Clients/IAM.png",
-    "assets/img/Clients/SEAFRONT.png",
     "assets/img/Clients/CA.jpg",
-    "assets/img/Clients/CASINO.png",
+    "assets/img/Clients/MTV.png",
+    "assets/img/Clients/ABC.png",
+    "assets/img/Clients/STEPS.png",
+    "assets/img/Clients/ROTANA.png",
+    "assets/img/Clients/IAM.png",
+    "assets/img/Clients/KLOUD.png",
     "assets/img/Clients/GAT.jpg",
+    "assets/img/Clients/CASINO.png",
+    "assets/img/Clients/SEAFRONT.png",
     "assets/img/Clients/RETINA.jpg",
     "assets/img/Clients/KAI.png",
 ]
@@ -207,7 +208,7 @@ var testimonials = [
     // },
     {
         id: 3,
-        name: "ROY KHOURY – WRITER, DIRECTOR, CHOREOGRAPHER",
+        name: "ROY El KHOURI – WRITER, DIRECTOR, CHOREOGRAPHER",
         testimonial: "“The work and experience with Rachel was beyond amazing. She made me feel comfortable, she was professional yet personal, with a strong knowledge of what she does. Execution and delivery were unbelievable! I certainly recommend her, and can’t wait for more projects to come!”",
         image: "assets/img/Testimonial/RoyKhoury.png",
     },
@@ -294,7 +295,7 @@ function renderTestimonial() {
                             <div class="testimonial">${test.testimonial}</div>
                             <div class="name">${test.name}</div>
                         </div>`
-        $(".testimonialTab").append(testimonial);
+        $(".testimonialTab .wrap").append(testimonial);
     });
 }
 
@@ -303,43 +304,48 @@ var jobs = [
         id: 1,
         position: "Coordinator",
         requirements: "Coordinates tasks, promotes collaboration, and ensures efficiency.",
-        image: "assets/img/Jobs/Coordinator.jpg"
+        image: "assets/img/Jobs/Coordinator.jpg",
+        description: true
     },
     {
         id: 2,
         position: "Assistant",
         requirements: "Supports coordination with computer proficiency and strong English skills, ensuring smooth task execution.",
-        image: "assets/img/Jobs/Assistant.jpg"
+        image: "assets/img/Jobs/Assistant.jpg",
+        description: true
     },
     {
         id: 3,
         position: "Driver",
         requirements: "Reliable, safely transports, maintains vehicle, follows routes.",
-        image: "assets/img/Jobs/Driver.jpg"
+        image: "assets/img/Jobs/Driver.jpg",
+        description: true
     },
     {
         id: 4,
         position: "Wardrobe Supervisor",
         requirements: "Manages and coordinates costumes, collaborates with designer to achieve visions.",
-        image: "assets/img/Jobs/Wardrobe.jpg"
+        image: "assets/img/Jobs/Wardrobe.jpg",
+        description: true
     },
     {
         id: 5,
+        position: "Crafter",
+        requirements: "Creates and handcrafts unique items with skill and creativity.",
+        image: "assets/img/Jobs/Crafter.jpg",
+        description: true
+    },
+    {
+        id: 6,
         position: "Makeup Artist",
         requirements: "Applies beauty and artistic makeup for expressive themes.",
         image: "assets/img/Jobs/MUA.jpg"
     },
     {
-        id: 6,
+        id: 7,
         position: "Tailor",
         requirements: "Expertly crafts costumes with precision and skill.",
         image: "assets/img/Jobs/Tailor.jpg"
-    },
-    {
-        id: 7,
-        position: "Crafter",
-        requirements: "Creates and handcrafts unique items with skill and creativity.",
-        image: "assets/img/Jobs/Crafter.jpg"
     },
     {
         id: 8,
@@ -391,6 +397,69 @@ var jobs = [
     // }
 ]
 
+var jobsDescription = [
+    {
+        id: 1,
+        position: "Coordinator",
+        responsibilities: [
+            "Responsibility 1",
+            "Responsibility 2"
+        ],
+        requirements: [
+            "Requirements 1",
+            "Requirements 2"
+        ]
+    },
+    {
+        id: 2,
+        position: "Assistant",
+        responsibilities: [
+            "Responsibility 1",
+            "Responsibility 2"
+        ],
+        requirements: [
+            "Requirements 1",
+            "Requirements 2"
+        ]
+    },
+    {
+        id: 3,
+        position: "Driver",
+        responsibilities: [
+            "Responsibility 1",
+            "Responsibility 2"
+        ],
+        requirements: [
+            "Requirements 1",
+            "Requirements 2"
+        ]
+    },
+    {
+        id: 4,
+        position: "Wardrobe Supervisor",
+        responsibilities: [
+            "Responsibility 1",
+            "Responsibility 2"
+        ],
+        requirements: [
+            "Requirements 1",
+            "Requirements 2"
+        ]
+    },
+    {
+        id: 5,
+        position: "Crafter",
+        responsibilities: [
+            "Responsibility 1",
+            "Responsibility 2"
+        ],
+        requirements: [
+            "Requirements 1",
+            "Requirements 2"
+        ]
+    },
+]
+
 function renderJob() {
     var job = ``;
 
@@ -403,7 +472,7 @@ function renderJob() {
                         <div class="position">${vacancy.position}</div>
                         <div class="requirements">${vacancy.requirements}</div>
                         <div onclick="jobPosition(${vacancy.id})" class="button">
-                            <a>Apply Now</a>
+                            <a>${vacancy.description ? "View Description" : "Apply Now"}</a>
                         </div>
                     </div>
                 </div>`;
@@ -412,171 +481,128 @@ function renderJob() {
     });
 }
 
+function renderDescription(position) {
+    $("#responsibilitiesList").empty();
+    $("#requirementsList").empty();
+    var chosenJob = jobsDescription.find(job => job.position == position);
+    var resp = ``;
+    var req = ``;
+
+    chosenJob.responsibilities.forEach(responsibility => {
+        resp = `<li>${responsibility}</li>`;
+
+        $("#responsibilitiesList").append(resp);
+    });
+
+    chosenJob.requirements.forEach(requirement => {
+        req = `<li>${requirement}</li>`;
+
+        $("#requirementsList").append(req);
+    })
+}
+
 var choreoTabs = [
     {
         id: 1,
-        name: "Music Video",
+        name: "Our Stars",
         elements: [
             {
                 id: 1,
-                image: "assets/img/Rectangle.png",
-                name: "EBKI",
-                summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
-                type: "descriptive",
-                images: [
-                    "assets/img/EBKI/EBKI.jpg",
-                    "assets/img/EBKI/EBKI(1).jpg",
-                    "assets/img/EBKI/EBKI(2).jpg",
-                    "assets/img/EBKI/EBKI(3).jpg",
-                    "assets/img/EBKI/EBKI(4).jpg",
-                ],
-                // concept: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
-                info: {
-                    "Lyrics and Composition": "Test",
-                    "Music Designer": "Test",
-                    "Recording": "Test",
-                    "Mix and Mastering": "Test",
-                    "Directed By": "Test",
-                    "Choreographer & Stylist": "Test",
-                }
+                image: "assets/img/Stars/Ebki.jpg",
+                name: "KARL HUSEIN",
+                summary: "Ebki - Music Video",
+                href: "https://youtube.com",
             },
             {
                 id: 2,
-                image: "assets/img/Rectangle.png",
-                name: "MOUKHTASSAR EL KALAM",
-                summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
-                type: "descriptive",
-                images: [
-                    "assets/img/Rectangle(2).png",
-                    "assets/img/Rectangle(2).png",
-                    "assets/img/Rectangle(2).png",
-                ],
-                // concept: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
-                info: {
-                    "Lyrics and Composition": "Test",
-                    "Music Designer": "Test",
-                    "Recording": "Test",
-                    "Mix and Mastering": "Test",
-                    "Directed By": "Test",
-                    "Choreographer & Stylist": "Test",
-                }
-            }
+                image: "assets/img/Stars/MokhtasarElKalam.jpg",
+                name: "LAILA CHANDOUL",
+                summary: "Mokhtasar El Kalam - Music Video",
+                href: "https://youtube.com",
+            },
+            {
+                id: 3,
+                image: "assets/img/Stars/KhamsehWNoss.jpg",
+                name: "NADINE NJEIM & KOSAI KHAULI",
+                summary: "Khamseh W Noss - TV Series",
+                href: "https://youtube.com",
+
+            },
+            {
+                id: 4,
+                image: "assets/img/Stars/Paranoia.jpg",
+                name: "DALIDA KHALIL",
+                summary: "Paranoia - TV Series",
+                href: "https://youtube.com",
+
+            },
+            {
+                id: 5,
+                image: "assets/img/Stars/Woseltelha.jpg",
+                name: "HAIFA WEHBE",
+                summary: "Woseltelha - Live Concert",
+                href: "https://youtube.com/shorts/48jXTIceaB0?si=5v4Ta2eYj2RmWIIa",
+
+            },
+            {
+                id: 6,
+                image: "assets/img/Stars/Aziza.jpg",
+                name: "AZIZA",
+                summary: "The Show - Live Concert",
+                href: "https://youtu.be/GkyzmWZjFxE?si=ipf12_B7GX3THm5i",
+
+            },
         ]
     },
     {
         id: 2,
-        name: "TV Series",
+        name: "Our Clubs",
         elements: [
             {
-                id: 3,
-                image: "assets/img/Rectangle.png",
-                name: "KHAMSEH W NOSS",
-                summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
-                type: "descriptive",
-                images: [
-                    "assets/img/Rectangle(2).png",
-                    "assets/img/Rectangle(2).png",
-                    "assets/img/Rectangle(2).png",
-                ],
-                // concept: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
-                info: {
-                    "Lyrics and Composition": "Test",
-                    "Music Designer": "Test",
-                    "Recording": "Test",
-                    "Mix and Mastering": "Test",
-                    "Directed By": "Test",
-                    "Choreographer & Stylist": "Test",
-                }
+                id: 7,
+                image: "assets/img/Clubs/Ava.jpg",
+                name: "AVA",
+                summary: "Beirut, Lebanon",
+                href: "https://youtu.be/WpziTVP_DzY?si=I1ZBna5opwREuVZz"
             },
             {
-                id: 4,
-                image: "assets/img/Rectangle.png",
-                name: "PARANOIA",
-                summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
-                type: "descriptive",
-                images: [
-                    "assets/img/Rectangle(2).png",
-                    "assets/img/Rectangle(2).png",
-                    "assets/img/Rectangle(2).png",
-                ],
-                // concept: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
-                info: {
-                    "Lyrics and Composition": "Test",
-                    "Music Designer": "Test",
-                    "Recording": "Test",
-                    "Mix and Mastering": "Test",
-                    "Directed By": "Test",
-                    "Choreographer & Stylist": "Test",
-                }
+                id: 8,
+                image: "assets/img/Clubs/Seafront.jpg",
+                name: "SEAFRONT",
+                summary: "Kaslik, Lebanon",
+                href: "https://youtube.com/shorts/8jxuLF0jQh0?si=0l434eKF3tMCDqmE"
+            },
+            {
+                id: 9,
+                image: "assets/img/Clubs/Kai.jpg",
+                name: "KAI",
+                summary: "Batroun, Lebanon",
+                href: "https://youtube.com/shorts/jCzdL_QE47A?si=vw43hFm4YPFc18Xp"
+            },
+            {
+                id: 10,
+                image: "assets/img/Clubs/Kloud.jpg",
+                name: "KLOUD",
+                summary: "Dbaye, Lebanon",
+                href: "https://youtube.com/shorts/6cyvM5eIm_w?si=0X7gHm-6kvuqpJmI"
+            },
+            {
+                id: 11,
+                image: "assets/img/Clubs/Andalucia.jpg",
+                name: "ANDALUCIA",
+                summary: "Monot, Lebanon",
+                href: "https://youtube.com/"
             }
         ]
     },
     {
         id: 3,
-        name: "Nightlife",
-        elements: [
-            {
-                id: 5,
-                image: "assets/img/Rectangle.png",
-                name: "AVA",
-                href: "https://youtube.com"
-            },
-            {
-                id: 6,
-                image: "assets/img/Rectangle.png",
-                name: "BOLD",
-                href: "https://youtube.com"
-            },
-            {
-                id: 7,
-                image: "assets/img/Rectangle.png",
-                name: "KAI",
-                href: "https://youtube.com"
-            },
-            {
-                id: 8,
-                image: "assets/img/Rectangle.png",
-                name: "KLOUD",
-                href: "https://youtube.com"
-            }
-        ]
-    },
-    {
-        id: 4,
-        name: "Weddings & Events",
+        name: "Our Weddings & Events",
         elements: [
             {
                 type: "video",
-                src: "assets/img/Weddings&Events/R_M10810ed.jpg",
+                src: "assets/img/Weddings&Events/W&E.jpg",
                 link: "https://youtu.be/zzk59n-Yunc?si=wwRWNL6mhBPHCvo9",
-            },
-            {
-                type: "image",
-                src: "assets/img/Weddings&Events/MAZ5136.jpg",
-            },
-            {
-                type: "image",
-                src: "assets/img/Weddings&Events/MAZ5167.jpg",
-            },
-            {
-                type: "image",
-                src: "assets/img/Weddings&Events/MAZ5220.jpg",
-            },
-            {
-                type: "image",
-                src: "assets/img/Weddings&Events/5W4A4828.jpg",
-            },
-            {
-                type: "image",
-                src: "assets/img/Weddings&Events/7C2A9022.jpg",
-            },
-            {
-                type: "image",
-                src: "assets/img/Weddings&Events/7C2A9108.jpg",
-            },
-            {
-                type: "image",
-                src: "assets/img/Weddings&Events/7C2A9629.jpg",
             },
             {
                 type: "image",
@@ -584,11 +610,7 @@ var choreoTabs = [
             },
             {
                 type: "image",
-                src: "assets/img/Weddings&Events/IAM_1304.jpg",
-            },
-            {
-                type: "image",
-                src: "assets/img/Weddings&Events/IAM_1407.jpg",
+                src: "assets/img/Weddings&Events/7C2A9022.jpg",
             },
             {
                 type: "image",
@@ -596,27 +618,23 @@ var choreoTabs = [
             },
             {
                 type: "image",
-                src: "assets/img/Weddings&Events/M_L_4396.jpg",
+                src: "assets/img/Weddings&Events/R_M19486.jpg",
             },
             {
                 type: "image",
-                src: "assets/img/Weddings&Events/Post9.jpg",
-            },
-            {
-                type: "image",
-                src: "assets/img/Weddings&Events/R_M10665.jpg",
-            },
-            {
-                type: "image",
-                src: "assets/img/Weddings&Events/R_M10677.jpg",
-            },
-            {
-                type: "image",
-                src: "assets/img/Weddings&Events/R_M10810.jpg",
+                src: "assets/img/Weddings&Events/5W4A4828.jpg",
             },
             {
                 type: "image",
                 src: "assets/img/Weddings&Events/R_M10816.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/Weddings&Events/ALY_0219.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/Weddings&Events/MAZ5136.jpg",
             },
             {
                 type: "image",
@@ -628,15 +646,35 @@ var choreoTabs = [
             },
             {
                 type: "image",
+                src: "assets/img/Weddings&Events/Post9.jpg",
+            },
+            {
+                type: "image",
                 src: "assets/img/Weddings&Events/R_M19199.jpg",
             },
             {
                 type: "image",
-                src: "assets/img/Weddings&Events/R_M19486.jpg",
+                src: "assets/img/Weddings&Events/IAM_1304.jpg",
             },
             {
                 type: "image",
                 src: "assets/img/Weddings&Events/RODD3360.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/Weddings&Events/IAM_1407.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/Weddings&Events/M_L_4396.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/Weddings&Events/R_M10677.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/Weddings&Events/MAZ5220.jpg",
             },
         ]
     }
@@ -655,8 +693,8 @@ function choreographyTabs() {
     choreoTabs.forEach((tab, index) => {
         tabs += `<a onclick="serviceShow(${index + 1})" ${index === 0 ? 'class="green"' : ''}>${tab.name}</a>`;
 
-        grids += `<div class="grid service-${index + 1} ${index !== 0 ? 'd-none' : ''} ${tab.name === 'Weddings & Events' ? 'displayCatalogue' : ''}">`;
-        if (tab.name != "Weddings & Events") {
+        grids += `<div class="grid service-${index + 1} ${index !== 0 ? 'd-none' : ''} ${tab.name === 'Our Weddings & Events' ? 'displayCatalogue' : ''}">`;
+        if (tab.name != "Our Weddings & Events") {
             tab.elements.forEach(grid => {
                 grids += `<a ${grid.href ? `href=${grid.href} target="_blank"` : `href="choreographyService.html?id=${tab.id}?name=${grid.name}"`}>
                             <div class="service">
@@ -680,22 +718,22 @@ function choreographyTabs() {
                 if (grid.type === "image") {
                     rowFill += 25;
                     if (rowFill <= 100) {
-                        grids += `<img onclick="showModal(this)" class="${grid.type}" src="${grid.src}" alt="Img">`;
+                        grids += `<div class="${grid.type}"><img onclick="showModal(this)" src="${grid.src}" alt="Img"></div>`;
                     } else {
                         rowFill = 25;
                         grids += `</div>
                                 <div class="row">
-                                    <img onclick="showModal(this)" class="${grid.type}" src="${grid.src}" alt="Img">`;
+                                    <div class="${grid.type}"><img onclick="showModal(this)" src="${grid.src}" alt="Img"></div>`;
                     }
                 } else if (grid.type === "video") {
                     rowFill += 50;
                     if (rowFill <= 100) {
-                        grids += `<img onclick="socialMedia('${grid.link}')" class="${grid.type}" src="${grid.src}" alt="Video">`;
+                        grids += `<div class="${grid.type}"><img onclick="socialMedia('${grid.link}')" src="${grid.src}" alt="Video"></div>`;
                     } else {
                         rowFill = 50;
                         grids += `</div>
                                 <div class="row">
-                                    <img onclick="socialMedia('${grid.link}')" class="${grid.type}" src="${grid.src}" alt="Video">`;
+                                    <div class="${grid.type}"><img onclick="socialMedia('${grid.link}')" src="${grid.src}" alt="Video"></div>`;
                     }
                 }
             });
@@ -705,20 +743,20 @@ function choreographyTabs() {
     });
 
     $(".servicesGrid .tabs").append(tabs);
-    $(".servicesGrid").append(grids);
-    $(".servicesGrid").append(modal);
+    $(".servicesGrid .wrap").append(grids);
+    $(".servicesGrid .wrap").append(modal);
 }
 
 var designTabs = [
     {
         id: 1,
-        name: "Photoshoot",
+        name: "Our Projects",
         elements: [
             {
                 id: 1,
                 image: "assets/img/Rectangle.png",
-                name: "LEA MAKHOUL",
-                summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+                name: "CHICAGO ARABIA",
+                summary: "Roy El Khouri - Broadway Musical",
                 type: "grid",
                 images: [
                     {
@@ -751,8 +789,8 @@ var designTabs = [
             {
                 id: 2,
                 image: "assets/img/Rectangle.png",
-                name: "MAROUN CONSTANTINE",
-                summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+                name: "LEA MAKHOUL",
+                summary: "Artist - Photoshoot",
                 type: "grid",
                 images: [
                     {
@@ -785,8 +823,8 @@ var designTabs = [
             {
                 id: 3,
                 image: "assets/img/Rectangle.png",
-                name: "NADA ABOU FARHAT",
-                summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+                name: "MAROUN CONSTANTINE",
+                summary: "Jewelery Design - Photoshoot",
                 type: "grid",
                 images: [
                     {
@@ -815,18 +853,12 @@ var designTabs = [
                     },
                 ],
                 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
-            }
-        ]
-    },
-    {
-        id: 2,
-        name: "Music Video",
-        elements: [
+            },
             {
                 id: 4,
                 image: "assets/img/Rectangle.png",
-                name: "EBKI",
-                summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+                name: "NADA ABOU FARHAT",
+                summary: "Artist - Photoshoot",
                 type: "grid",
                 images: [
                     {
@@ -859,8 +891,8 @@ var designTabs = [
             {
                 id: 5,
                 image: "assets/img/Rectangle.png",
-                name: "RATATA",
-                summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+                name: "EBKI",
+                summary: "Karl Husein - Music Video",
                 type: "grid",
                 images: [
                     {
@@ -889,39 +921,46 @@ var designTabs = [
                     },
                 ],
                 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
-            }
-        ]
-    },
-    {
-        id: 3,
-        name: "Commercial",
-        elements: [
+            },
             {
                 id: 6,
                 image: "assets/img/Rectangle.png",
-                name: "AL MAKASSED",
-                summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
-                type: "descriptive",
+                name: "RATATA",
+                summary: "Lea Makhoul - Music Video",
+                type: "grid",
                 images: [
-                    "assets/img/Rectangle(2).png",
-                    "assets/img/Rectangle(2).png",
-                    "assets/img/Rectangle(2).png",
+                    {
+                        type: "video",
+                        src: "assets/img/Rectangle.png",
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/Square.png",
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/Square.png",
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/Square.png",
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/Square.png",
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/Square.png",
+                    },
                 ],
-                // concept: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
-                info: {
-                    "Lyrics and Composition": "Test",
-                    "Music Designer": "Test",
-                    "Recording": "Test",
-                    "Mix and Mastering": "Test",
-                    "Directed By": "Test",
-                    "Choreographer & Stylist": "Test",
-                }
+                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
             },
             {
                 id: 7,
                 image: "assets/img/Rectangle.png",
-                name: "MEMOTILES",
-                summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+                name: "ZAKKI BLINK",
+                summary: "Al Makassed - Commercial",
                 type: "descriptive",
                 images: [
                     "assets/img/Rectangle(2).png",
@@ -937,39 +976,39 @@ var designTabs = [
                     "Directed By": "Test",
                     "Choreographer & Stylist": "Test",
                 }
-            }
-        ]
-    },
-    {
-        id: 4,
-        name: "Costume Themes",
-        elements: [
+            },
             {
                 id: 8,
                 image: "assets/img/Rectangle.png",
-                name: "CHRISTMAS",
-                summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
-                type: "slide",
+                name: "MEMOTILES",
+                summary: "Commercial",
+                type: "descriptive",
                 images: [
-                    [
-                        "assets/img/Rectangle(2).png",
-                        "assets/img/Rectangle(2).png",
-                        "assets/img/Rectangle(2).png",
-                        "assets/img/Rectangle(2).png",
-                    ],
-                    [
-                        "assets/img/Rectangle(2).png",
-                        "assets/img/Rectangle(2).png",
-                        "assets/img/Rectangle(2).png",
-                        "assets/img/Rectangle(2).png",
-                    ],
-                ]
+                    "assets/img/Rectangle(2).png",
+                    "assets/img/Rectangle(2).png",
+                    "assets/img/Rectangle(2).png",
+                ],
+                // concept: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+                info: {
+                    "Lyrics and Composition": "Test",
+                    "Music Designer": "Test",
+                    "Recording": "Test",
+                    "Mix and Mastering": "Test",
+                    "Directed By": "Test",
+                    "Choreographer & Stylist": "Test",
+                }
             },
+        ]
+    },
+    {
+        id: 2,
+        name: "Our Designs",
+        elements: [
             {
                 id: 9,
                 image: "assets/img/Rectangle.png",
-                name: "FOLKLORE",
-                summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+                name: "CHRISTMAS",
+                // summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
                 type: "slide",
                 images: [
                     [
@@ -989,8 +1028,8 @@ var designTabs = [
             {
                 id: 10,
                 image: "assets/img/Rectangle.png",
-                name: "ORIENTALE",
-                summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+                name: "FOLKLORE",
+                // summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
                 type: "slide",
                 images: [
                     [
@@ -1010,8 +1049,29 @@ var designTabs = [
             {
                 id: 11,
                 image: "assets/img/Rectangle.png",
+                name: "ORIENTALE",
+                // summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+                type: "slide",
+                images: [
+                    [
+                        "assets/img/Rectangle(2).png",
+                        "assets/img/Rectangle(2).png",
+                        "assets/img/Rectangle(2).png",
+                        "assets/img/Rectangle(2).png",
+                    ],
+                    [
+                        "assets/img/Rectangle(2).png",
+                        "assets/img/Rectangle(2).png",
+                        "assets/img/Rectangle(2).png",
+                        "assets/img/Rectangle(2).png",
+                    ],
+                ]
+            },
+            {
+                id: 12,
+                image: "assets/img/Rectangle.png",
                 name: "STREETSTYLE",
-                summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+                // summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
                 type: "slide",
                 images: [
                     [
@@ -1046,7 +1106,7 @@ function stylingTabs() {
                             <img src="${grid.image}" alt="Img">
                             <div class="information">
                                 <div class="name">${grid.name}</div>
-                                <div class="summary">${grid.summary}</div>
+                                ${grid.summary ? `<div class="summary">${grid.summary}</div>` : ''}
                             </div>
                         </div>
                     </a>`;
@@ -1055,149 +1115,460 @@ function stylingTabs() {
     });
 
     $(".servicesGrid .tabs").append(tabs);
-    $(".servicesGrid").append(grids);
+    $(".servicesGrid .wrap").append(grids);
 }
 
 var artTabs = [
     {
         id: 1,
-        image: "assets/img/Rectangle.png",
-        name: "DIAMOND NIGHT - AHLAM",
-        summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+        image: "assets/img/ArtisticDirection/MrLebCover.jpg",
+        name: "MR LEBANON 2024",
+        summary: "Haifa Wehbe - Casino Du Liban",
         type: "grid",
         images: [
             {
                 type: "video",
-                src: "assets/img/Rectangle.png",
+                src: "assets/img/ArtisticDirection/MrLeb/mrLeb_100.jpg",
+                link: "https://youtu.be/pYrZMdjldPo?si=6s3_QvrMGXMqsjLc",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/MrLeb/mrLeb_101.png",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/MrLeb/mrLeb_102.jpeg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/MrLeb/mrLeb_103.png",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/MrLeb/mrLeb_104.jpeg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/MrLeb/mrLeb_105.png",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/MrLeb/mrLeb_106.png",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/MrLeb/mrLeb_107.jpeg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/MrLeb/mrLeb_108.png",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/MrLeb/mrLeb_109.jpeg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/MrLeb/mrLeb_1010.jpeg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/MrLeb/mrLeb_1011.png",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/MrLeb/mrLeb_1012.jpeg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/MrLeb/mrLeb_1013.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/MrLeb/mrLeb_1014.png",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/MrLeb/mrLeb_1015.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/MrLeb/mrLeb_1016.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/MrLeb/mrLeb_1017.jpeg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/MrLeb/mrLeb_1018.jpeg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/MrLeb/mrLeb_1019.png",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/MrLeb/mrLeb_1020.jpeg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/MrLeb/mrLeb_1021.jpeg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/MrLeb/mrLeb_1022.jpeg",
+            },
+        ],
+        // description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+    },
+    {
+        id: 2,
+        image: "assets/img/ArtisticDirection/AhlamCover.jpg",
+        name: "DIAMOND NIGHT",
+        summary: "Ahlam Al Shamsi - Al Riyadh, KSA",
+        type: "grid",
+        images: [
+            {
+                type: "video",
+                src: "assets/img/ArtisticDirection/Ahlam/AH_100.jpg",
                 link: "https://youtu.be/m2i9zXV9qcA?si=UmwVBVd0g_8WS1wx",
             },
             {
                 type: "image",
-                src: "assets/img/Square.png",
+                src: "assets/img/ArtisticDirection/Ahlam/AH_101.jpg",
             },
             {
                 type: "image",
-                src: "assets/img/Square.png",
+                src: "assets/img/ArtisticDirection/Ahlam/AH_102.jpg",
             },
             {
                 type: "image",
-                src: "assets/img/Square.png",
+                src: "assets/img/ArtisticDirection/Ahlam/AH_103.jpg",
             },
             {
                 type: "image",
-                src: "assets/img/Square.png",
+                src: "assets/img/ArtisticDirection/Ahlam/AH_104.jpg",
             },
             {
                 type: "image",
-                src: "assets/img/Square.png",
+                src: "assets/img/ArtisticDirection/Ahlam/AH_105.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/Ahlam/AH_106.png",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/Ahlam/AH_107.png",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/Ahlam/AH_108.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/Ahlam/AH_109.png",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/Ahlam/AH_1010.png",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/Ahlam/AH_1011.png",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/Ahlam/AH_1012.png",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/Ahlam/AH_1013.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/Ahlam/AH_1014.png",
             },
         ],
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+        // description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
     },
     {
-        id: 2,
-        image: "assets/img/Rectangle.png",
+        id: 3,
+        image: "assets/img/ArtisticDirection/KultCover.jpg",
         name: "KULT",
-        summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+        summary: "Beirut, Lebanon",
         type: "grid",
         images: [
             {
                 type: "video",
-                src: "assets/img/Rectangle.png",
+                src: "assets/img/ArtisticDirection/Kult/VAR_100.jpg",
                 link: "https://youtu.be/moe2qFIx7qc?si=VfXmNJSsvx6Ad3bI",
             },
             {
                 type: "image",
-                src: "assets/img/Square.png",
+                src: "assets/img/ArtisticDirection/Kult/VAR_101.jpg",
             },
             {
                 type: "image",
-                src: "assets/img/Square.png",
+                src: "assets/img/ArtisticDirection/Kult/VAR_102.jpg",
             },
             {
                 type: "image",
-                src: "assets/img/Square.png",
+                src: "assets/img/ArtisticDirection/Kult/VAR_103.jpg",
             },
             {
                 type: "image",
-                src: "assets/img/Square.png",
+                src: "assets/img/ArtisticDirection/Kult/VAR_104.jpg",
             },
             {
                 type: "image",
-                src: "assets/img/Square.png",
+                src: "assets/img/ArtisticDirection/Kult/VAR_105.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/Kult/VAR_106.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/Kult/VAR_107.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/Kult/VAR_108.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/Kult/VAR_109.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/Kult/VAR_1010.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/Kult/VAR_1011.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/Kult/VAR_1012.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/Kult/VAR_1013.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/Kult/VAR_1014.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/Kult/VAR_1015.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/Kult/VAR_1016.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/Kult/VAR_1017.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/Kult/VAR_1018.jpg",
             },
         ],
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+        // description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
     },
     {
-        id: 3,
-        image: "assets/img/Rectangle.png",
+        id: 4,
+        image: "assets/img/ArtisticDirection/SayfCover.jpg",
         name: "SAYF",
-        summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+        summary: "Waterfront Beirut, Lebanon",
         type: "grid",
         images: [
             {
                 type: "video",
-                src: "assets/img/Rectangle.png",
+                src: "assets/img/ArtisticDirection/Sayf/SA_001.jpg",
                 link: "https://youtu.be/lQAdLBk-6g0?si=SaTp1gXeghJVzu3W",
             },
             {
                 type: "image",
-                src: "assets/img/Square.png",
+                src: "assets/img/ArtisticDirection/Sayf/SA_002.jpg",
             },
             {
                 type: "image",
-                src: "assets/img/Square.png",
+                src: "assets/img/ArtisticDirection/Sayf/SA_003.jpg",
             },
             {
                 type: "image",
-                src: "assets/img/Square.png",
+                src: "assets/img/ArtisticDirection/Sayf/SA_004.jpg",
             },
             {
                 type: "image",
-                src: "assets/img/Square.png",
+                src: "assets/img/ArtisticDirection/Sayf/SA_005.jpg",
             },
             {
                 type: "image",
-                src: "assets/img/Square.png",
+                src: "assets/img/ArtisticDirection/Sayf/SA_006.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/Sayf/SA_007.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/Sayf/SA_008.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/Sayf/SA_009.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/Sayf/SA_010.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/Sayf/SA_011.jpg",
             },
         ],
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+        // description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
     },
     {
-        id: 4,
-        image: "assets/img/Rectangle.png",
+        id: 5,
+        image: "assets/img/ArtisticDirection/TATCover.jpg",
         name: "TETE A TETE",
-        summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+        summary: "Christina Haddad, Casino Du Liban",
         type: "grid",
         images: [
             {
                 type: "video",
-                src: "assets/img/Rectangle.png",
+                src: "assets/img/ArtisticDirection/TeteATete/TAT_001.jpg",
                 link: "https://youtu.be/h_QfzLDR3v8?si=NFBh60IcRV3HDkgQ",
             },
             {
                 type: "image",
-                src: "assets/img/Square.png",
+                src: "assets/img/ArtisticDirection/TeteATete/TAT_002.jpg",
             },
             {
                 type: "image",
-                src: "assets/img/Square.png",
+                src: "assets/img/ArtisticDirection/TeteATete/TAT_003.jpg",
             },
             {
                 type: "image",
-                src: "assets/img/Square.png",
+                src: "assets/img/ArtisticDirection/TeteATete/TAT_004.jpg",
             },
             {
                 type: "image",
-                src: "assets/img/Square.png",
+                src: "assets/img/ArtisticDirection/TeteATete/TAT_005.jpg",
             },
             {
                 type: "image",
-                src: "assets/img/Square.png",
+                src: "assets/img/ArtisticDirection/TeteATete/TAT_006.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/TeteATete/TAT_007.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/TeteATete/TAT_008.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/TeteATete/TAT_009.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/TeteATete/TAT_0010.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/TeteATete/TAT_0011.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/TeteATete/TAT_0012.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/TeteATete/TAT_0013.png",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/TeteATete/TAT_0014.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/TeteATete/TAT_0015.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/TeteATete/TAT_0016.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/TeteATete/TAT_0017.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/TeteATete/TAT_0018.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/TeteATete/TAT_0019.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/TeteATete/TAT_0020.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/TeteATete/TAT_0021.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/TeteATete/TAT_0022.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/TeteATete/TAT_0023.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/TeteATete/TAT_0024.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/TeteATete/TAT_0025.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/TeteATete/TAT_0026.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/TeteATete/TAT_0027.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/TeteATete/TAT_0028.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/TeteATete/TAT_0029.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/TeteATete/TAT_0030.jpg",
+            },
+            {
+                type: "image",
+                src: "assets/img/ArtisticDirection/TeteATete/TAT_0031.jpg",
             },
         ],
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+        // description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
     },
 ]
 
@@ -1220,7 +1591,7 @@ function directionTabs() {
         });
         grids += `</div>`;
 
-    $(".servicesGrid").append(grids);
+    $(".servicesGrid .wrap").append(grids);
 }
 
 var styleCoaching = [
@@ -1280,14 +1651,16 @@ function coachingList() {
 
     styleCoaching.forEach((topic, i) => {
         list += `<div class="list ${(quantity === 'even' && i % 2 === 0) ? 'odd' : ((quantity === 'odd' && i % 2 !== 0) ? 'odd' : 'even')}">
-                    <div class="demo">
-                        <img src="${topic.img}" alt="Img">
-                    </div>
-                    <div class="information">
-                        <div class="name">${topic.name}</div>
-                        <div class="summary">${topic.summary}</div>
-                        <div class="button peachBtn">
-                            <a onclick="scrollToContact()">${topic.button}</a>
+                    <div class="wrap">
+                        <div class="demo">
+                            <img src="${topic.img}" alt="Img">
+                        </div>
+                        <div class="information">
+                            <div class="name">${topic.name}</div>
+                            <div class="summary">${topic.summary}</div>
+                            <div class="button peachBtn">
+                                <a onclick="scrollToContact()">${topic.button}</a>
+                            </div>
                         </div>
                     </div>
                 </div>`
@@ -1345,30 +1718,30 @@ function showService(tab, name, color) {
             if (grid.type === "image") {
                 rowFill += 25;
                 if (rowFill <= 100) {
-                    rows += `<img onclick="showModal(this)" class="${grid.type}" src="${grid.src}" alt="Img">`;
+                    rows += `<div class="${grid.type}"><img onclick="showModal(this)" src="${grid.src}" alt="Img"></div>`;
                 } else {
                     rowFill = 25;
                     rows += `</div>
                             <div class="row">
-                                <img onclick="showModal(this)" class="${grid.type}" src="${grid.src}" alt="Img">`;
+                                <div class="${grid.type}"><img onclick="showModal(this)" src="${grid.src}" alt="Img"></div>`;
                 }
             } else if (grid.type === "video") {
                 rowFill += 50;
                 if (rowFill <= 100) {
-                    rows += `<img onclick="socialMedia('${grid.link}')" class="${grid.type}" src="${grid.src}" alt="Video">`;
+                    rows += `<div class="${grid.type}"><img onclick="socialMedia('${grid.link}')" src="${grid.src}" alt="Video"></div>`;
                 } else {
                     rowFill = 50;
                     rows += `</div>
                             <div class="row">
-                                <img onclick="socialMedia('${grid.link}')" class="${grid.type}" src="${grid.src}" alt="Video">`;
+                                <div class="${grid.type}"><img onclick="socialMedia('${grid.link}')" src="${grid.src}" alt="Video"></div>`;
                 }
             }
         });
         rows += `</div>`;
 
         show += `<div class="displayProject">
-                    <div class="display">
-                        <div class="projectDescription">
+                    <div class="display wrap">
+                        <div class="projectDescription ${serviceTab.description ? "" : "d-none"}">
                             ${serviceTab.description}
                         </div>
                         <div id="displayCatalogue">
@@ -1431,14 +1804,14 @@ $(document).ready(function () {
         } else if (pathName === "design.html") {
             chooseService();
             stylingTabs();
-        } else if (pathName === "designService.html") {
+        } else if (pathName === "designService.html" || pathName === "designservice") {
             var oneTab = designTabs.find(tabs => tabs.id == id);
             serviceTab = oneTab.elements.find(service => service.name == name);
             showService(`Costume Design & Styling / ${oneTab.name}`, name, "pink");
         } else if (pathName === "art.html") {
             chooseService();
             directionTabs();
-        } else if (pathName === "artService.html") {
+        } else if (pathName === "artService.html" || pathName === "artservice") {
             var oneTab = artTabs.find(tabs => tabs.id == id);
             serviceTab = oneTab;
             showService(`Artistic Direction / Our Projects`, name, "purple");
