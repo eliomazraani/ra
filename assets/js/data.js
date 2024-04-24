@@ -305,35 +305,35 @@ var jobs = [
         position: "Coordinator",
         requirements: "Coordinates tasks, promotes collaboration, and ensures efficiency.",
         image: "assets/img/Jobs/Coordinator.jpg",
-        description: true
+        // description: true
     },
     {
         id: 2,
         position: "Assistant",
         requirements: "Supports coordination with computer proficiency and strong English skills, ensuring smooth task execution.",
         image: "assets/img/Jobs/Assistant.jpg",
-        description: true
+        // description: true
     },
     {
         id: 3,
         position: "Driver",
         requirements: "Reliable, safely transports, maintains vehicle, follows routes.",
         image: "assets/img/Jobs/Driver.jpg",
-        description: true
+        // description: true
     },
     {
         id: 4,
         position: "Wardrobe Supervisor",
         requirements: "Manages and coordinates costumes, collaborates with designer to achieve visions.",
         image: "assets/img/Jobs/Wardrobe.jpg",
-        description: true
+        // description: true
     },
     {
         id: 5,
         position: "Crafter",
         requirements: "Creates and handcrafts unique items with skill and creativity.",
         image: "assets/img/Jobs/Crafter.jpg",
-        description: true
+        // description: true
     },
     {
         id: 6,
