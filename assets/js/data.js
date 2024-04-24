@@ -506,36 +506,36 @@ var choreoTabs = [
         id: 1,
         name: "Our Stars",
         elements: [
-            {
-                id: 1,
-                image: "assets/img/Stars/Ebki.jpg",
-                name: "KARL HUSEIN",
-                summary: "Ebki - Music Video",
-                href: "https://youtube.com",
-            },
-            {
-                id: 2,
-                image: "assets/img/Stars/MokhtasarElKalam.jpg",
-                name: "LAILA CHANDOUL",
-                summary: "Mokhtasar El Kalam - Music Video",
-                href: "https://youtube.com",
-            },
-            {
-                id: 3,
-                image: "assets/img/Stars/KhamsehWNoss.jpg",
-                name: "NADINE NJEIM & KOSAI KHAULI",
-                summary: "Khamseh W Noss - TV Series",
-                href: "https://youtube.com",
+            // {
+            //     id: 1,
+            //     image: "assets/img/Stars/Ebki.jpg",
+            //     name: "KARL HUSEIN",
+            //     summary: "Ebki - Music Video",
+            //     href: "https://youtube.com",
+            // },
+            // {
+            //     id: 2,
+            //     image: "assets/img/Stars/MokhtasarElKalam.jpg",
+            //     name: "LAILA CHANDOUL",
+            //     summary: "Mokhtasar El Kalam - Music Video",
+            //     href: "https://youtube.com",
+            // },
+            // {
+            //     id: 3,
+            //     image: "assets/img/Stars/KhamsehWNoss.jpg",
+            //     name: "NADINE NJEIM & KOSAI KHAULI",
+            //     summary: "Khamseh W Noss - TV Series",
+            //     href: "https://youtube.com",
 
-            },
-            {
-                id: 4,
-                image: "assets/img/Stars/Paranoia.jpg",
-                name: "DALIDA KHALIL",
-                summary: "Paranoia - TV Series",
-                href: "https://youtube.com",
+            // },
+            // {
+            //     id: 4,
+            //     image: "assets/img/Stars/Paranoia.jpg",
+            //     name: "DALIDA KHALIL",
+            //     summary: "Paranoia - TV Series",
+            //     href: "https://youtube.com",
 
-            },
+            // },
             {
                 id: 5,
                 image: "assets/img/Stars/Woseltelha.jpg",
@@ -586,13 +586,13 @@ var choreoTabs = [
                 summary: "Dbaye, Lebanon",
                 href: "https://youtube.com/shorts/6cyvM5eIm_w?si=0X7gHm-6kvuqpJmI"
             },
-            {
-                id: 11,
-                image: "assets/img/Clubs/Andalucia.jpg",
-                name: "ANDALUCIA",
-                summary: "Monot, Lebanon",
-                href: "https://youtube.com/"
-            }
+            // {
+            //     id: 11,
+            //     image: "assets/img/Clubs/Andalucia.jpg",
+            //     name: "ANDALUCIA",
+            //     summary: "Monot, Lebanon",
+            //     href: "https://youtube.com/"
+            // }
         ]
     },
     {
