@@ -26,27 +26,32 @@ function jobPosition(num) {
         case 1:
             $("#jobPositionName").text("Coordinator");
             position = "Coordinator";
-            viewDescription(position);
+            // viewDescription(position);
+            applyNow(position);
             break;
         case 2:
             $("#jobPositionName").text("Assistant");
             position = "Assistant";
-            viewDescription(position);
+            // viewDescription(position);
+            applyNow(position);
             break;
         case 3:
             $("#jobPositionName").text("Driver");
             position = "Driver";
-            viewDescription(position);
+            // viewDescription(position);
+            applyNow(position);
             break;
         case 4:
             $("#jobPositionName").text("Wardrobe Supervisor");
             position = "Wardrobe Supervisor";
-            viewDescription(position);
+            // viewDescription(position);
+            applyNow(position);
             break;
         case 5:
             $("#jobPositionName").text("Crafter");
             position = "Crafter";
-            viewDescription(position);
+            // viewDescription(position);
+            applyNow(position);
             break;
         case 6:
             position = "Makeup Artist";
