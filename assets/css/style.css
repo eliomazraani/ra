@@ -249,13 +249,7 @@ body {
 .services .narrow {
   display: none;
 }
-.services .narrow .mvmt-choreo img {
-  pointer-events: none;
-}
 .services .narrow .cstm-style img {
-  pointer-events: none;
-}
-.services .narrow .art-direction img {
   pointer-events: none;
 }
 .services .block {
@@ -1612,18 +1606,22 @@ body {
   .vacancy {
     padding: 32px;
   }
-  .vacancy .wrap .hiring {
+  .vacancy .hiring {
     margin-top: 32px;
   }
-  .vacancy .wrap .jobList {
+  .vacancy .jobList {
     margin-top: 32px;
   }
-  .vacancy .wrap .jobList .jobPosition {
+  .vacancy .jobList .jobPosition {
     width: unset;
   }
-  .vacancy .wrap .jobList .jobPosition .image {
+  .vacancy .jobList .jobPosition .image {
     width: 100px;
     height: 100px;
+  }
+  .vacancy .jobList .jobPosition .image img {
+    width: -webkit-fill-available;
+    /* demo purpose */
   }
 }
 
