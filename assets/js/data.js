@@ -1786,7 +1786,7 @@ function showService(tab, name, color) {
 $(document).ready(function () {
     var pathName = window.location.pathname.slice(1);
     var params = window.location.href.split('?');
-    if (params.length > 1) {
+    if (params.length > 2) {
         var id = params[1].split('=')[1];
         var name = params[2].split('=')[1];
         name = name.replace(/%20/g, ' ');
