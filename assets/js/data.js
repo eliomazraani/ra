@@ -538,7 +538,7 @@ var choreoTabs = [
                 image: "assets/img/Stars/Paranoia.jpg",
                 name: "DALIDA KHALIL",
                 summary: "Paranoia - TV Series",
-                href: "https://youtube.com",
+                href: "https://youtube.com/shorts/a7DeNj7SOD4?si=y3gX5ZMn-BXroOFc",
             },
             {
                 id: 5,
@@ -581,13 +581,13 @@ var choreoTabs = [
                 summary: "Beirut, Lebanon",
                 redirect: "artService.html?id=3?name=KULT"
             },
-            {
-                id: 9,
-                image: "assets/img/Clubs/Ava.jpg",
-                name: "ANTIKA",
-                summary: "Waterfront Beirut, Lebanon",
-                href: "https://youtube.com/"
-            },
+            // {
+            //     id: 9,
+            //     image: "assets/img/Clubs/Ava.jpg",
+            //     name: "ANTIKA",
+            //     summary: "Waterfront Beirut, Lebanon",
+            //     href: "https://youtube.com/"
+            // },
             {
                 id: 10,
                 image: "assets/img/Clubs/Ava.jpg",
@@ -616,13 +616,13 @@ var choreoTabs = [
                 summary: "Dbaye, Lebanon",
                 href: "https://youtube.com/shorts/6cyvM5eIm_w?si=0X7gHm-6kvuqpJmI"
             },
-            {
-                id: 14,
-                image: "assets/img/Clubs/Andalucia.jpg",
-                name: "ANDALUCIA",
-                summary: "Monot, Lebanon",
-                href: "https://youtube.com/"
-            }
+            // {
+            //     id: 14,
+            //     image: "assets/img/Clubs/Andalucia.jpg",
+            //     name: "ANDALUCIA",
+            //     summary: "Monot, Lebanon",
+            //     href: "https://youtube.com/"
+            // }
         ]
     },
     {
@@ -790,268 +790,164 @@ var designTabs = [
                 type: "grid",
                 images: [
                     {
-                        type:"image",
-                        src:"assets/img/Chicago/image00001.jpeg"
+                        type: "image",
+                        src: "assets/img/Chicago/image00001.jpeg"
                     },
                     {
-                        type:"image",
-                        src:"assets/img/Chicago/image00002.jpeg"
+                        type: "image",
+                        src: "assets/img/Chicago/image00002.jpeg"
                     },
                     {
-                        type:"image",
-                        src:"assets/img/Chicago/image00003.jpeg"
+                        type: "image",
+                        src: "assets/img/Chicago/image00007.jpeg"
                     },
                     {
-                        type:"image",
-                        src:"assets/img/Chicago/image00004.jpeg"
+                        type: "image",
+                        src: "assets/img/Chicago/image00008.jpeg"
                     },
                     {
-                        type:"image",
-                        src:"assets/img/Chicago/image00005.jpeg"
+                        type: "image",
+                        src: "assets/img/Chicago/image00011.jpeg"
                     },
                     {
-                        type:"image",
-                        src:"assets/img/Chicago/image00006.jpeg"
+                        type: "image",
+                        src: "assets/img/Chicago/image00013.jpeg"
                     },
                     {
-                        type:"image",
-                        src:"assets/img/Chicago/image00007.jpeg"
+                        type: "image",
+                        src: "assets/img/Chicago/image00014.jpeg"
                     },
                     {
-                        type:"image",
-                        src:"assets/img/Chicago/image00008.jpeg"
+                        type: "image",
+                        src: "assets/img/Chicago/image00017.jpeg"
                     },
                     {
-                        type:"image",
-                        src:"assets/img/Chicago/image00009.jpeg"
+                        type: "image",
+                        src: "assets/img/Chicago/image00022.jpeg"
                     },
                     {
-                        type:"image",
-                        src:"assets/img/Chicago/image00010.jpeg"
+                        type: "image",
+                        src: "assets/img/Chicago/image00023.jpeg"
                     },
                     {
-                        type:"image",
-                        src:"assets/img/Chicago/image00011.jpeg"
+                        type: "image",
+                        src: "assets/img/Chicago/image00024.jpeg"
                     },
                     {
-                        type:"image",
-                        src:"assets/img/Chicago/image00012.jpeg"
+                        type: "image",
+                        src: "assets/img/Chicago/image00027.jpeg"
                     },
                     {
-                        type:"image",
-                        src:"assets/img/Chicago/image00013.jpeg"
+                        type: "image",
+                        src: "assets/img/Chicago/image00029.jpeg"
                     },
                     {
-                        type:"image",
-                        src:"assets/img/Chicago/image00014.jpeg"
+                        type: "image",
+                        src: "assets/img/Chicago/image00030.jpeg"
                     },
                     {
-                        type:"image",
-                        src:"assets/img/Chicago/image00015.jpeg"
+                        type: "image",
+                        src: "assets/img/Chicago/image00032.jpeg"
                     },
                     {
-                        type:"image",
-                        src:"assets/img/Chicago/image00016.jpeg"
+                        type: "image",
+                        src: "assets/img/Chicago/image00034.jpeg"
                     },
                     {
-                        type:"image",
-                        src:"assets/img/Chicago/image00017.jpeg"
+                        type: "image",
+                        src: "assets/img/Chicago/image00035.jpeg"
                     },
                     {
-                        type:"image",
-                        src:"assets/img/Chicago/image00018.jpeg"
+                        type: "image",
+                        src: "assets/img/Chicago/image00036.jpeg"
                     },
                     {
-                        type:"image",
-                        src:"assets/img/Chicago/image00019.jpeg"
+                        type: "image",
+                        src: "assets/img/Chicago/image00037.jpeg"
                     },
                     {
-                        type:"image",
-                        src:"assets/img/Chicago/image00020.jpeg"
+                        type: "image",
+                        src: "assets/img/Chicago/image00038.jpeg"
                     },
                     {
-                        type:"image",
-                        src:"assets/img/Chicago/image00021.jpeg"
+                        type: "image",
+                        src: "assets/img/Chicago/image00042.jpeg"
                     },
                     {
-                        type:"image",
-                        src:"assets/img/Chicago/image00022.jpeg"
+                        type: "image",
+                        src: "assets/img/Chicago/image00043.jpeg"
                     },
                     {
-                        type:"image",
-                        src:"assets/img/Chicago/image00023.jpeg"
+                        type: "image",
+                        src: "assets/img/Chicago/image00048.jpeg"
                     },
                     {
-                        type:"image",
-                        src:"assets/img/Chicago/image00024.jpeg"
+                        type: "image",
+                        src: "assets/img/Chicago/image00049.jpeg"
                     },
                     {
-                        type:"image",
-                        src:"assets/img/Chicago/image00026.jpeg"
+                        type: "image",
+                        src: "assets/img/Chicago/image00050.jpeg"
                     },
                     {
-                        type:"image",
-                        src:"assets/img/Chicago/image00027.jpeg"
+                        type: "image",
+                        src: "assets/img/Chicago/image00051.jpeg"
                     },
                     {
-                        type:"image",
-                        src:"assets/img/Chicago/image00029.jpeg"
+                        type: "image",
+                        src: "assets/img/Chicago/image00055.jpeg"
                     },
                     {
-                        type:"image",
-                        src:"assets/img/Chicago/image00030.jpeg"
+                        type: "image",
+                        src: "assets/img/Chicago/image00056.jpeg"
                     },
                     {
-                        type:"image",
-                        src:"assets/img/Chicago/image00031.jpeg"
+                        type: "image",
+                        src: "assets/img/Chicago/image00057.jpeg"
                     },
                     {
-                        type:"image",
-                        src:"assets/img/Chicago/image00032.jpeg"
+                        type: "image",
+                        src: "assets/img/Chicago/image00058.jpeg"
                     },
                     {
-                        type:"image",
-                        src:"assets/img/Chicago/image00033.jpeg"
+                        type: "image",
+                        src: "assets/img/Chicago/image00059.jpeg"
                     },
                     {
-                        type:"image",
-                        src:"assets/img/Chicago/image00034.jpeg"
+                        type: "image",
+                        src: "assets/img/Chicago/image00060.jpeg"
                     },
                     {
-                        type:"image",
-                        src:"assets/img/Chicago/image00035.jpeg"
+                        type: "image",
+                        src: "assets/img/Chicago/image00064.jpeg"
                     },
                     {
-                        type:"image",
-                        src:"assets/img/Chicago/image00036.jpeg"
+                        type: "image",
+                        src: "assets/img/Chicago/image00066.jpeg"
                     },
                     {
-                        type:"image",
-                        src:"assets/img/Chicago/image00037.jpeg"
+                        type: "image",
+                        src: "assets/img/Chicago/image00067.jpeg"
                     },
                     {
-                        type:"image",
-                        src:"assets/img/Chicago/image00038.jpeg"
+                        type: "image",
+                        src: "assets/img/Chicago/image00068.jpeg"
                     },
                     {
-                        type:"image",
-                        src:"assets/img/Chicago/image00039.jpeg"
+                        type: "image",
+                        src: "assets/img/Chicago/image00071.jpeg"
                     },
                     {
-                        type:"image",
-                        src:"assets/img/Chicago/image00040.jpeg"
+                        type: "image",
+                        src: "assets/img/Chicago/image00074.jpeg"
                     },
                     {
-                        type:"image",
-                        src:"assets/img/Chicago/image00041.jpeg"
+                        type: "image",
+                        src: "assets/img/Chicago/image00076.jpeg"
                     },
                     {
-                        type:"image",
-                        src:"assets/img/Chicago/image00042.jpeg"
-                    },
-                    {
-                        type:"image",
-                        src:"assets/img/Chicago/image00043.jpeg"
-                    },
-                    {
-                        type:"image",
-                        src:"assets/img/Chicago/image00044.jpeg"
-                    },
-                    {
-                        type:"image",
-                        src:"assets/img/Chicago/image00045.jpeg"
-                    },
-                    {
-                        type:"image",
-                        src:"assets/img/Chicago/image00048.jpeg"
-                    },
-                    {
-                        type:"image",
-                        src:"assets/img/Chicago/image00049.jpeg"
-                    },
-                    {
-                        type:"image",
-                        src:"assets/img/Chicago/image00050.jpeg"
-                    },
-                    {
-                        type:"image",
-                        src:"assets/img/Chicago/image00051.jpeg"
-                    },
-                    {
-                        type:"image",
-                        src:"assets/img/Chicago/image00054.jpeg"
-                    },
-                    {
-                        type:"image",
-                        src:"assets/img/Chicago/image00055.jpeg"
-                    },
-                    {
-                        type:"image",
-                        src:"assets/img/Chicago/image00056.jpeg"
-                    },
-                    {
-                        type:"image",
-                        src:"assets/img/Chicago/image00057.jpeg"
-                    },
-                    {
-                        type:"image",
-                        src:"assets/img/Chicago/image00058.jpeg"
-                    },
-                    {
-                        type:"image",
-                        src:"assets/img/Chicago/image00059.jpeg"
-                    },
-                    {
-                        type:"image",
-                        src:"assets/img/Chicago/image00060.jpeg"
-                    },
-                    {
-                        type:"image",
-                        src:"assets/img/Chicago/image00063.jpeg"
-                    },
-                    {
-                        type:"image",
-                        src:"assets/img/Chicago/image00064.jpeg"
-                    },
-                    {
-                        type:"image",
-                        src:"assets/img/Chicago/image00066.jpeg"
-                    },
-                    {
-                        type:"image",
-                        src:"assets/img/Chicago/image00067.jpeg"
-                    },
-                    {
-                        type:"image",
-                        src:"assets/img/Chicago/image00068.jpeg"
-                    },
-                    {
-                        type:"image",
-                        src:"assets/img/Chicago/image00069.jpeg"
-                    },
-                    {
-                        type:"image",
-                        src:"assets/img/Chicago/image00071.jpeg"
-                    },
-                    {
-                        type:"image",
-                        src:"assets/img/Chicago/image00072.jpeg"
-                    },
-                    {
-                        type:"image",
-                        src:"assets/img/Chicago/image00074.jpeg"
-                    },
-                    {
-                        type:"image",
-                        src:"assets/img/Chicago/image00075.jpeg"
-                    },
-                    {
-                        type:"image",
-                        src:"assets/img/Chicago/image00076.jpeg"
-                    },
-                    {
-                        type:"image",
-                        src:"assets/img/Chicago/image00077.jpeg"
+                        type: "image",
+                        src: "assets/img/Chicago/image00077.jpeg"
                     }
                 ],
                 // description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
@@ -1064,31 +960,119 @@ var designTabs = [
                 type: "grid",
                 images: [
                     {
-                        type: "video",
-                        src: "assets/img/Rectangle.png",
+                        type: "image",
+                        src: "assets/img/LeaMakhoul/img001.jpg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Square.png",
+                        src: "assets/img/LeaMakhoul/img002.jpg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Square.png",
+                        src: "assets/img/LeaMakhoul/img003.jpg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Square.png",
+                        src: "assets/img/LeaMakhoul/img004.jpg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Square.png",
+                        src: "assets/img/LeaMakhoul/img005.jpg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Square.png",
+                        src: "assets/img/LeaMakhoul/img006.jpg"
                     },
+                    {
+                        type: "image",
+                        src: "assets/img/LeaMakhoul/img007.jpg"
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/LeaMakhoul/img008.jpg"
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/LeaMakhoul/img009.jpg"
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/LeaMakhoul/img010.jpg"
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/LeaMakhoul/img011.jpg"
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/LeaMakhoul/img012.jpg"
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/LeaMakhoul/img013.jpg"
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/LeaMakhoul/img014.jpg"
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/LeaMakhoul/img015.jpg"
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/LeaMakhoul/img016.jpg"
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/LeaMakhoul/img017.jpg"
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/LeaMakhoul/img018.jpg"
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/LeaMakhoul/img019.jpg"
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/LeaMakhoul/img020.jpg"
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/LeaMakhoul/img021.jpg"
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/LeaMakhoul/img022.jpg"
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/LeaMakhoul/img023.jpg"
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/LeaMakhoul/img024.jpg"
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/LeaMakhoul/img025.jpg"
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/LeaMakhoul/img026.jpg"
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/LeaMakhoul/img027.jpg"
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/LeaMakhoul/img028.jpg"
+                    }
                 ],
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+                // description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
             },
             {
                 id: 3,
@@ -1098,31 +1082,83 @@ var designTabs = [
                 type: "grid",
                 images: [
                     {
-                        type: "video",
-                        src: "assets/img/Rectangle.png",
+                        type: "image",
+                        src: "assets/img/Maroun/1.JPG"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Square.png",
+                        src: "assets/img/Maroun/2.JPG"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Square.png",
+                        src: "assets/img/Maroun/3.JPG"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Square.png",
+                        src: "assets/img/Maroun/4.JPG"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Square.png",
+                        src: "assets/img/Maroun/5.JPG"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Square.png",
+                        src: "assets/img/Maroun/6.JPG"
                     },
+                    {
+                        type: "image",
+                        src: "assets/img/Maroun/7.JPG"
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/Maroun/8.JPG"
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/Maroun/9.JPG"
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/Maroun/10.JPG"
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/Maroun/11.JPG"
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/Maroun/12.JPG"
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/Maroun/13.JPG"
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/Maroun/14.JPG"
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/Maroun/15.JPG"
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/Maroun/16.JPG"
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/Maroun/17.JPG"
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/Maroun/18.JPG"
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/Maroun/19.JPG"
+                    }
                 ],
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+                // description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
             },
             {
                 id: 4,
@@ -2098,7 +2134,7 @@ function showService(tab, name, color) {
 $(document).ready(function () {
     var pathName = window.location.pathname.slice(1);
     var params = window.location.href.split('?');
-    if (params.length > 1) {
+    if (params.length > 2) {
         var id = params[1].split('=')[1];
         var name = params[2].split('=')[1];
         name = name.replace(/%20/g, ' ');
