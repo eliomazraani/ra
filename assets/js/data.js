@@ -121,18 +121,21 @@ var clients = [
     "assets/img/Clients/KULT.png",
     "assets/img/Clients/BENCHMARK.png",
     "assets/img/Clients/SAYF.png",
-    "assets/img/Clients/CA.jpg",
     "assets/img/Clients/MTV.png",
+    "assets/img/Clients/Nidal.png",
+    "assets/img/Clients/ROTANA.png",
     "assets/img/Clients/ABC.png",
     "assets/img/Clients/STEPS.png",
-    "assets/img/Clients/ROTANA.png",
     "assets/img/Clients/IAM.png",
-    "assets/img/Clients/KLOUD.png",
+    "assets/img/Clients/CA.jpg",
     "assets/img/Clients/GAT.jpg",
-    "assets/img/Clients/CASINO.png",
-    "assets/img/Clients/SEAFRONT.png",
     "assets/img/Clients/RETINA.jpg",
+    "assets/img/Clients/CASINO.png",
+    "assets/img/Clients/KLOUD.png",
+    "assets/img/Clients/Antika.png",
+    "assets/img/Clients/SEAFRONT.png",
     "assets/img/Clients/KAI.png",
+    "assets/img/Clients/KAP.png",
 ]
 
 function loadImage(url) {
@@ -508,24 +511,26 @@ var choreoTabs = [
         elements: [
             {
                 id: 1,
-                image: "assets/img/Stars/Ebki.jpg",
-                name: "KARL HUSEIN",
-                summary: "Ebki - Music Video",
-                href: "https://youtube.com",
+                image: "assets/img/Stars/Woseltelha.jpg",
+                name: "HAIFA WEHBE",
+                summary: "Woseltelha - Live Concert",
+                href: "https://youtu.be/qStmHL-4fSQ?si=D2BlVasr09E9rK-b",
+
             },
             {
                 id: 2,
-                image: "assets/img/Stars/MokhtasarElKalam.jpg",
-                name: "LAILA CHANDOUL",
-                summary: "Mokhtasar El Kalam - Music Video",
-                href: "https://youtube.com",
+                image: "assets/img/Stars/Woseltelha.jpg",
+                name: "AHLAM AL SHAMSI",
+                summary: "Ouyouni Bas - Live Concert",
+                href: "https://www.youtube.com/watch?v=MjmFBF7QRfk",
+
             },
             {
                 id: 3,
                 image: "assets/img/Stars/KhamsehWNoss.jpg",
                 name: "NADINE NJEIM & KOSAI KHAULI",
                 summary: "Khamseh W Noss - TV Series",
-                href: "https://youtube.com",
+                href: "https://www.youtube.com/watch?v=VdMGg68nIWE",
 
             },
             {
@@ -534,15 +539,13 @@ var choreoTabs = [
                 name: "DALIDA KHALIL",
                 summary: "Paranoia - TV Series",
                 href: "https://youtube.com",
-
             },
             {
                 id: 5,
-                image: "assets/img/Stars/Woseltelha.jpg",
-                name: "HAIFA WEHBE",
-                summary: "Woseltelha - Live Concert",
-                href: "https://youtube.com/shorts/48jXTIceaB0?si=5v4Ta2eYj2RmWIIa",
-
+                image: "assets/img/Stars/Ebki.jpg",
+                name: "KARL HUSEIN",
+                summary: "Ebki - Music Video",
+                href: "https://youtu.be/CqybF4Y4rp0?si=bazFeSNYOkFIALjE",
             },
             {
                 id: 6,
@@ -550,7 +553,13 @@ var choreoTabs = [
                 name: "AZIZA",
                 summary: "The Show - Live Concert",
                 href: "https://youtu.be/GkyzmWZjFxE?si=ipf12_B7GX3THm5i",
-
+            },
+            {
+                id: 7,
+                image: "assets/img/Stars/MokhtasarElKalam.jpg",
+                name: "LAILA CHANDOUL",
+                summary: "Mokhtasar El Kalam - Music Video",
+                href: "https://youtu.be/I5mU_SvMFOA?si=L6_LDSiQGzUU-wlp",
             },
         ]
     },
@@ -560,34 +569,55 @@ var choreoTabs = [
         elements: [
             {
                 id: 7,
+                image: "assets/img/ArtisticDirection/SayfCover.jpg",
+                name: "SAYF",
+                summary: "Waterfront Beirut, Lebanon",
+                redirect: "artService.html?id=4?name=SAYF"
+            },
+            {
+                id: 8,
+                image: "assets/img/ArtisticDirection/KultCover.jpg",
+                name: "KULT",
+                summary: "Beirut, Lebanon",
+                redirect: "artService.html?id=3?name=KULT"
+            },
+            {
+                id: 9,
+                image: "assets/img/Clubs/Ava.jpg",
+                name: "ANTIKA",
+                summary: "Waterfront Beirut, Lebanon",
+                href: "https://youtube.com/"
+            },
+            {
+                id: 10,
                 image: "assets/img/Clubs/Ava.jpg",
                 name: "AVA",
                 summary: "Beirut, Lebanon",
                 href: "https://youtu.be/WpziTVP_DzY?si=I1ZBna5opwREuVZz"
             },
             {
-                id: 8,
+                id: 11,
                 image: "assets/img/Clubs/Seafront.jpg",
                 name: "SEAFRONT",
                 summary: "Kaslik, Lebanon",
                 href: "https://youtube.com/shorts/8jxuLF0jQh0?si=0l434eKF3tMCDqmE"
             },
             {
-                id: 9,
+                id: 12,
                 image: "assets/img/Clubs/Kai.jpg",
                 name: "KAI",
                 summary: "Batroun, Lebanon",
                 href: "https://youtube.com/shorts/jCzdL_QE47A?si=vw43hFm4YPFc18Xp"
             },
             {
-                id: 10,
+                id: 13,
                 image: "assets/img/Clubs/Kloud.jpg",
                 name: "KLOUD",
                 summary: "Dbaye, Lebanon",
                 href: "https://youtube.com/shorts/6cyvM5eIm_w?si=0X7gHm-6kvuqpJmI"
             },
             {
-                id: 11,
+                id: 14,
                 image: "assets/img/Clubs/Andalucia.jpg",
                 name: "ANDALUCIA",
                 summary: "Monot, Lebanon",
@@ -696,7 +726,7 @@ function choreographyTabs() {
         grids += `<div class="grid service-${index + 1} ${index !== 0 ? 'd-none' : ''} ${tab.name === 'Our Weddings & Events' ? 'displayCatalogue' : ''}">`;
         if (tab.name != "Our Weddings & Events") {
             tab.elements.forEach(grid => {
-                grids += `<a ${grid.href ? `href=${grid.href} target="_blank"` : `href="choreographyService.html?id=${tab.id}?name=${grid.name}"`}>
+                grids += `<a ${grid.href ? `href=${grid.href} target="_blank"` : `href="${grid.redirect}"`}>
                             <div class="service">
                                 <img src="${grid.image}" alt="Img">
                                 ${
@@ -1012,16 +1042,64 @@ var designTabs = [
                 type: "slide",
                 images: [
                     [
-                        "assets/img/Rectangle(2).png",
-                        "assets/img/Rectangle(2).png",
-                        "assets/img/Rectangle(2).png",
-                        "assets/img/Rectangle(2).png",
+                        "assets/img/Christmas/01/1-1.jpg",
+                        "assets/img/Christmas/01/1-2.jpg",
+                        "assets/img/Christmas/01/1-3.jpg",
+                        "assets/img/Christmas/01/1-4.jpg",
+                        "assets/img/Christmas/01/1-5.jpg",
                     ],
                     [
-                        "assets/img/Rectangle(2).png",
-                        "assets/img/Rectangle(2).png",
-                        "assets/img/Rectangle(2).png",
-                        "assets/img/Rectangle(2).png",
+                        "assets/img/Christmas/02/2-1.jpg",
+                        "assets/img/Christmas/02/2-2.jpg",
+                        "assets/img/Christmas/02/2-3.jpg",
+                        "assets/img/Christmas/02/2-4.jpg",
+                        "assets/img/Christmas/02/2-5.jpg",
+                    ],
+                    [
+                        "assets/img/Christmas/03/3-1.jpg",
+                        "assets/img/Christmas/03/3-2.jpg",
+                        "assets/img/Christmas/03/3-3.jpg",
+                        "assets/img/Christmas/03/3-4.jpg",
+                    ],
+                    [
+                        "assets/img/Christmas/04/4-1.jpg",
+                        "assets/img/Christmas/04/4-2.jpg",
+                        "assets/img/Christmas/04/4-3.jpg",
+                        "assets/img/Christmas/04/4-4.jpg",
+                    ],
+                    [
+                        "assets/img/Christmas/05/5-1.jpg",
+                        "assets/img/Christmas/05/5-2.jpg",
+                    ],
+                    [
+                        "assets/img/Christmas/06/6-1.jpg",
+                        "assets/img/Christmas/06/6-2.jpg",
+                        "assets/img/Christmas/06/6-3.jpg",
+                        "assets/img/Christmas/06/6-4.jpg",
+                        "assets/img/Christmas/06/6-5.jpg",
+                        "assets/img/Christmas/06/6-6.jpg",
+                        "assets/img/Christmas/06/6-7.jpg",
+                        "assets/img/Christmas/06/6-8.jpg",
+                        "assets/img/Christmas/06/6-9.jpg",
+                    ],
+                    [
+                        "assets/img/Christmas/07/7-1.jpg",
+                        "assets/img/Christmas/07/7-2.jpg",
+                        "assets/img/Christmas/07/7-3.jpg",
+                        "assets/img/Christmas/07/7-4.jpg",
+                        "assets/img/Christmas/07/7-5.jpg",
+                        "assets/img/Christmas/07/7-6.jpg",
+                        "assets/img/Christmas/07/7-7.jpg",
+                        "assets/img/Christmas/07/7-8.jpg",
+                    ],
+                    [
+                        "assets/img/Christmas/08/8-1.jpg",
+                        "assets/img/Christmas/08/8-2.jpg",
+                        "assets/img/Christmas/08/8-3.jpg",
+                        "assets/img/Christmas/08/8-4.jpg",
+                        "assets/img/Christmas/08/8-5.jpg",
+                        "assets/img/Christmas/08/8-6.jpg",
+                        "assets/img/Christmas/08/8-7.jpg",
                     ],
                 ]
             },
