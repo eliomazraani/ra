@@ -511,7 +511,7 @@ var choreoTabs = [
         elements: [
             {
                 id: 1,
-                image: "assets/img/Stars/Woseltelha.jpg",
+                image: "assets/img/MovementChorepgraphy/Stars/Woseltelha.jpg",
                 name: "HAIFA WEHBE",
                 summary: "Woseltelha - Live Concert",
                 href: "https://youtu.be/qStmHL-4fSQ?si=D2BlVasr09E9rK-b",
@@ -519,7 +519,7 @@ var choreoTabs = [
             },
             {
                 id: 2,
-                image: "assets/img/Stars/OuyouniBas.jpg",
+                image: "assets/img/MovementChorepgraphy/Stars/OuyouniBas.jpg",
                 name: "AHLAM AL SHAMSI",
                 summary: "Ouyouni Bas - Live Concert",
                 href: "https://www.youtube.com/watch?v=MjmFBF7QRfk",
@@ -527,7 +527,7 @@ var choreoTabs = [
             },
             {
                 id: 3,
-                image: "assets/img/Stars/KhamsehWNoss.jpg",
+                image: "assets/img/MovementChorepgraphy/Stars/KhamsehWNoss.jpg",
                 name: "NADINE NJEIM & KOSAI KHAULI",
                 summary: "Khamseh W Noss - TV Series",
                 href: "https://www.youtube.com/watch?v=VdMGg68nIWE",
@@ -535,28 +535,28 @@ var choreoTabs = [
             },
             {
                 id: 4,
-                image: "assets/img/Stars/Paranoia.jpg",
+                image: "assets/img/MovementChorepgraphy/Stars/Paranoia.jpg",
                 name: "DALIDA KHALIL",
                 summary: "Paranoia - TV Series",
                 href: "https://youtube.com/shorts/a7DeNj7SOD4?si=y3gX5ZMn-BXroOFc",
             },
             {
                 id: 5,
-                image: "assets/img/Stars/Ebki.jpg",
+                image: "assets/img/MovementChorepgraphy/Stars/Ebki.jpg",
                 name: "KARL HUSEIN",
                 summary: "Ebki - Music Video",
                 href: "https://youtu.be/CqybF4Y4rp0?si=bazFeSNYOkFIALjE",
             },
             {
                 id: 6,
-                image: "assets/img/Stars/Aziza.jpg",
+                image: "assets/img/MovementChorepgraphy/Stars/Aziza.jpg",
                 name: "AZIZA",
                 summary: "The Show - Live Concert",
                 href: "https://youtu.be/GkyzmWZjFxE?si=ipf12_B7GX3THm5i",
             },
             {
                 id: 7,
-                image: "assets/img/Stars/MokhtasarElKalam.jpg",
+                image: "assets/img/MovementChorepgraphy/Stars/MokhtasarElKalam.jpg",
                 name: "LAILA CHANDOUL",
                 summary: "Mokhtasar El Kalam - Music Video",
                 href: "https://youtu.be/I5mU_SvMFOA?si=L6_LDSiQGzUU-wlp",
@@ -583,42 +583,42 @@ var choreoTabs = [
             },
             // {
             //     id: 9,
-            //     image: "assets/img/Clubs/Ava.jpg",
+            //     image: "assets/img/MovementChorepgraphy/Clubs/Ava.jpg",
             //     name: "ANTIKA",
             //     summary: "Waterfront Beirut, Lebanon",
             //     href: "https://youtube.com/"
             // },
             {
                 id: 10,
-                image: "assets/img/Clubs/Ava.jpg",
+                image: "assets/img/MovementChorepgraphy/Clubs/Ava.jpg",
                 name: "AVA",
                 summary: "Beirut, Lebanon",
                 href: "https://youtu.be/WpziTVP_DzY?si=I1ZBna5opwREuVZz"
             },
             {
                 id: 11,
-                image: "assets/img/Clubs/Seafront.jpg",
+                image: "assets/img/MovementChorepgraphy/Clubs/Seafront.jpg",
                 name: "SEAFRONT",
                 summary: "Kaslik, Lebanon",
                 href: "https://youtube.com/shorts/8jxuLF0jQh0?si=0l434eKF3tMCDqmE"
             },
             {
                 id: 12,
-                image: "assets/img/Clubs/Kai.jpg",
+                image: "assets/img/MovementChorepgraphy/Clubs/Kai.jpg",
                 name: "KAI",
                 summary: "Batroun, Lebanon",
                 href: "https://youtube.com/shorts/jCzdL_QE47A?si=vw43hFm4YPFc18Xp"
             },
             {
                 id: 13,
-                image: "assets/img/Clubs/Kloud.jpg",
+                image: "assets/img/MovementChorepgraphy/Clubs/Kloud.jpg",
                 name: "KLOUD",
                 summary: "Dbaye, Lebanon",
                 href: "https://youtube.com/shorts/6cyvM5eIm_w?si=0X7gHm-6kvuqpJmI"
             },
             // {
             //     id: 14,
-            //     image: "assets/img/Clubs/Andalucia.jpg",
+            //     image: "assets/img/MovementChorepgraphy/Clubs/Andalucia.jpg",
             //     name: "ANDALUCIA",
             //     summary: "Monot, Lebanon",
             //     href: "https://youtube.com/"
@@ -631,80 +631,80 @@ var choreoTabs = [
         elements: [
             {
                 type: "video",
-                src: "assets/img/Weddings&Events/W&E.jpg",
+                src: "assets/img/MovementChorepgraphy/Weddings&Events/W&E.jpg",
                 link: "https://youtu.be/zzk59n-Yunc?si=wwRWNL6mhBPHCvo9",
             },
             {
                 type: "image",
-                src: "assets/img/Weddings&Events/7C2A9699.jpg",
+                src: "assets/img/MovementChorepgraphy/Weddings&Events/7C2A9699.jpg",
             },
             {
                 type: "image",
-                src: "assets/img/Weddings&Events/7C2A9022.jpg",
+                src: "assets/img/MovementChorepgraphy/Weddings&Events/7C2A9022.jpg",
             },
             {
                 type: "image",
-                src: "assets/img/Weddings&Events/M_L_4251.jpg",
+                src: "assets/img/MovementChorepgraphy/Weddings&Events/M_L_4251.jpg",
             },
             {
                 type: "image",
-                src: "assets/img/Weddings&Events/R_M19486.jpg",
+                src: "assets/img/MovementChorepgraphy/Weddings&Events/R_M19486.jpg",
             },
             {
                 type: "image",
-                src: "assets/img/Weddings&Events/5W4A4828.jpg",
+                src: "assets/img/MovementChorepgraphy/Weddings&Events/5W4A4828.jpg",
             },
             {
                 type: "image",
-                src: "assets/img/Weddings&Events/R_M10816.jpg",
+                src: "assets/img/MovementChorepgraphy/Weddings&Events/R_M10816.jpg",
             },
             {
                 type: "image",
-                src: "assets/img/Weddings&Events/ALY_0219.jpg",
+                src: "assets/img/MovementChorepgraphy/Weddings&Events/ALY_0219.jpg",
             },
             {
                 type: "image",
-                src: "assets/img/Weddings&Events/MAZ5136.jpg",
+                src: "assets/img/MovementChorepgraphy/Weddings&Events/MAZ5136.jpg",
             },
             {
                 type: "image",
-                src: "assets/img/Weddings&Events/R_M19046.jpg",
+                src: "assets/img/MovementChorepgraphy/Weddings&Events/R_M19046.jpg",
             },
             {
                 type: "image",
-                src: "assets/img/Weddings&Events/R_M19144.jpg",
+                src: "assets/img/MovementChorepgraphy/Weddings&Events/R_M19144.jpg",
             },
             {
                 type: "image",
-                src: "assets/img/Weddings&Events/Post9.jpg",
+                src: "assets/img/MovementChorepgraphy/Weddings&Events/Post9.jpg",
             },
             {
                 type: "image",
-                src: "assets/img/Weddings&Events/R_M19199.jpg",
+                src: "assets/img/MovementChorepgraphy/Weddings&Events/R_M19199.jpg",
             },
             {
                 type: "image",
-                src: "assets/img/Weddings&Events/IAM_1304.jpg",
+                src: "assets/img/MovementChorepgraphy/Weddings&Events/IAM_1304.jpg",
             },
             {
                 type: "image",
-                src: "assets/img/Weddings&Events/RODD3360.jpg",
+                src: "assets/img/MovementChorepgraphy/Weddings&Events/RODD3360.jpg",
             },
             {
                 type: "image",
-                src: "assets/img/Weddings&Events/IAM_1407.jpg",
+                src: "assets/img/MovementChorepgraphy/Weddings&Events/IAM_1407.jpg",
             },
             {
                 type: "image",
-                src: "assets/img/Weddings&Events/M_L_4396.jpg",
+                src: "assets/img/MovementChorepgraphy/Weddings&Events/M_L_4396.jpg",
             },
             {
                 type: "image",
-                src: "assets/img/Weddings&Events/R_M10677.jpg",
+                src: "assets/img/MovementChorepgraphy/Weddings&Events/R_M10677.jpg",
             },
             {
                 type: "image",
-                src: "assets/img/Weddings&Events/MAZ5220.jpg",
+                src: "assets/img/MovementChorepgraphy/Weddings&Events/MAZ5220.jpg",
             },
         ]
     }
@@ -791,163 +791,163 @@ var designTabs = [
                 images: [
                     {
                         type: "image",
-                        src: "assets/img/Chicago/image00001.jpeg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/Chicago/image00001.jpeg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Chicago/image00002.jpeg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/Chicago/image00002.jpeg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Chicago/image00007.jpeg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/Chicago/image00007.jpeg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Chicago/image00008.jpeg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/Chicago/image00008.jpeg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Chicago/image00011.jpeg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/Chicago/image00011.jpeg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Chicago/image00013.jpeg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/Chicago/image00013.jpeg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Chicago/image00014.jpeg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/Chicago/image00014.jpeg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Chicago/image00017.jpeg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/Chicago/image00017.jpeg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Chicago/image00022.jpeg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/Chicago/image00022.jpeg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Chicago/image00023.jpeg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/Chicago/image00023.jpeg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Chicago/image00024.jpeg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/Chicago/image00024.jpeg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Chicago/image00027.jpeg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/Chicago/image00027.jpeg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Chicago/image00029.jpeg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/Chicago/image00029.jpeg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Chicago/image00030.jpeg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/Chicago/image00030.jpeg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Chicago/image00032.jpeg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/Chicago/image00032.jpeg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Chicago/image00034.jpeg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/Chicago/image00034.jpeg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Chicago/image00035.jpeg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/Chicago/image00035.jpeg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Chicago/image00036.jpeg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/Chicago/image00036.jpeg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Chicago/image00037.jpeg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/Chicago/image00037.jpeg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Chicago/image00038.jpeg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/Chicago/image00038.jpeg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Chicago/image00042.jpeg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/Chicago/image00042.jpeg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Chicago/image00043.jpeg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/Chicago/image00043.jpeg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Chicago/image00048.jpeg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/Chicago/image00048.jpeg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Chicago/image00049.jpeg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/Chicago/image00049.jpeg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Chicago/image00050.jpeg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/Chicago/image00050.jpeg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Chicago/image00051.jpeg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/Chicago/image00051.jpeg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Chicago/image00055.jpeg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/Chicago/image00055.jpeg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Chicago/image00056.jpeg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/Chicago/image00056.jpeg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Chicago/image00057.jpeg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/Chicago/image00057.jpeg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Chicago/image00058.jpeg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/Chicago/image00058.jpeg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Chicago/image00059.jpeg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/Chicago/image00059.jpeg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Chicago/image00060.jpeg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/Chicago/image00060.jpeg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Chicago/image00064.jpeg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/Chicago/image00064.jpeg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Chicago/image00066.jpeg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/Chicago/image00066.jpeg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Chicago/image00067.jpeg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/Chicago/image00067.jpeg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Chicago/image00068.jpeg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/Chicago/image00068.jpeg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Chicago/image00071.jpeg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/Chicago/image00071.jpeg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Chicago/image00074.jpeg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/Chicago/image00074.jpeg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Chicago/image00076.jpeg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/Chicago/image00076.jpeg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Chicago/image00077.jpeg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/Chicago/image00077.jpeg"
                     }
                 ],
                 // description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
@@ -961,115 +961,115 @@ var designTabs = [
                 images: [
                     {
                         type: "image",
-                        src: "assets/img/LeaMakhoul/img001.jpg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/LeaMakhoul/img001.jpg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/LeaMakhoul/img002.jpg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/LeaMakhoul/img002.jpg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/LeaMakhoul/img003.jpg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/LeaMakhoul/img003.jpg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/LeaMakhoul/img004.jpg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/LeaMakhoul/img004.jpg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/LeaMakhoul/img005.jpg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/LeaMakhoul/img005.jpg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/LeaMakhoul/img006.jpg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/LeaMakhoul/img006.jpg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/LeaMakhoul/img007.jpg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/LeaMakhoul/img007.jpg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/LeaMakhoul/img008.jpg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/LeaMakhoul/img008.jpg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/LeaMakhoul/img009.jpg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/LeaMakhoul/img009.jpg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/LeaMakhoul/img010.jpg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/LeaMakhoul/img010.jpg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/LeaMakhoul/img011.jpg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/LeaMakhoul/img011.jpg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/LeaMakhoul/img012.jpg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/LeaMakhoul/img012.jpg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/LeaMakhoul/img013.jpg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/LeaMakhoul/img013.jpg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/LeaMakhoul/img014.jpg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/LeaMakhoul/img014.jpg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/LeaMakhoul/img015.jpg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/LeaMakhoul/img015.jpg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/LeaMakhoul/img016.jpg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/LeaMakhoul/img016.jpg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/LeaMakhoul/img017.jpg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/LeaMakhoul/img017.jpg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/LeaMakhoul/img018.jpg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/LeaMakhoul/img018.jpg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/LeaMakhoul/img019.jpg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/LeaMakhoul/img019.jpg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/LeaMakhoul/img020.jpg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/LeaMakhoul/img020.jpg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/LeaMakhoul/img021.jpg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/LeaMakhoul/img021.jpg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/LeaMakhoul/img022.jpg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/LeaMakhoul/img022.jpg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/LeaMakhoul/img023.jpg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/LeaMakhoul/img023.jpg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/LeaMakhoul/img024.jpg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/LeaMakhoul/img024.jpg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/LeaMakhoul/img025.jpg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/LeaMakhoul/img025.jpg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/LeaMakhoul/img026.jpg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/LeaMakhoul/img026.jpg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/LeaMakhoul/img027.jpg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/LeaMakhoul/img027.jpg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/LeaMakhoul/img028.jpg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/LeaMakhoul/img028.jpg"
                     }
                 ],
                 // description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
@@ -1083,79 +1083,79 @@ var designTabs = [
                 images: [
                     {
                         type: "image",
-                        src: "assets/img/Maroun/1.JPG"
+                        src: "assets/img/CostumeDesign&Styling/Projects/Maroun/1.JPG"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Maroun/2.JPG"
+                        src: "assets/img/CostumeDesign&Styling/Projects/Maroun/2.JPG"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Maroun/3.JPG"
+                        src: "assets/img/CostumeDesign&Styling/Projects/Maroun/3.JPG"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Maroun/4.JPG"
+                        src: "assets/img/CostumeDesign&Styling/Projects/Maroun/4.JPG"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Maroun/5.JPG"
+                        src: "assets/img/CostumeDesign&Styling/Projects/Maroun/5.JPG"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Maroun/6.JPG"
+                        src: "assets/img/CostumeDesign&Styling/Projects/Maroun/6.JPG"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Maroun/7.JPG"
+                        src: "assets/img/CostumeDesign&Styling/Projects/Maroun/7.JPG"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Maroun/8.JPG"
+                        src: "assets/img/CostumeDesign&Styling/Projects/Maroun/8.JPG"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Maroun/9.JPG"
+                        src: "assets/img/CostumeDesign&Styling/Projects/Maroun/9.JPG"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Maroun/10.JPG"
+                        src: "assets/img/CostumeDesign&Styling/Projects/Maroun/10.JPG"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Maroun/11.JPG"
+                        src: "assets/img/CostumeDesign&Styling/Projects/Maroun/11.JPG"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Maroun/12.JPG"
+                        src: "assets/img/CostumeDesign&Styling/Projects/Maroun/12.JPG"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Maroun/13.JPG"
+                        src: "assets/img/CostumeDesign&Styling/Projects/Maroun/13.JPG"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Maroun/14.JPG"
+                        src: "assets/img/CostumeDesign&Styling/Projects/Maroun/14.JPG"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Maroun/15.JPG"
+                        src: "assets/img/CostumeDesign&Styling/Projects/Maroun/15.JPG"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Maroun/16.JPG"
+                        src: "assets/img/CostumeDesign&Styling/Projects/Maroun/16.JPG"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Maroun/17.JPG"
+                        src: "assets/img/CostumeDesign&Styling/Projects/Maroun/17.JPG"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Maroun/18.JPG"
+                        src: "assets/img/CostumeDesign&Styling/Projects/Maroun/18.JPG"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Maroun/19.JPG"
+                        src: "assets/img/CostumeDesign&Styling/Projects/Maroun/19.JPG"
                     }
                 ],
                 // description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
@@ -1168,31 +1168,31 @@ var designTabs = [
                 type: "grid",
                 images: [
                     {
-                        type: "video",
-                        src: "assets/img/Rectangle.png",
+                        type: "image",
+                        src: "assets/img/CostumeDesign&Styling/Projects/NadaAbouFarhat/1.jpeg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Square.png",
+                        src: "assets/img/CostumeDesign&Styling/Projects/NadaAbouFarhat/2.jpeg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Square.png",
+                        src: "assets/img/CostumeDesign&Styling/Projects/NadaAbouFarhat/3.jpeg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Square.png",
+                        src: "assets/img/CostumeDesign&Styling/Projects/NadaAbouFarhat/4.jpeg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Square.png",
+                        src: "assets/img/CostumeDesign&Styling/Projects/NadaAbouFarhat/5.jpeg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Square.png",
-                    },
+                        src: "assets/img/CostumeDesign&Styling/Projects/NadaAbouFarhat/6.jpeg"
+                    }
                 ],
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+                // description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
             },
             {
                 id: 5,
@@ -1202,31 +1202,63 @@ var designTabs = [
                 type: "grid",
                 images: [
                     {
-                        type: "video",
-                        src: "assets/img/Rectangle.png",
+                        type: "image",
+                        src: "assets/img/CostumeDesign&Styling/Projects/Ebki/1.jpg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Square.png",
+                        src: "assets/img/CostumeDesign&Styling/Projects/Ebki/2.jpg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Square.png",
+                        src: "assets/img/CostumeDesign&Styling/Projects/Ebki/3.jpg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Square.png",
+                        src: "assets/img/CostumeDesign&Styling/Projects/Ebki/4.jpg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Square.png",
+                        src: "assets/img/CostumeDesign&Styling/Projects/Ebki/5.jpg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Square.png",
+                        src: "assets/img/CostumeDesign&Styling/Projects/Ebki/6.jpg"
                     },
+                    {
+                        type: "image",
+                        src: "assets/img/CostumeDesign&Styling/Projects/Ebki/7.jpg"
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/CostumeDesign&Styling/Projects/Ebki/8.jpg"
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/CostumeDesign&Styling/Projects/Ebki/9.jpg"
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/CostumeDesign&Styling/Projects/Ebki/10.jpg"
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/CostumeDesign&Styling/Projects/Ebki/11.jpg"
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/CostumeDesign&Styling/Projects/Ebki/12.jpg"
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/CostumeDesign&Styling/Projects/Ebki/13.jpg"
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/CostumeDesign&Styling/Projects/Ebki/14.jpg"
+                    }
                 ],
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+                // description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
             },
             {
                 id: 6,
@@ -1236,31 +1268,55 @@ var designTabs = [
                 type: "grid",
                 images: [
                     {
-                        type: "video",
-                        src: "assets/img/Rectangle.png",
+                        type: "image",
+                        src: "assets/img/CostumeDesign&Styling/Projects/Ratata/1.jpg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Square.png",
+                        src: "assets/img/CostumeDesign&Styling/Projects/Ratata/2.jpg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Square.png",
+                        src: "assets/img/CostumeDesign&Styling/Projects/Ratata/3.jpg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Square.png",
+                        src: "assets/img/CostumeDesign&Styling/Projects/Ratata/4.jpg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Square.png",
+                        src: "assets/img/CostumeDesign&Styling/Projects/Ratata/5.jpg"
                     },
                     {
                         type: "image",
-                        src: "assets/img/Square.png",
+                        src: "assets/img/CostumeDesign&Styling/Projects/Ratata/6.jpg"
                     },
+                    {
+                        type: "image",
+                        src: "assets/img/CostumeDesign&Styling/Projects/Ratata/7.jpg"
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/CostumeDesign&Styling/Projects/Ratata/8.jpg"
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/CostumeDesign&Styling/Projects/Ratata/9.jpg"
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/CostumeDesign&Styling/Projects/Ratata/10.jpg"
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/CostumeDesign&Styling/Projects/Ratata/11.jpg"
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/CostumeDesign&Styling/Projects/Ratata/12.jpg"
+                    }
                 ],
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+                // description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
             },
             {
                 id: 7,
@@ -1269,9 +1325,28 @@ var designTabs = [
                 summary: "Al Makassed - Commercial",
                 type: "descriptive",
                 images: [
-                    "assets/img/Rectangle(2).png",
-                    "assets/img/Rectangle(2).png",
-                    "assets/img/Rectangle(2).png",
+                    "assets/img/CostumeDesign&Styling/Projects/ZakkiBlink/1.jpg",
+                    "assets/img/CostumeDesign&Styling/Projects/ZakkiBlink/2.jpg",
+                    "assets/img/CostumeDesign&Styling/Projects/ZakkiBlink/3.jpg",
+                    "assets/img/CostumeDesign&Styling/Projects/ZakkiBlink/4.jpg",
+                    "assets/img/CostumeDesign&Styling/Projects/ZakkiBlink/5.jpg",
+                    "assets/img/CostumeDesign&Styling/Projects/ZakkiBlink/6.jpg",
+                    "assets/img/CostumeDesign&Styling/Projects/ZakkiBlink/7.jpg",
+                    "assets/img/CostumeDesign&Styling/Projects/ZakkiBlink/8.jpg",
+                    "assets/img/CostumeDesign&Styling/Projects/ZakkiBlink/9.jpg",
+                    "assets/img/CostumeDesign&Styling/Projects/ZakkiBlink/10.jpg",
+                    "assets/img/CostumeDesign&Styling/Projects/ZakkiBlink/11.jpg",
+                    "assets/img/CostumeDesign&Styling/Projects/ZakkiBlink/12.jpg",
+                    "assets/img/CostumeDesign&Styling/Projects/ZakkiBlink/13.jpg",
+                    "assets/img/CostumeDesign&Styling/Projects/ZakkiBlink/14.jpg",
+                    "assets/img/CostumeDesign&Styling/Projects/ZakkiBlink/15.jpg",
+                    "assets/img/CostumeDesign&Styling/Projects/ZakkiBlink/16.jpg",
+                    "assets/img/CostumeDesign&Styling/Projects/ZakkiBlink/17.jpg",
+                    "assets/img/CostumeDesign&Styling/Projects/ZakkiBlink/18.jpg",
+                    "assets/img/CostumeDesign&Styling/Projects/ZakkiBlink/19.jpg",
+                    "assets/img/CostumeDesign&Styling/Projects/ZakkiBlink/20.jpg",
+                    "assets/img/CostumeDesign&Styling/Projects/ZakkiBlink/21.jpg",
+                    "assets/img/CostumeDesign&Styling/Projects/ZakkiBlink/22.jpg"
                 ],
                 // concept: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
                 info: {
@@ -1290,9 +1365,19 @@ var designTabs = [
                 summary: "Commercial",
                 type: "descriptive",
                 images: [
-                    "assets/img/Rectangle(2).png",
-                    "assets/img/Rectangle(2).png",
-                    "assets/img/Rectangle(2).png",
+                    "assets/img/CostumeDesign&Styling/Projects/Memotiles/1.jpg",
+                    "assets/img/CostumeDesign&Styling/Projects/Memotiles/2.jpg",
+                    "assets/img/CostumeDesign&Styling/Projects/Memotiles/3.jpg",
+                    "assets/img/CostumeDesign&Styling/Projects/Memotiles/4.jpg",
+                    "assets/img/CostumeDesign&Styling/Projects/Memotiles/5.jpg",
+                    "assets/img/CostumeDesign&Styling/Projects/Memotiles/6.jpg",
+                    "assets/img/CostumeDesign&Styling/Projects/Memotiles/7.jpg",
+                    "assets/img/CostumeDesign&Styling/Projects/Memotiles/8.jpg",
+                    "assets/img/CostumeDesign&Styling/Projects/Memotiles/9.jpg",
+                    "assets/img/CostumeDesign&Styling/Projects/Memotiles/10.jpg",
+                    "assets/img/CostumeDesign&Styling/Projects/Memotiles/11.jpg",
+                    "assets/img/CostumeDesign&Styling/Projects/Memotiles/12.jpg",
+                    "assets/img/CostumeDesign&Styling/Projects/Memotiles/13.jpg"
                 ],
                 // concept: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
                 info: {
@@ -1312,64 +1397,64 @@ var designTabs = [
         elements: [
             {
                 id: 9,
-                image: "assets/img/Christmas/Cover.jpg",
+                image: "assets/img/CostumeDesign&Styling/Designs/Christmas/Cover.jpg",
                 name: "CHRISTMAS",
                 // summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
                 type: "slide",
                 images: [
                     [
-                        "assets/img/Christmas/01/1-1.jpg",
-                        "assets/img/Christmas/01/1-2.jpg",
-                        "assets/img/Christmas/01/1-3.jpg",
-                        "assets/img/Christmas/01/1-4.jpg",
-                        "assets/img/Christmas/01/1-5.jpg",
-                        "assets/img/Christmas/03/3-1.jpg",
-                        "assets/img/Christmas/03/3-2.jpg",
-                        "assets/img/Christmas/03/3-3.jpg",
-                        "assets/img/Christmas/03/3-4.jpg",
-                        "assets/img/Christmas/05/5-2.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Christmas/01/1-1.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Christmas/01/1-2.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Christmas/01/1-3.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Christmas/01/1-4.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Christmas/01/1-5.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Christmas/03/3-1.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Christmas/03/3-2.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Christmas/03/3-3.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Christmas/03/3-4.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Christmas/05/5-2.jpg",
                     ],
                     [
-                        "assets/img/Christmas/02/2-1.jpg",
-                        "assets/img/Christmas/02/2-2.jpg",
-                        "assets/img/Christmas/02/2-3.jpg",
-                        "assets/img/Christmas/02/2-4.jpg",
-                        "assets/img/Christmas/02/2-5.jpg",
-                        "assets/img/Christmas/04/4-1.jpg",
-                        "assets/img/Christmas/04/4-2.jpg",
-                        "assets/img/Christmas/04/4-3.jpg",
-                        "assets/img/Christmas/04/4-4.jpg",
-                        "assets/img/Christmas/05/5-1.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Christmas/02/2-1.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Christmas/02/2-2.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Christmas/02/2-3.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Christmas/02/2-4.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Christmas/02/2-5.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Christmas/04/4-1.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Christmas/04/4-2.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Christmas/04/4-3.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Christmas/04/4-4.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Christmas/05/5-1.jpg",
                     ],
                     [
-                        "assets/img/Christmas/06/6-1.jpg",
-                        "assets/img/Christmas/06/6-2.jpg",
-                        "assets/img/Christmas/06/6-3.jpg",
-                        "assets/img/Christmas/06/6-4.jpg",
-                        "assets/img/Christmas/06/6-5.jpg",
-                        "assets/img/Christmas/06/6-6.jpg",
-                        "assets/img/Christmas/06/6-7.jpg",
-                        "assets/img/Christmas/06/6-8.jpg",
-                        "assets/img/Christmas/06/6-9.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Christmas/06/6-1.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Christmas/06/6-2.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Christmas/06/6-3.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Christmas/06/6-4.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Christmas/06/6-5.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Christmas/06/6-6.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Christmas/06/6-7.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Christmas/06/6-8.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Christmas/06/6-9.jpg",
                     ],
                     [
-                        "assets/img/Christmas/07/7-1.jpg",
-                        "assets/img/Christmas/07/7-2.jpg",
-                        "assets/img/Christmas/07/7-3.jpg",
-                        "assets/img/Christmas/07/7-4.jpg",
-                        "assets/img/Christmas/07/7-5.jpg",
-                        "assets/img/Christmas/07/7-6.jpg",
-                        "assets/img/Christmas/07/7-7.jpg",
-                        "assets/img/Christmas/07/7-8.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Christmas/07/7-1.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Christmas/07/7-2.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Christmas/07/7-3.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Christmas/07/7-4.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Christmas/07/7-5.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Christmas/07/7-6.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Christmas/07/7-7.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Christmas/07/7-8.jpg",
                     ],
                     [
-                        "assets/img/Christmas/08/8-1.jpg",
-                        "assets/img/Christmas/08/8-2.jpg",
-                        "assets/img/Christmas/08/8-3.jpg",
-                        "assets/img/Christmas/08/8-4.jpg",
-                        "assets/img/Christmas/08/8-5.jpg",
-                        "assets/img/Christmas/08/8-6.jpg",
-                        "assets/img/Christmas/08/8-7.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Christmas/08/8-1.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Christmas/08/8-2.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Christmas/08/8-3.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Christmas/08/8-4.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Christmas/08/8-5.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Christmas/08/8-6.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Christmas/08/8-7.jpg",
                     ],
                 ]
             },
@@ -1381,16 +1466,27 @@ var designTabs = [
                 type: "slide",
                 images: [
                     [
-                        "assets/img/Rectangle(2).png",
-                        "assets/img/Rectangle(2).png",
-                        "assets/img/Rectangle(2).png",
-                        "assets/img/Rectangle(2).png",
+                        "assets/img/CostumeDesign&Styling/Designs/Folklore/1.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Folklore/2.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Folklore/3.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Folklore/4.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Folklore/5.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Folklore/6.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Folklore/7.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Folklore/8.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Folklore/9.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Folklore/10.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Folklore/11.jpg"
                     ],
                     [
-                        "assets/img/Rectangle(2).png",
-                        "assets/img/Rectangle(2).png",
-                        "assets/img/Rectangle(2).png",
-                        "assets/img/Rectangle(2).png",
+                        "assets/img/CostumeDesign&Styling/Designs/Folklore/12.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Folklore/13.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Folklore/14.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Folklore/15.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Folklore/16.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Folklore/17.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Folklore/18.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Folklore/19.jpg"
                     ],
                 ]
             },
@@ -1402,17 +1498,38 @@ var designTabs = [
                 type: "slide",
                 images: [
                     [
-                        "assets/img/Rectangle(2).png",
-                        "assets/img/Rectangle(2).png",
-                        "assets/img/Rectangle(2).png",
-                        "assets/img/Rectangle(2).png",
+                        "assets/img/CostumeDesign&Styling/Designs/Orientale/1.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Orientale/2.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Orientale/3.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Orientale/4.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Orientale/5.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Orientale/6.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Orientale/7.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Orientale/8.jpg"
                     ],
                     [
-                        "assets/img/Rectangle(2).png",
-                        "assets/img/Rectangle(2).png",
-                        "assets/img/Rectangle(2).png",
-                        "assets/img/Rectangle(2).png",
+                        "assets/img/CostumeDesign&Styling/Designs/Orientale/9.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Orientale/10.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Orientale/21.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Orientale/22.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Orientale/23.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Orientale/24.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Orientale/25.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Orientale/26.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Orientale/27.jpg"
                     ],
+                    [
+                        "assets/img/CostumeDesign&Styling/Designs/Orientale/11.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Orientale/12.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Orientale/13.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Orientale/14.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Orientale/15.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Orientale/16.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Orientale/17.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Orientale/18.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Orientale/19.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Orientale/20.jpg"
+                    ]
                 ]
             },
             {
@@ -1423,17 +1540,47 @@ var designTabs = [
                 type: "slide",
                 images: [
                     [
-                        "assets/img/Rectangle(2).png",
-                        "assets/img/Rectangle(2).png",
-                        "assets/img/Rectangle(2).png",
-                        "assets/img/Rectangle(2).png",
+                        "assets/img/CostumeDesign&Styling/Designs/StreetStyle/1.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/StreetStyle/2.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/StreetStyle/3.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/StreetStyle/4.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/StreetStyle/5.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/StreetStyle/6.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/StreetStyle/7.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/StreetStyle/8.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/StreetStyle/9.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/StreetStyle/10.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/StreetStyle/11.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/StreetStyle/12.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/StreetStyle/13.jpg"
                     ],
                     [
-                        "assets/img/Rectangle(2).png",
-                        "assets/img/Rectangle(2).png",
-                        "assets/img/Rectangle(2).png",
-                        "assets/img/Rectangle(2).png",
+                        "assets/img/CostumeDesign&Styling/Designs/StreetStyle/14.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/StreetStyle/15.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/StreetStyle/16.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/StreetStyle/17.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/StreetStyle/18.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/StreetStyle/19.jpg"
                     ],
+                    [
+                        "assets/img/CostumeDesign&Styling/Designs/StreetStyle/20.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/StreetStyle/21.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/StreetStyle/22.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/StreetStyle/23.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/StreetStyle/24.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/StreetStyle/25.jpg"
+                    ],
+                    [
+                        "assets/img/CostumeDesign&Styling/Designs/StreetStyle/26.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/StreetStyle/27.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/StreetStyle/28.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/StreetStyle/29.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/StreetStyle/30.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/StreetStyle/31.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/StreetStyle/32.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/StreetStyle/33.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/StreetStyle/34.jpg"
+                    ]
                 ]
             }
         ]

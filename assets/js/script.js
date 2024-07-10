@@ -500,22 +500,32 @@ function updateGallery(elem, num) {
     var $gallery = $(elem).siblings(".gallery");
     var parentWidth = $(elem).closest(".galleryProject").width();
     var elementWidth = $gallery[0].scrollWidth;
+    console.log(parentWidth, elementWidth);
 
-    var currentTranslate = $gallery.data('translate') || 0;
+    function customRound(num) {
+        var integerPart = Math.floor(num);
+        var decimalPart = num - integerPart;
 
-    var ratio = elementWidth / parentWidth;
-    var translateAmount = 25 * ratio;
-
-    if (num === 1) {
-        currentTranslate = Math.min(currentTranslate + translateAmount, 100 * (ratio - 1));
-    } else if (num === -1) {
-        currentTranslate = Math.max(currentTranslate - translateAmount, 0);
+        return (decimalPart >= 0.5) ? Math.ceil(num) : Math.floor(num);
     }
 
-    $gallery.css('transform', `translateX(-${currentTranslate}%)`);
-    $gallery.data('translate', currentTranslate);
-}
+    var totalPages = customRound(elementWidth / parentWidth);
 
+    var currentPage = $gallery.data('page') || 0;
+
+    if (num === 1) {
+        currentPage = Math.min(currentPage + 1, totalPages - 1);
+    } else if (num === -1) {
+        currentPage = Math.max(currentPage - 1, 0);
+    }
+
+    var currentTranslate = currentPage * parentWidth;
+
+    var translatePercentage = (currentTranslate / elementWidth) * 200;
+
+    $gallery.css('transform', `translateX(-${translatePercentage}%)`);
+    $gallery.data('page', currentPage);
+}
 
 var currentUrl = window.location.pathname.slice(1);
 let displayCatalogue = document.getElementsByClassName("displayCatalogue");
