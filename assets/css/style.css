@@ -1240,6 +1240,7 @@ body {
   }
   .galleryProject .gallery {
     overflow: auto;
+    scrollbar-width: none;
   }
   .galleryProject .gallery img {
     max-height: 260px;

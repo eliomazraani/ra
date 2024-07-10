@@ -519,7 +519,7 @@ var choreoTabs = [
             },
             {
                 id: 2,
-                image: "assets/img/Stars/Woseltelha.jpg",
+                image: "assets/img/Stars/OuyouniBas.jpg",
                 name: "AHLAM AL SHAMSI",
                 summary: "Ouyouni Bas - Live Concert",
                 href: "https://www.youtube.com/watch?v=MjmFBF7QRfk",
@@ -790,31 +790,271 @@ var designTabs = [
                 type: "grid",
                 images: [
                     {
-                        type: "video",
-                        src: "assets/img/Rectangle.png",
+                        type:"image",
+                        src:"assets/img/Chicago/image00001.jpeg"
                     },
                     {
-                        type: "image",
-                        src: "assets/img/Square.png",
+                        type:"image",
+                        src:"assets/img/Chicago/image00002.jpeg"
                     },
                     {
-                        type: "image",
-                        src: "assets/img/Square.png",
+                        type:"image",
+                        src:"assets/img/Chicago/image00003.jpeg"
                     },
                     {
-                        type: "image",
-                        src: "assets/img/Square.png",
+                        type:"image",
+                        src:"assets/img/Chicago/image00004.jpeg"
                     },
                     {
-                        type: "image",
-                        src: "assets/img/Square.png",
+                        type:"image",
+                        src:"assets/img/Chicago/image00005.jpeg"
                     },
                     {
-                        type: "image",
-                        src: "assets/img/Square.png",
+                        type:"image",
+                        src:"assets/img/Chicago/image00006.jpeg"
                     },
+                    {
+                        type:"image",
+                        src:"assets/img/Chicago/image00007.jpeg"
+                    },
+                    {
+                        type:"image",
+                        src:"assets/img/Chicago/image00008.jpeg"
+                    },
+                    {
+                        type:"image",
+                        src:"assets/img/Chicago/image00009.jpeg"
+                    },
+                    {
+                        type:"image",
+                        src:"assets/img/Chicago/image00010.jpeg"
+                    },
+                    {
+                        type:"image",
+                        src:"assets/img/Chicago/image00011.jpeg"
+                    },
+                    {
+                        type:"image",
+                        src:"assets/img/Chicago/image00012.jpeg"
+                    },
+                    {
+                        type:"image",
+                        src:"assets/img/Chicago/image00013.jpeg"
+                    },
+                    {
+                        type:"image",
+                        src:"assets/img/Chicago/image00014.jpeg"
+                    },
+                    {
+                        type:"image",
+                        src:"assets/img/Chicago/image00015.jpeg"
+                    },
+                    {
+                        type:"image",
+                        src:"assets/img/Chicago/image00016.jpeg"
+                    },
+                    {
+                        type:"image",
+                        src:"assets/img/Chicago/image00017.jpeg"
+                    },
+                    {
+                        type:"image",
+                        src:"assets/img/Chicago/image00018.jpeg"
+                    },
+                    {
+                        type:"image",
+                        src:"assets/img/Chicago/image00019.jpeg"
+                    },
+                    {
+                        type:"image",
+                        src:"assets/img/Chicago/image00020.jpeg"
+                    },
+                    {
+                        type:"image",
+                        src:"assets/img/Chicago/image00021.jpeg"
+                    },
+                    {
+                        type:"image",
+                        src:"assets/img/Chicago/image00022.jpeg"
+                    },
+                    {
+                        type:"image",
+                        src:"assets/img/Chicago/image00023.jpeg"
+                    },
+                    {
+                        type:"image",
+                        src:"assets/img/Chicago/image00024.jpeg"
+                    },
+                    {
+                        type:"image",
+                        src:"assets/img/Chicago/image00026.jpeg"
+                    },
+                    {
+                        type:"image",
+                        src:"assets/img/Chicago/image00027.jpeg"
+                    },
+                    {
+                        type:"image",
+                        src:"assets/img/Chicago/image00029.jpeg"
+                    },
+                    {
+                        type:"image",
+                        src:"assets/img/Chicago/image00030.jpeg"
+                    },
+                    {
+                        type:"image",
+                        src:"assets/img/Chicago/image00031.jpeg"
+                    },
+                    {
+                        type:"image",
+                        src:"assets/img/Chicago/image00032.jpeg"
+                    },
+                    {
+                        type:"image",
+                        src:"assets/img/Chicago/image00033.jpeg"
+                    },
+                    {
+                        type:"image",
+                        src:"assets/img/Chicago/image00034.jpeg"
+                    },
+                    {
+                        type:"image",
+                        src:"assets/img/Chicago/image00035.jpeg"
+                    },
+                    {
+                        type:"image",
+                        src:"assets/img/Chicago/image00036.jpeg"
+                    },
+                    {
+                        type:"image",
+                        src:"assets/img/Chicago/image00037.jpeg"
+                    },
+                    {
+                        type:"image",
+                        src:"assets/img/Chicago/image00038.jpeg"
+                    },
+                    {
+                        type:"image",
+                        src:"assets/img/Chicago/image00039.jpeg"
+                    },
+                    {
+                        type:"image",
+                        src:"assets/img/Chicago/image00040.jpeg"
+                    },
+                    {
+                        type:"image",
+                        src:"assets/img/Chicago/image00041.jpeg"
+                    },
+                    {
+                        type:"image",
+                        src:"assets/img/Chicago/image00042.jpeg"
+                    },
+                    {
+                        type:"image",
+                        src:"assets/img/Chicago/image00043.jpeg"
+                    },
+                    {
+                        type:"image",
+                        src:"assets/img/Chicago/image00044.jpeg"
+                    },
+                    {
+                        type:"image",
+                        src:"assets/img/Chicago/image00045.jpeg"
+                    },
+                    {
+                        type:"image",
+                        src:"assets/img/Chicago/image00048.jpeg"
+                    },
+                    {
+                        type:"image",
+                        src:"assets/img/Chicago/image00049.jpeg"
+                    },
+                    {
+                        type:"image",
+                        src:"assets/img/Chicago/image00050.jpeg"
+                    },
+                    {
+                        type:"image",
+                        src:"assets/img/Chicago/image00051.jpeg"
+                    },
+                    {
+                        type:"image",
+                        src:"assets/img/Chicago/image00054.jpeg"
+                    },
+                    {
+                        type:"image",
+                        src:"assets/img/Chicago/image00055.jpeg"
+                    },
+                    {
+                        type:"image",
+                        src:"assets/img/Chicago/image00056.jpeg"
+                    },
+                    {
+                        type:"image",
+                        src:"assets/img/Chicago/image00057.jpeg"
+                    },
+                    {
+                        type:"image",
+                        src:"assets/img/Chicago/image00058.jpeg"
+                    },
+                    {
+                        type:"image",
+                        src:"assets/img/Chicago/image00059.jpeg"
+                    },
+                    {
+                        type:"image",
+                        src:"assets/img/Chicago/image00060.jpeg"
+                    },
+                    {
+                        type:"image",
+                        src:"assets/img/Chicago/image00063.jpeg"
+                    },
+                    {
+                        type:"image",
+                        src:"assets/img/Chicago/image00064.jpeg"
+                    },
+                    {
+                        type:"image",
+                        src:"assets/img/Chicago/image00066.jpeg"
+                    },
+                    {
+                        type:"image",
+                        src:"assets/img/Chicago/image00067.jpeg"
+                    },
+                    {
+                        type:"image",
+                        src:"assets/img/Chicago/image00068.jpeg"
+                    },
+                    {
+                        type:"image",
+                        src:"assets/img/Chicago/image00069.jpeg"
+                    },
+                    {
+                        type:"image",
+                        src:"assets/img/Chicago/image00071.jpeg"
+                    },
+                    {
+                        type:"image",
+                        src:"assets/img/Chicago/image00072.jpeg"
+                    },
+                    {
+                        type:"image",
+                        src:"assets/img/Chicago/image00074.jpeg"
+                    },
+                    {
+                        type:"image",
+                        src:"assets/img/Chicago/image00075.jpeg"
+                    },
+                    {
+                        type:"image",
+                        src:"assets/img/Chicago/image00076.jpeg"
+                    },
+                    {
+                        type:"image",
+                        src:"assets/img/Chicago/image00077.jpeg"
+                    }
                 ],
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+                // description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
             },
             {
                 id: 2,
@@ -1036,7 +1276,7 @@ var designTabs = [
         elements: [
             {
                 id: 9,
-                image: "assets/img/Rectangle.png",
+                image: "assets/img/Christmas/Cover.jpg",
                 name: "CHRISTMAS",
                 // summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
                 type: "slide",
@@ -1047,6 +1287,11 @@ var designTabs = [
                         "assets/img/Christmas/01/1-3.jpg",
                         "assets/img/Christmas/01/1-4.jpg",
                         "assets/img/Christmas/01/1-5.jpg",
+                        "assets/img/Christmas/03/3-1.jpg",
+                        "assets/img/Christmas/03/3-2.jpg",
+                        "assets/img/Christmas/03/3-3.jpg",
+                        "assets/img/Christmas/03/3-4.jpg",
+                        "assets/img/Christmas/05/5-2.jpg",
                     ],
                     [
                         "assets/img/Christmas/02/2-1.jpg",
@@ -1054,22 +1299,11 @@ var designTabs = [
                         "assets/img/Christmas/02/2-3.jpg",
                         "assets/img/Christmas/02/2-4.jpg",
                         "assets/img/Christmas/02/2-5.jpg",
-                    ],
-                    [
-                        "assets/img/Christmas/03/3-1.jpg",
-                        "assets/img/Christmas/03/3-2.jpg",
-                        "assets/img/Christmas/03/3-3.jpg",
-                        "assets/img/Christmas/03/3-4.jpg",
-                    ],
-                    [
                         "assets/img/Christmas/04/4-1.jpg",
                         "assets/img/Christmas/04/4-2.jpg",
                         "assets/img/Christmas/04/4-3.jpg",
                         "assets/img/Christmas/04/4-4.jpg",
-                    ],
-                    [
                         "assets/img/Christmas/05/5-1.jpg",
-                        "assets/img/Christmas/05/5-2.jpg",
                     ],
                     [
                         "assets/img/Christmas/06/6-1.jpg",
@@ -1761,7 +1995,7 @@ function showService(tab, name, color) {
                         ? Object.entries(serviceTab.info).map(([key, value]) => `<div class="row"><div class="position">${key}</div><div class="name">${value}</div></div>`).join('')
                         : '';
         show += `<div class="galleryProject">
-                    <img onclick="updateGallery(-1)" class="leftArrowLite" src="assets/img/leftArrowLite.png" alt="Img">
+                    <img onclick="updateGallery(this, -1)" class="leftArrowLite" src="assets/img/leftArrowLite.png" alt="Img">
                     <div class="gallery">
                         ${imagesHTML}
                     </div>
@@ -1771,7 +2005,7 @@ function showService(tab, name, color) {
                             <img id="galleryImg">
                         </div>
                     </div>
-                    <img onclick="updateGallery(1)" class="rightArrowLite" src="assets/img/rightArrowLite.png" alt="Img">
+                    <img onclick="updateGallery(this, 1)" class="rightArrowLite" src="assets/img/rightArrowLite.png" alt="Img">
                 </div>
                 <div class="infoProject" ${serviceTab.concept ? "" : "style='justify-content: end'"}>
                     <div class="concept ${serviceTab.concept ? "" : "d-none"}">
@@ -1843,11 +2077,11 @@ function showService(tab, name, color) {
             
             var imagesHTML = serviceTab.images[i].map(image => `<img onclick="showModal(this)" src="${image}" alt="Img">`).join('');
             show += `<div class="galleryProject" ${i === serviceTab.images.length - 1 ? `style='padding-bottom: 16px'` : ''}>
-                        <img onclick="updateGallery(-1)" class="leftArrowLite" src="assets/img/leftArrowLite.png" alt="Img">
+                        <img onclick="updateGallery(this, -1)" class="leftArrowLite" src="assets/img/leftArrowLite.png" alt="Img">
                         <div class="gallery">
                             ${imagesHTML}
                         </div>
-                        <img onclick="updateGallery(1)" class="rightArrowLite" src="assets/img/rightArrowLite.png" alt="Img">
+                        <img onclick="updateGallery(this, 1)" class="rightArrowLite" src="assets/img/rightArrowLite.png" alt="Img">
                     </div>`
         }
         show += `<div id="galleryModal" class="modal">

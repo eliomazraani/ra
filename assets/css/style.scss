@@ -1478,6 +1478,7 @@ body {
 
         .gallery {
             overflow: auto;
+            scrollbar-width: none;
 
             img {
                 max-height: 260px;

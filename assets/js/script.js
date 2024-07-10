@@ -496,19 +496,26 @@ function closeModal() {
 
 let currentIndex = 0;
 
-function updateGallery(num) {
-    const gallery = document.querySelector('.gallery');
-    const images = gallery.querySelectorAll('img');
-    currentIndex = currentIndex + num;
-    if (currentIndex < 0) {
-        currentIndex = 0;
-    } else if (currentIndex > images.length - 2) {
-        currentIndex = images.length - 2;
+function updateGallery(elem, num) {
+    var $gallery = $(elem).siblings(".gallery");
+    var parentWidth = $(elem).closest(".galleryProject").width();
+    var elementWidth = $gallery[0].scrollWidth;
+
+    var currentTranslate = $gallery.data('translate') || 0;
+
+    var ratio = elementWidth / parentWidth;
+    var translateAmount = 25 * ratio;
+
+    if (num === 1) {
+        currentTranslate = Math.min(currentTranslate + translateAmount, 100 * (ratio - 1));
+    } else if (num === -1) {
+        currentTranslate = Math.max(currentTranslate - translateAmount, 0);
     }
 
-    const translateXValue = -currentIndex * 50;
-    gallery.style.transform = `translateX(${translateXValue}%)`;
+    $gallery.css('transform', `translateX(-${currentTranslate}%)`);
+    $gallery.data('translate', currentTranslate);
 }
+
 
 var currentUrl = window.location.pathname.slice(1);
 let displayCatalogue = document.getElementsByClassName("displayCatalogue");
