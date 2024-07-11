@@ -1706,6 +1706,13 @@ body {
             img {
                 height: 100%;
             }
+
+            &.scale {
+                
+                img {
+                    transform: scale(1.5);
+                }
+            }
         }
     }
 
@@ -1730,9 +1737,13 @@ body {
 
             .image {
                 width: calc(50% - 8px);
+                height: 120px;
 
-                img {
-                    width: 100%;
+                &.scale {
+
+                    img {
+                        transform: scale(2.5);
+                    }
                 }
             }
         }

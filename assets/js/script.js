@@ -26,27 +26,32 @@ function jobPosition(num) {
         case 1:
             $("#jobPositionName").text("Coordinator");
             position = "Coordinator";
-            viewDescription(position);
+            // viewDescription(position);
+            applyNow(position);
             break;
         case 2:
             $("#jobPositionName").text("Assistant");
             position = "Assistant";
-            viewDescription(position);
+            // viewDescription(position);
+            applyNow(position);
             break;
         case 3:
             $("#jobPositionName").text("Driver");
             position = "Driver";
-            viewDescription(position);
+            // viewDescription(position);
+            applyNow(position);
             break;
         case 4:
             $("#jobPositionName").text("Wardrobe Supervisor");
             position = "Wardrobe Supervisor";
-            viewDescription(position);
+            // viewDescription(position);
+            applyNow(position);
             break;
         case 5:
             $("#jobPositionName").text("Crafter");
             position = "Crafter";
-            viewDescription(position);
+            // viewDescription(position);
+            applyNow(position);
             break;
         case 6:
             position = "Makeup Artist";
@@ -506,7 +511,7 @@ function updateGallery(elem, num) {
         var integerPart = Math.floor(num);
         var decimalPart = num - integerPart;
 
-        return (decimalPart >= 0.5) ? Math.ceil(num) : Math.floor(num);
+        return (decimalPart >= 0.5) ? Math.ceil(num) + 1 : Math.ceil(num);
     }
 
     var totalPages = customRound(elementWidth / parentWidth);
@@ -521,7 +526,7 @@ function updateGallery(elem, num) {
 
     var currentTranslate = currentPage * parentWidth;
 
-    var translatePercentage = (currentTranslate / elementWidth) * 200;
+    var translatePercentage = (currentTranslate / elementWidth) * 100;
 
     $gallery.css('transform', `translateX(-${translatePercentage}%)`);
     $gallery.data('page', currentPage);

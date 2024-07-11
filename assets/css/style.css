@@ -1438,6 +1438,9 @@ body {
 .displayCatalogue .row .image img {
   height: 100%;
 }
+.displayCatalogue .row .image.scale img {
+  transform: scale(1.5);
+}
 @media only screen and (max-width: 1427px) {
   .displayCatalogue .row {
     width: 100%;
@@ -1456,9 +1459,10 @@ body {
   }
   .displayCatalogue .row .image {
     width: calc(50% - 8px);
+    height: 120px;
   }
-  .displayCatalogue .row .image img {
-    width: 100%;
+  .displayCatalogue .row .image.scale img {
+    transform: scale(2.5);
   }
 }
 
