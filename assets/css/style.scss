@@ -1716,8 +1716,8 @@ body {
         }
     }
 
-    // @include screen767 {
-    @media only screen and (max-width: 1427px) {
+    @include screen767 {
+    // @media only screen and (max-width: 1427px) {
 
         .row {
             width: 100%;
@@ -1743,6 +1743,13 @@ body {
 
                     img {
                         transform: scale(2.5);
+                    }
+                }
+
+                &.mobScale {
+
+                    img {
+                        transform: scale(1.5);
                     }
                 }
             }

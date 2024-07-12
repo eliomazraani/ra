@@ -1129,7 +1129,8 @@ var designTabs = [
                     },
                     {
                         type: "image",
-                        src: "assets/img/CostumeDesign&Styling/Projects/NadaAbouFarhat/3.jpeg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/NadaAbouFarhat/3.jpeg",
+                        mobScale: true
                     },
                     {
                         type: "image",
@@ -1338,19 +1339,23 @@ var designTabs = [
                     },
                     {
                         type: "image",
-                        src: "assets/img/CostumeDesign&Styling/Projects/Memotiles/3.jpg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/Memotiles/3.jpg",
+                        mobScale: true
                     },
                     {
                         type: "image",
-                        src: "assets/img/CostumeDesign&Styling/Projects/Memotiles/4.jpg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/Memotiles/4.jpg",
+                        mobScale: true
                     },
                     {
                         type: "image",
-                        src: "assets/img/CostumeDesign&Styling/Projects/Memotiles/5.jpg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/Memotiles/5.jpg",
+                        mobScale: true
                     },
                     {
                         type: "image",
-                        src: "assets/img/CostumeDesign&Styling/Projects/Memotiles/6.jpg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/Memotiles/6.jpg",
+                        mobScale: true
                     },
                     {
                         type: "image",
@@ -1358,27 +1363,33 @@ var designTabs = [
                     },
                     {
                         type: "image",
-                        src: "assets/img/CostumeDesign&Styling/Projects/Memotiles/8.jpg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/Memotiles/8.jpg",
+                        mobScale: true
                     },
                     {
                         type: "image",
-                        src: "assets/img/CostumeDesign&Styling/Projects/Memotiles/9.jpg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/Memotiles/9.jpg",
+                        mobScale: true
                     },
                     {
                         type: "image",
-                        src: "assets/img/CostumeDesign&Styling/Projects/Memotiles/10.jpg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/Memotiles/10.jpg",
+                        mobScale: true
                     },
                     {
                         type: "image",
-                        src: "assets/img/CostumeDesign&Styling/Projects/Memotiles/11.jpg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/Memotiles/11.jpg",
+                        mobScale: true
                     },
                     {
                         type: "image",
-                        src: "assets/img/CostumeDesign&Styling/Projects/Memotiles/12.jpg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/Memotiles/12.jpg",
+                        mobScale: true
                     },
                     {
                         type: "image",
-                        src: "assets/img/CostumeDesign&Styling/Projects/Memotiles/13.jpg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/Memotiles/13.jpg",
+                        mobScale: true
                     }
                 ],
                 // description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
@@ -2243,12 +2254,12 @@ function showService(tab, name, color) {
             if (grid.type === "image") {
                 rowFill += 25;
                 if (rowFill <= 100) {
-                    rows += `<div class="${grid.type} ${grid.scale ? 'scale' : ''}"><img onclick="showModal(this)" src="${grid.src}" alt="Img"></div>`;
+                    rows += `<div class="${grid.type} ${grid.scale ? 'scale' : ''} ${grid.mobScale ? 'mobScale' : ''}"><img onclick="showModal(this)" src="${grid.src}" alt="Img"></div>`;
                 } else {
                     rowFill = 25;
                     rows += `</div>
                             <div class="row">
-                                <div class="${grid.type} ${grid.scale ? 'scale' : ''}"><img onclick="showModal(this)" src="${grid.src}" alt="Img"></div>`;
+                                <div class="${grid.type} ${grid.scale ? 'scale' : ''} ${grid.mobScale ? 'mobScale' : ''}"><img onclick="showModal(this)" src="${grid.src}" alt="Img"></div>`;
                 }
             } else if (grid.type === "video") {
                 rowFill += 50;

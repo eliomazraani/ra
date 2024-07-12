@@ -1441,7 +1441,7 @@ body {
 .displayCatalogue .row .image.scale img {
   transform: scale(1.5);
 }
-@media only screen and (max-width: 1427px) {
+@media (max-width: 767px) {
   .displayCatalogue .row {
     width: 100%;
     height: unset;
@@ -1463,6 +1463,9 @@ body {
   }
   .displayCatalogue .row .image.scale img {
     transform: scale(2.5);
+  }
+  .displayCatalogue .row .image.mobScale img {
+    transform: scale(1.5);
   }
 }
 
