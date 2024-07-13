@@ -505,16 +505,8 @@ function updateGallery(elem, num) {
     var $gallery = $(elem).siblings(".gallery");
     var parentWidth = $(elem).closest(".galleryProject").width();
     var elementWidth = $gallery[0].scrollWidth;
-    console.log(parentWidth, elementWidth);
 
-    function customRound(num) {
-        var integerPart = Math.floor(num);
-        var decimalPart = num - integerPart;
-
-        return (decimalPart >= 0.5) ? Math.ceil(num) + 1 : Math.ceil(num);
-    }
-
-    var totalPages = customRound(elementWidth / parentWidth);
+    var totalPages = Math.ceil(elementWidth / parentWidth);
 
     var currentPage = $gallery.data('page') || 0;
 
@@ -526,9 +518,11 @@ function updateGallery(elem, num) {
 
     var currentTranslate = currentPage * parentWidth;
 
-    var translatePercentage = (currentTranslate / elementWidth) * 100;
+    if (currentTranslate + parentWidth > elementWidth) {
+        currentTranslate = elementWidth - parentWidth;
+    }
 
-    $gallery.css('transform', `translateX(-${translatePercentage}%)`);
+    $gallery.css('transform', `translateX(-${currentTranslate}px)`);
     $gallery.data('page', currentPage);
 }
 
@@ -688,6 +682,10 @@ $(document).ready(function () {
     }, 1000);
     document.addEventListener('touchstart', handleSwipeStart);
     document.addEventListener('touchend', handleSwipeEnd);
+
+    $('.gallery').each(function() {
+        $(this).data('page', 0);
+    });
 });
 
 $(window).resize(function () {

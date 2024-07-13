@@ -962,7 +962,9 @@ var designTabs = [
                     [
                         "assets/img/CostumeDesign&Styling/Projects/LeaMakhoul/img001.jpg",
                         "assets/img/CostumeDesign&Styling/Projects/LeaMakhoul/img002.jpg",
-                        "assets/img/CostumeDesign&Styling/Projects/LeaMakhoul/img015.jpg"
+                        "assets/img/CostumeDesign&Styling/Projects/LeaMakhoul/img015.jpg",
+                        "assets/img/CostumeDesign&Styling/Projects/LeaMakhoul/img013.jpg",
+                        "assets/img/CostumeDesign&Styling/Projects/LeaMakhoul/img014.jpg"
                     ],
                     [
                         "assets/img/CostumeDesign&Styling/Projects/LeaMakhoul/img007.jpg",
@@ -985,13 +987,7 @@ var designTabs = [
                     [
                         "assets/img/CostumeDesign&Styling/Projects/LeaMakhoul/img010.jpg",
                         "assets/img/CostumeDesign&Styling/Projects/LeaMakhoul/img011.jpg",
-                        "assets/img/CostumeDesign&Styling/Projects/LeaMakhoul/img012.jpg"
-                    ],
-                    [
-                        "assets/img/CostumeDesign&Styling/Projects/LeaMakhoul/img013.jpg",
-                        "assets/img/CostumeDesign&Styling/Projects/LeaMakhoul/img014.jpg"
-                    ],
-                    [
+                        "assets/img/CostumeDesign&Styling/Projects/LeaMakhoul/img012.jpg",
                         "assets/img/CostumeDesign&Styling/Projects/LeaMakhoul/img017.jpg",
                         "assets/img/CostumeDesign&Styling/Projects/LeaMakhoul/img018.jpg",
                         "assets/img/CostumeDesign&Styling/Projects/LeaMakhoul/img019.jpg"
@@ -1230,7 +1226,7 @@ var designTabs = [
                     },
                     {
                         type: "image",
-                        src: "assets/img/CostumeDesign&Styling/Projects/Ratata/2.jpg",
+                        src: "assets/img/CostumeDesign&Styling/Projects/Ratata/4.jpg",
                         scale: true
                     },
                     {
@@ -1239,13 +1235,12 @@ var designTabs = [
                     },
                     {
                         type: "image",
-                        src: "assets/img/CostumeDesign&Styling/Projects/Ratata/4.jpg",
+                        src: "assets/img/CostumeDesign&Styling/Projects/Ratata/2.jpg",
                         scale: true
                     },
                     {
                         type: "image",
-                        src: "assets/img/CostumeDesign&Styling/Projects/Ratata/5.jpg",
-                        scale: true
+                        src: "assets/img/CostumeDesign&Styling/Projects/Ratata/9.jpg"
                     },
                     {
                         type: "image",
@@ -1258,11 +1253,13 @@ var designTabs = [
                     },
                     {
                         type: "image",
-                        src: "assets/img/CostumeDesign&Styling/Projects/Ratata/8.jpg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/Ratata/12.jpg",
+                        scale: true
                     },
                     {
                         type: "image",
-                        src: "assets/img/CostumeDesign&Styling/Projects/Ratata/9.jpg"
+                        src: "assets/img/CostumeDesign&Styling/Projects/Ratata/5.jpg",
+                        scale: true
                     },
                     {
                         type: "image",
@@ -1276,8 +1273,7 @@ var designTabs = [
                     },
                     {
                         type: "image",
-                        src: "assets/img/CostumeDesign&Styling/Projects/Ratata/12.jpg",
-                        scale: true
+                        src: "assets/img/CostumeDesign&Styling/Projects/Ratata/8.jpg"
                     }
                 ],
                 // description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
@@ -1344,11 +1340,6 @@ var designTabs = [
                     },
                     {
                         type: "image",
-                        src: "assets/img/CostumeDesign&Styling/Projects/Memotiles/4.jpg",
-                        mobScale: true
-                    },
-                    {
-                        type: "image",
                         src: "assets/img/CostumeDesign&Styling/Projects/Memotiles/5.jpg",
                         mobScale: true
                     },
@@ -1378,12 +1369,12 @@ var designTabs = [
                     },
                     {
                         type: "image",
-                        src: "assets/img/CostumeDesign&Styling/Projects/Memotiles/11.jpg",
+                        src: "assets/img/CostumeDesign&Styling/Projects/Memotiles/12.jpg",
                         mobScale: true
                     },
                     {
                         type: "image",
-                        src: "assets/img/CostumeDesign&Styling/Projects/Memotiles/12.jpg",
+                        src: "assets/img/CostumeDesign&Styling/Projects/Memotiles/11.jpg",
                         mobScale: true
                     },
                     {
@@ -1539,25 +1530,22 @@ var designTabs = [
                 type: "slide",
                 images: [
                     [
+                        "assets/img/CostumeDesign&Styling/Designs/Orientale/17.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Orientale/18.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Orientale/19.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Orientale/20.jpg",
                         "assets/img/CostumeDesign&Styling/Designs/Orientale/1.jpg",
                         "assets/img/CostumeDesign&Styling/Designs/Orientale/2.jpg",
                         "assets/img/CostumeDesign&Styling/Designs/Orientale/3.jpg",
+                    ],
+                    [
                         "assets/img/CostumeDesign&Styling/Designs/Orientale/4.jpg",
                         "assets/img/CostumeDesign&Styling/Designs/Orientale/5.jpg",
                         "assets/img/CostumeDesign&Styling/Designs/Orientale/6.jpg",
                         "assets/img/CostumeDesign&Styling/Designs/Orientale/7.jpg",
-                        "assets/img/CostumeDesign&Styling/Designs/Orientale/8.jpg"
-                    ],
-                    [
+                        "assets/img/CostumeDesign&Styling/Designs/Orientale/8.jpg",
                         "assets/img/CostumeDesign&Styling/Designs/Orientale/9.jpg",
                         "assets/img/CostumeDesign&Styling/Designs/Orientale/10.jpg",
-                        "assets/img/CostumeDesign&Styling/Designs/Orientale/21.jpg",
-                        "assets/img/CostumeDesign&Styling/Designs/Orientale/22.jpg",
-                        "assets/img/CostumeDesign&Styling/Designs/Orientale/23.jpg",
-                        "assets/img/CostumeDesign&Styling/Designs/Orientale/24.jpg",
-                        "assets/img/CostumeDesign&Styling/Designs/Orientale/25.jpg",
-                        "assets/img/CostumeDesign&Styling/Designs/Orientale/26.jpg",
-                        "assets/img/CostumeDesign&Styling/Designs/Orientale/27.jpg"
                     ],
                     [
                         "assets/img/CostumeDesign&Styling/Designs/Orientale/11.jpg",
@@ -1566,10 +1554,13 @@ var designTabs = [
                         "assets/img/CostumeDesign&Styling/Designs/Orientale/14.jpg",
                         "assets/img/CostumeDesign&Styling/Designs/Orientale/15.jpg",
                         "assets/img/CostumeDesign&Styling/Designs/Orientale/16.jpg",
-                        "assets/img/CostumeDesign&Styling/Designs/Orientale/17.jpg",
-                        "assets/img/CostumeDesign&Styling/Designs/Orientale/18.jpg",
-                        "assets/img/CostumeDesign&Styling/Designs/Orientale/19.jpg",
-                        "assets/img/CostumeDesign&Styling/Designs/Orientale/20.jpg"
+                        "assets/img/CostumeDesign&Styling/Designs/Orientale/21.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Orientale/22.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Orientale/23.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Orientale/24.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Orientale/25.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Orientale/26.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Orientale/27.jpg"
                     ]
                 ]
             },
