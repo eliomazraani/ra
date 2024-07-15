@@ -411,6 +411,9 @@ body {
     width: 262px;
     height: 326px;
   }
+  .values .wrap .box .detail {
+    height: unset !important;
+  }
 }
 @media (max-width: 390px) {
   .values .box {
@@ -716,13 +719,17 @@ body {
 }
 .contact .wrap .reachOut .link {
   display: flex;
-  align-items: center;
+  align-items: start;
 }
 .contact .wrap .reachOut .link img {
   margin-right: 11px;
 }
 .contact .wrap .reachOut .link div {
   cursor: pointer;
+  line-height: 1;
+}
+.contact .wrap .reachOut .link:not(:first-child) {
+  margin-top: 14px;
 }
 .contact .wrap .right {
   padding: 32px 0 34px;

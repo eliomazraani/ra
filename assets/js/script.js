@@ -664,6 +664,39 @@ function getYear() {
     document.getElementById("year").innerHTML = year;
 }
 
+function handleActionOutside(event) {
+    const serviceBtn = document.querySelector('.links.sp');
+    const burgerMenu = document.querySelector('.narrow .menu');
+    if ($(window).width() > 767 && !serviceBtn.contains(event.target)) {
+        $('.vectorDown').addClass('switch');
+        $('.vectorUp').removeClass('switch');
+        $('.dropDownContent').removeClass('show');
+    } else if ($(window).width() < 767 && !burgerMenu.contains(event.target)) {
+        $('#burgerMenu').addClass('switch');
+        $('#close').removeClass('switch');
+        $('.navLinks').removeClass('show');
+    }
+}
+
+function normalizeHeights() {
+    if ($(window).width() > 767) { 
+        console.log("test");
+        let maxHeight = 0;
+    
+        $('.values .detail').each(function() {
+            let currentHeight = $(this).height();
+            
+            if (currentHeight > maxHeight) {
+                maxHeight = currentHeight;
+            }
+        });
+    
+        $('.values .detail').each(function() {
+            $(this).height(maxHeight);
+        });
+    }
+}
+
 $(document).ready(function () {
     var currentUrl = window.location.href;
     if (currentUrl.endsWith('/') && $(window).width() > 767) {
@@ -682,6 +715,9 @@ $(document).ready(function () {
     }, 1000);
     document.addEventListener('touchstart', handleSwipeStart);
     document.addEventListener('touchend', handleSwipeEnd);
+
+    document.addEventListener('click', handleActionOutside);
+    window.addEventListener('scroll', handleActionOutside);
 
     $('.gallery').each(function() {
         $(this).data('page', 0);

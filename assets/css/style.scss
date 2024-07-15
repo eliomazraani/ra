@@ -498,6 +498,10 @@ body {
             .box {
                 width: 262px;
                 height: 326px;
+
+                .detail {
+                    height: unset !important;
+                }
             }
         }
     }
@@ -852,7 +856,7 @@ body {
     
             .link {
                 display: flex;
-                align-items: center;
+                align-items: start;
     
                 img {
                     margin-right: 11px;
@@ -860,6 +864,11 @@ body {
     
                 div {
                     cursor: pointer;
+                    line-height: 1;
+                }
+
+                &:not(:first-child) {
+                    margin-top: 14px;
                 }
             }
         }

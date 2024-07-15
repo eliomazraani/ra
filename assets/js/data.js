@@ -1406,13 +1406,18 @@ var designTabs = [
                         "assets/img/CostumeDesign&Styling/Designs/Christmas/5.jpg",
                         "assets/img/CostumeDesign&Styling/Designs/Christmas/6.jpg",
                         "assets/img/CostumeDesign&Styling/Designs/Christmas/7.jpg",
-                        "assets/img/CostumeDesign&Styling/Designs/Christmas/8.jpg"
+                        "assets/img/CostumeDesign&Styling/Designs/Christmas/8.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Christmas/25.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Christmas/26.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Christmas/27.jpg"
                     ],
                     [
                         "assets/img/CostumeDesign&Styling/Designs/Christmas/9.jpg",
                         "assets/img/CostumeDesign&Styling/Designs/Christmas/10.jpg",
                         "assets/img/CostumeDesign&Styling/Designs/Christmas/11.jpg",
                         "assets/img/CostumeDesign&Styling/Designs/Christmas/12.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Christmas/23.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Christmas/24.jpg",
                         "assets/img/CostumeDesign&Styling/Designs/Christmas/13.jpg",
                         "assets/img/CostumeDesign&Styling/Designs/Christmas/14.jpg",
                         "assets/img/CostumeDesign&Styling/Designs/Christmas/15.jpg",
@@ -1420,6 +1425,7 @@ var designTabs = [
                     ],
                     [
                         "assets/img/CostumeDesign&Styling/Designs/Christmas/17.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Christmas/22.jpg",
                         "assets/img/CostumeDesign&Styling/Designs/Christmas/18.jpg",
                         "assets/img/CostumeDesign&Styling/Designs/Christmas/19.jpg",
                         "assets/img/CostumeDesign&Styling/Designs/Christmas/20.jpg",
@@ -1524,6 +1530,74 @@ var designTabs = [
             },
             {
                 id: 12,
+                image: "assets/img/CostumeDesign&Styling/Designs/MidnightAttire/Cover.jpg",
+                name: "MIDNIGHT ATTIRE",
+                // summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+                type: "slide",
+                images: [
+                    [
+                        "assets/img/CostumeDesign&Styling/Designs/MidnightAttire/1.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/MidnightAttire/2.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/MidnightAttire/3.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/MidnightAttire/4.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/MidnightAttire/5.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/MidnightAttire/6.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/MidnightAttire/7.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/MidnightAttire/8.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/MidnightAttire/9.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/MidnightAttire/10.jpg"
+                    ],
+                    [
+                        "assets/img/CostumeDesign&Styling/Designs/MidnightAttire/11.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/MidnightAttire/12.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/MidnightAttire/13.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/MidnightAttire/14.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/MidnightAttire/15.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/MidnightAttire/16.jpg"
+                    ],
+                    [
+                        "assets/img/CostumeDesign&Styling/Designs/MidnightAttire/17.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/MidnightAttire/18.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/MidnightAttire/19.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/MidnightAttire/20.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/MidnightAttire/21.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/MidnightAttire/22.jpg"
+                    ],
+                    [
+                        "assets/img/CostumeDesign&Styling/Designs/MidnightAttire/23.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/MidnightAttire/24.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/MidnightAttire/25.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/MidnightAttire/26.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/MidnightAttire/27.jpg"
+                    ],
+                    [
+                        "assets/img/CostumeDesign&Styling/Designs/MidnightAttire/28.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/MidnightAttire/29.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/MidnightAttire/30.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/MidnightAttire/31.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/MidnightAttire/32.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/MidnightAttire/33.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/MidnightAttire/34.jpg"
+                    ],
+                    [
+                        "assets/img/CostumeDesign&Styling/Designs/MidnightAttire/35.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/MidnightAttire/36.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/MidnightAttire/37.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/MidnightAttire/38.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/MidnightAttire/39.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/MidnightAttire/40.jpg"
+                    ],
+                    [
+                        "assets/img/CostumeDesign&Styling/Designs/MidnightAttire/41.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/MidnightAttire/42.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/MidnightAttire/43.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/MidnightAttire/44.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/MidnightAttire/45.jpg"
+                    ]
+                ]
+            },
+            {
+                id: 13,
                 image: "assets/img/CostumeDesign&Styling/Designs/Orientale/Cover.jpg",
                 name: "ORIENTALE",
                 // summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
@@ -1565,7 +1639,7 @@ var designTabs = [
                 ]
             },
             {
-                id: 13,
+                id: 14,
                 image: "assets/img/CostumeDesign&Styling/Designs/StreetStyle/Cover.jpg",
                 name: "STREETSTYLE",
                 // summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
@@ -2350,9 +2424,11 @@ $(document).ready(function () {
         renderClient();
         renderTestimonial();
         renderJob();
+        normalizeHeights();
     }, 1000)
 });
 
 $(window).resize(function () {
     renderClient();
+    normalizeHeights();
 });
