@@ -647,6 +647,14 @@ body {
         justify-content: center;
         align-items: center;
 
+        .sc35 {
+            height: 35px;
+        }
+        
+        .sc40 {
+            height: 40px;
+        }
+
         &:first-of-type {
             display: flex;
         }
@@ -856,7 +864,7 @@ body {
     
             .link {
                 display: flex;
-                align-items: start;
+                align-items: center;
     
                 img {
                     margin-right: 11px;
@@ -1228,15 +1236,26 @@ body {
                     border-bottom: 1px solid;
                     padding: 10px;
                 }
+
+                &.purple {
+                    font-weight: 700;
+                    background: linear-gradient(90deg, #464EA3 0.01%, #995BB7 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                    border-bottom: 1px solid;
+                    padding: 10px;
+                    cursor: unset;
+                }
             }
 
             &.solo {
                 justify-content: center;
-                font-weight: 700;
-                font-size: 18px;
-                line-height: 21px;
-                letter-spacing: 0.34em;
-                text-transform: uppercase;
+                // font-weight: 700;
+                // font-size: 18px;
+                // line-height: 21px;
+                // letter-spacing: 0.34em;
+                // text-transform: uppercase;
             }
         }
 

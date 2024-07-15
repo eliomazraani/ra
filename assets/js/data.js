@@ -132,10 +132,22 @@ var clients = [
     "assets/img/Clients/RETINA.jpg",
     "assets/img/Clients/CASINO.png",
     "assets/img/Clients/KLOUD.png",
-    "assets/img/Clients/Antika.png",
-    "assets/img/Clients/SEAFRONT.png",
-    "assets/img/Clients/KAI.png",
-    "assets/img/Clients/KAP.png",
+    {
+        src: "assets/img/Clients/Antika.png",
+        scale: "sc40"
+    },
+    {
+        src: "assets/img/Clients/SEAFRONT.png",
+        scale: "sc40"
+    },
+    {
+        src: "assets/img/Clients/KAI.png",
+        scale: "sc40"
+    },
+    {
+        src: "assets/img/Clients/KAP.png",
+        scale: "sc35"
+    }
 ]
 
 function loadImage(url) {
@@ -160,7 +172,21 @@ async function renderClient() {
 
     for (let i = 0; i < clients.length; i++) {
         try {
-            var img = await loadImage(clients[i]);
+            var client = clients[i];
+            var imgSrc, imgClass = "";
+
+            if (typeof client === 'string') {
+                imgSrc = client;
+            } else if (typeof client === 'object') {
+                imgSrc = client.src;
+                if (client.scale) {
+                    imgClass = `class="${client.scale}"`;
+                }
+            }
+
+            var img = new Image();
+            img.src = imgSrc;
+            await img.decode();
             var imgWidth = img.width;
 
             if (currentContainerWidth + imgWidth + columnGap > faderWidth) {
@@ -172,7 +198,7 @@ async function renderClient() {
                 currentContainerWidth = 0;
             }
 
-            currentContainer += `<img src="${clients[i]}" alt="Img">`;
+            currentContainer += `<img src="${imgSrc}" ${imgClass} alt="Img">`;
             currentContainerWidth += imgWidth + columnGap;
 
             if (i === clients.length - 1 && currentContainerWidth > 0) {
@@ -190,7 +216,18 @@ async function renderClient() {
 
     var clientM = `<div class="clientLogo">`;
     clients.forEach(client => {
-        clientM += `<img src="${client}" alt="Img">`
+        var imgSrc, imgClass = "";
+
+        if (typeof client === 'string') {
+            imgSrc = client;
+        } else if (typeof client === 'object') {
+            imgSrc = client.src;
+            if (client.scale) {
+                imgClass = `class="${client.scale}"`;
+            }
+        }
+
+        clientM += `<img src="${imgSrc}" ${imgClass} alt="Img">`
     });
     clientM += `</div>`;
     $(".clients .narrow").append(clientM);
@@ -260,7 +297,7 @@ var testimonials = [
     // {
     //     id: ,
     //     name: "TOUMA SALEMEH – EVENT PLANNER",
-    //     testimonial: "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec magna at bibendum. Nam non dui nec erat rhoncus sagittis sed at tortor. In eu sapien non diam efficitur auctor ut eget nisl. Praesent arcu massa, ultricies quis condimentum nec, consectetur ut odio. Vestibulum a lobortis metus.”",
+    //     testimonial: "“It Has been our greatest pleasure working with you! The high level of professionalism your team has along with the discipline and respect they have to their work amazed us. For many more weddings and events to come!”",
     //     image: "assets/img/Testimonial/Client.png",
     // },
     // {
@@ -1620,6 +1657,8 @@ var designTabs = [
                         "assets/img/CostumeDesign&Styling/Designs/Orientale/8.jpg",
                         "assets/img/CostumeDesign&Styling/Designs/Orientale/9.jpg",
                         "assets/img/CostumeDesign&Styling/Designs/Orientale/10.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Orientale/28.jpg",
+                        "assets/img/CostumeDesign&Styling/Designs/Orientale/29.jpg",
                     ],
                     [
                         "assets/img/CostumeDesign&Styling/Designs/Orientale/11.jpg",
@@ -1771,6 +1810,7 @@ var artTabs = [
             {
                 type: "image",
                 src: "assets/img/ArtisticDirection/MrLeb/mrLeb_1010.jpeg",
+                mobScale: true
             },
             {
                 type: "image",
@@ -1779,6 +1819,7 @@ var artTabs = [
             {
                 type: "image",
                 src: "assets/img/ArtisticDirection/MrLeb/mrLeb_1012.jpeg",
+                mobScale: true
             },
             {
                 type: "image",
@@ -1803,6 +1844,7 @@ var artTabs = [
             {
                 type: "image",
                 src: "assets/img/ArtisticDirection/MrLeb/mrLeb_1018.jpeg",
+                mobScale: true
             },
             {
                 type: "image",
@@ -2175,7 +2217,9 @@ var artTabs = [
 
 function directionTabs() {
     $(".servicesGrid .tabs").addClass("solo");
-    $(".servicesGrid .tabs").text("OUR PROJECTS");
+    // $(".servicesGrid .tabs").text("OUR PROJECTS");
+
+    var tabs = `<a class="purple">OUR PROJECTS</a>`;
 
     var grids = `<div class="grid">`;
 
@@ -2192,6 +2236,7 @@ function directionTabs() {
         });
         grids += `</div>`;
 
+    $(".servicesGrid .tabs").append(tabs);
     $(".servicesGrid .wrap").append(grids);
 }
 

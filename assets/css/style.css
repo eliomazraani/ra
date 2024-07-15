@@ -537,6 +537,12 @@ body {
   justify-content: center;
   align-items: center;
 }
+.clients .clientLogo .sc35 {
+  height: 35px;
+}
+.clients .clientLogo .sc40 {
+  height: 40px;
+}
 .clients .clientLogo:first-of-type {
   display: flex;
 }
@@ -719,7 +725,7 @@ body {
 }
 .contact .wrap .reachOut .link {
   display: flex;
-  align-items: start;
+  align-items: center;
 }
 .contact .wrap .reachOut .link img {
   margin-right: 11px;
@@ -1030,13 +1036,18 @@ body {
   border-bottom: 1px solid;
   padding: 10px;
 }
+.serviceOptions .servicesGrid .tabs a.purple {
+  font-weight: 700;
+  background: linear-gradient(90deg, #464EA3 0.01%, #995BB7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  border-bottom: 1px solid;
+  padding: 10px;
+  cursor: unset;
+}
 .serviceOptions .servicesGrid .tabs.solo {
   justify-content: center;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 21px;
-  letter-spacing: 0.34em;
-  text-transform: uppercase;
 }
 .serviceOptions .servicesGrid .grid {
   margin-top: 48px;
