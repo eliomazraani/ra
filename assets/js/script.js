@@ -667,11 +667,12 @@ function getYear() {
 function handleActionOutside(event) {
     const serviceBtn = document.querySelector('.links.sp');
     const burgerMenu = document.querySelector('.narrow .menu');
+    const navLinks  = document.querySelector('.narrow .navLinks ');
     if ($(window).width() > 767 && !serviceBtn.contains(event.target)) {
         $('.vectorDown').addClass('switch');
         $('.vectorUp').removeClass('switch');
         $('.dropDownContent').removeClass('show');
-    } else if ($(window).width() < 767 && !burgerMenu.contains(event.target)) {
+    } else if ($(window).width() < 767 && !burgerMenu.contains(event.target) && !navLinks.contains(event.target)) {
         $('#burgerMenu').addClass('switch');
         $('#close').removeClass('switch');
         $('.navLinks').removeClass('show');
