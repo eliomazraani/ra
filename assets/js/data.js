@@ -954,6 +954,140 @@ var designTabs = [
             },
             {
                 id: 2,
+                image: "assets/img/CostumeDesign&Styling/Projects/Ratata/Cover.jpg",
+                name: "RATATA",
+                summary: "Lea Makhoul - Music Video",
+                type: "grid",
+                images: [
+                    {
+                        type: "image",
+                        src: "assets/img/CostumeDesign&Styling/Projects/Ratata/1.jpg"
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/CostumeDesign&Styling/Projects/Ratata/4.jpg",
+                        scale: true
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/CostumeDesign&Styling/Projects/Ratata/3.jpg"
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/CostumeDesign&Styling/Projects/Ratata/2.jpg",
+                        scale: true
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/CostumeDesign&Styling/Projects/Ratata/9.jpg"
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/CostumeDesign&Styling/Projects/Ratata/6.jpg"
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/CostumeDesign&Styling/Projects/Ratata/7.jpg",
+                        scale: true
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/CostumeDesign&Styling/Projects/Ratata/12.jpg",
+                        scale: true
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/CostumeDesign&Styling/Projects/Ratata/5.jpg",
+                        scale: true
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/CostumeDesign&Styling/Projects/Ratata/10.jpg",
+                        scale: true
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/CostumeDesign&Styling/Projects/Ratata/11.jpg",
+                        scale: true
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/CostumeDesign&Styling/Projects/Ratata/8.jpg"
+                    }
+                ],
+                // description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+            },
+            {
+                id: 3,
+                image: "assets/img/CostumeDesign&Styling/Projects/Ebki/Cover.jpg",
+                name: "EBKI",
+                summary: "Karl Husein - Music Video",
+                type: "grid",
+                images: [
+                    {
+                        type: "image",
+                        src: "assets/img/CostumeDesign&Styling/Projects/Ebki/1.jpg",
+                        scale: true
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/CostumeDesign&Styling/Projects/Ebki/2.jpg",
+                        scale: true
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/CostumeDesign&Styling/Projects/Ebki/3.jpg",
+                        scale: true
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/CostumeDesign&Styling/Projects/Ebki/4.jpg",
+                        scale: true
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/CostumeDesign&Styling/Projects/Ebki/5.jpg",
+                        scale: true
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/CostumeDesign&Styling/Projects/Ebki/6.jpg",
+                        scale: true
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/CostumeDesign&Styling/Projects/Ebki/7.jpg",
+                        scale: true
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/CostumeDesign&Styling/Projects/Ebki/8.jpg",
+                        scale: true
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/CostumeDesign&Styling/Projects/Ebki/11.jpg",
+                        scale: true
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/CostumeDesign&Styling/Projects/Ebki/12.jpg",
+                        scale: true
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/CostumeDesign&Styling/Projects/Ebki/13.jpg",
+                        scale: true
+                    },
+                    {
+                        type: "image",
+                        src: "assets/img/CostumeDesign&Styling/Projects/Ebki/14.jpg"
+                    }
+                ],
+                // description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
+            },
+            {
+                id: 4,
                 image: "assets/img/CostumeDesign&Styling/Projects/LeaMakhoul/Cover.jpg",
                 name: "LEA MAKHOUL",
                 summary: "Artist - Photoshoot",
@@ -1005,7 +1139,7 @@ var designTabs = [
                 ],
             },
             {
-                id: 3,
+                id: 5,
                 image: "assets/img/CostumeDesign&Styling/Projects/Maroun/Cover.JPG",
                 name: "MAROUN CONSTANTINE",
                 summary: "Jewelery Design - Photoshoot",
@@ -1109,7 +1243,7 @@ var designTabs = [
                 // description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
             },
             {
-                id: 4,
+                id: 6,
                 image: "assets/img/CostumeDesign&Styling/Projects/NadaAbouFarhat/Cover.jpeg",
                 name: "NADA ABOU FARHAT",
                 summary: "Artist - Photoshoot",
@@ -1140,140 +1274,6 @@ var designTabs = [
                         type: "image",
                         src: "assets/img/CostumeDesign&Styling/Projects/NadaAbouFarhat/6.jpeg",
                         scale: true
-                    }
-                ],
-                // description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
-            },
-            {
-                id: 5,
-                image: "assets/img/CostumeDesign&Styling/Projects/Ebki/Cover.jpg",
-                name: "EBKI",
-                summary: "Karl Husein - Music Video",
-                type: "grid",
-                images: [
-                    {
-                        type: "image",
-                        src: "assets/img/CostumeDesign&Styling/Projects/Ebki/1.jpg",
-                        scale: true
-                    },
-                    {
-                        type: "image",
-                        src: "assets/img/CostumeDesign&Styling/Projects/Ebki/2.jpg",
-                        scale: true
-                    },
-                    {
-                        type: "image",
-                        src: "assets/img/CostumeDesign&Styling/Projects/Ebki/3.jpg",
-                        scale: true
-                    },
-                    {
-                        type: "image",
-                        src: "assets/img/CostumeDesign&Styling/Projects/Ebki/4.jpg",
-                        scale: true
-                    },
-                    {
-                        type: "image",
-                        src: "assets/img/CostumeDesign&Styling/Projects/Ebki/5.jpg",
-                        scale: true
-                    },
-                    {
-                        type: "image",
-                        src: "assets/img/CostumeDesign&Styling/Projects/Ebki/6.jpg",
-                        scale: true
-                    },
-                    {
-                        type: "image",
-                        src: "assets/img/CostumeDesign&Styling/Projects/Ebki/7.jpg",
-                        scale: true
-                    },
-                    {
-                        type: "image",
-                        src: "assets/img/CostumeDesign&Styling/Projects/Ebki/8.jpg",
-                        scale: true
-                    },
-                    {
-                        type: "image",
-                        src: "assets/img/CostumeDesign&Styling/Projects/Ebki/11.jpg",
-                        scale: true
-                    },
-                    {
-                        type: "image",
-                        src: "assets/img/CostumeDesign&Styling/Projects/Ebki/12.jpg",
-                        scale: true
-                    },
-                    {
-                        type: "image",
-                        src: "assets/img/CostumeDesign&Styling/Projects/Ebki/13.jpg",
-                        scale: true
-                    },
-                    {
-                        type: "image",
-                        src: "assets/img/CostumeDesign&Styling/Projects/Ebki/14.jpg"
-                    }
-                ],
-                // description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
-            },
-            {
-                id: 6,
-                image: "assets/img/CostumeDesign&Styling/Projects/Ratata/Cover.jpg",
-                name: "RATATA",
-                summary: "Lea Makhoul - Music Video",
-                type: "grid",
-                images: [
-                    {
-                        type: "image",
-                        src: "assets/img/CostumeDesign&Styling/Projects/Ratata/1.jpg"
-                    },
-                    {
-                        type: "image",
-                        src: "assets/img/CostumeDesign&Styling/Projects/Ratata/4.jpg",
-                        scale: true
-                    },
-                    {
-                        type: "image",
-                        src: "assets/img/CostumeDesign&Styling/Projects/Ratata/3.jpg"
-                    },
-                    {
-                        type: "image",
-                        src: "assets/img/CostumeDesign&Styling/Projects/Ratata/2.jpg",
-                        scale: true
-                    },
-                    {
-                        type: "image",
-                        src: "assets/img/CostumeDesign&Styling/Projects/Ratata/9.jpg"
-                    },
-                    {
-                        type: "image",
-                        src: "assets/img/CostumeDesign&Styling/Projects/Ratata/6.jpg"
-                    },
-                    {
-                        type: "image",
-                        src: "assets/img/CostumeDesign&Styling/Projects/Ratata/7.jpg",
-                        scale: true
-                    },
-                    {
-                        type: "image",
-                        src: "assets/img/CostumeDesign&Styling/Projects/Ratata/12.jpg",
-                        scale: true
-                    },
-                    {
-                        type: "image",
-                        src: "assets/img/CostumeDesign&Styling/Projects/Ratata/5.jpg",
-                        scale: true
-                    },
-                    {
-                        type: "image",
-                        src: "assets/img/CostumeDesign&Styling/Projects/Ratata/10.jpg",
-                        scale: true
-                    },
-                    {
-                        type: "image",
-                        src: "assets/img/CostumeDesign&Styling/Projects/Ratata/11.jpg",
-                        scale: true
-                    },
-                    {
-                        type: "image",
-                        src: "assets/img/CostumeDesign&Styling/Projects/Ratata/8.jpg"
                     }
                 ],
                 // description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nec.",
