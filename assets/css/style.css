@@ -249,9 +249,6 @@ body {
 .services .narrow {
   display: none;
 }
-.services .narrow .cstm-style img {
-  pointer-events: none;
-}
 .services .block {
   width: 25%;
   position: relative;
