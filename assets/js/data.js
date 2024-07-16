@@ -1177,7 +1177,7 @@ var designTabs = [
             },
             {
                 id: 5,
-                image: "assets/img/CostumeDesign&Styling/Projects/Maroun/Cover.JPG",
+                image: "assets/img/CostumeDesign&Styling/Projects/Maroun/Cover.jpg",
                 name: "MAROUN CONSTANTINE",
                 summary: "Jewelery Design - Photoshoot",
                 type: "grid",
