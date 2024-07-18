@@ -1964,24 +1964,28 @@ body {
     @include screen767 {
         padding: 32px;
 
-        .hiring {
-            margin-top: 32px;
-        }
+        .wrap {
 
-        .jobList {
-            margin-top: 32px;
+            .hiring {
+                margin-top: 32px;
+            }
 
-            .jobPosition {
-                width: unset;
+            .jobList {
+                margin-top: 32px;
+                flex-direction: column;
 
-                .image {
-                    width: 100px;
-                    height: 100px;
+                .jobPosition {
+                    width: unset;
 
-                    img {
-                        // width: 100%;
-                        width: -webkit-fill-available;
-                        /* demo purpose */
+                    .image {
+                        width: 100px;
+                        height: 100px;
+
+                        img {
+                            // width: 100%;
+                            width: -webkit-fill-available;
+                            /* demo purpose */
+                        }
                     }
                 }
             }

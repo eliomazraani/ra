@@ -1635,20 +1635,21 @@ body {
   .vacancy {
     padding: 32px;
   }
-  .vacancy .hiring {
+  .vacancy .wrap .hiring {
     margin-top: 32px;
   }
-  .vacancy .jobList {
+  .vacancy .wrap .jobList {
     margin-top: 32px;
+    flex-direction: column;
   }
-  .vacancy .jobList .jobPosition {
+  .vacancy .wrap .jobList .jobPosition {
     width: unset;
   }
-  .vacancy .jobList .jobPosition .image {
+  .vacancy .wrap .jobList .jobPosition .image {
     width: 100px;
     height: 100px;
   }
-  .vacancy .jobList .jobPosition .image img {
+  .vacancy .wrap .jobList .jobPosition .image img {
     width: -webkit-fill-available;
     /* demo purpose */
   }

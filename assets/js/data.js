@@ -389,7 +389,7 @@ var jobs = [
     },
     {
         id: 8,
-        position: "Dancer/Performer",
+        position: "Dancer / Performer",
         requirements: "Expresses art through different types of dance/performances.",
         image: "assets/img/Jobs/Dancer.jpg"
     },
