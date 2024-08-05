@@ -681,7 +681,6 @@ function handleActionOutside(event) {
 
 function normalizeHeights() {
     if ($(window).width() > 767) { 
-        console.log("test");
         let maxHeight = 0;
     
         $('.values .detail').each(function() {

@@ -618,13 +618,13 @@ var choreoTabs = [
                 summary: "Beirut, Lebanon",
                 redirect: "artService.html?id=3?name=KULT"
             },
-            // {
-            //     id: 9,
-            //     image: "assets/img/MovementChorepgraphy/Clubs/Ava.jpg",
-            //     name: "ANTIKA",
-            //     summary: "Waterfront Beirut, Lebanon",
-            //     href: "https://youtube.com/"
-            // },
+            {
+                id: 9,
+                image: "assets/img/MovementChorepgraphy/Clubs/KAP.jpg",
+                name: "KAP",
+                summary: "Jounieh, Lebanon",
+                href: "https://youtu.be/iVYA4lvsqhM?si=xx3g44DjpNcZzGs3"
+            },
             {
                 id: 10,
                 image: "assets/img/MovementChorepgraphy/Clubs/Ava.jpg",
