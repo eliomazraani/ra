@@ -668,11 +668,11 @@ function handleActionOutside(event) {
     const serviceBtn = document.querySelector('.links.sp');
     const burgerMenu = document.querySelector('.narrow .menu');
     const navLinks  = document.querySelector('.narrow .navLinks ');
-    if ($(window).width() > 767 && !serviceBtn.contains(event.target)) {
+    if ($(window).width() > 1024 && !serviceBtn.contains(event.target)) {
         $('.vectorDown').addClass('switch');
         $('.vectorUp').removeClass('switch');
         $('.dropDownContent').removeClass('show');
-    } else if ($(window).width() < 767 && !burgerMenu.contains(event.target) && !navLinks.contains(event.target)) {
+    } else if ($(window).width() < 1024 && !burgerMenu.contains(event.target) && !navLinks.contains(event.target)) {
         $('#burgerMenu').addClass('switch');
         $('#close').removeClass('switch');
         $('.navLinks').removeClass('show');
@@ -680,7 +680,7 @@ function handleActionOutside(event) {
 }
 
 function normalizeHeights() {
-    if ($(window).width() > 767) { 
+    if ($(window).width() > 1024) { 
         let maxHeight = 0;
     
         $('.values .detail').each(function() {
@@ -699,7 +699,7 @@ function normalizeHeights() {
 
 $(document).ready(function () {
     var currentUrl = window.location.href;
-    if (currentUrl.endsWith('/') && $(window).width() > 767) {
+    if (currentUrl.endsWith('/') && $(window).width() > 1024) {
         var height = $(window).height() - 92;
         $('.services').css('height', height);
     } else {
@@ -726,7 +726,7 @@ $(document).ready(function () {
 
 $(window).resize(function () {
     var currentUrl = window.location.href;
-    if (currentUrl.endsWith('/') && $(window).width() > 767) {
+    if (currentUrl.endsWith('/') && $(window).width() > 1024) {
         var height = $(window).height() - 92;
         $('.services').css('height', height);
     } else {

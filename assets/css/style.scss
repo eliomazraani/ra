@@ -1,11 +1,5 @@
-@mixin screen1100 {
-    @media (max-width: 1100px) {
-        @content
-    }
-}
-
-@mixin screen860 {
-    @media (max-width: 860px) {
+@mixin screen1024 {
+    @media (max-width: 1024px) {
         @content
     }
 }
@@ -291,7 +285,7 @@ body {
         }
     }
 
-    @include screen767 {
+    @include screen1024 {
         .wide {
             display: none;
         }
@@ -323,7 +317,6 @@ body {
 
         img {
             width: 100%;
-            // height: 100%;
         }
 
         .paragraph {
@@ -339,10 +332,6 @@ body {
                 line-height: 32px;
                 letter-spacing: 0.1em;
                 text-transform: uppercase;
-
-                @include screen767 {
-                    font-size: 5px;
-                }
             }
 
             .description {
@@ -356,6 +345,27 @@ body {
 
         &:hover .paragraph .description {
             display: block;
+        }
+    }
+
+    @include screen1024 {
+        .wide {
+            flex-wrap: wrap;
+        }
+
+        .block {
+            width: 50%;
+
+            img {
+                height: 100%;
+            }
+
+            .paragraph {
+
+                .description {
+                    display: block;
+                }
+            }
         }
     }
 
@@ -410,6 +420,10 @@ body {
                 }
             }
 
+            img {
+                height: unset;
+            }
+
             .paragraph {
                 bottom: 32px;
                 padding-right: 32px;
@@ -423,17 +437,6 @@ body {
                     display: block;
                     font-weight: 400;
                     line-height: 20px;
-                }
-
-                .glimpseBtn {
-                    margin-top: 8px;
-                    display: flex;
-                    align-items: center;
-                    column-gap: 8px;
-
-                    i {
-                        color: #FFFFFF;
-                    }
                 }
 
                 .button {
@@ -487,9 +490,11 @@ body {
         }
     }
 
-    @include screen767 {
+    @include screen1024 {
         padding: 32px;
+    }
 
+    @include screen767 {
         .wrap {
             flex-direction: column;
             align-items: center;
@@ -568,9 +573,11 @@ body {
         }
     }
 
-    @include screen767 {
+    @include screen1024 {
         padding: 32px;
+    }
 
+    @include screen767 {
         .wrap {
             flex-direction: column;
             align-items: center;
@@ -681,7 +688,7 @@ body {
         cursor: pointer;
     }
 
-    @include screen767 {
+    @include screen1024 {
         padding: 0 32px;
 
         .wide {
@@ -800,7 +807,7 @@ body {
         }
     }
 
-    @include screen767 {
+    @include screen1024 {
         padding: 32px;
     }
 }
@@ -929,8 +936,11 @@ body {
         }
     }
 
-    @include screen767 {
+    @include screen1024 {
         padding: 32px;
+    }
+
+    @include screen767 {
         .wrap {
             flex-direction: column;
             align-items: center;
@@ -1173,9 +1183,11 @@ body {
             }
         }
 
-        @include screen767 {
+        @include screen1024 {
             padding: 120px 32px 32px;
+        }
 
+        @include screen767 {
             .wrap {
                 row-gap: 8px;
     
@@ -1313,9 +1325,31 @@ body {
             }
         }
 
-        @include screen767 {
+        @include screen1024 {
             padding: 16px 32px 64px;
 
+            .grid {
+                
+                a {
+
+                    .service {
+
+                        .information {
+
+                            .name {
+                                font-size: 12px;
+                            }
+    
+                            .summary {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        @include screen767 {
             .tabs {
                 justify-content: start;
                 white-space: nowrap;
@@ -1335,6 +1369,24 @@ body {
 
                 a {
                     width: unset;
+
+                    .service {
+
+                        img {
+                            width: unset;
+                        }
+
+                        .information {
+
+                            .name {
+                                font-size: 14px;
+                            }
+    
+                            .summary {
+                                font-size: 14px;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -1395,9 +1447,22 @@ body {
             }
         }
 
-        @include screen767 {
+        @include screen1024 {
             .list {
                 padding: 32px;
+
+                .wrap {
+
+                    .demo {
+                        width: 200px;
+                        height: 200px;
+                    }
+                }
+            }
+        }
+
+        @include screen767 {
+            .list {
 
                 .wrap {
                     flex-direction: column !important;
@@ -1452,7 +1517,7 @@ body {
         background: linear-gradient(90deg, #464EA3 0.01%, #995BB7 100%);
     }
 
-    @include screen767 {
+    @include screen1024 {
         padding: 10.5px 32px;
 
         .serviceName {
@@ -1677,7 +1742,7 @@ body {
         }
     }
 
-    @include screen767 {
+    @include screen1024 {
         padding: 32px;
 
         .display {
@@ -1751,9 +1816,7 @@ body {
         }
     }
 
-    @include screen767 {
-    // @media only screen and (max-width: 1427px) {
-
+    @include screen1024 {
         .row {
             width: 100%;
             height: unset;
@@ -1772,7 +1835,7 @@ body {
 
             .image {
                 width: calc(50% - 8px);
-                height: 120px;
+                height: 270px;
 
                 &.scale {
 
@@ -1787,6 +1850,15 @@ body {
                         transform: scale(1.5);
                     }
                 }
+            }
+        }
+    }
+
+    @include screen767 {
+        .row {
+
+            .image {
+                height: 120px;
             }
         }
     }
@@ -1861,7 +1933,7 @@ body {
         cursor: pointer;
     }
 
-    @include screen767 {
+    @include screen1024 {
         .modal-content {
             width: 90%;
 
@@ -1961,9 +2033,38 @@ body {
         }
     }
 
-    @include screen767 {
+    @include screen1024 {
         padding: 32px;
 
+        .wrap {
+
+            .jobList {
+                column-gap: 16px;
+
+                .jobPosition {
+                    width: 48%;
+
+                    .image {
+                        width: 100px;
+                        height: 100px;
+                    }
+
+                    .details {
+
+                        .position {
+                            font-size: 14px;
+                        }
+
+                        .requirements {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @include screen767 {
         .wrap {
 
             .hiring {
@@ -1977,14 +2078,14 @@ body {
                 .jobPosition {
                     width: unset;
 
-                    .image {
-                        width: 100px;
-                        height: 100px;
+                    .details {
 
-                        img {
-                            // width: 100%;
-                            width: -webkit-fill-available;
-                            /* demo purpose */
+                        .position {
+                            font-size: 16px;
+                        }
+
+                        .requirements {
+                            font-size: 14px;
                         }
                     }
                 }
