@@ -1899,7 +1899,7 @@ var artTabs = [
             },
             {
                 type: "image",
-                src: "assets/img/ArtisticDirection/Ahlam/AH_106.png",
+                src: "assets/img/ArtisticDirection/Ahlam/AH_106.PNG",
             },
             {
                 type: "image",
@@ -1911,19 +1911,19 @@ var artTabs = [
             },
             {
                 type: "image",
-                src: "assets/img/ArtisticDirection/Ahlam/AH_109.png",
+                src: "assets/img/ArtisticDirection/Ahlam/AH_109.PNG",
             },
             {
                 type: "image",
-                src: "assets/img/ArtisticDirection/Ahlam/AH_1010.png",
+                src: "assets/img/ArtisticDirection/Ahlam/AH_1010.PNG",
             },
             {
                 type: "image",
-                src: "assets/img/ArtisticDirection/Ahlam/AH_1011.png",
+                src: "assets/img/ArtisticDirection/Ahlam/AH_1011.PNG",
             },
             {
                 type: "image",
-                src: "assets/img/ArtisticDirection/Ahlam/AH_1012.png",
+                src: "assets/img/ArtisticDirection/Ahlam/AH_1012.PNG",
             },
             {
                 type: "image",
