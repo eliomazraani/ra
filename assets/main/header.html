@@ -1,0 +1,61 @@
+<!-- Header -->
+<div class="wide">
+    <div class="logo">
+        <a class="toHome">
+            <img src="assets/img/Logo.svg" alt="Img">
+        </a>
+    </div>
+    <div class="navLinks">
+        <a href="/" class="links lp">Home</a>
+        <a href="about.html" class="links ap">About Us</a>
+        <div style="position: relative;" onclick="dropDownContent()">
+            <a class="links sp">
+                Our Services
+                <i class="fas fa-caret-down vectorDown switch"></i>
+                <i class="fas fa-caret-up vectorUp"></i>
+            </a>
+            <div class="dropDownContent fade">
+                <a href="choreography.html" class="chp">Movement & Choreography</a>
+                <a href="design.html" class="des">Costume Design & Styling</a>
+                <a href="art.html" class="art">Artistic Direction</a>
+                <a href="coaching.html" class="stl">Style Coaching</a>
+            </div>
+        </div>
+        <a href="joinUs.html" class="links tp">Join Our Team</a>
+    </div>
+    <div class="button">
+        <a onclick="scrollToContact()">Get In Touch</a>
+    </div>
+</div>
+<div class="narrow">
+    <div class="logo">
+        <a href="/" class="toHome">
+            <img src="assets/img/Logo.svg" alt="Img">
+        </a>
+    </div>
+    <div class="menu" onclick="dropDownMenu()">
+        <i id="burgerMenu" class="fas fa-bars switch"></i>
+        <i id="close" class="fas fa-close"></i>
+    </div>
+    <div class="navLinks fade">
+        <a href="/" class="links">Home</a>
+        <a href="about.html" class="links">About Us</a>
+        <div class="dropDown" onclick="dropDownContent()">
+            <a class="links" style="padding: 0;">Our Services</a>
+            <i class="fas fa-caret-down vectorDown switch"></i>
+            <i class="fas fa-caret-up vectorUp"></i>
+        </div>    
+        <div class="dropDownContent fade">
+            <a href="choreography.html">Movement & Choreography</a>
+            <a href="design.html">Costume Design & Styling</a>
+            <a href="art.html">Artistic Direction</a>
+            <a href="coaching.html">Style Coaching</a>
+        </div>
+        <a href="joinUs.html" class="links">Join Our Team</a>
+        <div class="getInTouchButton">
+            <div class="button">
+                <a onclick="scrollToContact()">Get In Touch</a>
+            </div>
+        </div>
+    </div>
+</div>

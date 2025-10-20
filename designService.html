@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <title>Rachel Asmar</title>
+    <link rel="shortcut icon" href="assets/img/LogoPink.svg" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="top pink"></header>
+    <main>
+        <section class="breadCrumbs pink"></section>
+        <section class="showService"></section>
+        <section class="clients"></section>
+        <section class="testimonials pink"></section>
+        <section class="contact pink"></section>
+        <section class="msgSumbmission"></section>
+    </main>
+    <footer class="bottom"></footer>
+    <script>
+        $(".top").load("assets/main/header.html");
+        $(".breadCrumbs").load("assets/showService/breadCrumbs.html");
+        $(".clients").load("assets/main/clients.html");
+        $(".testimonials").load("assets/main/testimonials.html");
+        $(".contact").load("assets/main/contact.html");
+        $(".msgSumbmission").load("assets/main/overlay.html");
+        $(".bottom").load("assets/main/footer.html");
+    </script>
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
