@@ -1,0 +1,50 @@
+<!-- Contact -->
+<div class="wrap">
+    <div class="left">
+        <div class="getInTouch">Get In Touch</div>
+        <div class="description">
+            We're enthusiastic about introducing our services at Rachel Asmar. Our commitment is to deliver the best possible customer experience. <br>
+            Whether you're curious to learn more or have questions, we're here to assist. Take a look at our website for details or contact us for further help. Thank you for considering us!
+        </div>
+        <div class="reachOut">
+            <div class="address link">
+                <img src="assets/img/Location.svg" alt="Img">
+                <div onclick="openGoogleMaps()">
+                    RA | The Hub, Beirut, Lebanon
+                </div>
+            </div>
+            <div class="number link">
+                <img src="assets/img/Phone.svg" alt="Img">
+                <div onclick="openWhatsApp()">
+                    961 70908587
+                </div>
+            </div>
+            <div class="email link">
+                <img src="assets/img/Email.svg" alt="Img">
+                <div onclick="openEmail()">
+                    Info@rachelasmar.com
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="right">
+        <form action="" class="form" id="contactForm">
+            <div class="row">
+                <input type="text" id="firstName" placeholder="First Name*" required>
+                <input type="text" id="lastName" placeholder="Last Name*" required>
+            </div>
+            <div class="row">
+                <input type="phone" id="phoneNumber" placeholder="Phone Number*" required>
+                <input type="email" id="email" placeholder="Email*" required>
+            </div>
+            <div class="row">
+                <textarea name="" id="message" cols="30" rows="10" placeholder="Message*" required></textarea>
+            </div>
+            <div class="row">
+                <div id="sendEmail" onclick="sendEmail()" class="button">
+                    <a>Submit</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
